@@ -1,0 +1,67 @@
+# Machine-readable form of the PCB playbook. Consumed by layout-quality checks
+# (kicad-tools rules and the kicad-pcb plugin). Prose rationale lives in the
+# neighboring .md files; keep the two in sync.
+version: 1
+name: meawoppl-default
+
+parts:
+  min_passive_imperial: "0402"
+  prefer_leaded_packages: true      # inspectable / bodgeable over hidden thermal pads
+  require_lcsc_package_match: true  # LCSC package must match footprint size
+
+routing:
+  octilinear_only: true             # 0/45/90 degree segments
+  circle_approximations: forbid     # use 45 degree miters around keepouts
+  width_islands: error              # short wide segment between narrower ones
+  width_transition_requires_clearance_reason: true
+  straight_pad_exits: true          # centered exit, first bend outside the pad
+  pad_grazing: error                # track touching a pad it doesn't terminate on
+  stubs: error                      # including tails touching same-net copper
+  no_front_routing_under: [QFN, DFN, BGA]
+  order: [power, critical, io]
+
+vias:
+  in_pad: forbid
+  under_package_body: forbid        # enforced as keepout, not just checked
+  preferred_diameter_mm: 0.45
+  preferred_drill_mm: 0.20
+  fanout: staggered                 # alternate near/far rows off QFN sides
+  orphans: error
+  redundant_ground: warn
+  keep_roles: [decoupling_return, rf_return, plane_stitching]
+
+decoupling:
+  max_pin_distance_mm: 2.0
+  same_side_as_ic: true
+  require_return_via: true
+
+planes:
+  thermal_reliefs: required         # ordinary pads on planes
+  solid_exceptions: [exposed_pad, rf_ground]
+  relief_gap_mm: 0.15
+  relief_spoke_mm: 0.15
+
+silkscreen:
+  reference_prefixes: [U, J, SW, SJ, AE, Y]   # everything else hidden (kept on Fab)
+  text_height_mm: 1.0
+  text_thickness_mm: 0.15
+  uniform_size: true
+  over_vias_or_pads: error
+  explanatory_text: forbid          # "RF KEEP CLEAR", "EXT", board titles
+  pin1_dots: polarized_only         # visible outside package outline
+
+mechanics:
+  centerline_align: [mounting_holes, board_to_board_connectors, main_ics, rf_connector]
+  mount_hole_between_mating_connectors: true
+  prefer_round_dimensions: true
+
+manufacturing:
+  fab: jlcpcb
+  rules: boards/esp32-fpga-module/module.kicad_dru
+  stackup_4l: JLC04101H-7628
+  rf_cpwg_50ohm: {trace_mm: 0.26, gap_mm: 0.15}
+  cpl_offsets: per_board            # docs/jlcpcb-placement-offsets.json, LCSC-keyed
+  release:
+    tag: true
+    snapshot_dir: releases/{tag}
+    hashes: sha256
