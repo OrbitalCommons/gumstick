@@ -1,0 +1,136 @@
+(footprint "D1_RGBLED"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "918ff64d-e5a5-4e3d-89f8-1e5391509f44")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "FC-B1010RGBT-HG"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00226663-6252-41ab-9fdc-555db0d45736")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fff72067-f744-42ca-ab0b-10a85805d9d0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf41370f-9b16-425f-acf5-878d9a0837ec")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "FC-B1010RGBT-HG"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "20a4701a-7125-4e87-bfbe-3c80d4e397e4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Nationstar"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f5adcbaf-7f2c-49ab-b674-54b5188fad13")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" "C158099"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0629d905-31a4-400f-8628-b4258f0282dc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "P$1" smd rect
+		(at 0.33 -0.33)
+		(size 0.3 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "c2fac4a7-b61a-452d-8894-7b1ac429efb8")
+	)
+	(pad "P$2" smd rect
+		(at 0.33 0.33)
+		(size 0.3 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "530f63a4-d988-4d52-91e4-815f80a56cdb")
+	)
+	(pad "P$3" smd rect
+		(at -0.33 0.33)
+		(size 0.3 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "c60bde54-d207-4f32-b928-627d7ba49f91")
+	)
+	(pad "P$4" smd rect
+		(at -0.33 -0.33)
+		(size 0.3 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "e6122d48-d4d6-4d5e-840c-1b94df6ef98f")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/FC-B1010RGBT-HG_approx.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

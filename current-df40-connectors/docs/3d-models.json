@@ -1,0 +1,294 @@
+[
+  {
+    "reference": "C1",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C2",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C32",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C33",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C34",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C37",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C38",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C39",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C40",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C41",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C42",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C43",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C44",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C45",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C46",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C48",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C49",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C50",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C52",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C6",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "C60",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C61",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C62",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C63",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C66",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C7",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "D1",
+    "file": "FC-B1010RGBT-HG_approx.step",
+    "kind": "dimension-based approximation",
+    "kicad_source": null
+  },
+  {
+    "reference": "J1",
+    "file": "DF40C_2_0_40DS.step",
+    "kind": "manufacturer STEP, normalized axes/origin",
+    "kicad_source": null
+  },
+  {
+    "reference": "J2",
+    "file": "DF40C_2_0_40DS.step",
+    "kind": "manufacturer STEP, normalized axes/origin",
+    "kicad_source": null
+  },
+  {
+    "reference": "L1",
+    "file": "L_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+  },
+  {
+    "reference": "L2",
+    "file": "L_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+  },
+  {
+    "reference": "L3",
+    "file": "L_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+  },
+  {
+    "reference": "L4",
+    "file": "Coilcraft_XFL3012.step",
+    "kind": "manufacturer STEP; original geometry and face colors",
+    "kicad_source": null,
+    "source_url": "https://www.coilcraft.com/getmedia/959de638-4a4c-4509-9841-81badc8b8b4e/XFL3012.STEP",
+    "rotation_deg": [
+      -90,
+      0,
+      0
+    ],
+    "offset_mm": [
+      0,
+      0,
+      0.05
+    ]
+  },
+  {
+    "reference": "R20",
+    "file": "R_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  },
+  {
+    "reference": "R22",
+    "file": "R_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  },
+  {
+    "reference": "R28",
+    "file": "R_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  },
+  {
+    "reference": "R29",
+    "file": "R_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  },
+  {
+    "reference": "R3",
+    "file": "R_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  },
+  {
+    "reference": "R62",
+    "file": "R_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+  },
+  {
+    "reference": "U1",
+    "file": "QFN-56-1EP_7x7mm_P0.4mm_EP4x4mm.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Package_DFN_QFN.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP4x4mm.step"
+  },
+  {
+    "reference": "U2",
+    "file": "QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Package_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm.step"
+  },
+  {
+    "reference": "U3",
+    "file": "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+  },
+  {
+    "reference": "U4",
+    "file": "SOT-23-5.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+  },
+  {
+    "reference": "Y1",
+    "file": "Crystal_SMD_2520-4Pin_2.5x2.0mm.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Crystal.3dshapes/Crystal_SMD_2520-4Pin_2.5x2.0mm.step"
+  },
+  {
+    "reference": "C67",
+    "file": "C_0603_1608Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+  },
+  {
+    "reference": "C35",
+    "file": "C_0402_1005Metric.step",
+    "kind": "KiCad package model",
+    "kicad_source": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+  },
+  {
+    "reference": "J3",
+    "file": "U.FL_Hirose_U.FL-R-SMT-1_Vertical.step",
+    "kind": "KiCad package model"
+  }
+]

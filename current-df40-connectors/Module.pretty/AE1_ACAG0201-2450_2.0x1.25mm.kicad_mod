@@ -1,0 +1,180 @@
+(footprint "AE1_ACAG0201-2450_2.0x1.25mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Abracon ACAG0201-2450-T; datasheet 2025-09-20 p5 land pattern; RF layout separate")
+	(tags "antenna 2.4GHz Abracon 0805")
+	(property "Reference" "REF**"
+		(at 2.4 2.425 0)
+		(layer "F.SilkS")
+		(uuid "0d59279f-1379-4d93-bfe2-c14866ddef33")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "ACAG0201-2450-T"
+		(at 0 1.55 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a48c1b3-a4c8-4c7d-a39c-cc5677122fd7")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f89dc663-56b7-4c5d-a0d4-dad43f520786")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1c8e4ed-a066-4b5f-9134-50a89ce9bb5f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "ACAG0201-2450-T"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c3518496-ae94-491e-926c-73f84a2b094e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Abracon"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "dc33f7df-8b1e-46ae-839e-dcb14219c238")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C3284598"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "21c796f6-1b80-4867-a6b6-3457c495bf0b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.25 -0.75)
+		(end -1.25 -0.35)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2c6cf7c1-a2b8-444e-b8fa-3ae2a122d057")
+	)
+	(fp_line
+		(start -0.8 -0.85)
+		(end 0.8 -0.85)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d9d06223-95cd-45e2-84cd-2b8c2bb6694d")
+	)
+	(fp_line
+		(start -0.8 0.85)
+		(end 0.8 0.85)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d6a0e004-d591-4f64-b183-485ea1e203c5")
+	)
+	(fp_rect
+		(start -1.35 -0.975)
+		(end 1.35 0.975)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0c69c8ca-939f-4dcc-8944-3fe3f0de2104")
+	)
+	(fp_rect
+		(start -1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cc4b7a9a-ec7c-466e-9fda-a121b8cbf75b")
+	)
+	(fp_circle
+		(center -0.65 -0.3)
+		(end -0.55 -0.3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "19d4f4e0-f78e-4ccd-ab20-9b6f10606de4")
+	)
+	(pad "1" smd rect
+		(at -0.7 0)
+		(size 0.6 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "4de8bc0a-b956-42cb-848b-74b82419c78e")
+	)
+	(pad "2" smd rect
+		(at 0.7 0)
+		(size 0.6 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "d8c76aa7-275c-4a2b-b015-506c66d29add")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/ACAG0201-2450.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

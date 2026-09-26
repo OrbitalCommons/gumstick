@@ -1,0 +1,5 @@
+#VRML V2.0 utf8
+# Nominal illustrative body, dimensions in KiCad VRML units (2.54 mm).
+Transform { translation 0.0 0 0.11811023622047243 children [ Shape { appearance Appearance { material Material { diffuseColor 0.34 0.47 0.36 } } geometry Box { size 0.7874015748031495 0.49212598425196846 0.23622047244094485 } } ] }
+Transform { translation -0.2755905511811023 0 0.005905511811023621 children [ Shape { appearance Appearance { material Material { diffuseColor 0.7 0.7 0.73 } } geometry Box { size 0.23622047244094485 0.49212598425196846 0.011811023622047242 } } ] }
+Transform { translation 0.2755905511811023 0 0.005905511811023621 children [ Shape { appearance Appearance { material Material { diffuseColor 0.7 0.7 0.73 } } geometry Box { size 0.23622047244094485 0.49212598425196846 0.011811023622047242 } } ] }

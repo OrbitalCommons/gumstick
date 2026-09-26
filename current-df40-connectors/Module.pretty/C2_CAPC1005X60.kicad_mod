@@ -1,0 +1,162 @@
+(footprint "C2_CAPC1005X60"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Chip, 1.00 X 0.50 X 0.60 mm body\n\nChip package with body size 1.00 X 0.50 X 0.60 mm")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4efda1cb-52a8-4c44-8257-6dc75d771bcf")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "3.3pF"
+		(at 0 1.2636 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "247f8334-0a9a-4c3a-8a45-1e19045f52e5")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify top)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e3794326-c89e-4056-89ca-3cffdc1ae933")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7a5af38-8e4f-4477-9c05-39814c86d904")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "GJM1555C1H3R3BB01D"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ca02da8a-5c1d-4c60-a69a-74b1e2b316a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Murata"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bffc2db4-872d-481a-9c9c-ba63005d4700")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" "C76906"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "22f8b930-0d3d-4051-8f43-5eccadfef588")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.55 -0.3)
+		(end 0.55 -0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "85cfe8ca-32d8-45f2-80d5-dfd63053b896")
+	)
+	(fp_line
+		(start -0.55 0.3)
+		(end -0.55 -0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11b3c3a0-eeae-4518-8348-cdb7e2211052")
+	)
+	(fp_line
+		(start 0.55 -0.3)
+		(end 0.55 0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b08a0ce9-8091-4bd6-850b-55da33aad2a9")
+	)
+	(fp_line
+		(start 0.55 0.3)
+		(end -0.55 0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "430995b8-9fc0-4c68-83b3-73e438b295c5")
+	)
+	(pad "1" smd rect
+		(at -0.4846 0)
+		(size 0.56 0.6291)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "4d0c3826-b05f-4f98-adf9-609be92fa4e2")
+	)
+	(pad "2" smd rect
+		(at 0.4846 0)
+		(size 0.56 0.6291)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "1663e132-241d-40c1-ac58-8f38802819b1")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/C_0402_1005Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

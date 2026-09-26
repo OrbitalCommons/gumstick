@@ -1,0 +1,24 @@
+{
+  "coordinates_mm_relative_to_aux_origin": {
+    "H1": [
+      10.0,
+      28.25
+    ],
+    "J2": [
+      10.0,
+      40.75
+    ],
+    "J1": [
+      10.0,
+      15.75
+    ]
+  },
+  "connector_spacing_mm": 25.0,
+  "hole_to_connector_mm": {
+    "J1": 12.5,
+    "J2": 12.5
+  },
+  "non_45_or_90_segments": [],
+  "board_width_mm": 20,
+  "board_length_mm": 45
+}

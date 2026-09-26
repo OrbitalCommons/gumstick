@@ -1,0 +1,50 @@
+{
+  "D1": {
+    "pin": "P$1",
+    "x": 118.13,
+    "y": 143.17,
+    "layer": "F.Silkscreen"
+  },
+  "J3": {
+    "pin": "1",
+    "x": 112.2,
+    "y": 107.35,
+    "layer": "F.Silkscreen"
+  },
+  "U1": {
+    "pin": "1",
+    "x": 113.7,
+    "y": 110.2948,
+    "layer": "F.Silkscreen"
+  },
+  "U2": {
+    "pin": "1",
+    "x": 114.2798,
+    "y": 142.25,
+    "layer": "F.Silkscreen"
+  },
+  "U4": {
+    "pin": "1",
+    "x": 100.5625,
+    "y": 122.575,
+    "layer": "F.Silkscreen"
+  },
+  "Y1": {
+    "pin": "IN/OUT",
+    "x": 116.025,
+    "y": 114.575,
+    "layer": "F.Silkscreen"
+  },
+  "J1": {
+    "pin": "1",
+    "x": 113.8,
+    "y": 113.53,
+    "layer": "B.Silkscreen"
+  },
+  "J2": {
+    "pin": "1",
+    "x": 113.8,
+    "y": 138.395,
+    "layer": "B.Silkscreen"
+  }
+}

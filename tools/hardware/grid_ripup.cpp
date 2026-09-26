@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc,char**argv){string d=argv[1];ifstream f(d+"/search.bin",ios::binary);int W,H,L,ns,nt;f.read((char*)&W,4);f.read((char*)&H,4);f.read((char*)&L,4);f.read((char*)&ns,4);f.read((char*)&nt,4);int N=W*H,M=N*L;vector<unsigned char>A(M),V(N),T(M);f.read((char*)A.data(),M);f.read((char*)V.data(),N);vector<int>S(ns),targets(nt);f.read((char*)S.data(),4*ns);f.read((char*)targets.data(),4*nt);for(int t:targets)T[t]=1;
+vector<float>g(M,1e20);vector<int>par(M,-2);using Q=pair<float,int>;priority_queue<Q,vector<Q>,greater<Q>>q;
+int xmin=W,xmax=0,ymin=H,ymax=0;for(int t:targets){xmin=min(xmin,t%W);xmax=max(xmax,t%W);ymin=min(ymin,(t%N)/W);ymax=max(ymax,(t%N)/W);}
+auto heur=[&](int i){int x=i%W,y=(i%N)/W,dx=max({xmin-x,0,x-xmax}),dy=max({ymin-y,0,y-ymax});return float(max(dx,dy)+.414214*min(dx,dy));};
+for(int s:S){g[s]=0;par[s]=-1;q.push({heur(s),s});}int end=-1;vector<unsigned char>closed(M);int dx[8]={1,0,-1,0,1,-1,-1,1},dy[8]={0,1,0,-1,1,1,-1,-1};
+while(!q.empty()){int i=q.top().second;q.pop();if(closed[i])continue;closed[i]=1;if(T[i]){end=i;break;}int x=i%W,y=(i%N)/W,z=i/N;for(int k=0;k<8+L;k++){int j;float cost;if(k<8){int xx=x+dx[k],yy=y+dy[k];if(xx<1||xx>=W-1||yy<1||yy>=H-1)continue;j=z*N+yy*W+xx;if(A[j]==255)continue;if(k>=4&&(A[z*N+y*W+xx]==255||A[z*N+yy*W+x]==255))continue;cost=k<4?1:1.414214;if(z==1)cost*=1.05;if(z==3)cost*=5;}else{int zz=k-8;if(zz==z||V[i%N]==255)continue;j=zz*N+i%N;if(A[j]==255)continue;cost=100+V[i%N]*1000;}if(k<8)cost+=A[j]*35;float ng=g[i]+cost;if(ng<g[j]){g[j]=ng;par[j]=i;q.push({ng+heur(j),j});}}}
+ofstream o(d+"/path.txt");if(end<0){int c=0,v=0;for(int i=0;i<M;i++)if(closed[i]){c++;if(!V[i%N])v++;}cerr<<"Explored "<<c<<" via sites "<<v<<endl;return 1;}vector<int>path;for(int i=end;i!=-1;i=par[i])path.push_back(i);reverse(path.begin(),path.end());for(int i:path)o<<i%W<<' '<<(i%N)/W<<' '<<i/N<<'\n';return 0;}

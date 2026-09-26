@@ -1,0 +1,4 @@
+Reference,Description,Notes
+TP1,FPGA_CRESET_N,PCB copper feature; no purchased component
+TP2,FPGA_CDONE,PCB copper feature; no purchased component
+H1,M3 clearance hole,Board hole only; screw/spacer selected with motherboard

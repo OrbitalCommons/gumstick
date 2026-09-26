@@ -1,0 +1,55 @@
+{
+  "measurement": "sum of track centerline lengths; excludes vertical via barrel length and package delay",
+  "nets": [
+    {
+      "net": "/LINK_IO3",
+      "length_mm": 29.186067811865477,
+      "vias": 2,
+      "self_contacts": []
+    },
+    {
+      "net": "/LINK_CS_N",
+      "length_mm": 28.15071247280615,
+      "vias": 2,
+      "self_contacts": []
+    },
+    {
+      "net": "/LINK_MOSI",
+      "length_mm": 29.417974362384182,
+      "vias": 3,
+      "self_contacts": []
+    },
+    {
+      "net": "/LINK_SCK",
+      "length_mm": 31.949419177103415,
+      "vias": 0,
+      "self_contacts": []
+    },
+    {
+      "net": "/LINK_MISO",
+      "length_mm": 34.66786917454509,
+      "vias": 2,
+      "self_contacts": []
+    },
+    {
+      "net": "/LINK_IO2",
+      "length_mm": 29.70193238947456,
+      "vias": 4,
+      "self_contacts": []
+    },
+    {
+      "net": "/USB_D-",
+      "length_mm": 9.244698987322334,
+      "vias": 1,
+      "self_contacts": []
+    },
+    {
+      "net": "/USB_D+",
+      "length_mm": 8.63005432638166,
+      "vias": 1,
+      "self_contacts": []
+    }
+  ],
+  "qspi_spread_mm": 6.517156701738941,
+  "usb_mismatch_mm": 0.614644660940673
+}

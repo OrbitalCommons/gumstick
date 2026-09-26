@@ -1,0 +1,93 @@
+(footprint "AE1_PCB-ANTENNA"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 4.7 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "505bc38d-3a9e-49c5-8915-04fae041f61b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "PCB-ANTENNA"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b50a3ea0-af1c-47f9-aaed-926c09b88be6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "864f6b0b-3f6f-43eb-ae41-2ee51b330ae1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a551315a-b734-4f28-ad8b-8bfc71d811be")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(net_tie_pad_groups "P$1,P$2")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy 0.525 6.224999) (xy 0.525001 6.225) (xy 1.924998 6.225) (xy 1.925 6.224998) (xy 1.925 1.4) (xy 2.425 1.4)
+			(xy 2.425 6.224999) (xy 2.425001 6.225) (xy 4.124998 6.225) (xy 4.125 6.224998) (xy 4.125 3.674999)
+			(xy 4.149999 3.649998) (xy 4.170707 3.6) (xy 7.15 3.6) (xy 7.15 6.249999) (xy 7.150001 6.25) (xy 8.824998 6.25)
+			(xy 8.825 6.249998) (xy 8.825 3.625) (xy 11.875 3.625) (xy 11.875 6.224999) (xy 11.875001 6.225)
+			(xy 13.524998 6.225) (xy 13.525 6.224998) (xy 13.525 2.325) (xy 14.025 2.325) (xy 14.025 6.725) (xy 11.325 6.725)
+			(xy 11.325 4.125) (xy 9.325001 4.125) (xy 9.325 4.125001) (xy 9.325 6.725) (xy 6.6 6.725) (xy 6.6 4.125)
+			(xy 4.625001 4.125) (xy 4.625 4.125001) (xy 4.625 6.725) (xy -0.375 6.725) (xy -0.375 1.4) (xy 0.525 1.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "471d5099-dbd3-4a72-a324-5ffe12143628")
+	)
+	(pad "P$1" smd rect
+		(at 0.075 1.65 180)
+		(size 0.9 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "d29a13f2-cc84-4ea6-9c3b-cd7e26c5d6ff")
+	)
+	(pad "P$2" smd rect
+		(at 2.175 1.65 180)
+		(size 0.5 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "37fd0810-a4f2-47f0-b459-6389e2fddb1f")
+	)
+	(embedded_fonts no)
+)

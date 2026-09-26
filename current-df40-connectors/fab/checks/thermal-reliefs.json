@@ -1,0 +1,51 @@
+{
+  "default": "thermal",
+  "gap_mm": 0.15,
+  "spoke_width_mm": 0.15,
+  "connector_spoke_width_mm": 0.1,
+  "solid_pad_exceptions": [
+    {
+      "reference": "U3",
+      "pad": "9",
+      "reason": "Buck exposed ground/thermal pad"
+    },
+    {
+      "reference": "J3",
+      "pad": "2",
+      "reason": "U.FL shield/RF ground"
+    },
+    {
+      "reference": "J3",
+      "pad": "2",
+      "reason": "U.FL shield/RF ground"
+    },
+    {
+      "reference": "U1",
+      "pad": "57",
+      "reason": "ESP32 exposed ground/thermal pad"
+    },
+    {
+      "reference": "AE1",
+      "pad": "2",
+      "reason": "Antenna RF ground termination"
+    },
+    {
+      "reference": "U2",
+      "pad": "PAD",
+      "reason": "FPGA exposed ground/thermal pad"
+    }
+  ],
+  "vias": "Solid zone connections retained",
+  "manual_neck_pads": [
+    "J1.10",
+    "J1.22",
+    "J1.30",
+    "J1.31",
+    "J1.5",
+    "J1.6",
+    "J1.9",
+    "J2.23"
+  ],
+  "manual_neck_width_mm": 0.1,
+  "connector_gap_mm": 0.1
+}

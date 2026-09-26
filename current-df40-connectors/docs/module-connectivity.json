@@ -1,0 +1,2091 @@
+{
+  "U1": {
+    "source_ref": "U1",
+    "value": "ESP32-S2FH4",
+    "footprint": "Module:U1_QFN56_ESP32-S2FH4_EXP-M",
+    "pins": {
+      "1": {
+        "name": "VDDA",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "LNA_IN",
+        "type": "passive",
+        "net": "RF_IN"
+      },
+      "3": {
+        "name": "VDD3P3",
+        "type": "passive",
+        "net": "ESP_VDD3P3"
+      },
+      "4": {
+        "name": "VDD3P3_2",
+        "type": "passive",
+        "net": "ESP_VDD3P3"
+      },
+      "5": {
+        "name": "GPIO0",
+        "type": "passive",
+        "net": "ESP_GPIO0_BOOT"
+      },
+      "6": {
+        "name": "GPIO1",
+        "type": "passive",
+        "net": "ESP_GPIO1"
+      },
+      "7": {
+        "name": "GPIO2",
+        "type": "passive",
+        "net": "ESP_GPIO2"
+      },
+      "8": {
+        "name": "GPIO3",
+        "type": "passive",
+        "net": "ESP_GPIO3"
+      },
+      "9": {
+        "name": "GPIO4",
+        "type": "passive",
+        "net": "ESP_GPIO4"
+      },
+      "10": {
+        "name": "GPIO5",
+        "type": "passive",
+        "net": "ESP_GPIO5"
+      },
+      "11": {
+        "name": "GPIO6",
+        "type": "passive",
+        "net": "ESP_GPIO6"
+      },
+      "12": {
+        "name": "GPIO7",
+        "type": "passive",
+        "net": "ESP_GPIO7"
+      },
+      "13": {
+        "name": "GPIO8",
+        "type": "passive",
+        "net": "ESP_GPIO8"
+      },
+      "14": {
+        "name": "GPIO9",
+        "type": "passive",
+        "net": "LINK_IO3"
+      },
+      "15": {
+        "name": "GPIO10",
+        "type": "passive",
+        "net": "LINK_CS_N"
+      },
+      "16": {
+        "name": "GPIO11",
+        "type": "passive",
+        "net": "LINK_MOSI"
+      },
+      "17": {
+        "name": "GPIO12",
+        "type": "passive",
+        "net": "LINK_SCK"
+      },
+      "18": {
+        "name": "GPIO13",
+        "type": "passive",
+        "net": "LINK_MISO"
+      },
+      "19": {
+        "name": "GPIO14",
+        "type": "passive",
+        "net": "LINK_IO2"
+      },
+      "20": {
+        "name": "VDD3P3_RTC",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "21": {
+        "name": "GPIO15",
+        "type": "passive",
+        "net": "ESP_GPIO15"
+      },
+      "22": {
+        "name": "GPIO16",
+        "type": "passive",
+        "net": "ESP_GPIO16"
+      },
+      "23": {
+        "name": "GPIO17",
+        "type": "passive",
+        "net": "ESP_GPIO17"
+      },
+      "24": {
+        "name": "GPIO18",
+        "type": "passive",
+        "net": "ESP_GPIO18"
+      },
+      "25": {
+        "name": "GPIO19/USB_D-",
+        "type": "passive",
+        "net": "USB_D-"
+      },
+      "26": {
+        "name": "GPIO20/USB_D+",
+        "type": "passive",
+        "net": "USB_D+"
+      },
+      "27": {
+        "name": "VDD3P3_RTC_IO",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "28": {
+        "name": "GPIO21",
+        "type": "passive",
+        "net": "ESP_GPIO21"
+      },
+      "29": {
+        "name": "SPICS1",
+        "type": "passive",
+        "net": null
+      },
+      "30": {
+        "name": "VDD_SPI",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "31": {
+        "name": "SPIHD",
+        "type": "passive",
+        "net": null
+      },
+      "32": {
+        "name": "SPIWP",
+        "type": "passive",
+        "net": null
+      },
+      "33": {
+        "name": "SPICS0",
+        "type": "passive",
+        "net": null
+      },
+      "34": {
+        "name": "SPICLK",
+        "type": "passive",
+        "net": null
+      },
+      "35": {
+        "name": "SPIQ",
+        "type": "passive",
+        "net": null
+      },
+      "36": {
+        "name": "SPID",
+        "type": "passive",
+        "net": null
+      },
+      "37": {
+        "name": "GPIO33",
+        "type": "passive",
+        "net": "ESP_GPIO33"
+      },
+      "38": {
+        "name": "GPIO34",
+        "type": "passive",
+        "net": "ESP_GPIO34"
+      },
+      "39": {
+        "name": "GPIO35",
+        "type": "passive",
+        "net": "ESP_GPIO35"
+      },
+      "40": {
+        "name": "GPIO36",
+        "type": "passive",
+        "net": "FPGA_CRESET_N"
+      },
+      "41": {
+        "name": "GPIO37",
+        "type": "passive",
+        "net": "FPGA_CDONE"
+      },
+      "42": {
+        "name": "GPIO38",
+        "type": "passive",
+        "net": "ESP_GPIO38"
+      },
+      "43": {
+        "name": "GPIO39",
+        "type": "passive",
+        "net": "ESP_GPIO39"
+      },
+      "44": {
+        "name": "GPIO40",
+        "type": "passive",
+        "net": "ESP_GPIO40"
+      },
+      "45": {
+        "name": "VDD3P3_CPU",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "46": {
+        "name": "GPIO41",
+        "type": "passive",
+        "net": "ESP_GPIO41"
+      },
+      "47": {
+        "name": "GPIO42",
+        "type": "passive",
+        "net": "ESP_GPIO42"
+      },
+      "48": {
+        "name": "GPIO43",
+        "type": "passive",
+        "net": "ESP_GPIO43_TXD"
+      },
+      "49": {
+        "name": "GPIO44",
+        "type": "passive",
+        "net": "ESP_GPIO44_RXD"
+      },
+      "50": {
+        "name": "GPIO45",
+        "type": "passive",
+        "net": "ESP_GPIO45"
+      },
+      "51": {
+        "name": "VDDA_2",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "52": {
+        "name": "XTAL_N",
+        "type": "passive",
+        "net": "XTAL_N"
+      },
+      "53": {
+        "name": "XTAL_P",
+        "type": "passive",
+        "net": "XTAL_P"
+      },
+      "54": {
+        "name": "VDDA_3",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "55": {
+        "name": "GPIO46",
+        "type": "passive",
+        "net": "ESP_GPIO46"
+      },
+      "56": {
+        "name": "CHIP_PU",
+        "type": "passive",
+        "net": "ESP_EN"
+      },
+      "57": {
+        "name": "EPAD",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "d7c60a9f-657e-5c67-9976-b5901a049576",
+    "mpn": "ESP32-S2FH4",
+    "lcsc": "C2840995",
+    "manufacturer": "Espressif",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C2840995.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "U2": {
+    "source_ref": "U2",
+    "value": "iCE40UP5K-SG48",
+    "footprint": "Module:U2_ICE40-QFN",
+    "pins": {
+      "1": {
+        "name": "VCCIO_2",
+        "type": "power_in",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "IOB_6A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_6A"
+      },
+      "3": {
+        "name": "IOB_9B",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_9B"
+      },
+      "4": {
+        "name": "IOB_8A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_8A"
+      },
+      "5": {
+        "name": "VCC_1",
+        "type": "power_in",
+        "net": "+1.2V"
+      },
+      "6": {
+        "name": "IOB_13B",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_13B"
+      },
+      "7": {
+        "name": "CDONE",
+        "type": "bidirectional",
+        "net": "FPGA_CDONE"
+      },
+      "8": {
+        "name": "CRESET_B",
+        "type": "passive",
+        "net": "FPGA_CRESET_N"
+      },
+      "9": {
+        "name": "IOB_16A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_16A"
+      },
+      "10": {
+        "name": "IOB_18A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_18A"
+      },
+      "11": {
+        "name": "IOB_20A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_20A"
+      },
+      "12": {
+        "name": "IOB_22A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_22A"
+      },
+      "13": {
+        "name": "IOB_24A",
+        "type": "bidirectional",
+        "net": "LINK_IO2"
+      },
+      "14": {
+        "name": "IOB_32A_SPI_SO",
+        "type": "bidirectional",
+        "net": "LINK_MISO"
+      },
+      "15": {
+        "name": "IOB_34A_SPI_SCK",
+        "type": "bidirectional",
+        "net": "LINK_SCK"
+      },
+      "16": {
+        "name": "IOB_35B_SPI_SS",
+        "type": "bidirectional",
+        "net": "LINK_CS_N"
+      },
+      "17": {
+        "name": "IOB_33B_SPI_SI",
+        "type": "bidirectional",
+        "net": "LINK_MOSI"
+      },
+      "18": {
+        "name": "IOB_31B",
+        "type": "bidirectional",
+        "net": "LINK_IO3"
+      },
+      "19": {
+        "name": "IOB_29B",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_29B"
+      },
+      "20": {
+        "name": "IOB_25B_G3",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_25B_G3"
+      },
+      "21": {
+        "name": "IOB_23B",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_23B"
+      },
+      "22": {
+        "name": "SPI_VCCIO1",
+        "type": "power_in",
+        "net": "+3.3V"
+      },
+      "23": {
+        "name": "IOT_37A",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_37A"
+      },
+      "24": {
+        "name": "VPP_2V5",
+        "type": "power_in",
+        "net": "+3.3V"
+      },
+      "25": {
+        "name": "IOT_36B",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_36B"
+      },
+      "26": {
+        "name": "IOT_39A",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_39A"
+      },
+      "27": {
+        "name": "IOT_38B",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_38B"
+      },
+      "28": {
+        "name": "IOT_41A",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_41A"
+      },
+      "29": {
+        "name": "VCCPLL",
+        "type": "power_in",
+        "net": "+1.2V_PLL"
+      },
+      "30": {
+        "name": "VCC_2",
+        "type": "power_in",
+        "net": "+1.2V"
+      },
+      "31": {
+        "name": "IOT_42B",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_42B"
+      },
+      "32": {
+        "name": "IOT_43A",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_43A"
+      },
+      "33": {
+        "name": "VCCIO_0",
+        "type": "power_in",
+        "net": "+3.3V"
+      },
+      "34": {
+        "name": "IOT_44B",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_44B"
+      },
+      "35": {
+        "name": "IOT_46B_G0",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_46B_G0"
+      },
+      "36": {
+        "name": "IOT_48B",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_48B"
+      },
+      "37": {
+        "name": "IOT_45A_G1",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_45A_G1"
+      },
+      "38": {
+        "name": "IOT_50B",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_50B"
+      },
+      "39": {
+        "name": "RGB0",
+        "type": "bidirectional",
+        "net": "FPGA_RGB0"
+      },
+      "40": {
+        "name": "RGB1",
+        "type": "bidirectional",
+        "net": "FPGA_RGB1"
+      },
+      "41": {
+        "name": "RGB2",
+        "type": "bidirectional",
+        "net": "FPGA_RGB2"
+      },
+      "42": {
+        "name": "IOT_51A",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_51A"
+      },
+      "43": {
+        "name": "IOT_49A",
+        "type": "bidirectional",
+        "net": "FPGA_IOT_49A"
+      },
+      "44": {
+        "name": "IOB_3B_G6",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_3B_G6"
+      },
+      "45": {
+        "name": "IOB_5B",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_5B"
+      },
+      "46": {
+        "name": "IOB_0A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_0A"
+      },
+      "47": {
+        "name": "IOB_2A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_2A"
+      },
+      "48": {
+        "name": "IOB_4A",
+        "type": "bidirectional",
+        "net": "FPGA_IOB_4A"
+      },
+      "PAD": {
+        "name": "PAD",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "e094afbd-4e5b-51ff-a984-f81fb78f6987",
+    "mpn": "ICE40UP5K-SG48I",
+    "lcsc": "C2678152",
+    "manufacturer": "Lattice",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C2678152.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "Y1": {
+    "source_ref": "U5",
+    "value": "40MHz / CL10pF",
+    "footprint": "Module:Y1_JGHC_S2240000101050",
+    "pins": {
+      "GND-A": {
+        "name": "GND",
+        "type": "power_in",
+        "net": "GND"
+      },
+      "GND-B": {
+        "name": "GND",
+        "type": "power_in",
+        "net": "GND"
+      },
+      "IN/OUT": {
+        "name": "IN/OUT",
+        "type": "bidirectional",
+        "net": "XTAL_P_CRYSTAL"
+      },
+      "OUT/IN": {
+        "name": "OUT/IN",
+        "type": "bidirectional",
+        "net": "XTAL_N"
+      }
+    },
+    "uuid": "495e4abb-9881-5066-9d2e-c4a3c75939ce",
+    "mpn": "S2240000101050",
+    "lcsc": "C426970",
+    "manufacturer": "JGHC",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C426970.html",
+    "sourcing_status": "LCSC lists 1040; JLCPCB lists 1069, checked 2026-09-26. Catalog 40MHz CL10pF 50ohm +/-10ppm. Generic family datasheet differs in ESR/temperature options; verify ordered grade and oscillator margin."
+  },
+  "L1": {
+    "source_ref": "L1",
+    "value": "100ohm @100MHz",
+    "footprint": "Module:L1_L_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "ESP_VDD3P3"
+      }
+    },
+    "uuid": "23cc1944-3c15-5044-99e6-aceb51e4aaea",
+    "lcsc": "C160981",
+    "mpn": "BLM18KG101TN1D",
+    "manufacturer": "Murata",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C160981.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "L2": {
+    "source_ref": "L2",
+    "value": "100ohm @100MHz",
+    "footprint": "Module:L2_L_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+1.2V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "+1.2V_PLL"
+      }
+    },
+    "uuid": "28783c4d-5245-58cf-b5bd-a73408a4f365",
+    "lcsc": "C160981",
+    "mpn": "BLM18KG101TN1D",
+    "manufacturer": "Murata",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C160981.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "L3": {
+    "source_ref": "L3",
+    "value": "2.2nH",
+    "footprint": "Module:L3_INDC1006X60N",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "RF_IN"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "RF_ANT"
+      }
+    },
+    "uuid": "2ed5995f-2a06-51b5-acb7-4f2d719373de",
+    "mpn": "LQG15HS2N2S02D",
+    "lcsc": "C86061",
+    "manufacturer": "Murata",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C86061.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "R3": {
+    "source_ref": "R3",
+    "value": "0R",
+    "footprint": "Module:R3_RESC1005X40",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "XTAL_P"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "XTAL_P_CRYSTAL"
+      }
+    },
+    "uuid": "6783c0d9-b70f-5bf2-ada7-401f59676990",
+    "mpn": "0402WGF0000TCE",
+    "lcsc": "C17168",
+    "manufacturer": "Uniroyal",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C17168.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "R20": {
+    "source_ref": "R20",
+    "value": "10kR",
+    "footprint": "Module:R20_RESC1005X40",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "ESP_GPIO0_BOOT"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "+3.3V"
+      }
+    },
+    "uuid": "0452640d-834f-5529-b0eb-34e8de19006f",
+    "mpn": "RC0402FR-0710KL",
+    "lcsc": "C60490",
+    "manufacturer": "Yageo",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C60490.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "R22": {
+    "source_ref": "R22",
+    "value": "10kR",
+    "footprint": "Module:R22_RESC1005X40",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "ESP_EN"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "+3.3V"
+      }
+    },
+    "uuid": "a435af42-a950-59fd-b1af-0b335e28e160",
+    "mpn": "RC0402FR-0710KL",
+    "lcsc": "C60490",
+    "manufacturer": "Yageo",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C60490.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "R28": {
+    "source_ref": "R28",
+    "value": "10kR",
+    "footprint": "Module:R28_RESC1005X40",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "GND"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "FPGA_CRESET_N"
+      }
+    },
+    "uuid": "8e719007-4518-5bf3-a756-ff47ea76bb99",
+    "mpn": "RC0402FR-0710KL",
+    "lcsc": "C60490",
+    "manufacturer": "Yageo",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C60490.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "R29": {
+    "source_ref": "R29",
+    "value": "10kR",
+    "footprint": "Module:R29_RESC1005X40",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "FPGA_CDONE"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "+3.3V"
+      }
+    },
+    "uuid": "bf7f7ffc-c916-5fc4-97bd-bb847f532168",
+    "mpn": "RC0402FR-0710KL",
+    "lcsc": "C60490",
+    "manufacturer": "Yageo",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C60490.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C1": {
+    "source_ref": "C1",
+    "value": "3.3pF",
+    "footprint": "Module:C1_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "RF_IN"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "8b638669-e7ab-5a6d-aecf-9e4f113a21d5",
+    "mpn": "GJM1555C1H3R3BB01D",
+    "lcsc": "C76906",
+    "manufacturer": "Murata",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C76906.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C2": {
+    "source_ref": "C2",
+    "value": "3.3pF",
+    "footprint": "Module:C2_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "RF_ANT"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "cd06d54d-ddc5-5e5c-94bb-2d42939d904d",
+    "mpn": "GJM1555C1H3R3BB01D",
+    "lcsc": "C76906",
+    "manufacturer": "Murata",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C76906.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C6": {
+    "source_ref": "C6",
+    "value": "12pF",
+    "footprint": "Module:C6_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "XTAL_P_CRYSTAL"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "afba8f48-563a-58c2-b409-a549d51873f9",
+    "mpn": "CL05C120JB5NNNC",
+    "lcsc": "C26406",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C26406.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C7": {
+    "source_ref": "C7",
+    "value": "12pF",
+    "footprint": "Module:C7_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "XTAL_N"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "7fc1b6c5-7ca9-5f14-b00f-cecb1cfc274c",
+    "mpn": "CL05C120JB5NNNC",
+    "lcsc": "C26406",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C26406.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C32": {
+    "source_ref": "C32",
+    "value": "1uF",
+    "footprint": "Module:C32_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "ESP_EN"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "300c198e-19f1-5baf-827c-9d16d2439a06",
+    "mpn": "CL05A105KO5NNNC",
+    "lcsc": "C29266",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C29266.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C33": {
+    "source_ref": "C33",
+    "value": "10uF",
+    "footprint": "Module:C33_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "ea38dc74-bf3c-5cc8-859d-12971ba22356",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C19702.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C34": {
+    "source_ref": "C34",
+    "value": "10uF",
+    "footprint": "Module:C34_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "ESP_VDD3P3"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "323edae4-1d69-51f7-bfc0-e4fa26a5c11a",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C19702.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C35": {
+    "source_ref": "C35",
+    "value": "0.1uF",
+    "footprint": "Module:C35_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "ESP_VDD3P3"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "38d7e124-fb3d-5088-8cf9-8a1231d9263e",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "0402; 100 nF; X7R; 16 V. Confirm supplier stock at order."
+  },
+  "C37": {
+    "source_ref": "C37",
+    "value": "0.1uF",
+    "footprint": "Module:C37_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "31a52c2d-ad7c-54ec-81ba-934825a1975d",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C38": {
+    "source_ref": "C38",
+    "value": "0.1uF",
+    "footprint": "Module:C38_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "1dd745ab-6943-5725-856f-85c93e40a2a9",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C39": {
+    "source_ref": "C39",
+    "value": "0.1uF",
+    "footprint": "Module:C39_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "af4aea76-d531-57fe-91fc-c672b35d55b0",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C40": {
+    "source_ref": "C40",
+    "value": "0.1uF",
+    "footprint": "Module:C40_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "b35155fc-7a00-5ab2-aa7c-f5eb6d1b988f",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C41": {
+    "source_ref": "C41",
+    "value": "0.1uF",
+    "footprint": "Module:C41_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "f223a8b8-9bde-512c-b053-c0035ef4d288",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C42": {
+    "source_ref": "C42",
+    "value": "0.1uF",
+    "footprint": "Module:C42_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "fc9b5772-b15c-5b68-8ced-7f7dbe087a33",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C43": {
+    "source_ref": "C43",
+    "value": "10uF",
+    "footprint": "Module:C43_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+1.2V_PLL"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "4e516de4-e0fa-57a3-90c1-eea112e23228",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C19702.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C44": {
+    "source_ref": "C44",
+    "value": "0.1uF",
+    "footprint": "Module:C44_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+1.2V_PLL"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "e9a1f255-b541-5868-ae32-eb8502ab965c",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C45": {
+    "source_ref": "C45",
+    "value": "10uF",
+    "footprint": "Module:C45_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+1.2V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "9746e245-7e8f-50a7-a375-dc44931a63d1",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C19702.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C46": {
+    "source_ref": "C46",
+    "value": "0.1uF",
+    "footprint": "Module:C46_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "90559744-2bcb-5700-b376-cf9a23fcf347",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C48": {
+    "source_ref": "C48",
+    "value": "0.1uF",
+    "footprint": "Module:C48_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "3e08e4e0-d3b1-50fb-8878-2ab749db9698",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C49": {
+    "source_ref": "C49",
+    "value": "0.1uF",
+    "footprint": "Module:C49_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+1.2V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "b8ad5575-a78e-558e-a25c-f39bb27b2ed6",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C50": {
+    "source_ref": "C50",
+    "value": "0.1uF",
+    "footprint": "Module:C50_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+1.2V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "cf315866-ead3-5e05-8e32-84b902aec6e2",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C52": {
+    "source_ref": "C52",
+    "value": "0.1uF",
+    "footprint": "Module:C52_CAPC1005X60",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "7e85474b-306e-5b14-99a8-9b7e74de1e61",
+    "mpn": "CL05B104KO5NNNC",
+    "lcsc": "C1525",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C1525.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "U3": {
+    "value": "TPS62160DGKR",
+    "footprint": "Module:U3_VSSOP-8_3x3mm_P0.65mm",
+    "pins": {
+      "1": {
+        "name": "PGND",
+        "net": "GND",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "VIN",
+        "net": "VIN_5V",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "EN",
+        "net": "VIN_5V",
+        "type": "input"
+      },
+      "4": {
+        "name": "AGND",
+        "net": "GND",
+        "type": "power_in"
+      },
+      "5": {
+        "name": "FB",
+        "net": "BUCK_FB",
+        "type": "input"
+      },
+      "6": {
+        "name": "VOS",
+        "net": "+3.3V",
+        "type": "input"
+      },
+      "7": {
+        "name": "SW",
+        "net": "BUCK_SW",
+        "type": "power_out"
+      },
+      "8": {
+        "name": "PG",
+        "net": "PG_3V3",
+        "type": "open_collector"
+      }
+    },
+    "uuid": "8e5b058c-fdfe-5a6a-8b47-83974fdd23cb",
+    "mpn": "TPS62160DGKR",
+    "lcsc": "C60726",
+    "manufacturer": "Texas Instruments",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C60726.html",
+    "sourcing_status": "DGK exposed-lead package; manufacturer pinout checked. Assembly stock and loaded thermal validation pending."
+  },
+  "U4": {
+    "value": "TLV75512PDBVR",
+    "footprint": "Module:U4_SOT-23-5",
+    "pins": {
+      "1": {
+        "name": "IN",
+        "net": "+3.3V",
+        "type": "power_in"
+      },
+      "2": {
+        "name": "GND",
+        "net": "GND",
+        "type": "power_in"
+      },
+      "3": {
+        "name": "EN",
+        "net": "+3.3V",
+        "type": "input"
+      },
+      "4": {
+        "name": "NC",
+        "net": null,
+        "type": "no_connect"
+      },
+      "5": {
+        "name": "OUT",
+        "net": "+1.2V",
+        "type": "power_out"
+      }
+    },
+    "uuid": "e7564487-4937-55bf-9431-0ea0e12b15a2",
+    "mpn": "TLV75512PDBVR",
+    "lcsc": "C2877864",
+    "manufacturer": "Texas Instruments",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C2877864.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "L4": {
+    "value": "2.2uH",
+    "footprint": "Module:L4_L_XFL3012_222MEC",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "BUCK_SW",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "+3.3V",
+        "type": "passive"
+      }
+    },
+    "uuid": "7141129f-1384-52e0-b31d-ba974dadf8bf",
+    "mpn": "XFL3012-222MEC",
+    "lcsc": "C3911432",
+    "manufacturer": "Coilcraft",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C3911432.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C60": {
+    "value": "10uF / 10V",
+    "footprint": "Module:C60_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "VIN_5V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "GND",
+        "type": "passive"
+      }
+    },
+    "uuid": "dff9647f-de00-51f4-afba-1533e0caa84a",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C19702.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C61": {
+    "value": "22uF / 10V",
+    "footprint": "Module:C61_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "+3.3V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "GND",
+        "type": "passive"
+      }
+    },
+    "uuid": "6d6237c3-0ddf-566f-9e2c-1f6bf42312fe",
+    "mpn": "CL10A226MPCNUBE",
+    "lcsc": "C5355402",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "sourcing_url": "https://jlcpcb.com/partdetail/6155917-CL10A226MPCNUBE/C5355402",
+    "sourcing_status": "JLCPCB listing checked 2026-09-24; paired output capacitors, DC bias reviewed"
+  },
+  "C62": {
+    "value": "1uF / 6.3V",
+    "footprint": "Module:C62_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "+3.3V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "GND",
+        "type": "passive"
+      }
+    },
+    "uuid": "89bb2b32-fac6-584e-abcf-a7bf91e887f7",
+    "mpn": "CL10A105KB8NNNC",
+    "lcsc": "C15849",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C15849.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C63": {
+    "value": "1uF / 6.3V",
+    "footprint": "Module:C63_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "+1.2V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "GND",
+        "type": "passive"
+      }
+    },
+    "uuid": "dc6ac307-0d20-5716-8301-b3a20dff2452",
+    "mpn": "CL10A105KB8NNNC",
+    "lcsc": "C15849",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C15849.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "R62": {
+    "value": "100kR",
+    "footprint": "Module:R62_R_0402_1005Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "PG_3V3",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "+3.3V",
+        "type": "passive"
+      }
+    },
+    "uuid": "4da6f929-47e9-5bef-9479-bed296e798c0",
+    "mpn": "RC0402FR-07100KL",
+    "lcsc": "C60491",
+    "manufacturer": "Yageo",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C60491.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "J1": {
+    "value": "DF40C(2.0)-40DS-0.4V(51)",
+    "footprint": "Module:J1_DF40C_40DS_2mm",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "VIN_5V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "VIN_5V",
+        "type": "passive"
+      },
+      "3": {
+        "name": "3",
+        "net": "VIN_5V",
+        "type": "passive"
+      },
+      "4": {
+        "name": "4",
+        "net": "VIN_5V",
+        "type": "passive"
+      },
+      "5": {
+        "name": "5",
+        "net": "GND",
+        "type": "passive"
+      },
+      "6": {
+        "name": "6",
+        "net": "GND",
+        "type": "passive"
+      },
+      "7": {
+        "name": "7",
+        "net": "USB_D+",
+        "type": "passive"
+      },
+      "8": {
+        "name": "8",
+        "net": "USB_D-",
+        "type": "passive"
+      },
+      "9": {
+        "name": "9",
+        "net": "GND",
+        "type": "passive"
+      },
+      "10": {
+        "name": "10",
+        "net": "GND",
+        "type": "passive"
+      },
+      "11": {
+        "name": "11",
+        "net": "ESP_EN",
+        "type": "passive"
+      },
+      "12": {
+        "name": "12",
+        "net": "ESP_GPIO0_BOOT",
+        "type": "passive"
+      },
+      "13": {
+        "name": "13",
+        "net": "ESP_GPIO1",
+        "type": "passive"
+      },
+      "14": {
+        "name": "14",
+        "net": "ESP_GPIO2",
+        "type": "passive"
+      },
+      "15": {
+        "name": "15",
+        "net": "ESP_GPIO3",
+        "type": "passive"
+      },
+      "16": {
+        "name": "16",
+        "net": "ESP_GPIO4",
+        "type": "passive"
+      },
+      "17": {
+        "name": "17",
+        "net": "ESP_GPIO5",
+        "type": "passive"
+      },
+      "18": {
+        "name": "18",
+        "net": "ESP_GPIO6",
+        "type": "passive"
+      },
+      "19": {
+        "name": "19",
+        "net": "ESP_GPIO7",
+        "type": "passive"
+      },
+      "20": {
+        "name": "20",
+        "net": "ESP_GPIO8",
+        "type": "passive"
+      },
+      "21": {
+        "name": "21",
+        "net": "ESP_GPIO40",
+        "type": "passive"
+      },
+      "22": {
+        "name": "22",
+        "net": "GND",
+        "type": "passive"
+      },
+      "23": {
+        "name": "23",
+        "net": "ESP_GPIO39",
+        "type": "passive"
+      },
+      "24": {
+        "name": "24",
+        "net": "ESP_GPIO41",
+        "type": "passive"
+      },
+      "25": {
+        "name": "25",
+        "net": "ESP_GPIO42",
+        "type": "passive"
+      },
+      "26": {
+        "name": "26",
+        "net": "ESP_GPIO43_TXD",
+        "type": "passive"
+      },
+      "27": {
+        "name": "27",
+        "net": "ESP_GPIO44_RXD",
+        "type": "passive"
+      },
+      "28": {
+        "name": "28",
+        "net": "ESP_GPIO35",
+        "type": "passive"
+      },
+      "29": {
+        "name": "29",
+        "net": "ESP_GPIO33",
+        "type": "passive"
+      },
+      "30": {
+        "name": "30",
+        "net": "GND",
+        "type": "passive"
+      },
+      "31": {
+        "name": "31",
+        "net": "GND",
+        "type": "passive"
+      },
+      "32": {
+        "name": "32",
+        "net": "ESP_GPIO34",
+        "type": "passive"
+      },
+      "33": {
+        "name": "33",
+        "net": "ESP_GPIO46",
+        "type": "passive"
+      },
+      "34": {
+        "name": "34",
+        "net": "ESP_GPIO45",
+        "type": "passive"
+      },
+      "35": {
+        "name": "35",
+        "net": "ESP_GPIO15",
+        "type": "passive"
+      },
+      "36": {
+        "name": "36",
+        "net": "ESP_GPIO17",
+        "type": "passive"
+      },
+      "37": {
+        "name": "37",
+        "net": "ESP_GPIO16",
+        "type": "passive"
+      },
+      "38": {
+        "name": "38",
+        "net": "ESP_GPIO18",
+        "type": "passive"
+      },
+      "39": {
+        "name": "39",
+        "net": "ESP_GPIO38",
+        "type": "passive"
+      },
+      "40": {
+        "name": "40",
+        "net": "ESP_GPIO21",
+        "type": "passive"
+      }
+    },
+    "uuid": "e841a837-569e-589e-95ee-bf951eab9d5e",
+    "mpn": "DF40C(2.0)-40DS-0.4V(51)",
+    "lcsc": "C597934",
+    "manufacturer": "Hirose",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C597934.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "J2": {
+    "value": "DF40C-40DP-0.4V(51)",
+    "footprint": "Module:J2_DF40C_40DP",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "GND",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "FPGA_IOB_18A",
+        "type": "passive"
+      },
+      "3": {
+        "name": "3",
+        "net": "GND",
+        "type": "passive"
+      },
+      "4": {
+        "name": "4",
+        "net": "FPGA_IOB_16A",
+        "type": "passive"
+      },
+      "5": {
+        "name": "5",
+        "net": "FPGA_IOB_22A",
+        "type": "passive"
+      },
+      "6": {
+        "name": "6",
+        "net": "FPGA_IOB_13B",
+        "type": "passive"
+      },
+      "7": {
+        "name": "7",
+        "net": "FPGA_IOB_20A",
+        "type": "passive"
+      },
+      "8": {
+        "name": "8",
+        "net": "GND",
+        "type": "passive"
+      },
+      "9": {
+        "name": "9",
+        "net": "FPGA_IOT_37A",
+        "type": "passive"
+      },
+      "10": {
+        "name": "10",
+        "net": "FPGA_IOB_23B",
+        "type": "passive"
+      },
+      "11": {
+        "name": "11",
+        "net": "FPGA_IOB_29B",
+        "type": "passive"
+      },
+      "12": {
+        "name": "12",
+        "net": "FPGA_IOB_25B_G3",
+        "type": "passive"
+      },
+      "13": {
+        "name": "13",
+        "net": "GND",
+        "type": "passive"
+      },
+      "14": {
+        "name": "14",
+        "net": "FPGA_IOT_36B",
+        "type": "passive"
+      },
+      "15": {
+        "name": "15",
+        "net": "FPGA_IOT_38B",
+        "type": "passive"
+      },
+      "16": {
+        "name": "16",
+        "net": "FPGA_IOT_39A",
+        "type": "passive"
+      },
+      "17": {
+        "name": "17",
+        "net": "FPGA_IOT_41A",
+        "type": "passive"
+      },
+      "18": {
+        "name": "18",
+        "net": "GND",
+        "type": "passive"
+      },
+      "19": {
+        "name": "19",
+        "net": "FPGA_IOT_42B",
+        "type": "passive"
+      },
+      "20": {
+        "name": "20",
+        "net": "FPGA_IOT_43A",
+        "type": "passive"
+      },
+      "21": {
+        "name": "21",
+        "net": "FPGA_IOT_48B",
+        "type": "passive"
+      },
+      "22": {
+        "name": "22",
+        "net": "FPGA_IOT_46B_G0",
+        "type": "passive"
+      },
+      "23": {
+        "name": "23",
+        "net": "GND",
+        "type": "passive"
+      },
+      "24": {
+        "name": "24",
+        "net": "FPGA_IOT_45A_G1",
+        "type": "passive"
+      },
+      "25": {
+        "name": "25",
+        "net": "FPGA_IOT_50B",
+        "type": "passive"
+      },
+      "26": {
+        "name": "26",
+        "net": "FPGA_RGB0",
+        "type": "passive"
+      },
+      "27": {
+        "name": "27",
+        "net": "FPGA_RGB1",
+        "type": "passive"
+      },
+      "28": {
+        "name": "28",
+        "net": "GND",
+        "type": "passive"
+      },
+      "29": {
+        "name": "29",
+        "net": "FPGA_RGB2",
+        "type": "passive"
+      },
+      "30": {
+        "name": "30",
+        "net": "FPGA_IOT_51A",
+        "type": "passive"
+      },
+      "31": {
+        "name": "31",
+        "net": "FPGA_IOT_49A",
+        "type": "passive"
+      },
+      "32": {
+        "name": "32",
+        "net": "FPGA_IOB_3B_G6",
+        "type": "passive"
+      },
+      "33": {
+        "name": "33",
+        "net": "FPGA_IOT_44B",
+        "type": "passive"
+      },
+      "34": {
+        "name": "34",
+        "net": "FPGA_IOB_5B",
+        "type": "passive"
+      },
+      "35": {
+        "name": "35",
+        "net": "FPGA_IOB_0A",
+        "type": "passive"
+      },
+      "36": {
+        "name": "36",
+        "net": "FPGA_IOB_2A",
+        "type": "passive"
+      },
+      "37": {
+        "name": "37",
+        "net": "FPGA_IOB_4A",
+        "type": "passive"
+      },
+      "38": {
+        "name": "38",
+        "net": "FPGA_IOB_9B",
+        "type": "passive"
+      },
+      "39": {
+        "name": "39",
+        "net": "FPGA_IOB_8A",
+        "type": "passive"
+      },
+      "40": {
+        "name": "40",
+        "net": "FPGA_IOB_6A",
+        "type": "passive"
+      }
+    },
+    "uuid": "0509779b-77d1-52f1-afe1-7e0b1b078cd0",
+    "mpn": "DF40C-40DP-0.4V(51)",
+    "lcsc": "C424643",
+    "manufacturer": "Hirose",
+    "sourcing_url": "https://www.hirose.com/en/product/p/CL0684-4013-7-51",
+    "sourcing_status": "Manufacturer footprint and mate verified; confirm distributor stock before order"
+  },
+  "D1": {
+    "source_ref": "U9",
+    "value": "FC-B1010RGBT-HG",
+    "footprint": "Module:D1_RGBLED",
+    "lcsc": "C158099",
+    "pins": {
+      "P$1": {
+        "name": "A",
+        "type": "passive",
+        "net": "+3.3V"
+      },
+      "P$2": {
+        "name": "K_RGB0",
+        "type": "passive",
+        "net": "FPGA_RGB0"
+      },
+      "P$3": {
+        "name": "K_RGB1",
+        "type": "passive",
+        "net": "FPGA_RGB1"
+      },
+      "P$4": {
+        "name": "K_RGB2",
+        "type": "passive",
+        "net": "FPGA_RGB2"
+      }
+    },
+    "uuid": "e09628a3-7347-564d-99c5-16cef8e0bc97",
+    "mpn": "FC-B1010RGBT-HG",
+    "manufacturer": "Nationstar",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C158099.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "C66": {
+    "value": "1uF / 6.3V",
+    "footprint": "Module:C66_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "+3.3V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "GND",
+        "type": "passive"
+      }
+    },
+    "uuid": "2d8de925-9675-51f9-938b-e956241fe6bb",
+    "mpn": "CL10A105KB8NNNC",
+    "lcsc": "C15849",
+    "manufacturer": "Samsung",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C15849.html",
+    "sourcing_status": "Catalog identity matched; assembly stock and final land-pattern review pending"
+  },
+  "TP1": {
+    "value": "FPGA_CRESET_N",
+    "footprint": "Module:TestPoint_0p8",
+    "uuid": "184d54a8-f009-5296-8a88-286feab685ae",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "FPGA_CRESET_N"
+      }
+    }
+  },
+  "TP2": {
+    "value": "FPGA_CDONE",
+    "footprint": "Module:TestPoint_0p8",
+    "uuid": "72f51a3c-985e-5d08-9698-76b7036f49f7",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "FPGA_CDONE"
+      }
+    }
+  },
+  "C67": {
+    "value": "22uF / 10V",
+    "footprint": "Module:C67_C_0603_1608Metric",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "+3.3V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "GND",
+        "type": "passive"
+      }
+    },
+    "uuid": "43cfe691-6720-5d9f-9f6b-1ac5a2088a1a",
+    "mpn": "CL10A226MPCNUBE",
+    "lcsc": "C5355402",
+    "manufacturer": "Samsung Electro-Mechanics",
+    "sourcing_url": "https://jlcpcb.com/partdetail/6155917-CL10A226MPCNUBE/C5355402",
+    "sourcing_status": "JLCPCB listing checked 2026-09-24; paired output capacitors, DC bias reviewed"
+  },
+  "J3": {
+    "value": "U.FL-R-SMT-1(01)",
+    "footprint": "Module:J3_U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+    "pins": {
+      "1": {
+        "name": "1",
+        "type": "passive",
+        "net": "RF_ANT"
+      },
+      "2": {
+        "name": "2",
+        "type": "passive",
+        "net": "GND"
+      }
+    },
+    "uuid": "725c13cd-d7a2-55f8-bf5e-e25dd2b32da0",
+    "mpn": "U.FL-R-SMT-1(01)",
+    "manufacturer": "Hirose",
+    "sourcing_status": "Supplier stock and mating cable clearance require verification"
+  },
+  "R64": {
+    "value": "75kR",
+    "footprint": "Module:R64_R_0402_1005Metric",
+    "mpn": "0402WGF7502TCE",
+    "manufacturer": "UNI-ROYAL",
+    "lcsc": "C25798",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C25798.html",
+    "sourcing_status": "0402 1% feedback resistor, catalog identity checked; recheck assembly stock at ordering",
+    "uuid": "e85b0cf8-9128-5691-9b72-72f683e3a97f",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "+3.3V",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "BUCK_FB",
+        "type": "passive"
+      }
+    }
+  },
+  "R65": {
+    "value": "24kR",
+    "footprint": "Module:R65_R_0402_1005Metric",
+    "mpn": "0402WGF2402TCE",
+    "manufacturer": "UNI-ROYAL",
+    "lcsc": "C25769",
+    "sourcing_url": "https://www.lcsc.com/product-detail/C25769.html",
+    "sourcing_status": "0402 1% feedback resistor, catalog identity checked; recheck assembly stock at ordering",
+    "uuid": "9a3a0eb5-80e5-553b-b012-10d7750354bc",
+    "pins": {
+      "1": {
+        "name": "1",
+        "net": "BUCK_FB",
+        "type": "passive"
+      },
+      "2": {
+        "name": "2",
+        "net": "GND",
+        "type": "passive"
+      }
+    }
+  }
+}

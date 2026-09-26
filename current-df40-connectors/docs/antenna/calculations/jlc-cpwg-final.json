@@ -1,0 +1,88 @@
+[
+  {
+    "width_mm": 0.26,
+    "gap_mm": 0.15,
+    "request": {
+      "accessId": "4cf4e9062f5c4541998a676efae563a7",
+      "impedance_calc_mark": "CoatedCoplanarWaveguideWithLowerGnd1B",
+      "paramMd5": "6a2265b25160702ee081f6251796e35d",
+      "impedance_calc_arg": {
+        "dCalculateMode": 3,
+        "H1": 8.283464566929135,
+        "Er1": 4.4,
+        "W1": 10.236220472440946,
+        "W2": 9.736220472440946,
+        "G1": 20,
+        "D1": 5.905511811023622,
+        "T1": 1.6,
+        "C1": 1,
+        "C2": 0.6,
+        "CEr": 3.8,
+        "isLinkComputingMode": false,
+        "W2LinkW1Incr": 0.5,
+        "ZoTol": 0.5
+      },
+      "uuid": "07864b97426a4cbeaae3a643d07eaf30"
+    },
+    "response": {
+      "accessId": "4cf4e9062f5c4541998a676efae563a7",
+      "impedance_calc_error_msg": "",
+      "impedance_calc_mark": "CoatedCoplanarWaveguideWithLowerGnd1B",
+      "impedance_calc_result": {
+        "dCer": 116.548528423,
+        "dDelay": 5845.42336437,
+        "dErEff": 3.07095512167,
+        "dImpedance": 50.1544158771,
+        "dInductance": 293.173794394,
+        "dResultValid": 1
+      },
+      "impedance_calc_status": 0,
+      "impedance_calc_time": 46,
+      "paramMd5": "f09d089ea8969b6e6b767947010987a2",
+      "uuid": "07864b97426a4cbeaae3a643d07eaf30"
+    }
+  },
+  {
+    "width_mm": 0.265,
+    "gap_mm": 0.15,
+    "request": {
+      "accessId": "ca1f4f7c1ad94567a7e8260807123b65",
+      "impedance_calc_mark": "CoatedCoplanarWaveguideWithLowerGnd1B",
+      "paramMd5": "67b7223d09f4a4c2cca31dcf3492b21f",
+      "impedance_calc_arg": {
+        "dCalculateMode": 3,
+        "H1": 8.283464566929135,
+        "Er1": 4.4,
+        "W1": 10.433070866141733,
+        "W2": 9.933070866141733,
+        "G1": 20,
+        "D1": 5.905511811023622,
+        "T1": 1.6,
+        "C1": 1,
+        "C2": 0.6,
+        "CEr": 3.8,
+        "isLinkComputingMode": false,
+        "W2LinkW1Incr": 0.5,
+        "ZoTol": 0.5
+      },
+      "uuid": "07864b97426a4cbeaae3a643d07eaf30"
+    },
+    "response": {
+      "accessId": "ca1f4f7c1ad94567a7e8260807123b65",
+      "impedance_calc_error_msg": "",
+      "impedance_calc_mark": "CoatedCoplanarWaveguideWithLowerGnd1B",
+      "impedance_calc_result": {
+        "dCer": 117.55540866,
+        "dDelay": 5848.65188197,
+        "dErEff": 3.07434833036,
+        "dImpedance": 49.7522993511,
+        "dInductance": 290.983879232,
+        "dResultValid": 1
+      },
+      "impedance_calc_status": 0,
+      "impedance_calc_time": 47,
+      "paramMd5": "0867dc113894299ecdadb7493077dbcb",
+      "uuid": "07864b97426a4cbeaae3a643d07eaf30"
+    }
+  }
+]

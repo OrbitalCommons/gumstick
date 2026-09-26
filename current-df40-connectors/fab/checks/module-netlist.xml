@@ -1,0 +1,2969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/meawoppl/repos/bp-test/boards/esp32-fpga-module/module.kicad_sch</source>
+    <date>2026-09-26T10:06:49</date>
+    <tool>Eeschema 10.0.6-10.0.6~ubuntu24.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ESP32 FPGA module - development</title>
+        <company/>
+        <rev>A-draft</rev>
+        <date/>
+        <source>module.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>3.3pF</value>
+      <footprint>Module:C1_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">GJM1555C1H3R3BB01D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C76906</field>
+        <field name="Footprint">Module:C1_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C1" description=""/>
+      <property name="MPN" value="GJM1555C1H3R3BB01D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C76906"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b638669-e7ab-5a6d-aecf-9e4f113a21d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>3.3pF</value>
+      <footprint>Module:C2_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">GJM1555C1H3R3BB01D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C76906</field>
+        <field name="Footprint">Module:C2_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C2" description=""/>
+      <property name="MPN" value="GJM1555C1H3R3BB01D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C76906"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd06d54d-ddc5-5e5c-94bb-2d42939d904d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>12pF</value>
+      <footprint>Module:C6_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05C120JB5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C26406</field>
+        <field name="Footprint">Module:C6_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C6" description=""/>
+      <property name="MPN" value="CL05C120JB5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C26406"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>afba8f48-563a-58c2-b409-a549d51873f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>12pF</value>
+      <footprint>Module:C7_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05C120JB5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C26406</field>
+        <field name="Footprint">Module:C7_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C7" description=""/>
+      <property name="MPN" value="CL05C120JB5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C26406"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fc1b6c5-7ca9-5f14-b00f-cecb1cfc274c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C32">
+      <value>1uF</value>
+      <footprint>Module:C32_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05A105KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C29266</field>
+        <field name="Footprint">Module:C32_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C32" description=""/>
+      <property name="MPN" value="CL05A105KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C29266"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>300c198e-19f1-5baf-827c-9d16d2439a06</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>10uF</value>
+      <footprint>Module:C33_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A106KP8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C19702</field>
+        <field name="Footprint">Module:C33_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C33" description=""/>
+      <property name="MPN" value="CL10A106KP8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C19702"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ea38dc74-bf3c-5cc8-859d-12971ba22356</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C34">
+      <value>10uF</value>
+      <footprint>Module:C34_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A106KP8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C19702</field>
+        <field name="Footprint">Module:C34_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C34" description=""/>
+      <property name="MPN" value="CL10A106KP8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C19702"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>323edae4-1d69-51f7-bfc0-e4fa26a5c11a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C35">
+      <value>0.1uF</value>
+      <footprint>Module:C35_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C35_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C35" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38d7e124-fb3d-5088-8cf9-8a1231d9263e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C37">
+      <value>0.1uF</value>
+      <footprint>Module:C37_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C37_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C37" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31a52c2d-ad7c-54ec-81ba-934825a1975d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C38">
+      <value>0.1uF</value>
+      <footprint>Module:C38_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C38_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C38" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1dd745ab-6943-5725-856f-85c93e40a2a9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C39">
+      <value>0.1uF</value>
+      <footprint>Module:C39_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C39_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C39" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af4aea76-d531-57fe-91fc-c672b35d55b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C40">
+      <value>0.1uF</value>
+      <footprint>Module:C40_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C40_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C40" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b35155fc-7a00-5ab2-aa7c-f5eb6d1b988f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C41">
+      <value>0.1uF</value>
+      <footprint>Module:C41_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C41_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C41" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f223a8b8-9bde-512c-b053-c0035ef4d288</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C42">
+      <value>0.1uF</value>
+      <footprint>Module:C42_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C42_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C42" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc9b5772-b15c-5b68-8ced-7f7dbe087a33</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C43">
+      <value>10uF</value>
+      <footprint>Module:C43_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A106KP8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C19702</field>
+        <field name="Footprint">Module:C43_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C43" description=""/>
+      <property name="MPN" value="CL10A106KP8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C19702"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e516de4-e0fa-57a3-90c1-eea112e23228</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C44">
+      <value>0.1uF</value>
+      <footprint>Module:C44_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C44_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C44" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9a1f255-b541-5868-ae32-eb8502ab965c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C45">
+      <value>10uF</value>
+      <footprint>Module:C45_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A106KP8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C19702</field>
+        <field name="Footprint">Module:C45_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C45" description=""/>
+      <property name="MPN" value="CL10A106KP8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C19702"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9746e245-7e8f-50a7-a375-dc44931a63d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C46">
+      <value>0.1uF</value>
+      <footprint>Module:C46_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C46_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C46" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90559744-2bcb-5700-b376-cf9a23fcf347</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C48">
+      <value>0.1uF</value>
+      <footprint>Module:C48_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C48_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C48" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e08e4e0-d3b1-50fb-8878-2ab749db9698</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C49">
+      <value>0.1uF</value>
+      <footprint>Module:C49_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C49_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C49" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b8ad5575-a78e-558e-a25c-f39bb27b2ed6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C50">
+      <value>0.1uF</value>
+      <footprint>Module:C50_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C50_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C50" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf315866-ead3-5e05-8e32-84b902aec6e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C52">
+      <value>0.1uF</value>
+      <footprint>Module:C52_CAPC1005X60</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Module:C52_CAPC1005X60</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C52" description=""/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e85474b-306e-5b14-99a8-9b7e74de1e61</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C60">
+      <value>10uF / 10V</value>
+      <footprint>Module:C60_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A106KP8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C19702</field>
+        <field name="Footprint">Module:C60_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C60" description=""/>
+      <property name="MPN" value="CL10A106KP8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C19702"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dff9647f-de00-51f4-afba-1533e0caa84a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C61">
+      <value>22uF / 10V</value>
+      <footprint>Module:C61_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A226MPCNUBE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C5355402</field>
+        <field name="Footprint">Module:C61_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C61" description=""/>
+      <property name="MPN" value="CL10A226MPCNUBE"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C5355402"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6d6237c3-0ddf-566f-9e2c-1f6bf42312fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C62">
+      <value>1uF / 6.3V</value>
+      <footprint>Module:C62_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A105KB8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C15849</field>
+        <field name="Footprint">Module:C62_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C62" description=""/>
+      <property name="MPN" value="CL10A105KB8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C15849"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89bb2b32-fac6-584e-abcf-a7bf91e887f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C63">
+      <value>1uF / 6.3V</value>
+      <footprint>Module:C63_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A105KB8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C15849</field>
+        <field name="Footprint">Module:C63_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C63" description=""/>
+      <property name="MPN" value="CL10A105KB8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C15849"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc6ac307-0d20-5716-8301-b3a20dff2452</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C66">
+      <value>1uF / 6.3V</value>
+      <footprint>Module:C66_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A105KB8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C15849</field>
+        <field name="Footprint">Module:C66_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C66" description=""/>
+      <property name="MPN" value="CL10A105KB8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C15849"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d8de925-9675-51f9-938b-e956241fe6bb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C67">
+      <value>22uF / 10V</value>
+      <footprint>Module:C67_C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CL10A226MPCNUBE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="LCSC">C5355402</field>
+        <field name="Footprint">Module:C67_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="C67" description=""/>
+      <property name="MPN" value="CL10A226MPCNUBE"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="LCSC" value="C5355402"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43cfe691-6720-5d9f-9f6b-1ac5a2088a1a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>FC-B1010RGBT-HG</value>
+      <footprint>Module:D1_RGBLED</footprint>
+      <fields>
+        <field name="MPN">FC-B1010RGBT-HG</field>
+        <field name="Manufacturer">Nationstar</field>
+        <field name="LCSC">C158099</field>
+        <field name="Footprint">Module:D1_RGBLED</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="D1" description=""/>
+      <property name="MPN" value="FC-B1010RGBT-HG"/>
+      <property name="Manufacturer" value="Nationstar"/>
+      <property name="LCSC" value="C158099"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e09628a3-7347-564d-99c5-16cef8e0bc97</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="P$1"/>
+            <pin num="P$2"/>
+            <pin num="P$3"/>
+            <pin num="P$4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>DF40C(2.0)-40DS-0.4V(51)</value>
+      <footprint>Module:J1_DF40C_40DS_2mm</footprint>
+      <fields>
+        <field name="MPN">DF40C(2.0)-40DS-0.4V(51)</field>
+        <field name="Manufacturer">Hirose</field>
+        <field name="LCSC">C597934</field>
+        <field name="Footprint">Module:J1_DF40C_40DS_2mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="J1" description=""/>
+      <property name="MPN" value="DF40C(2.0)-40DS-0.4V(51)"/>
+      <property name="Manufacturer" value="Hirose"/>
+      <property name="LCSC" value="C597934"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e841a837-569e-589e-95ee-bf951eab9d5e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>DF40C-40DP-0.4V(51)</value>
+      <footprint>Module:J2_DF40C_40DP</footprint>
+      <fields>
+        <field name="MPN">DF40C-40DP-0.4V(51)</field>
+        <field name="Manufacturer">Hirose</field>
+        <field name="LCSC">C424643</field>
+        <field name="Footprint">Module:J2_DF40C_40DP</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="J2" description=""/>
+      <property name="MPN" value="DF40C-40DP-0.4V(51)"/>
+      <property name="Manufacturer" value="Hirose"/>
+      <property name="LCSC" value="C424643"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0509779b-77d1-52f1-afe1-7e0b1b078cd0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>U.FL-R-SMT-1(01)</value>
+      <footprint>Module:J3_U.FL_Hirose_U.FL-R-SMT-1_Vertical</footprint>
+      <fields>
+        <field name="MPN">U.FL-R-SMT-1(01)</field>
+        <field name="Manufacturer">Hirose</field>
+        <field name="Footprint">Module:J3_U.FL_Hirose_U.FL-R-SMT-1_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="J3" description=""/>
+      <property name="MPN" value="U.FL-R-SMT-1(01)"/>
+      <property name="Manufacturer" value="Hirose"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>725c13cd-d7a2-55f8-bf5e-e25dd2b32da0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>100ohm @100MHz</value>
+      <footprint>Module:L1_L_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">BLM18KG101TN1D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C160981</field>
+        <field name="Footprint">Module:L1_L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="L1" description=""/>
+      <property name="MPN" value="BLM18KG101TN1D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C160981"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>23cc1944-3c15-5044-99e6-aceb51e4aaea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>100ohm @100MHz</value>
+      <footprint>Module:L2_L_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">BLM18KG101TN1D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C160981</field>
+        <field name="Footprint">Module:L2_L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="L2" description=""/>
+      <property name="MPN" value="BLM18KG101TN1D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C160981"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>28783c4d-5245-58cf-b5bd-a73408a4f365</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L3">
+      <value>2.2nH</value>
+      <footprint>Module:L3_INDC1006X60N</footprint>
+      <fields>
+        <field name="MPN">LQG15HS2N2S02D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C86061</field>
+        <field name="Footprint">Module:L3_INDC1006X60N</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="L3" description=""/>
+      <property name="MPN" value="LQG15HS2N2S02D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C86061"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ed5995f-2a06-51b5-acb7-4f2d719373de</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L4">
+      <value>2.2uH</value>
+      <footprint>Module:L4_L_XFL3012_222MEC</footprint>
+      <fields>
+        <field name="MPN">XFL3012-222MEC</field>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="LCSC">C3911432</field>
+        <field name="Footprint">Module:L4_L_XFL3012_222MEC</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="L4" description=""/>
+      <property name="MPN" value="XFL3012-222MEC"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="LCSC" value="C3911432"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7141129f-1384-52e0-b31d-ba974dadf8bf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>0R</value>
+      <footprint>Module:R3_RESC1005X40</footprint>
+      <fields>
+        <field name="MPN">0402WGF0000TCE</field>
+        <field name="Manufacturer">Uniroyal</field>
+        <field name="LCSC">C17168</field>
+        <field name="Footprint">Module:R3_RESC1005X40</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="R3" description=""/>
+      <property name="MPN" value="0402WGF0000TCE"/>
+      <property name="Manufacturer" value="Uniroyal"/>
+      <property name="LCSC" value="C17168"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6783c0d9-b70f-5bf2-ada7-401f59676990</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>10kR</value>
+      <footprint>Module:R20_RESC1005X40</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="LCSC">C60490</field>
+        <field name="Footprint">Module:R20_RESC1005X40</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="R20" description=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="LCSC" value="C60490"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0452640d-834f-5529-b0eb-34e8de19006f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>10kR</value>
+      <footprint>Module:R22_RESC1005X40</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="LCSC">C60490</field>
+        <field name="Footprint">Module:R22_RESC1005X40</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="R22" description=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="LCSC" value="C60490"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a435af42-a950-59fd-b1af-0b335e28e160</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R28">
+      <value>10kR</value>
+      <footprint>Module:R28_RESC1005X40</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="LCSC">C60490</field>
+        <field name="Footprint">Module:R28_RESC1005X40</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="R28" description=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="LCSC" value="C60490"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e719007-4518-5bf3-a756-ff47ea76bb99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R29">
+      <value>10kR</value>
+      <footprint>Module:R29_RESC1005X40</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="LCSC">C60490</field>
+        <field name="Footprint">Module:R29_RESC1005X40</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="R29" description=""/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="LCSC" value="C60490"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf7f7ffc-c916-5fc4-97bd-bb847f532168</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R62">
+      <value>100kR</value>
+      <footprint>Module:R62_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="LCSC">C60491</field>
+        <field name="Footprint">Module:R62_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="R62" description=""/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="LCSC" value="C60491"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4da6f929-47e9-5bef-9479-bed296e798c0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R64">
+      <value>75kR</value>
+      <footprint>Module:R64_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF7502TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25798</field>
+        <field name="Footprint">Module:R64_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="R64" description=""/>
+      <property name="MPN" value="0402WGF7502TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25798"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e85b0cf8-9128-5691-9b72-72f683e3a97f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R65">
+      <value>24kR</value>
+      <footprint>Module:R65_R_0402_1005Metric</footprint>
+      <fields>
+        <field name="MPN">0402WGF2402TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25769</field>
+        <field name="Footprint">Module:R65_R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="R65" description=""/>
+      <property name="MPN" value="0402WGF2402TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25769"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a3a0eb5-80e5-553b-b012-10d7750354bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>FPGA_CRESET_N</value>
+      <footprint>Module:TestPoint_0p8</footprint>
+      <fields>
+        <field name="Footprint">Module:TestPoint_0p8</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="TP1" description=""/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>184d54a8-f009-5296-8a88-286feab685ae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>FPGA_CDONE</value>
+      <footprint>Module:TestPoint_0p8</footprint>
+      <fields>
+        <field name="Footprint">Module:TestPoint_0p8</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="TP2" description=""/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72f51a3c-985e-5d08-9698-76b7036f49f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>ESP32-S2FH4</value>
+      <footprint>Module:U1_QFN56_ESP32-S2FH4_EXP-M</footprint>
+      <fields>
+        <field name="MPN">ESP32-S2FH4</field>
+        <field name="Manufacturer">Espressif</field>
+        <field name="LCSC">C2840995</field>
+        <field name="Footprint">Module:U1_QFN56_ESP32-S2FH4_EXP-M</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="U1" description=""/>
+      <property name="MPN" value="ESP32-S2FH4"/>
+      <property name="Manufacturer" value="Espressif"/>
+      <property name="LCSC" value="C2840995"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7c60a9f-657e-5c67-9976-b5901a049576</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="41"/>
+            <pin num="42"/>
+            <pin num="43"/>
+            <pin num="44"/>
+            <pin num="45"/>
+            <pin num="46"/>
+            <pin num="47"/>
+            <pin num="48"/>
+            <pin num="49"/>
+            <pin num="50"/>
+            <pin num="51"/>
+            <pin num="52"/>
+            <pin num="53"/>
+            <pin num="54"/>
+            <pin num="55"/>
+            <pin num="56"/>
+            <pin num="57"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>iCE40UP5K-SG48</value>
+      <footprint>Module:U2_ICE40-QFN</footprint>
+      <fields>
+        <field name="MPN">ICE40UP5K-SG48I</field>
+        <field name="Manufacturer">Lattice</field>
+        <field name="LCSC">C2678152</field>
+        <field name="Footprint">Module:U2_ICE40-QFN</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="U2" description=""/>
+      <property name="MPN" value="ICE40UP5K-SG48I"/>
+      <property name="Manufacturer" value="Lattice"/>
+      <property name="LCSC" value="C2678152"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e094afbd-4e5b-51ff-a984-f81fb78f6987</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="41"/>
+            <pin num="42"/>
+            <pin num="43"/>
+            <pin num="44"/>
+            <pin num="45"/>
+            <pin num="46"/>
+            <pin num="47"/>
+            <pin num="48"/>
+            <pin num="PAD"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>TPS62160DGKR</value>
+      <footprint>Module:U3_VSSOP-8_3x3mm_P0.65mm</footprint>
+      <fields>
+        <field name="MPN">TPS62160DGKR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C60726</field>
+        <field name="Footprint">Module:U3_VSSOP-8_3x3mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="U3" description=""/>
+      <property name="MPN" value="TPS62160DGKR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C60726"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e5b058c-fdfe-5a6a-8b47-83974fdd23cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>TLV75512PDBVR</value>
+      <footprint>Module:U4_SOT-23-5</footprint>
+      <fields>
+        <field name="MPN">TLV75512PDBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C2877864</field>
+        <field name="Footprint">Module:U4_SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="U4" description=""/>
+      <property name="MPN" value="TLV75512PDBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C2877864"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7564487-4937-55bf-9431-0ea0e12b15a2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y1">
+      <value>40MHz / CL10pF</value>
+      <footprint>Module:Y1_JGHC_S2240000101050</footprint>
+      <fields>
+        <field name="MPN">S2240000101050</field>
+        <field name="Manufacturer">JGHC</field>
+        <field name="LCSC">C426970</field>
+        <field name="Footprint">Module:Y1_JGHC_S2240000101050</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Module" part="Y1" description=""/>
+      <property name="MPN" value="S2240000101050"/>
+      <property name="Manufacturer" value="JGHC"/>
+      <property name="LCSC" value="C426970"/>
+      <property name="Sheetname" value="module"/>
+      <property name="Sheetfile" value="module.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>495e4abb-9881-5066-9d2e-c4a3c75939ce</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="IN/OUT"/>
+            <pin num="GND-A"/>
+            <pin num="GND-B"/>
+            <pin num="OUT/IN"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Module" part="C1">
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">3.3pF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C2">
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">3.3pF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C32">
+      <fields>
+        <field name="Reference">C32</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C33">
+      <fields>
+        <field name="Reference">C33</field>
+        <field name="Value">10uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C34">
+      <fields>
+        <field name="Reference">C34</field>
+        <field name="Value">10uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C35">
+      <fields>
+        <field name="Reference">C35</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C37">
+      <fields>
+        <field name="Reference">C37</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C38">
+      <fields>
+        <field name="Reference">C38</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C39">
+      <fields>
+        <field name="Reference">C39</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C40">
+      <fields>
+        <field name="Reference">C40</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C41">
+      <fields>
+        <field name="Reference">C41</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C42">
+      <fields>
+        <field name="Reference">C42</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C43">
+      <fields>
+        <field name="Reference">C43</field>
+        <field name="Value">10uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C44">
+      <fields>
+        <field name="Reference">C44</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C45">
+      <fields>
+        <field name="Reference">C45</field>
+        <field name="Value">10uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C46">
+      <fields>
+        <field name="Reference">C46</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C48">
+      <fields>
+        <field name="Reference">C48</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C49">
+      <fields>
+        <field name="Reference">C49</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C50">
+      <fields>
+        <field name="Reference">C50</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C52">
+      <fields>
+        <field name="Reference">C52</field>
+        <field name="Value">0.1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C6">
+      <fields>
+        <field name="Reference">C6</field>
+        <field name="Value">12pF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C60">
+      <fields>
+        <field name="Reference">C60</field>
+        <field name="Value">10uF / 10V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C61">
+      <fields>
+        <field name="Reference">C61</field>
+        <field name="Value">22uF / 10V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C62">
+      <fields>
+        <field name="Reference">C62</field>
+        <field name="Value">1uF / 6.3V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C63">
+      <fields>
+        <field name="Reference">C63</field>
+        <field name="Value">1uF / 6.3V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C66">
+      <fields>
+        <field name="Reference">C66</field>
+        <field name="Value">1uF / 6.3V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C67">
+      <fields>
+        <field name="Reference">C67</field>
+        <field name="Value">22uF / 10V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="C7">
+      <fields>
+        <field name="Reference">C7</field>
+        <field name="Value">12pF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="D1">
+      <fields>
+        <field name="Reference">D1</field>
+        <field name="Value">FC-B1010RGBT-HG</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="P$1" name="A" type="passive"/>
+        <pin num="P$2" name="K_RGB0" type="passive"/>
+        <pin num="P$3" name="K_RGB1" type="passive"/>
+        <pin num="P$4" name="K_RGB2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">DF40C(2.0)-40DS-0.4V(51)</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="passive"/>
+        <pin num="15" name="15" type="passive"/>
+        <pin num="16" name="16" type="passive"/>
+        <pin num="17" name="17" type="passive"/>
+        <pin num="18" name="18" type="passive"/>
+        <pin num="19" name="19" type="passive"/>
+        <pin num="20" name="20" type="passive"/>
+        <pin num="21" name="21" type="passive"/>
+        <pin num="22" name="22" type="passive"/>
+        <pin num="23" name="23" type="passive"/>
+        <pin num="24" name="24" type="passive"/>
+        <pin num="25" name="25" type="passive"/>
+        <pin num="26" name="26" type="passive"/>
+        <pin num="27" name="27" type="passive"/>
+        <pin num="28" name="28" type="passive"/>
+        <pin num="29" name="29" type="passive"/>
+        <pin num="30" name="30" type="passive"/>
+        <pin num="31" name="31" type="passive"/>
+        <pin num="32" name="32" type="passive"/>
+        <pin num="33" name="33" type="passive"/>
+        <pin num="34" name="34" type="passive"/>
+        <pin num="35" name="35" type="passive"/>
+        <pin num="36" name="36" type="passive"/>
+        <pin num="37" name="37" type="passive"/>
+        <pin num="38" name="38" type="passive"/>
+        <pin num="39" name="39" type="passive"/>
+        <pin num="40" name="40" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="J2">
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">DF40C-40DP-0.4V(51)</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+        <pin num="11" name="11" type="passive"/>
+        <pin num="12" name="12" type="passive"/>
+        <pin num="13" name="13" type="passive"/>
+        <pin num="14" name="14" type="passive"/>
+        <pin num="15" name="15" type="passive"/>
+        <pin num="16" name="16" type="passive"/>
+        <pin num="17" name="17" type="passive"/>
+        <pin num="18" name="18" type="passive"/>
+        <pin num="19" name="19" type="passive"/>
+        <pin num="20" name="20" type="passive"/>
+        <pin num="21" name="21" type="passive"/>
+        <pin num="22" name="22" type="passive"/>
+        <pin num="23" name="23" type="passive"/>
+        <pin num="24" name="24" type="passive"/>
+        <pin num="25" name="25" type="passive"/>
+        <pin num="26" name="26" type="passive"/>
+        <pin num="27" name="27" type="passive"/>
+        <pin num="28" name="28" type="passive"/>
+        <pin num="29" name="29" type="passive"/>
+        <pin num="30" name="30" type="passive"/>
+        <pin num="31" name="31" type="passive"/>
+        <pin num="32" name="32" type="passive"/>
+        <pin num="33" name="33" type="passive"/>
+        <pin num="34" name="34" type="passive"/>
+        <pin num="35" name="35" type="passive"/>
+        <pin num="36" name="36" type="passive"/>
+        <pin num="37" name="37" type="passive"/>
+        <pin num="38" name="38" type="passive"/>
+        <pin num="39" name="39" type="passive"/>
+        <pin num="40" name="40" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="J3">
+      <fields>
+        <field name="Reference">J3</field>
+        <field name="Value">U.FL-R-SMT-1(01)</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="RF" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="L1">
+      <fields>
+        <field name="Reference">L1</field>
+        <field name="Value">100ohm @100MHz</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="L2">
+      <fields>
+        <field name="Reference">L2</field>
+        <field name="Value">100ohm @100MHz</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="L3">
+      <fields>
+        <field name="Reference">L3</field>
+        <field name="Value">2.2nH</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="L4">
+      <fields>
+        <field name="Reference">L4</field>
+        <field name="Value">2.2uH</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="R20">
+      <fields>
+        <field name="Reference">R20</field>
+        <field name="Value">10kR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="R22">
+      <fields>
+        <field name="Reference">R22</field>
+        <field name="Value">10kR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="R28">
+      <fields>
+        <field name="Reference">R28</field>
+        <field name="Value">10kR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="R29">
+      <fields>
+        <field name="Reference">R29</field>
+        <field name="Value">10kR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="R3">
+      <fields>
+        <field name="Reference">R3</field>
+        <field name="Value">0R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="R62">
+      <fields>
+        <field name="Reference">R62</field>
+        <field name="Value">100kR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="R64">
+      <fields>
+        <field name="Reference">R64</field>
+        <field name="Value">75kR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="R65">
+      <fields>
+        <field name="Reference">R65</field>
+        <field name="Value">24kR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="TP1">
+      <fields>
+        <field name="Reference">TP1</field>
+        <field name="Value">FPGA_CRESET_N</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="TP2">
+      <fields>
+        <field name="Reference">TP2</field>
+        <field name="Value">FPGA_CDONE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="U1">
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">ESP32-S2FH4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VDDA" type="power_in"/>
+        <pin num="2" name="LNA_IN" type="bidirectional"/>
+        <pin num="3" name="VDD3P3" type="power_in"/>
+        <pin num="4" name="VDD3P3_2" type="power_in"/>
+        <pin num="5" name="GPIO0" type="bidirectional"/>
+        <pin num="6" name="GPIO1" type="bidirectional"/>
+        <pin num="7" name="GPIO2" type="bidirectional"/>
+        <pin num="8" name="GPIO3" type="bidirectional"/>
+        <pin num="9" name="GPIO4" type="bidirectional"/>
+        <pin num="10" name="GPIO5" type="bidirectional"/>
+        <pin num="11" name="GPIO6" type="bidirectional"/>
+        <pin num="12" name="GPIO7" type="bidirectional"/>
+        <pin num="13" name="GPIO8" type="bidirectional"/>
+        <pin num="14" name="GPIO9" type="bidirectional"/>
+        <pin num="15" name="GPIO10" type="bidirectional"/>
+        <pin num="16" name="GPIO11" type="bidirectional"/>
+        <pin num="17" name="GPIO12" type="bidirectional"/>
+        <pin num="18" name="GPIO13" type="bidirectional"/>
+        <pin num="19" name="GPIO14" type="bidirectional"/>
+        <pin num="20" name="VDD3P3_RTC" type="power_in"/>
+        <pin num="21" name="GPIO15" type="bidirectional"/>
+        <pin num="22" name="GPIO16" type="bidirectional"/>
+        <pin num="23" name="GPIO17" type="bidirectional"/>
+        <pin num="24" name="GPIO18" type="bidirectional"/>
+        <pin num="25" name="GPIO19/USB_D-" type="bidirectional"/>
+        <pin num="26" name="GPIO20/USB_D+" type="bidirectional"/>
+        <pin num="27" name="VDD3P3_RTC_IO" type="power_in"/>
+        <pin num="28" name="GPIO21" type="bidirectional"/>
+        <pin num="29" name="SPICS1" type="bidirectional"/>
+        <pin num="30" name="VDD_SPI" type="power_in"/>
+        <pin num="31" name="SPIHD" type="bidirectional"/>
+        <pin num="32" name="SPIWP" type="bidirectional"/>
+        <pin num="33" name="SPICS0" type="bidirectional"/>
+        <pin num="34" name="SPICLK" type="bidirectional"/>
+        <pin num="35" name="SPIQ" type="bidirectional"/>
+        <pin num="36" name="SPID" type="bidirectional"/>
+        <pin num="37" name="GPIO33" type="bidirectional"/>
+        <pin num="38" name="GPIO34" type="bidirectional"/>
+        <pin num="39" name="GPIO35" type="bidirectional"/>
+        <pin num="40" name="GPIO36" type="bidirectional"/>
+        <pin num="41" name="GPIO37" type="bidirectional"/>
+        <pin num="42" name="GPIO38" type="bidirectional"/>
+        <pin num="43" name="GPIO39" type="bidirectional"/>
+        <pin num="44" name="GPIO40" type="bidirectional"/>
+        <pin num="45" name="VDD3P3_CPU" type="power_in"/>
+        <pin num="46" name="GPIO41" type="bidirectional"/>
+        <pin num="47" name="GPIO42" type="bidirectional"/>
+        <pin num="48" name="GPIO43" type="bidirectional"/>
+        <pin num="49" name="GPIO44" type="bidirectional"/>
+        <pin num="50" name="GPIO45" type="bidirectional"/>
+        <pin num="51" name="VDDA_2" type="power_in"/>
+        <pin num="52" name="XTAL_N" type="bidirectional"/>
+        <pin num="53" name="XTAL_P" type="bidirectional"/>
+        <pin num="54" name="VDDA_3" type="power_in"/>
+        <pin num="55" name="GPIO46" type="bidirectional"/>
+        <pin num="56" name="CHIP_PU" type="bidirectional"/>
+        <pin num="57" name="EPAD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="U2">
+      <fields>
+        <field name="Reference">U2</field>
+        <field name="Value">iCE40UP5K-SG48</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCIO_2" type="power_in"/>
+        <pin num="2" name="IOB_6A" type="bidirectional"/>
+        <pin num="3" name="IOB_9B" type="bidirectional"/>
+        <pin num="4" name="IOB_8A" type="bidirectional"/>
+        <pin num="5" name="VCC_1" type="power_in"/>
+        <pin num="6" name="IOB_13B" type="bidirectional"/>
+        <pin num="7" name="CDONE" type="bidirectional"/>
+        <pin num="8" name="CRESET_B" type="passive"/>
+        <pin num="9" name="IOB_16A" type="bidirectional"/>
+        <pin num="10" name="IOB_18A" type="bidirectional"/>
+        <pin num="11" name="IOB_20A" type="bidirectional"/>
+        <pin num="12" name="IOB_22A" type="bidirectional"/>
+        <pin num="13" name="IOB_24A" type="bidirectional"/>
+        <pin num="14" name="IOB_32A_SPI_SO" type="bidirectional"/>
+        <pin num="15" name="IOB_34A_SPI_SCK" type="bidirectional"/>
+        <pin num="16" name="IOB_35B_SPI_SS" type="bidirectional"/>
+        <pin num="17" name="IOB_33B_SPI_SI" type="bidirectional"/>
+        <pin num="18" name="IOB_31B" type="bidirectional"/>
+        <pin num="19" name="IOB_29B" type="bidirectional"/>
+        <pin num="20" name="IOB_25B_G3" type="bidirectional"/>
+        <pin num="21" name="IOB_23B" type="bidirectional"/>
+        <pin num="22" name="SPI_VCCIO1" type="power_in"/>
+        <pin num="23" name="IOT_37A" type="bidirectional"/>
+        <pin num="24" name="VPP_2V5" type="power_in"/>
+        <pin num="25" name="IOT_36B" type="bidirectional"/>
+        <pin num="26" name="IOT_39A" type="bidirectional"/>
+        <pin num="27" name="IOT_38B" type="bidirectional"/>
+        <pin num="28" name="IOT_41A" type="bidirectional"/>
+        <pin num="29" name="VCCPLL" type="power_in"/>
+        <pin num="30" name="VCC_2" type="power_in"/>
+        <pin num="31" name="IOT_42B" type="bidirectional"/>
+        <pin num="32" name="IOT_43A" type="bidirectional"/>
+        <pin num="33" name="VCCIO_0" type="power_in"/>
+        <pin num="34" name="IOT_44B" type="bidirectional"/>
+        <pin num="35" name="IOT_46B_G0" type="bidirectional"/>
+        <pin num="36" name="IOT_48B" type="bidirectional"/>
+        <pin num="37" name="IOT_45A_G1" type="bidirectional"/>
+        <pin num="38" name="IOT_50B" type="bidirectional"/>
+        <pin num="39" name="RGB0" type="bidirectional"/>
+        <pin num="40" name="RGB1" type="bidirectional"/>
+        <pin num="41" name="RGB2" type="bidirectional"/>
+        <pin num="42" name="IOT_51A" type="bidirectional"/>
+        <pin num="43" name="IOT_49A" type="bidirectional"/>
+        <pin num="44" name="IOB_3B_G6" type="bidirectional"/>
+        <pin num="45" name="IOB_5B" type="bidirectional"/>
+        <pin num="46" name="IOB_0A" type="bidirectional"/>
+        <pin num="47" name="IOB_2A" type="bidirectional"/>
+        <pin num="48" name="IOB_4A" type="bidirectional"/>
+        <pin num="PAD" name="PAD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="U3">
+      <fields>
+        <field name="Reference">U3</field>
+        <field name="Value">TPS62160DGKR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PGND" type="power_in"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="AGND" type="power_in"/>
+        <pin num="5" name="FB" type="input"/>
+        <pin num="6" name="VOS" type="input"/>
+        <pin num="7" name="SW" type="power_out"/>
+        <pin num="8" name="PG" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="U4">
+      <fields>
+        <field name="Reference">U4</field>
+        <field name="Value">TLV75512PDBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Module" part="Y1">
+      <fields>
+        <field name="Reference">Y1</field>
+        <field name="Value">40MHz / CL10pF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="GND-A" name="GND" type="power_in"/>
+        <pin num="GND-B" name="GND" type="power_in"/>
+        <pin num="IN/OUT" name="IN/OUT" type="bidirectional"/>
+        <pin num="OUT/IN" name="OUT/IN" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Module">
+      <uri>${KIPRJMOD}/Module.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+1.2V" class="Default">
+      <node ref="C45" pin="1" pintype="passive"/>
+      <node ref="C49" pin="1" pintype="passive"/>
+      <node ref="C50" pin="1" pintype="passive"/>
+      <node ref="C63" pin="1" pintype="passive"/>
+      <node ref="L2" pin="1" pintype="passive"/>
+      <node ref="U2" pin="30" pinfunction="VCC_2_30" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="VCC_1_5" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+    </net>
+    <net code="2" name="+1.2V_PLL" class="Default">
+      <node ref="C43" pin="1" pintype="passive"/>
+      <node ref="C44" pin="1" pintype="passive"/>
+      <node ref="L2" pin="2" pintype="passive"/>
+      <node ref="U2" pin="29" pinfunction="VCCPLL_29" pintype="power_in"/>
+    </net>
+    <net code="3" name="+3.3V" class="Default">
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="C37" pin="1" pintype="passive"/>
+      <node ref="C38" pin="1" pintype="passive"/>
+      <node ref="C39" pin="1" pintype="passive"/>
+      <node ref="C40" pin="1" pintype="passive"/>
+      <node ref="C41" pin="1" pintype="passive"/>
+      <node ref="C42" pin="1" pintype="passive"/>
+      <node ref="C46" pin="1" pintype="passive"/>
+      <node ref="C48" pin="1" pintype="passive"/>
+      <node ref="C52" pin="1" pintype="passive"/>
+      <node ref="C61" pin="1" pintype="passive"/>
+      <node ref="C62" pin="1" pintype="passive"/>
+      <node ref="C66" pin="1" pintype="passive"/>
+      <node ref="C67" pin="1" pintype="passive"/>
+      <node ref="D1" pin="P$1" pinfunction="A_P$1" pintype="passive"/>
+      <node ref="L1" pin="1" pintype="passive"/>
+      <node ref="L4" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="R62" pin="2" pintype="passive"/>
+      <node ref="R64" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VDDA_1" pintype="power_in"/>
+      <node ref="U1" pin="20" pinfunction="VDD3P3_RTC_20" pintype="power_in"/>
+      <node ref="U1" pin="27" pinfunction="VDD3P3_RTC_IO_27" pintype="power_in"/>
+      <node ref="U1" pin="30" pinfunction="VDD_SPI_30" pintype="power_in"/>
+      <node ref="U1" pin="45" pinfunction="VDD3P3_CPU_45" pintype="power_in"/>
+      <node ref="U1" pin="51" pinfunction="VDDA_2_51" pintype="power_in"/>
+      <node ref="U1" pin="54" pinfunction="VDDA_3_54" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="VCCIO_2_1" pintype="power_in"/>
+      <node ref="U2" pin="22" pinfunction="SPI_VCCIO1_22" pintype="power_in"/>
+      <node ref="U2" pin="24" pinfunction="VPP_2V5_24" pintype="power_in"/>
+      <node ref="U2" pin="33" pinfunction="VCCIO_0_33" pintype="power_in"/>
+      <node ref="U3" pin="6" pinfunction="VOS_6" pintype="input"/>
+      <node ref="U4" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U4" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="4" name="/BUCK_FB" class="Default">
+      <node ref="R64" pin="2" pintype="passive"/>
+      <node ref="R65" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="FB_5" pintype="input"/>
+    </net>
+    <net code="5" name="/BUCK_SW" class="Default">
+      <node ref="L4" pin="1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="SW_7" pintype="power_out"/>
+    </net>
+    <net code="6" name="/ESP_EN" class="Default">
+      <node ref="C32" pin="1" pintype="passive"/>
+      <node ref="J1" pin="11" pinfunction="11_11" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U1" pin="56" pinfunction="CHIP_PU_56" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/ESP_GPIO0_BOOT" class="Default">
+      <node ref="J1" pin="12" pinfunction="12_12" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="GPIO0_5" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/ESP_GPIO1" class="Default">
+      <node ref="J1" pin="13" pinfunction="13_13" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="GPIO1_6" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/ESP_GPIO2" class="Default">
+      <node ref="J1" pin="14" pinfunction="14_14" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="GPIO2_7" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/ESP_GPIO3" class="Default">
+      <node ref="J1" pin="15" pinfunction="15_15" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GPIO3_8" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/ESP_GPIO4" class="Default">
+      <node ref="J1" pin="16" pinfunction="16_16" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="GPIO4_9" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/ESP_GPIO5" class="Default">
+      <node ref="J1" pin="17" pinfunction="17_17" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="GPIO5_10" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/ESP_GPIO6" class="Default">
+      <node ref="J1" pin="18" pinfunction="18_18" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="GPIO6_11" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/ESP_GPIO7" class="Default">
+      <node ref="J1" pin="19" pinfunction="19_19" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="GPIO7_12" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/ESP_GPIO8" class="Default">
+      <node ref="J1" pin="20" pinfunction="20_20" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GPIO8_13" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/ESP_GPIO15" class="Default">
+      <node ref="J1" pin="35" pinfunction="35_35" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="GPIO15_21" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/ESP_GPIO16" class="Default">
+      <node ref="J1" pin="37" pinfunction="37_37" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="GPIO16_22" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/ESP_GPIO17" class="Default">
+      <node ref="J1" pin="36" pinfunction="36_36" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="GPIO17_23" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/ESP_GPIO18" class="Default">
+      <node ref="J1" pin="38" pinfunction="38_38" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="GPIO18_24" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/ESP_GPIO21" class="Default">
+      <node ref="J1" pin="40" pinfunction="40_40" pintype="passive"/>
+      <node ref="U1" pin="28" pinfunction="GPIO21_28" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/ESP_GPIO33" class="Default">
+      <node ref="J1" pin="29" pinfunction="29_29" pintype="passive"/>
+      <node ref="U1" pin="37" pinfunction="GPIO33_37" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/ESP_GPIO34" class="Default">
+      <node ref="J1" pin="32" pinfunction="32_32" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="GPIO34_38" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/ESP_GPIO35" class="Default">
+      <node ref="J1" pin="28" pinfunction="28_28" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="GPIO35_39" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="/ESP_GPIO38" class="Default">
+      <node ref="J1" pin="39" pinfunction="39_39" pintype="passive"/>
+      <node ref="U1" pin="42" pinfunction="GPIO38_42" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/ESP_GPIO39" class="Default">
+      <node ref="J1" pin="23" pinfunction="23_23" pintype="passive"/>
+      <node ref="U1" pin="43" pinfunction="GPIO39_43" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="/ESP_GPIO40" class="Default">
+      <node ref="J1" pin="21" pinfunction="21_21" pintype="passive"/>
+      <node ref="U1" pin="44" pinfunction="GPIO40_44" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="/ESP_GPIO41" class="Default">
+      <node ref="J1" pin="24" pinfunction="24_24" pintype="passive"/>
+      <node ref="U1" pin="46" pinfunction="GPIO41_46" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/ESP_GPIO42" class="Default">
+      <node ref="J1" pin="25" pinfunction="25_25" pintype="passive"/>
+      <node ref="U1" pin="47" pinfunction="GPIO42_47" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/ESP_GPIO43_TXD" class="Default">
+      <node ref="J1" pin="26" pinfunction="26_26" pintype="passive"/>
+      <node ref="U1" pin="48" pinfunction="GPIO43_48" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="/ESP_GPIO44_RXD" class="Default">
+      <node ref="J1" pin="27" pinfunction="27_27" pintype="passive"/>
+      <node ref="U1" pin="49" pinfunction="GPIO44_49" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="/ESP_GPIO45" class="Default">
+      <node ref="J1" pin="34" pinfunction="34_34" pintype="passive"/>
+      <node ref="U1" pin="50" pinfunction="GPIO45_50" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="/ESP_GPIO46" class="Default">
+      <node ref="J1" pin="33" pinfunction="33_33" pintype="passive"/>
+      <node ref="U1" pin="55" pinfunction="GPIO46_55" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="/FPGA_CDONE" class="Default">
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="41" pinfunction="GPIO37_41" pintype="bidirectional"/>
+      <node ref="U2" pin="7" pinfunction="CDONE_7" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="/FPGA_CRESET_N" class="Default">
+      <node ref="R28" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="40" pinfunction="GPIO36_40" pintype="bidirectional"/>
+      <node ref="U2" pin="8" pinfunction="CRESET_B_8" pintype="passive"/>
+    </net>
+    <net code="35" name="/FPGA_IOB_0A" class="Default">
+      <node ref="J2" pin="35" pinfunction="35_35" pintype="passive"/>
+      <node ref="U2" pin="46" pinfunction="IOB_0A_46" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/FPGA_IOB_2A" class="Default">
+      <node ref="J2" pin="36" pinfunction="36_36" pintype="passive"/>
+      <node ref="U2" pin="47" pinfunction="IOB_2A_47" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="/FPGA_IOB_3B_G6" class="Default">
+      <node ref="J2" pin="32" pinfunction="32_32" pintype="passive"/>
+      <node ref="U2" pin="44" pinfunction="IOB_3B_G6_44" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="/FPGA_IOB_4A" class="Default">
+      <node ref="J2" pin="37" pinfunction="37_37" pintype="passive"/>
+      <node ref="U2" pin="48" pinfunction="IOB_4A_48" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="/FPGA_IOB_5B" class="Default">
+      <node ref="J2" pin="34" pinfunction="34_34" pintype="passive"/>
+      <node ref="U2" pin="45" pinfunction="IOB_5B_45" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="/FPGA_IOB_6A" class="Default">
+      <node ref="J2" pin="40" pinfunction="40_40" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="IOB_6A_2" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="/FPGA_IOB_8A" class="Default">
+      <node ref="J2" pin="39" pinfunction="39_39" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="IOB_8A_4" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="/FPGA_IOB_9B" class="Default">
+      <node ref="J2" pin="38" pinfunction="38_38" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="IOB_9B_3" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="/FPGA_IOB_13B" class="Default">
+      <node ref="J2" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="IOB_13B_6" pintype="bidirectional"/>
+    </net>
+    <net code="44" name="/FPGA_IOB_16A" class="Default">
+      <node ref="J2" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="IOB_16A_9" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="/FPGA_IOB_18A" class="Default">
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="IOB_18A_10" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="/FPGA_IOB_20A" class="Default">
+      <node ref="J2" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="IOB_20A_11" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="/FPGA_IOB_22A" class="Default">
+      <node ref="J2" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="IOB_22A_12" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="/FPGA_IOB_23B" class="Default">
+      <node ref="J2" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="U2" pin="21" pinfunction="IOB_23B_21" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="/FPGA_IOB_25B_G3" class="Default">
+      <node ref="J2" pin="12" pinfunction="12_12" pintype="passive"/>
+      <node ref="U2" pin="20" pinfunction="IOB_25B_G3_20" pintype="bidirectional"/>
+    </net>
+    <net code="50" name="/FPGA_IOB_29B" class="Default">
+      <node ref="J2" pin="11" pinfunction="11_11" pintype="passive"/>
+      <node ref="U2" pin="19" pinfunction="IOB_29B_19" pintype="bidirectional"/>
+    </net>
+    <net code="51" name="/FPGA_IOT_36B" class="Default">
+      <node ref="J2" pin="14" pinfunction="14_14" pintype="passive"/>
+      <node ref="U2" pin="25" pinfunction="IOT_36B_25" pintype="bidirectional"/>
+    </net>
+    <net code="52" name="/FPGA_IOT_37A" class="Default">
+      <node ref="J2" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="U2" pin="23" pinfunction="IOT_37A_23" pintype="bidirectional"/>
+    </net>
+    <net code="53" name="/FPGA_IOT_38B" class="Default">
+      <node ref="J2" pin="15" pinfunction="15_15" pintype="passive"/>
+      <node ref="U2" pin="27" pinfunction="IOT_38B_27" pintype="bidirectional"/>
+    </net>
+    <net code="54" name="/FPGA_IOT_39A" class="Default">
+      <node ref="J2" pin="16" pinfunction="16_16" pintype="passive"/>
+      <node ref="U2" pin="26" pinfunction="IOT_39A_26" pintype="bidirectional"/>
+    </net>
+    <net code="55" name="/FPGA_IOT_41A" class="Default">
+      <node ref="J2" pin="17" pinfunction="17_17" pintype="passive"/>
+      <node ref="U2" pin="28" pinfunction="IOT_41A_28" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="/FPGA_IOT_42B" class="Default">
+      <node ref="J2" pin="19" pinfunction="19_19" pintype="passive"/>
+      <node ref="U2" pin="31" pinfunction="IOT_42B_31" pintype="bidirectional"/>
+    </net>
+    <net code="57" name="/FPGA_IOT_43A" class="Default">
+      <node ref="J2" pin="20" pinfunction="20_20" pintype="passive"/>
+      <node ref="U2" pin="32" pinfunction="IOT_43A_32" pintype="bidirectional"/>
+    </net>
+    <net code="58" name="/FPGA_IOT_44B" class="Default">
+      <node ref="J2" pin="33" pinfunction="33_33" pintype="passive"/>
+      <node ref="U2" pin="34" pinfunction="IOT_44B_34" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="/FPGA_IOT_45A_G1" class="Default">
+      <node ref="J2" pin="24" pinfunction="24_24" pintype="passive"/>
+      <node ref="U2" pin="37" pinfunction="IOT_45A_G1_37" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="/FPGA_IOT_46B_G0" class="Default">
+      <node ref="J2" pin="22" pinfunction="22_22" pintype="passive"/>
+      <node ref="U2" pin="35" pinfunction="IOT_46B_G0_35" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="/FPGA_IOT_48B" class="Default">
+      <node ref="J2" pin="21" pinfunction="21_21" pintype="passive"/>
+      <node ref="U2" pin="36" pinfunction="IOT_48B_36" pintype="bidirectional"/>
+    </net>
+    <net code="62" name="/FPGA_IOT_49A" class="Default">
+      <node ref="J2" pin="31" pinfunction="31_31" pintype="passive"/>
+      <node ref="U2" pin="43" pinfunction="IOT_49A_43" pintype="bidirectional"/>
+    </net>
+    <net code="63" name="/FPGA_IOT_50B" class="Default">
+      <node ref="J2" pin="25" pinfunction="25_25" pintype="passive"/>
+      <node ref="U2" pin="38" pinfunction="IOT_50B_38" pintype="bidirectional"/>
+    </net>
+    <net code="64" name="/FPGA_IOT_51A" class="Default">
+      <node ref="J2" pin="30" pinfunction="30_30" pintype="passive"/>
+      <node ref="U2" pin="42" pinfunction="IOT_51A_42" pintype="bidirectional"/>
+    </net>
+    <net code="65" name="/FPGA_RGB0" class="Default">
+      <node ref="D1" pin="P$2" pinfunction="K_RGB0_P$2" pintype="passive"/>
+      <node ref="J2" pin="26" pinfunction="26_26" pintype="passive"/>
+      <node ref="U2" pin="39" pinfunction="RGB0_39" pintype="bidirectional"/>
+    </net>
+    <net code="66" name="/FPGA_RGB1" class="Default">
+      <node ref="D1" pin="P$3" pinfunction="K_RGB1_P$3" pintype="passive"/>
+      <node ref="J2" pin="27" pinfunction="27_27" pintype="passive"/>
+      <node ref="U2" pin="40" pinfunction="RGB1_40" pintype="bidirectional"/>
+    </net>
+    <net code="67" name="/FPGA_RGB2" class="Default">
+      <node ref="D1" pin="P$4" pinfunction="K_RGB2_P$4" pintype="passive"/>
+      <node ref="J2" pin="29" pinfunction="29_29" pintype="passive"/>
+      <node ref="U2" pin="41" pinfunction="RGB2_41" pintype="bidirectional"/>
+    </net>
+    <net code="68" name="/LINK_CS_N" class="Default">
+      <node ref="U1" pin="15" pinfunction="GPIO10_15" pintype="bidirectional"/>
+      <node ref="U2" pin="16" pinfunction="IOB_35B_SPI_SS_16" pintype="bidirectional"/>
+    </net>
+    <net code="69" name="/LINK_IO2" class="Default">
+      <node ref="U1" pin="19" pinfunction="GPIO14_19" pintype="bidirectional"/>
+      <node ref="U2" pin="13" pinfunction="IOB_24A_13" pintype="bidirectional"/>
+    </net>
+    <net code="70" name="/LINK_IO3" class="Default">
+      <node ref="U1" pin="14" pinfunction="GPIO9_14" pintype="bidirectional"/>
+      <node ref="U2" pin="18" pinfunction="IOB_31B_18" pintype="bidirectional"/>
+    </net>
+    <net code="71" name="/LINK_MISO" class="Default">
+      <node ref="U1" pin="18" pinfunction="GPIO13_18" pintype="bidirectional"/>
+      <node ref="U2" pin="14" pinfunction="IOB_32A_SPI_SO_14" pintype="bidirectional"/>
+    </net>
+    <net code="72" name="/LINK_MOSI" class="Default">
+      <node ref="U1" pin="16" pinfunction="GPIO11_16" pintype="bidirectional"/>
+      <node ref="U2" pin="17" pinfunction="IOB_33B_SPI_SI_17" pintype="bidirectional"/>
+    </net>
+    <net code="73" name="/LINK_SCK" class="Default">
+      <node ref="U1" pin="17" pinfunction="GPIO12_17" pintype="bidirectional"/>
+      <node ref="U2" pin="15" pinfunction="IOB_34A_SPI_SCK_15" pintype="bidirectional"/>
+    </net>
+    <net code="74" name="/PG_3V3" class="Default">
+      <node ref="R62" pin="1" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="PG_8" pintype="open_collector"/>
+    </net>
+    <net code="75" name="/RF_ANT" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="RF_1" pintype="passive"/>
+      <node ref="L3" pin="2" pintype="passive"/>
+    </net>
+    <net code="76" name="/RF_IN" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="L3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="LNA_IN_2" pintype="bidirectional"/>
+    </net>
+    <net code="77" name="/USB_D+" class="Default">
+      <node ref="J1" pin="7" pinfunction="7_7" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="GPIO20/USB_D+_26" pintype="bidirectional"/>
+    </net>
+    <net code="78" name="/USB_D-" class="Default">
+      <node ref="J1" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="GPIO19/USB_D-_25" pintype="bidirectional"/>
+    </net>
+    <net code="79" name="/XTAL_N" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="52" pinfunction="XTAL_N_52" pintype="bidirectional"/>
+      <node ref="Y1" pin="OUT/IN" pinfunction="OUT/IN_OUT/IN" pintype="bidirectional"/>
+    </net>
+    <net code="80" name="/XTAL_P" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="53" pinfunction="XTAL_P_53" pintype="bidirectional"/>
+    </net>
+    <net code="81" name="/XTAL_P_CRYSTAL" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="Y1" pin="IN/OUT" pinfunction="IN/OUT_IN/OUT" pintype="bidirectional"/>
+    </net>
+    <net code="82" name="ESP_VDD3P3" class="Default">
+      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="C35" pin="1" pintype="passive"/>
+      <node ref="L1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VDD3P3_3" pintype="power_in"/>
+      <node ref="U1" pin="4" pinfunction="VDD3P3_2_4" pintype="power_in"/>
+    </net>
+    <net code="83" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="C34" pin="2" pintype="passive"/>
+      <node ref="C35" pin="2" pintype="passive"/>
+      <node ref="C37" pin="2" pintype="passive"/>
+      <node ref="C38" pin="2" pintype="passive"/>
+      <node ref="C39" pin="2" pintype="passive"/>
+      <node ref="C40" pin="2" pintype="passive"/>
+      <node ref="C41" pin="2" pintype="passive"/>
+      <node ref="C42" pin="2" pintype="passive"/>
+      <node ref="C43" pin="2" pintype="passive"/>
+      <node ref="C44" pin="2" pintype="passive"/>
+      <node ref="C45" pin="2" pintype="passive"/>
+      <node ref="C46" pin="2" pintype="passive"/>
+      <node ref="C48" pin="2" pintype="passive"/>
+      <node ref="C49" pin="2" pintype="passive"/>
+      <node ref="C50" pin="2" pintype="passive"/>
+      <node ref="C52" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C60" pin="2" pintype="passive"/>
+      <node ref="C61" pin="2" pintype="passive"/>
+      <node ref="C62" pin="2" pintype="passive"/>
+      <node ref="C63" pin="2" pintype="passive"/>
+      <node ref="C66" pin="2" pintype="passive"/>
+      <node ref="C67" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="J1" pin="10" pinfunction="10_10" pintype="passive"/>
+      <node ref="J1" pin="22" pinfunction="22_22" pintype="passive"/>
+      <node ref="J1" pin="30" pinfunction="30_30" pintype="passive"/>
+      <node ref="J1" pin="31" pinfunction="31_31" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="J1" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="13" pinfunction="13_13" pintype="passive"/>
+      <node ref="J2" pin="18" pinfunction="18_18" pintype="passive"/>
+      <node ref="J2" pin="23" pinfunction="23_23" pintype="passive"/>
+      <node ref="J2" pin="28" pinfunction="28_28" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J2" pin="8" pinfunction="8_8" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="R65" pin="2" pintype="passive"/>
+      <node ref="U1" pin="57" pinfunction="EPAD_57" pintype="power_in"/>
+      <node ref="U2" pin="PAD" pinfunction="PAD_PAD" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="PGND_1" pintype="power_in"/>
+      <node ref="U3" pin="4" pinfunction="AGND_4" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="Y1" pin="GND-A" pinfunction="GND_GND-A" pintype="power_in"/>
+      <node ref="Y1" pin="GND-B" pinfunction="GND_GND-B" pintype="power_in"/>
+    </net>
+    <net code="84" name="VIN_5V" class="Default">
+      <node ref="C60" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="VIN_2" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="85" name="unconnected-(U1-SPICLK-Pad34)" class="Default">
+      <node ref="U1" pin="34" pinfunction="SPICLK_34" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(U1-SPICS0-Pad33)" class="Default">
+      <node ref="U1" pin="33" pinfunction="SPICS0_33" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(U1-SPICS1-Pad29)" class="Default">
+      <node ref="U1" pin="29" pinfunction="SPICS1_29" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(U1-SPID-Pad36)" class="Default">
+      <node ref="U1" pin="36" pinfunction="SPID_36" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(U1-SPIHD-Pad31)" class="Default">
+      <node ref="U1" pin="31" pinfunction="SPIHD_31" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(U1-SPIQ-Pad35)" class="Default">
+      <node ref="U1" pin="35" pinfunction="SPIQ_35" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(U1-SPIWP-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="SPIWP_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(U4-NC-Pad4)" class="Default">
+      <node ref="U4" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

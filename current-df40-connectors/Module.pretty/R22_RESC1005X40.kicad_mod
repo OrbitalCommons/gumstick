@@ -1,0 +1,162 @@
+(footprint "R22_RESC1005X40"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Chip, 1.05 X 0.54 X 0.40 mm body\n\nChip package with body size 1.05 X 0.54 X 0.40 mm")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7b78fcee-8cb7-42a1-bf36-62c4ec05882f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "10kR"
+		(at 0 1.271 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d72c27ae-b48e-42ad-ba21-06c3cc6f34de")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9105a251-5232-43e8-b2af-9dc22533cf13")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "60d4650f-bfb9-4743-b92a-5cd9a18ee590")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "RC0402FR-0710KL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a099877a-465d-4080-9e88-28972de8f837")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Yageo"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e5361bf9-01dd-4317-87ca-5e9e93850826")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" "C60490"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5689b81d-e41f-4eca-9ac2-c0387bba1d21")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.55 -0.3)
+		(end 0.55 -0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b279fde9-1297-4074-bfc1-ea1c89a91103")
+	)
+	(fp_line
+		(start -0.55 0.3)
+		(end -0.55 -0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c220359e-5773-4711-ad23-64ee2b6beb19")
+	)
+	(fp_line
+		(start 0.55 -0.3)
+		(end 0.55 0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "085602db-c0cb-4704-8e84-f8460a5af16d")
+	)
+	(fp_line
+		(start 0.55 0.3)
+		(end -0.55 0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4bdda766-664b-44a5-b144-dadff0bcd96c")
+	)
+	(pad "1" smd rect
+		(at -0.5075 0)
+		(size 0.5351 0.644)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "6fb7bd65-45ba-44db-a1d1-b75e3581c734")
+	)
+	(pad "2" smd rect
+		(at 0.5075 0)
+		(size 0.5351 0.644)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "acc7e867-18bc-4c75-b2e6-212f0b28f04e")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/R_0402_1005Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

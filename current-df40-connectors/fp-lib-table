@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "Module") (type "KiCad") (uri "${KIPRJMOD}/Module.pretty") (options "") (descr "Module local footprints")))

@@ -1,0 +1,207 @@
+(footprint "R62_R_0402_1005Metric"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+	(tags "resistor")
+	(property "Reference" "REF**"
+		(at 1.8 0 270)
+		(layer "F.Fab")
+		(uuid "0a11d8dc-2b89-4ee7-9357-bb4e6d4c377a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "100kR"
+		(at 0 1.17 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e6ca0961-b38b-417f-8ef6-0af0cbc20b4d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eaf1decf-9eb4-439e-89a7-dcc19dda57eb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c564905-03d3-4a13-8578-a2b6066daa2f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "RC0402FR-07100KL"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6cd474da-d833-4ba7-96bd-a2133b5e1e1c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" "Yageo"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "606cad22-c162-4e4a-a9fa-42123697c13d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" "C60491"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7f7805f2-34ed-4d3f-99ce-e9b0ae217530")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.93 -0.47)
+		(end 0.93 -0.47)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "246c2ad9-1fa0-490a-a8eb-b12c214bf461")
+	)
+	(fp_line
+		(start -0.93 0.47)
+		(end -0.93 -0.47)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "df3a1250-b126-41ea-b55c-690f42dc2b75")
+	)
+	(fp_line
+		(start 0.93 -0.47)
+		(end 0.93 0.47)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "27e301b9-5b40-4300-bc55-892e56f3b072")
+	)
+	(fp_line
+		(start 0.93 0.47)
+		(end -0.93 0.47)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3d3c07f4-a436-4fe3-b8d1-a061e31a2c13")
+	)
+	(fp_line
+		(start -0.525 -0.27)
+		(end 0.525 -0.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7a0828ce-105b-4ef0-84cd-4fe81132e420")
+	)
+	(fp_line
+		(start -0.525 0.27)
+		(end -0.525 -0.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "87b34853-d0c4-48cc-b030-c9ac8b5bb453")
+	)
+	(fp_line
+		(start 0.525 -0.27)
+		(end 0.525 0.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "da37ecd3-1e45-4f65-9db4-57e8462baaed")
+	)
+	(fp_line
+		(start 0.525 0.27)
+		(end -0.525 0.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "081ce90a-2dd3-4a05-9bc4-2a6072f2b856")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "f33bb41f-c7ce-46f1-9d18-a2beeeaec700")
+		(effects
+			(font
+				(size 0.26 0.26)
+				(thickness 0.04)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.51 0)
+		(size 0.54 0.64)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0)
+		(uuid "d6350764-90b7-41cb-b3e7-9bde287870c9")
+	)
+	(pad "2" smd roundrect
+		(at 0.51 0)
+		(size 0.54 0.64)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0)
+		(uuid "c6bad8a9-9f70-4024-b193-005dea1a5721")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/R_0402_1005Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,28 @@
+{
+  "regulator": "TPS62160DGKR",
+  "expected_pins": {
+    "U3.1": "GND",
+    "U3.2": "VIN_5V",
+    "U3.3": "VIN_5V",
+    "U3.4": "GND",
+    "U3.5": "BUCK_FB",
+    "U3.6": "+3.3V",
+    "U3.7": "BUCK_SW",
+    "U3.8": "PG_3V3",
+    "R64.1": "+3.3V",
+    "R64.2": "BUCK_FB",
+    "R65.1": "BUCK_FB",
+    "R65.2": "GND"
+  },
+  "netlist_matches": true,
+  "divider_ohms": [
+    75000,
+    24000
+  ],
+  "nominal_output_v": 3.3,
+  "physical_drc_violations": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "erc_violations": 0,
+  "loaded_thermal_test": "pending"
+}

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "defaultProject": "esp32-fpga-module",
+  "projects": [
+    {
+      "id": "esp32-fpga-module",
+      "name": "ESP32 + FPGA module (development)",
+      "root": "boards/esp32-fpga-module",
+      "kicad": {
+        "project": "module.kicad_pro",
+        "schematic": "module.kicad_sch",
+        "pcb": "module.kicad_pcb"
+      },
+      "artifacts": {
+        "gerbers": "fab/gerbers",
+        "jlcpcb": "fab/jlcpcb"
+      },
+      "manufacturer": {
+        "name": "JLCPCB",
+        "profile": "FR4-4L-1oz-0.5oz-0.45-0.20-via-routed",
+        "capabilities_url": "https://jlcpcb.com/capabilities/Capab",
+        "checked_on": "2026-09-24",
+        "rules": "module.kicad_dru",
+        "notes": "Nominal 1.0 mm; 1 oz outer / 0.5 oz inner; explicit JLC04101H-7628. RF feed 0.26 mm / 0.15 mm ground gap based on manufacturer calculator; see docs/antenna/STACKUP-AND-FEED.md. Antenna reference copper and measurement remain open.",
+        "stackup": "JLC04101H-7628"
+      }
+    },
+    {
+      "id": "direction-led-tester",
+      "name": "Direction LED tester",
+      "root": ".",
+      "kicad": {
+        "project": "direction-led-tester.kicad_pro",
+        "schematic": "direction-led-tester.kicad_sch",
+        "pcb": "direction-led-tester.kicad_pcb"
+      },
+      "artifacts": {
+        "gerbers": "fab/gerbers",
+        "jlcpcb": "fab/jlcpcb"
+      }
+    },
+    {
+      "id": "mainboard-reference",
+      "name": "Original MainBoard (import reference)",
+      "root": "boards/mainboard-reference",
+      "kicad": {
+        "project": "MainBoard.kicad_pro",
+        "schematic": "MainBoard.kicad_sch",
+        "pcb": "MainBoard.kicad_pcb"
+      }
+    }
+  ]
+}

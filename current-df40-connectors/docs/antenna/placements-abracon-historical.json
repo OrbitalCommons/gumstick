@@ -1,0 +1,75 @@
+[
+  {
+    "ref": "AE1",
+    "value": "ACAG0201-2450-T",
+    "x_mm": 116,
+    "y_mm": 103.075,
+    "rotation_deg": 0,
+    "footprint": "ACAG0201-2450_2.0x1.25mm",
+    "nets": {
+      "1": "RF_ANT_MATCH",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R_ANT",
+    "value": "0R / TUNE",
+    "x_mm": 112.4,
+    "y_mm": 103.075,
+    "rotation_deg": 0,
+    "footprint": "R_0402_1005Metric",
+    "nets": {
+      "1": "RF_CHIP",
+      "2": "RF_ANT_MATCH"
+    }
+  },
+  {
+    "ref": "C_ANT_IN",
+    "value": "DNP / TUNE",
+    "x_mm": 110.8,
+    "y_mm": 103.555,
+    "rotation_deg": -90,
+    "footprint": "C_0402_1005Metric",
+    "nets": {
+      "1": "RF_CHIP",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C_ANT_OUT",
+    "value": "DNP / TUNE",
+    "x_mm": 114.0,
+    "y_mm": 103.555,
+    "rotation_deg": -90,
+    "footprint": "C_0402_1005Metric",
+    "nets": {
+      "1": "RF_ANT_MATCH",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "JP_ANT",
+    "value": "CUT_CHIP_BRIDGE_EXT",
+    "x_mm": 109,
+    "y_mm": 104,
+    "rotation_deg": 0,
+    "footprint": "RF_Select_CutChip_BridgeExt",
+    "nets": {
+      "1": "RF_ANT",
+      "2": "RF_CHIP",
+      "3": "RF_EXT"
+    }
+  },
+  {
+    "ref": "J_EXT",
+    "value": "U.FL-R-SMT-1(01)",
+    "x_mm": 105.5,
+    "y_mm": 104,
+    "rotation_deg": 180,
+    "footprint": "U.FL_Hirose_U.FL-R-SMT-1_Vertical",
+    "nets": {
+      "1": "RF_EXT",
+      "2": "GND"
+    }
+  }
+]

@@ -1,0 +1,15 @@
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# Local experiments, agent worktrees, and runtime output
+/tmp/
+/logs/
+/.worktrees/
+/portal_pasted_image_*.png
+__pycache__/
+*.py[cod]
+*.kicad_prl
+*.lck
+*~
+.history/

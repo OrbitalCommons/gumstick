@@ -1,0 +1,45 @@
+(version 1)
+# JLCPCB FR4, 4 layers, 1 oz outer / 0.5 oz inner, routed edges.
+# Source checked 2026-09-24: https://jlcpcb.com/capabilities/Capab
+# Retain 0.10 mm track/space and 0.45/0.20 mm vias as conservative
+# project choices within published multilayer limits. This size avoids the
+# small-via surcharge (0.20 mm drills with diameter >= 0.45 mm).
+(rule "JLCPCB through vias only"
+  (constraint disallow blind_via buried_via micro_via))
+(rule "JLCPCB different-net SMD pad spacing"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'SMD' && B.Pad_Type == 'SMD'")
+  (constraint clearance (min 0.15mm)))
+(rule "JLCPCB via drill to foreign copper"
+  (condition "A.Type == 'Via'")
+  (constraint hole_clearance (min 0.20mm)))
+(rule "JLCPCB PTH drill to foreign copper"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+  (constraint hole_clearance (min 0.28mm)))
+(rule "JLCPCB inner PTH drill to foreign copper"
+  (layer inner)
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+  (constraint hole_clearance (min 0.30mm)))
+(rule "JLCPCB plated pad annular ring"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+  (constraint annular_width (min 0.15mm)))
+(rule "JLCPCB drilled pad hole spacing"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Hole_Size_X > 0mm && B.Hole_Size_X > 0mm")
+  (constraint hole_to_hole (min 0.45mm)))
+(rule "JLCPCB NPTH minimum drill"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'")
+  (constraint hole_size (min 0.50mm)))
+(rule "JLCPCB plated slots"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.Hole_Size_X != A.Hole_Size_Y")
+  (constraint hole_size (min 0.35mm)))
+(rule "JLCPCB nonplated slots"
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical' && A.Hole_Size_X != A.Hole_Size_Y")
+  (constraint hole_size (min 1.0mm)))
+(rule "JLCPCB silkscreen text"
+  (condition "A.Layer == 'F.Silkscreen' || A.Layer == 'B.Silkscreen'")
+  (constraint text_height (min 1.0mm))
+  (constraint text_thickness (min 0.15mm)))
+
+# JLC04101H-7628 coated CPWG, nominal 50 ohm: 0.26 mm base width / 0.15 mm ground gap.
+(rule "RF feed to ground pour spacing"
+  (condition "A.Type == 'Track' && A.NetName.Matches('/RF_*') && B.Type == 'Zone' && B.NetName == 'GND'")
+  (constraint clearance (min 0.15mm)))

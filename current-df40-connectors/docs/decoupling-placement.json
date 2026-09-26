@@ -1,0 +1,357 @@
+{
+  "board_sha256": "87f79015ff1839fab969b1c949993c3161284cc376d5711af10f55e21a9c03d3",
+  "measurements": "Straight-line pad-center distances, not routed lengths or electrical loop inductance. Ground-via proximity does not prove an unobstructed plane return.",
+  "assignments": [
+    {
+      "ic": "U1",
+      "pin": "1",
+      "pin_name": "VDDA",
+      "net": "+3.3V",
+      "capacitor": "C37",
+      "pin_xy_mm": [
+        12.599999999999994,
+        11.994799999999998
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        13.815399999999997,
+        11.75
+      ],
+      "supply_pad_distance_mm": 1.24,
+      "nearest_ground_via_xy_mm": [
+        14.299999999999997,
+        13.099999999999994
+      ],
+      "nearest_ground_via_distance_mm": 1.434
+    },
+    {
+      "ic": "U1",
+      "pin": "3",
+      "pin_name": "VDD3P3",
+      "net": "ESP_VDD3P3",
+      "capacitor": "C35",
+      "pin_xy_mm": [
+        11.799999999999997,
+        11.994799999999998
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        11.349999999999994,
+        10.284599999999998
+      ],
+      "supply_pad_distance_mm": 1.768,
+      "nearest_ground_via_xy_mm": [
+        13.169200000000004,
+        9.200000000000003
+      ],
+      "nearest_ground_via_distance_mm": 1.823
+    },
+    {
+      "ic": "U1",
+      "pin": "4",
+      "pin_name": "VDD3P3_2",
+      "net": "ESP_VDD3P3",
+      "capacitor": "C35",
+      "pin_xy_mm": [
+        11.400000000000006,
+        11.994799999999998
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        11.349999999999994,
+        10.284599999999998
+      ],
+      "supply_pad_distance_mm": 1.711,
+      "nearest_ground_via_xy_mm": [
+        13.169200000000004,
+        9.200000000000003
+      ],
+      "nearest_ground_via_distance_mm": 1.823
+    },
+    {
+      "ic": "U1",
+      "pin": "20",
+      "pin_name": "VDD3P3_RTC",
+      "net": "+3.3V",
+      "capacitor": "C38",
+      "pin_xy_mm": [
+        6.494799999999998,
+        14.900000000000006
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        4.584599999999995,
+        14.900000000000006
+      ],
+      "supply_pad_distance_mm": 1.91,
+      "nearest_ground_via_xy_mm": [
+        4.450000000000003,
+        18.799999999999997
+      ],
+      "nearest_ground_via_distance_mm": 3.988
+    },
+    {
+      "ic": "U1",
+      "pin": "27",
+      "pin_name": "VDD3P3_RTC_IO",
+      "net": "+3.3V",
+      "capacitor": "C40",
+      "pin_xy_mm": [
+        6.494799999999998,
+        17.700000000000003
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        4.7346,
+        17.599999999999994
+      ],
+      "supply_pad_distance_mm": 1.763,
+      "nearest_ground_via_xy_mm": [
+        4.450000000000003,
+        18.799999999999997
+      ],
+      "nearest_ground_via_distance_mm": 1.382
+    },
+    {
+      "ic": "U1",
+      "pin": "30",
+      "pin_name": "VDD_SPI",
+      "net": "+3.3V",
+      "capacitor": "C41",
+      "pin_xy_mm": [
+        7.799999999999997,
+        19.005200000000002
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        7.799999999999997,
+        20.165400000000005
+      ],
+      "supply_pad_distance_mm": 1.16,
+      "nearest_ground_via_xy_mm": [
+        9.049999999999997,
+        19.849999999999994
+      ],
+      "nearest_ground_via_distance_mm": 1.792
+    },
+    {
+      "ic": "U1",
+      "pin": "45",
+      "pin_name": "VDD3P3_CPU",
+      "net": "+3.3V",
+      "capacitor": "C39",
+      "pin_xy_mm": [
+        13.505200000000002,
+        17.299999999999997
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        15.915400000000005,
+        17.599999999999994
+      ],
+      "supply_pad_distance_mm": 2.429,
+      "nearest_ground_via_xy_mm": [
+        17.599999999999994,
+        18.5
+      ],
+      "nearest_ground_via_distance_mm": 1.15
+    },
+    {
+      "ic": "U1",
+      "pin": "51",
+      "pin_name": "VDDA_2",
+      "net": "+3.3V",
+      "capacitor": "C42",
+      "pin_xy_mm": [
+        13.505200000000002,
+        14.900000000000006
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        15.150000000000006,
+        13.384600000000006
+      ],
+      "supply_pad_distance_mm": 2.236,
+      "nearest_ground_via_xy_mm": [
+        14.299999999999997,
+        13.099999999999994
+      ],
+      "nearest_ground_via_distance_mm": 1.091
+    },
+    {
+      "ic": "U1",
+      "pin": "54",
+      "pin_name": "VDDA_3",
+      "net": "+3.3V",
+      "capacitor": "C42",
+      "pin_xy_mm": [
+        13.505200000000002,
+        13.700000000000003
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        15.150000000000006,
+        13.384600000000006
+      ],
+      "supply_pad_distance_mm": 1.675,
+      "nearest_ground_via_xy_mm": [
+        14.299999999999997,
+        13.099999999999994
+      ],
+      "nearest_ground_via_distance_mm": 1.091
+    },
+    {
+      "ic": "U2",
+      "pin": "1",
+      "pin_name": "VCCIO_2",
+      "net": "+3.3V",
+      "capacitor": "C52",
+      "pin_xy_mm": [
+        13.479799999999997,
+        42.25
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        16.5154,
+        42.25
+      ],
+      "supply_pad_distance_mm": 3.036,
+      "nearest_ground_via_xy_mm": [
+        18.284599999999998,
+        42.25
+      ],
+      "nearest_ground_via_distance_mm": 0.8
+    },
+    {
+      "ic": "U2",
+      "pin": "5",
+      "pin_name": "VCC_1",
+      "net": "+1.2V",
+      "capacitor": "C50",
+      "pin_xy_mm": [
+        13.479799999999997,
+        40.25
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        16.5154,
+        40.25
+      ],
+      "supply_pad_distance_mm": 3.036,
+      "nearest_ground_via_xy_mm": [
+        18.284599999999998,
+        40.25
+      ],
+      "nearest_ground_via_distance_mm": 0.8
+    },
+    {
+      "ic": "U2",
+      "pin": "22",
+      "pin_name": "SPI_VCCIO1",
+      "net": "+3.3V",
+      "capacitor": "C48",
+      "pin_xy_mm": [
+        8.25,
+        36.02019999999999
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        7.7845999999999975,
+        33.650000000000006
+      ],
+      "supply_pad_distance_mm": 2.415,
+      "nearest_ground_via_xy_mm": [
+        6.0154,
+        33.650000000000006
+      ],
+      "nearest_ground_via_distance_mm": 0.8
+    },
+    {
+      "ic": "U2",
+      "pin": "24",
+      "pin_name": "VPP_2V5",
+      "net": "+3.3V",
+      "capacitor": "C48",
+      "pin_xy_mm": [
+        7.25,
+        36.02019999999999
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        7.7845999999999975,
+        33.650000000000006
+      ],
+      "supply_pad_distance_mm": 2.43,
+      "nearest_ground_via_xy_mm": [
+        6.0154,
+        33.650000000000006
+      ],
+      "nearest_ground_via_distance_mm": 0.8
+    },
+    {
+      "ic": "U2",
+      "pin": "29",
+      "pin_name": "VCCPLL",
+      "net": "+1.2V_PLL",
+      "capacitor": "C44",
+      "pin_xy_mm": [
+        6.520200000000003,
+        38.75
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        3.7845999999999975,
+        38.75
+      ],
+      "supply_pad_distance_mm": 2.736,
+      "nearest_ground_via_xy_mm": [
+        2.0153999999999996,
+        38.75
+      ],
+      "nearest_ground_via_distance_mm": 0.8
+    },
+    {
+      "ic": "U2",
+      "pin": "30",
+      "pin_name": "VCC_2",
+      "net": "+1.2V",
+      "capacitor": "C49",
+      "pin_xy_mm": [
+        6.520200000000003,
+        39.25
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        3.7845999999999975,
+        39.94999999999999
+      ],
+      "supply_pad_distance_mm": 2.824,
+      "nearest_ground_via_xy_mm": [
+        2.0153999999999996,
+        39.94999999999999
+      ],
+      "nearest_ground_via_distance_mm": 0.8
+    },
+    {
+      "ic": "U2",
+      "pin": "33",
+      "pin_name": "VCCIO_0",
+      "net": "+3.3V",
+      "capacitor": "C46",
+      "pin_xy_mm": [
+        6.520200000000003,
+        40.75
+      ],
+      "capacitor_supply_pad_xy_mm": [
+        3.7845999999999975,
+        41.25
+      ],
+      "supply_pad_distance_mm": 2.781,
+      "nearest_ground_via_xy_mm": [
+        2.0153999999999996,
+        41.25
+      ],
+      "nearest_ground_via_distance_mm": 0.8
+    }
+  ],
+  "shared_capacitors": {
+    "C35": [
+      "U1.3",
+      "U1.4"
+    ],
+    "C42": [
+      "U1.51",
+      "U1.54"
+    ],
+    "C48": [
+      "U2.22",
+      "U2.24"
+    ]
+  },
+  "scope": "Existing capacitors repositioned; shared-capacitor topology retained. This does not establish full manufacturer-checklist compliance."
+}

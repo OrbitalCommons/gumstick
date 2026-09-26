@@ -1,0 +1,228 @@
+(footprint "U3_VSSOP-8_3x3mm_P0.65mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "VSSOP-8 3.0 x 3.0, http://www.ti.com/lit/ds/symlink/lm75b.pdf")
+	(tags "VSSOP-8 3.0 x 3.0")
+	(property "Reference" "REF**"
+		(at 0 -2.5 0)
+		(layer "F.SilkS")
+		(uuid "3e047665-4510-4512-91f4-97f28a34a054")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "VSSOP-8_3.0x3.0mm_P0.65mm"
+		(at 0.02 2.73 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc283e31-a49f-4c97-b88a-1e49f3868362")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e2fc6940-664e-44d4-9bf4-178aeb535721")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f68ce5b4-1bde-4b00-9841-db6fe2987a33")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -2 -1.45) (xy -2.24 -1.78) (xy -1.76 -1.78) (xy -2 -1.45)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "7553c58a-326d-4727-a755-e3fce17a341c")
+	)
+	(fp_line
+		(start -3.48 -1.75)
+		(end 3.48 -1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "40aae6c2-ab06-43c3-a852-4470408e37c3")
+	)
+	(fp_line
+		(start -3.48 1.75)
+		(end -3.48 -1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "17a4f495-19ae-46a3-836c-f64f04f9d8d8")
+	)
+	(fp_line
+		(start 3.48 -1.75)
+		(end 3.48 1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a2099d1b-bc96-480c-9f18-2c254403e316")
+	)
+	(fp_line
+		(start 3.48 1.75)
+		(end -3.48 1.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4e6f60ba-a2af-41d0-b69e-257c21b20196")
+	)
+	(fp_line
+		(start -1.5 1.5)
+		(end -1.5 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5a541020-a488-4428-b924-d31ff2966c37")
+	)
+	(fp_line
+		(start -0.5 -1.5)
+		(end -1.5 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c93f77c7-352a-434a-8e18-ba6848df5028")
+	)
+	(fp_line
+		(start -0.5 -1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "22a648aa-c7c0-43ca-aa06-ad6fa11ca1a2")
+	)
+	(fp_line
+		(start 1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6feeeb27-7c7f-4661-ba1b-f5cb459bb656")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "44944335-29d8-4f8c-b1ac-3aba4fc4400f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "1a0970ec-a19b-4887-b4f8-3d6393da1bed")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.2 -0.975 270)
+		(size 0.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cb5b3c3a-6a9c-448f-9caa-af1289ee0428")
+	)
+	(pad "2" smd rect
+		(at -2.2 -0.325 270)
+		(size 0.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "86469c21-5a96-4f22-ab33-ea05ce684d38")
+	)
+	(pad "3" smd rect
+		(at -2.2 0.325 270)
+		(size 0.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5e3c67a2-8469-4058-b60f-b2df7a606ed4")
+	)
+	(pad "4" smd rect
+		(at -2.2 0.975 270)
+		(size 0.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2bc7416b-d56d-4d3f-90e9-3dad23912828")
+	)
+	(pad "5" smd rect
+		(at 2.2 0.975 270)
+		(size 0.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6281c025-0745-4897-a25c-b047a166642e")
+	)
+	(pad "6" smd rect
+		(at 2.2 0.325 270)
+		(size 0.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2ee8fbaf-c232-4c67-84ab-209199e6c711")
+	)
+	(pad "7" smd rect
+		(at 2.2 -0.325 270)
+		(size 0.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "44eb2d83-cf6a-4461-ad8a-8b1a4215a13e")
+	)
+	(pad "8" smd rect
+		(at 2.2 -0.975 270)
+		(size 0.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "291bf7b4-2e64-4d10-b46b-228455991a46")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/VSSOP-8_3x3mm_P0.65mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,11 @@
+{
+  "revision": "U.FL only 2026-09-26",
+  "coordinate_system": "local mm; add 100 to x/y for absolute KiCad",
+  "placements": {
+    "J3": [
+      12.2,
+      5,
+      90
+    ]
+  }
+}

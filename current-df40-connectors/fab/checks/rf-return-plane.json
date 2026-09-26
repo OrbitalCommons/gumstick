@@ -1,0 +1,5 @@
+{
+  "rf_centerline_samples_outside_antenna_reservation": 52,
+  "missing_In1_GND": [],
+  "scope": "Pointwise reference-plane coverage only, not impedance or antenna validation"
+}

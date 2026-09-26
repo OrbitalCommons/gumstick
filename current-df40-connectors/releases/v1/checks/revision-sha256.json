@@ -1,0 +1,11 @@
+{
+  "module.kicad_pcb": "441d492ca44e15825f883397baa316bb4cc7ad006db7818a43be6ab2683e6361",
+  "module.kicad_sch": "474ade84441a1a5b6d33b7d8c7b10289f7e4678738ae3cbcfa7b341039994d20",
+  "fab/module-gerbers.zip": "55388d9cca02b9c8ed3e5b151a37897ade215ce65471be46296ab99901af035b",
+  "fab/jlcpcb/BOM_module.csv": "a6a032f12a8814f66396feeb814f54d26e39861fa0a543c236bf88b1e0605e09",
+  "fab/jlcpcb/CPL_module.csv": "999bccd9fdb6ab94adf967c28344806be1e36a566e5237f29fdf68e58b1fd2c1",
+  "fab/module.glb": "878f01ef675fb5739aaab53a36c43265b91ef593dd0e97b2549b62151d61359e",
+  "fab/module.step": "07cfe053c3d05e33cce6034932c0a9b5c36d9485c20794aadbb0c76a56488166",
+  "fab/module-component-models.zip": "c20d9f36f4247dc3c01d9b8d69628785c63120f6ad864283b68fc5b87b508904",
+  "3dmodels/Coilcraft_XFL3012.step": "ffb531630e6b80326b97bed7b698b8b7d3ad48cda8002d562e511896fda22002"
+}

@@ -1,0 +1,25 @@
+Designators,Quantity,Value,Footprint family,Manufacturer Part Number,LCSC Part Number,Notes
+"C1, C2",2,3.3pF,Module:CAPC1005X60,GJM1555C1H3R3BB01D,C76906,Catalog identity matched; assembly stock and final land-pattern review pending
+C32,1,1uF,Module:CAPC1005X60,CL05A105KO5NNNC,C29266,Catalog identity matched; assembly stock and final land-pattern review pending
+"C33, C34, C43, C45, C60",5,10uF / 10V,Module:C_0603_1608Metric,CL10A106KP8NNNC,C19702,Catalog identity matched; assembly stock and final land-pattern review pending
+"C35, C37, C38, C39, C40, C41, C42, C44, C46, C48, C49, C50, C52",13,0.1uF,Module:CAPC1005X60,CL05B104KO5NNNC,C1525,0402; 100 nF; X7R; 16 V. Confirm supplier stock at order.; Catalog identity matched; assembly stock and final land-pattern review pending
+"C6, C7",2,12pF,Module:CAPC1005X60,CL05C120JB5NNNC,C26406,Catalog identity matched; assembly stock and final land-pattern review pending
+"C61, C67",2,22uF / 10V,Module:C_0603_1608Metric,CL10A226MPCNUBE,C5355402,"JLCPCB listing checked 2026-09-24; paired output capacitors, DC bias reviewed"
+"C62, C63, C66",3,1uF / 6.3V,Module:C_0603_1608Metric,CL10A105KB8NNNC,C15849,Catalog identity matched; assembly stock and final land-pattern review pending
+D1,1,FC-B1010RGBT-HG,Module:RGBLED,FC-B1010RGBT-HG,C158099,Catalog identity matched; assembly stock and final land-pattern review pending
+J1,1,DF40C(2.0)-40DS-0.4V(51),Module:DF40C_40DS_2mm,DF40C(2.0)-40DS-0.4V(51),C597934,Catalog identity matched; assembly stock and final land-pattern review pending
+J2,1,DF40C-40DP-0.4V(51),Module:DF40C_40DP,DF40C-40DP-0.4V(51),C424643,Manufacturer footprint and mate verified; confirm distributor stock before order
+J3,1,U.FL-R-SMT-1(01),Module:U.FL_Hirose_U.FL-R-SMT-1_Vertical,U.FL-R-SMT-1(01),,Supplier stock and mating cable clearance require verification; LCSC part not selected
+"L1, L2",2,100ohm @100MHz,Module:L_0603_1608Metric,BLM18KG101TN1D,C160981,Catalog identity matched; assembly stock and final land-pattern review pending
+L3,1,2.2nH,Module:INDC1006X60N,LQG15HS2N2S02D,C86061,Catalog identity matched; assembly stock and final land-pattern review pending
+L4,1,2.2uH,Module:L_XFL3012_222MEC,XFL3012-222MEC,C3911432,Catalog identity matched; assembly stock and final land-pattern review pending
+"R20, R22, R28, R29",4,10kR,Module:RESC1005X40,RC0402FR-0710KL,C60490,Catalog identity matched; assembly stock and final land-pattern review pending
+R3,1,0R,Module:RESC1005X40,0402WGF0000TCE,C17168,Catalog identity matched; assembly stock and final land-pattern review pending
+R62,1,100kR,Module:R_0402_1005Metric,RC0402FR-07100KL,C60491,Catalog identity matched; assembly stock and final land-pattern review pending
+R64,1,75kR,Module:R_0402_1005Metric,0402WGF7502TCE,C25798,"0402 1% feedback resistor, catalog identity checked; recheck assembly stock at ordering"
+R65,1,24kR,Module:R_0402_1005Metric,0402WGF2402TCE,C25769,"0402 1% feedback resistor, catalog identity checked; recheck assembly stock at ordering"
+U1,1,ESP32-S2FH4,Module:QFN56_ESP32-S2FH4_EXP-M,ESP32-S2FH4,C2840995,Catalog identity matched; assembly stock and final land-pattern review pending
+U2,1,iCE40UP5K-SG48,Module:ICE40-QFN,ICE40UP5K-SG48I,C2678152,Catalog identity matched; assembly stock and final land-pattern review pending
+U3,1,TPS62160DGKR,Module:VSSOP-8_3x3mm_P0.65mm,TPS62160DGKR,C60726,DGK exposed-lead package; manufacturer pinout checked. Assembly stock and loaded thermal validation pending.
+U4,1,TLV75512PDBVR,Module:SOT-23-5,TLV75512PDBVR,C2877864,Catalog identity matched; assembly stock and final land-pattern review pending
+Y1,1,40MHz / CL10pF,Module:JGHC_S2240000101050,S2240000101050,C426970,"LCSC lists 1040; JLCPCB lists 1069, checked 2026-09-26. Catalog 40MHz CL10pF 50ohm +/-10ppm. Generic family datasheet differs in ESR/temperature options; verify ordered grade and oscillator margin."

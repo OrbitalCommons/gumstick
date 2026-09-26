@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-24",
+  "before": {
+    "track_segments": 2413,
+    "off_angle_segments": 0,
+    "width_transitions": 81,
+    "transitions_by_net": {
+      "+3.3V": 34,
+      "ESP_VDD3P3": 5,
+      "GND": 4,
+      "VIN_5V": 4,
+      "+1.8V": 4,
+      "+1.2V": 12,
+      "FPGA_VCCIO0": 11,
+      "+1.2V_PLL": 7
+    },
+    "width_counts_mm": {
+      "0.25": 378,
+      "0.4": 251,
+      "0.3": 51,
+      "0.2": 52,
+      "0.1": 1601,
+      "0.15": 76,
+      "0.18": 4
+    },
+    "length_by_width_mm": {
+      "0.25": 142.8,
+      "0.4": 102.268,
+      "0.3": 15.636,
+      "0.2": 28.584,
+      "0.1": 908.391,
+      "0.15": 38.746,
+      "0.18": 4.826
+    }
+  },
+  "after": {
+    "track_segments": 2023,
+    "off_angle_segments": 0,
+    "width_transitions": 28,
+    "transitions_by_net": {
+      "+3.3V": 13,
+      "ESP_VDD3P3": 3,
+      "GND": 6,
+      "VIN_5V": 1,
+      "+1.2V": 3,
+      "+1.2V_PLL": 2
+    },
+    "width_counts_mm": {
+      "0.25": 279,
+      "0.4": 152,
+      "0.3": 36,
+      "0.15": 63,
+      "0.1": 1457,
+      "0.2": 32,
+      "0.18": 4
+    },
+    "length_by_width_mm": {
+      "0.25": 162.47,
+      "0.4": 81.846,
+      "0.3": 18.332,
+      "0.15": 41.792,
+      "0.1": 852.011,
+      "0.2": 20.584,
+      "0.18": 4.826
+    }
+  },
+  "original_raw_contact_count": 541,
+  "original_centerline_contact_count": 195,
+  "current_raw_contact_count": 158,
+  "current_contact_counts": {
+    "endpoint": 57,
+    "interior_join": 9,
+    "copper_overlap": 92
+  },
+  "remaining_unblocked_widening_candidates": 0,
+  "remaining_isolated_wide_islands": 0,
+  "placements_changed": {
+    "C39": {
+      "position_mm": [
+        13.5,
+        21
+      ],
+      "rotation_deg": 270
+    },
+    "SJ1": {
+      "position_mm": [
+        9,
+        33.1
+      ],
+      "rotation_deg": 180
+    },
+    "C60": {
+      "position_mm": [
+        16.1,
+        21.3
+      ],
+      "rotation_deg": 0
+    },
+    "R61": {
+      "position_mm": [
+        18.15,
+        19.7
+      ],
+      "rotation_deg": 90
+    }
+  },
+  "notes": [
+    "119 literal duplicate segments removed.",
+    "MOSI via moved 0.075 mm from (8.35,34.275) to (8.35,34.35), outside QFN bodies.",
+    "Default SJ1 selection remains 3.3 V on pads 1-2.",
+    "Constrained residual width changes remain inventoried with blocking geometry."
+  ]
+}

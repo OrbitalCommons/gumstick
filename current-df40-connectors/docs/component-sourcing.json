@@ -1,0 +1,278 @@
+{
+  "checked_on": "2026-09-23",
+  "scope": "ESP32-S2 version; ESP32-C3 is not pin-compatible and remains a separate design decision",
+  "parts": [
+    {
+      "references": [
+        "C1",
+        "C2"
+      ],
+      "manufacturer": "Murata",
+      "mpn": "GJM1555C1H3R3BB01D",
+      "lcsc": "C76906",
+      "specification": "0402; 3.3 pF; C0G; 50 V",
+      "url": "https://www.lcsc.com/product-detail/C76906.html"
+    },
+    {
+      "references": [
+        "C32"
+      ],
+      "manufacturer": "Samsung",
+      "mpn": "CL05A105KO5NNNC",
+      "lcsc": "C29266",
+      "specification": "0402; 1 uF; X5R; 16 V",
+      "url": "https://www.lcsc.com/product-detail/C29266.html"
+    },
+    {
+      "references": [
+        "C33",
+        "C34",
+        "C43",
+        "C45",
+        "C60"
+      ],
+      "manufacturer": "Samsung",
+      "mpn": "CL10A106KP8NNNC",
+      "lcsc": "C19702",
+      "specification": "0603; 10 uF; X5R; 10 V",
+      "url": "https://www.lcsc.com/product-detail/C19702.html"
+    },
+    {
+      "references": [
+        "C35",
+        "C37",
+        "C38",
+        "C39",
+        "C40",
+        "C41",
+        "C42",
+        "C44",
+        "C46",
+        "C48",
+        "C49",
+        "C50",
+        "C52"
+      ],
+      "manufacturer": "Samsung",
+      "mpn": "CL05B104KO5NNNC",
+      "lcsc": "C1525",
+      "specification": "0402; 100 nF; X7R; 16 V",
+      "url": "https://www.lcsc.com/product-detail/C1525.html"
+    },
+    {
+      "references": [
+        "C6",
+        "C7"
+      ],
+      "manufacturer": "Samsung",
+      "mpn": "CL05C120JB5NNNC",
+      "lcsc": "C26406",
+      "specification": "0402; 12 pF; C0G; 50 V",
+      "url": "https://www.lcsc.com/product-detail/C26406.html"
+    },
+    {
+      "references": [
+        "C61",
+        "C67"
+      ],
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL10A226MPCNUBE",
+      "lcsc": "C5355402",
+      "specification": "0603; 22 uF; X5R; 10 V; +/-20%; two in parallel at 3.3 V",
+      "url": "https://jlcpcb.com/partdetail/6155917-CL10A226MPCNUBE/C5355402",
+      "checked_on": "2026-09-24",
+      "dc_bias_reference": "https://product.samsungsem.com/mlcc/CL10A226MPCNUB.do"
+    },
+    {
+      "references": [
+        "C62",
+        "C63",
+        "C66"
+      ],
+      "manufacturer": "Samsung",
+      "mpn": "CL10A105KB8NNNC",
+      "lcsc": "C15849",
+      "specification": "0603; 1 uF; X5R; 50 V",
+      "url": "https://www.lcsc.com/product-detail/C15849.html"
+    },
+    {
+      "references": [
+        "D1"
+      ],
+      "manufacturer": "Nationstar",
+      "mpn": "FC-B1010RGBT-HG",
+      "lcsc": "C158099",
+      "specification": "Common-anode RGB; 1.0 x 1.0 mm",
+      "url": "https://www.lcsc.com/product-detail/C158099.html"
+    },
+    {
+      "references": [
+        "J1"
+      ],
+      "manufacturer": "Hirose",
+      "mpn": "DF40C(2.0)-40DS-0.4V(51)",
+      "lcsc": "C597934",
+      "specification": "40 contacts; 0.4 mm pitch; receptacle",
+      "url": "https://www.lcsc.com/product-detail/C597934.html"
+    },
+    {
+      "references": [
+        "L1",
+        "L2"
+      ],
+      "manufacturer": "Murata",
+      "mpn": "BLM18KG101TN1D",
+      "lcsc": "C160981",
+      "specification": "0603; ferrite bead; 100 ohm at 100 MHz",
+      "url": "https://www.lcsc.com/product-detail/C160981.html"
+    },
+    {
+      "references": [
+        "L3"
+      ],
+      "manufacturer": "Murata",
+      "mpn": "LQG15HS2N2S02D",
+      "lcsc": "C86061",
+      "specification": "0402; 2.2 nH; RF inductor",
+      "url": "https://www.lcsc.com/product-detail/C86061.html"
+    },
+    {
+      "references": [
+        "L4"
+      ],
+      "manufacturer": "Coilcraft",
+      "mpn": "XFL3012-222MEC",
+      "lcsc": "C3911432",
+      "specification": "3 x 3 mm; 2.2 uH",
+      "url": "https://www.lcsc.com/product-detail/C3911432.html"
+    },
+    {
+      "references": [
+        "R20",
+        "R22",
+        "R28",
+        "R29"
+      ],
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-0710KL",
+      "lcsc": "C60490",
+      "specification": "0402; 10 kohm; 1%",
+      "url": "https://www.lcsc.com/product-detail/C60490.html"
+    },
+    {
+      "references": [
+        "R3"
+      ],
+      "manufacturer": "Uniroyal",
+      "mpn": "0402WGF0000TCE",
+      "lcsc": "C17168",
+      "specification": "0402; 0 ohm",
+      "url": "https://www.lcsc.com/product-detail/C17168.html"
+    },
+    {
+      "references": [
+        "R62"
+      ],
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-07100KL",
+      "lcsc": "C60491",
+      "specification": "0402; 100 kohm; 1%",
+      "url": "https://www.lcsc.com/product-detail/C60491.html"
+    },
+    {
+      "references": [
+        "U1"
+      ],
+      "manufacturer": "Espressif",
+      "mpn": "ESP32-S2FH4",
+      "lcsc": "C2840995",
+      "specification": "QFN56; 7 x 7 mm; 4 MB flash",
+      "url": "https://www.lcsc.com/product-detail/C2840995.html"
+    },
+    {
+      "references": [
+        "U2"
+      ],
+      "manufacturer": "Lattice",
+      "mpn": "ICE40UP5K-SG48I",
+      "lcsc": "C2678152",
+      "specification": "QFN48; industrial temperature grade",
+      "url": "https://www.lcsc.com/product-detail/C2678152.html"
+    },
+    {
+      "references": [
+        "U3"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPS62160DGKR",
+      "lcsc": "C60726",
+      "specification": "VSSOP8 exposed leads; adjustable buck set to 3.3 V",
+      "url": "https://www.lcsc.com/product-detail/C60726.html",
+      "checked_on": "2026-09-26"
+    },
+    {
+      "references": [
+        "U4"
+      ],
+      "manufacturer": "Texas Instruments",
+      "mpn": "TLV75512PDBVR",
+      "lcsc": "C2877864",
+      "specification": "SOT-23-5; 1.2 V LDO",
+      "url": "https://www.lcsc.com/product-detail/C2877864.html"
+    },
+    {
+      "references": [
+        "Y1"
+      ],
+      "manufacturer": "JGHC",
+      "mpn": "S2240000101050",
+      "lcsc": "C426970",
+      "specification": "2520; 40 MHz; CL 10 pF; catalog +/-10ppm and 50 ohm; exact temperature grade confirmation pending",
+      "url": "https://www.lcsc.com/product-detail/C426970.html",
+      "checked_on": "2026-09-26"
+    },
+    {
+      "references": [
+        "J2"
+      ],
+      "manufacturer": "Hirose",
+      "mpn": "DF40C-40DP-0.4V(51)",
+      "lcsc": "C424643",
+      "specification": "40 contacts; 0.4 mm pitch; plug, mating to DF40C(2.0)-40DS for 2 mm stack",
+      "url": "https://www.lcsc.com/product-detail/C424643.html",
+      "note": "Verify current stock and assembly availability; exact manufacturer footprint/model included"
+    },
+    {
+      "references": [
+        "J3"
+      ],
+      "manufacturer": "Hirose",
+      "mpn": "U.FL-R-SMT-1(01)",
+      "lcsc": "",
+      "specification": "U.FL 50-ohm receptacle",
+      "notes": "Supplier selection pending."
+    },
+    {
+      "references": [
+        "R64"
+      ],
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0402WGF7502TCE",
+      "lcsc": "C25798",
+      "specification": "75kR; 0402; 1%; 62.5 mW",
+      "url": "https://www.lcsc.com/product-detail/C25798.html",
+      "checked_on": "2026-09-26"
+    },
+    {
+      "references": [
+        "R65"
+      ],
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0402WGF2402TCE",
+      "lcsc": "C25769",
+      "specification": "24kR; 0402; 1%; 62.5 mW",
+      "url": "https://www.lcsc.com/product-detail/C25769.html",
+      "checked_on": "2026-09-26"
+    }
+  ]
+}

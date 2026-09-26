@@ -1,0 +1,78 @@
+{
+  "board_sha256": "ed0b783af7d4864bdfd963ad35f954181600ad6b3dfb7fa9577ef12c408632d6",
+  "package": "U2",
+  "corrected_pad_exits": [
+    {
+      "pad": "U2.4",
+      "net": "/FPGA_IOB_8A",
+      "straight_exit_mm": 0.45,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.14",
+      "net": "/LINK_MISO",
+      "straight_exit_mm": 0.45,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.17",
+      "net": "/LINK_MOSI",
+      "straight_exit_mm": 0.45,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.18",
+      "net": "/LINK_IO3",
+      "straight_exit_mm": 0.45,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.20",
+      "net": "/FPGA_IOB_25B_G3",
+      "straight_exit_mm": 0.45,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.28",
+      "net": "/FPGA_IOT_41A",
+      "straight_exit_mm": 0.5,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.32",
+      "net": "/FPGA_IOT_43A",
+      "straight_exit_mm": 0.4702,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.33",
+      "net": "FPGA_VCCIO0",
+      "straight_exit_mm": 0.45,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.35",
+      "net": "/FPGA_IOT_46B_G0",
+      "straight_exit_mm": 0.45,
+      "trace_width_mm": 0.1
+    },
+    {
+      "pad": "U2.41",
+      "net": "/FPGA_RGB2",
+      "straight_exit_mm": 0.45,
+      "trace_width_mm": 0.1
+    }
+  ],
+  "via_move_mm": {
+    "net": "/FPGA_IOT_43A",
+    "before": [
+      5.8,
+      40.705
+    ],
+    "after": [
+      5.8,
+      40.5
+    ]
+  },
+  "off_angle_segments": 0
+}

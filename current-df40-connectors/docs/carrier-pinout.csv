@@ -1,0 +1,81 @@
+Connector,Pin,Signal,Direction / constraint
+J1,1,VIN_5V,5V input; all four VIN contacts required
+J1,2,VIN_5V,5V input; all four VIN contacts required
+J1,3,VIN_5V,5V input; all four VIN contacts required
+J1,4,VIN_5V,5V input; all four VIN contacts required
+J1,5,GND,Ground
+J1,6,GND,Ground
+J1,7,USB_D+,USB 2.0 full speed differential pair
+J1,8,USB_D-,USB 2.0 full speed differential pair
+J1,9,GND,Ground
+J1,10,GND,Ground
+J1,11,ESP_EN,3.3V logic; no 5V tolerance
+J1,12,ESP_GPIO0_BOOT,3.3V logic; no 5V tolerance
+J1,13,ESP_GPIO1,3.3V logic; no 5V tolerance
+J1,14,ESP_GPIO2,3.3V logic; no 5V tolerance
+J1,15,ESP_GPIO3,3.3V logic; no 5V tolerance
+J1,16,ESP_GPIO4,3.3V logic; no 5V tolerance
+J1,17,ESP_GPIO5,3.3V logic; no 5V tolerance
+J1,18,ESP_GPIO6,3.3V logic; no 5V tolerance
+J1,19,ESP_GPIO7,3.3V logic; no 5V tolerance
+J1,20,ESP_GPIO8,3.3V logic; no 5V tolerance
+J1,21,ESP_GPIO40,3.3V logic; no 5V tolerance
+J1,22,GND,Ground
+J1,23,ESP_GPIO39,3.3V logic; no 5V tolerance
+J1,24,ESP_GPIO41,3.3V logic; no 5V tolerance
+J1,25,ESP_GPIO42,3.3V logic; no 5V tolerance
+J1,26,ESP_GPIO43_TXD,3.3V logic; no 5V tolerance
+J1,27,ESP_GPIO44_RXD,3.3V logic; no 5V tolerance
+J1,28,ESP_GPIO35,3.3V logic; no 5V tolerance
+J1,29,ESP_GPIO33,3.3V logic; no 5V tolerance
+J1,30,GND,Ground
+J1,31,GND,Ground
+J1,32,ESP_GPIO34,3.3V logic; no 5V tolerance
+J1,33,ESP_GPIO46,3.3V INPUT ONLY; boot strap; keep low/high-impedance during reset
+J1,34,ESP_GPIO45,3.3V GPIO; boot strap selects flash voltage; do not pull high during reset
+J1,35,ESP_GPIO15,3.3V logic; no 5V tolerance
+J1,36,ESP_GPIO17,3.3V logic; no 5V tolerance
+J1,37,ESP_GPIO16,3.3V logic; no 5V tolerance
+J1,38,ESP_GPIO18,3.3V logic; no 5V tolerance
+J1,39,ESP_GPIO38,3.3V GPIO; no 5V tolerance
+J1,40,ESP_GPIO21,3.3V logic; no 5V tolerance
+J2,1,GND,Ground
+J2,2,FPGA_IOB_18A,3.3V logic; no 5V tolerance
+J2,3,GND,Ground
+J2,4,FPGA_IOB_16A,3.3V logic; no 5V tolerance
+J2,5,FPGA_IOB_22A,3.3V logic; no 5V tolerance
+J2,6,FPGA_IOB_13B,3.3V logic; no 5V tolerance
+J2,7,FPGA_IOB_20A,3.3V logic; no 5V tolerance
+J2,8,GND,Ground
+J2,9,FPGA_IOT_37A,3.3V logic; no 5V tolerance
+J2,10,FPGA_IOB_23B,3.3V logic; no 5V tolerance
+J2,11,FPGA_IOB_29B,3.3V logic; no 5V tolerance
+J2,12,FPGA_IOB_25B_G3,3.3V logic; no 5V tolerance
+J2,13,GND,Ground
+J2,14,FPGA_IOT_36B,3.3V logic; no 5V tolerance
+J2,15,FPGA_IOT_38B,3.3V logic; no 5V tolerance
+J2,16,FPGA_IOT_39A,3.3V logic; no 5V tolerance
+J2,17,FPGA_IOT_41A,3.3V logic; no 5V tolerance
+J2,18,GND,Ground
+J2,19,FPGA_IOT_42B,3.3V logic; no 5V tolerance
+J2,20,FPGA_IOT_43A,3.3V logic; no 5V tolerance
+J2,21,FPGA_IOT_48B,3.3V logic; no 5V tolerance
+J2,22,FPGA_IOT_46B_G0,3.3V logic; no 5V tolerance
+J2,23,GND,Ground
+J2,24,FPGA_IOT_45A_G1,3.3V logic; no 5V tolerance
+J2,25,FPGA_IOT_50B,3.3V logic; no 5V tolerance
+J2,26,FPGA_RGB0,FPGA RGB current sink; shared with onboard D1; not an unloaded GPIO
+J2,27,FPGA_RGB1,FPGA RGB current sink; shared with onboard D1; not an unloaded GPIO
+J2,28,GND,Ground
+J2,29,FPGA_RGB2,FPGA RGB current sink; shared with onboard D1; not an unloaded GPIO
+J2,30,FPGA_IOT_51A,3.3V logic; no 5V tolerance
+J2,31,FPGA_IOT_49A,3.3V logic; no 5V tolerance
+J2,32,FPGA_IOB_3B_G6,3.3V logic; no 5V tolerance
+J2,33,FPGA_IOT_44B,3.3V logic; no 5V tolerance
+J2,34,FPGA_IOB_5B,3.3V logic; no 5V tolerance
+J2,35,FPGA_IOB_0A,3.3V logic; no 5V tolerance
+J2,36,FPGA_IOB_2A,3.3V logic; no 5V tolerance
+J2,37,FPGA_IOB_4A,3.3V logic; no 5V tolerance
+J2,38,FPGA_IOB_9B,3.3V logic; no 5V tolerance
+J2,39,FPGA_IOB_8A,3.3V logic; no 5V tolerance
+J2,40,FPGA_IOB_6A,3.3V logic; no 5V tolerance
