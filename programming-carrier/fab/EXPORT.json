@@ -1,0 +1,6 @@
+{
+  "pcb_sha256": "cfceed630e4d3d108d2a49787f27ab03703317954669a1fe015295b708add991",
+  "assembly_components": 217,
+  "bom_groups": 17,
+  "coordinate_convention": "mm, board drill/place origin; native KiCad Y preserved; part-specific JLCPCB rotation offsets applied from docs/jlcpcb-placement-offsets.json; T/B layers"
+}

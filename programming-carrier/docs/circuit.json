@@ -1,0 +1,4945 @@
+{
+  "J1": {
+    "value": "DF40C-40DP-0.4V(51)",
+    "mpn": "DF40C-40DP-0.4V(51)",
+    "lcsc": "C424643",
+    "footprint": "Carrier:J1_Module_v1_Mate",
+    "pins": {
+      "20": "ESP_GPIO8",
+      "19": "ESP_GPIO7",
+      "18": "ESP_GPIO6",
+      "17": "ESP_GPIO5",
+      "16": "ESP_GPIO4",
+      "15": "ESP_GPIO3",
+      "14": "ESP_GPIO2",
+      "13": "ESP_GPIO1",
+      "12": "ESP_GPIO0_BOOT",
+      "11": "ESP_EN",
+      "10": "GND",
+      "9": "GND",
+      "8": "USB_D-",
+      "7": "USB_D+",
+      "6": "GND",
+      "5": "GND",
+      "4": "VIN_5V",
+      "3": "VIN_5V",
+      "2": "VIN_5V",
+      "1": "VIN_5V",
+      "21": "ESP_GPIO40",
+      "22": "GND",
+      "23": "ESP_GPIO39",
+      "24": "ESP_GPIO41",
+      "25": "ESP_GPIO42",
+      "26": "ESP_GPIO43_TXD",
+      "27": "ESP_GPIO44_RXD",
+      "28": "ESP_GPIO35",
+      "29": "ESP_GPIO33",
+      "30": "GND",
+      "31": "GND",
+      "32": "ESP_GPIO34",
+      "33": "ESP_GPIO46",
+      "34": "ESP_GPIO45",
+      "35": "ESP_GPIO15",
+      "36": "ESP_GPIO17",
+      "37": "ESP_GPIO16",
+      "38": "ESP_GPIO18",
+      "39": "ESP_GPIO38",
+      "40": "ESP_GPIO21"
+    },
+    "kind": "connector",
+    "types": {},
+    "names": {
+      "20": "ESP_GPIO8",
+      "19": "ESP_GPIO7",
+      "18": "ESP_GPIO6",
+      "17": "ESP_GPIO5",
+      "16": "ESP_GPIO4",
+      "15": "ESP_GPIO3",
+      "14": "ESP_GPIO2",
+      "13": "ESP_GPIO1",
+      "12": "ESP_GPIO0_BOOT",
+      "11": "ESP_EN",
+      "10": "GND",
+      "9": "GND",
+      "8": "USB_D-",
+      "7": "USB_D+",
+      "6": "GND",
+      "5": "GND",
+      "4": "VIN_5V",
+      "3": "VIN_5V",
+      "2": "VIN_5V",
+      "1": "VIN_5V",
+      "21": "ESP_GPIO40",
+      "22": "GND",
+      "23": "ESP_GPIO39",
+      "24": "ESP_GPIO41",
+      "25": "ESP_GPIO42",
+      "26": "ESP_GPIO43_TXD",
+      "27": "ESP_GPIO44_RXD",
+      "28": "ESP_GPIO35",
+      "29": "ESP_GPIO33",
+      "30": "GND",
+      "31": "GND",
+      "32": "ESP_GPIO34",
+      "33": "ESP_GPIO46",
+      "34": "ESP_GPIO45",
+      "35": "ESP_GPIO15",
+      "36": "ESP_GPIO17",
+      "37": "ESP_GPIO16",
+      "38": "ESP_GPIO18",
+      "39": "ESP_GPIO38",
+      "40": "ESP_GPIO21"
+    },
+    "bom": true,
+    "position": [
+      100,
+      42,
+      0
+    ]
+  },
+  "J2": {
+    "value": "DF40C(2.0)-40DS-0.4V(51)",
+    "mpn": "DF40C(2.0)-40DS-0.4V(51)",
+    "lcsc": "C597934",
+    "footprint": "Carrier:J2_Module_v1_Mate",
+    "pins": {
+      "20": "FPGA_IOT_43A",
+      "19": "FPGA_IOT_42B",
+      "18": "GND",
+      "17": "FPGA_IOT_41A",
+      "16": "FPGA_IOT_39A",
+      "15": "FPGA_IOT_38B",
+      "14": "FPGA_IOT_36B",
+      "13": "GND",
+      "12": "FPGA_IOB_25B_G3",
+      "11": "FPGA_IOB_29B",
+      "10": "FPGA_IOB_23B",
+      "9": "FPGA_IOT_37A",
+      "8": "GND",
+      "7": "FPGA_IOB_20A",
+      "6": "FPGA_IOB_13B",
+      "5": "FPGA_IOB_22A",
+      "4": "FPGA_IOB_16A",
+      "3": "GND",
+      "2": "FPGA_IOB_18A",
+      "1": "GND",
+      "21": "FPGA_IOT_48B",
+      "22": "FPGA_IOT_46B_G0",
+      "23": "GND",
+      "24": "FPGA_IOT_45A_G1",
+      "25": "FPGA_IOT_50B",
+      "26": "FPGA_RGB0",
+      "27": "FPGA_RGB1",
+      "28": "GND",
+      "29": "FPGA_RGB2",
+      "30": "FPGA_IOT_51A",
+      "31": "FPGA_IOT_49A",
+      "32": "FPGA_IOB_3B_G6",
+      "33": "FPGA_IOT_44B",
+      "34": "FPGA_IOB_5B",
+      "35": "FPGA_IOB_0A",
+      "36": "FPGA_IOB_2A",
+      "37": "FPGA_IOB_4A",
+      "38": "FPGA_IOB_9B",
+      "39": "FPGA_IOB_8A",
+      "40": "FPGA_IOB_6A"
+    },
+    "kind": "connector",
+    "types": {},
+    "names": {
+      "20": "FPGA_IOT_43A",
+      "19": "FPGA_IOT_42B",
+      "18": "GND",
+      "17": "FPGA_IOT_41A",
+      "16": "FPGA_IOT_39A",
+      "15": "FPGA_IOT_38B",
+      "14": "FPGA_IOT_36B",
+      "13": "GND",
+      "12": "FPGA_IOB_25B_G3",
+      "11": "FPGA_IOB_29B",
+      "10": "FPGA_IOB_23B",
+      "9": "FPGA_IOT_37A",
+      "8": "GND",
+      "7": "FPGA_IOB_20A",
+      "6": "FPGA_IOB_13B",
+      "5": "FPGA_IOB_22A",
+      "4": "FPGA_IOB_16A",
+      "3": "GND",
+      "2": "FPGA_IOB_18A",
+      "1": "GND",
+      "21": "FPGA_IOT_48B",
+      "22": "FPGA_IOT_46B_G0",
+      "23": "GND",
+      "24": "FPGA_IOT_45A_G1",
+      "25": "FPGA_IOT_50B",
+      "26": "FPGA_RGB0",
+      "27": "FPGA_RGB1",
+      "28": "GND",
+      "29": "FPGA_RGB2",
+      "30": "FPGA_IOT_51A",
+      "31": "FPGA_IOT_49A",
+      "32": "FPGA_IOB_3B_G6",
+      "33": "FPGA_IOT_44B",
+      "34": "FPGA_IOB_5B",
+      "35": "FPGA_IOB_0A",
+      "36": "FPGA_IOB_2A",
+      "37": "FPGA_IOB_4A",
+      "38": "FPGA_IOB_9B",
+      "39": "FPGA_IOB_8A",
+      "40": "FPGA_IOB_6A"
+    },
+    "bom": true,
+    "position": [
+      100,
+      67,
+      0
+    ]
+  },
+  "H1": {
+    "value": "M3",
+    "mpn": "M3",
+    "lcsc": "",
+    "footprint": "Carrier:MountingHole_3.2mm_M3",
+    "pins": {},
+    "kind": "hole",
+    "types": {},
+    "names": {},
+    "bom": false,
+    "position": [
+      100,
+      54.5,
+      0
+    ]
+  },
+  "H2": {
+    "value": "M3",
+    "mpn": "M3",
+    "lcsc": "",
+    "footprint": "Carrier:MountingHole_3.2mm_M3",
+    "pins": {},
+    "kind": "hole",
+    "types": {},
+    "names": {},
+    "bom": false,
+    "position": [
+      24,
+      24,
+      0
+    ]
+  },
+  "H3": {
+    "value": "M3",
+    "mpn": "M3",
+    "lcsc": "",
+    "footprint": "Carrier:MountingHole_3.2mm_M3",
+    "pins": {},
+    "kind": "hole",
+    "types": {},
+    "names": {},
+    "bom": false,
+    "position": [
+      176,
+      24,
+      0
+    ]
+  },
+  "H4": {
+    "value": "M3",
+    "mpn": "M3",
+    "lcsc": "",
+    "footprint": "Carrier:MountingHole_3.2mm_M3",
+    "pins": {},
+    "kind": "hole",
+    "types": {},
+    "names": {},
+    "bom": false,
+    "position": [
+      24,
+      161,
+      0
+    ]
+  },
+  "H5": {
+    "value": "M3",
+    "mpn": "M3",
+    "lcsc": "",
+    "footprint": "Carrier:MountingHole_3.2mm_M3",
+    "pins": {},
+    "kind": "hole",
+    "types": {},
+    "names": {},
+    "bom": false,
+    "position": [
+      176,
+      161,
+      0
+    ]
+  },
+  "J3": {
+    "value": "USB-C USB2",
+    "mpn": "TYPE-C-31-M-12",
+    "lcsc": "C165948",
+    "footprint": "Carrier:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+    "pins": {
+      "A1": "GND",
+      "B12": "GND",
+      "A12": "GND",
+      "B1": "GND",
+      "A4": "VBUS",
+      "B9": "VBUS",
+      "A9": "VBUS",
+      "B4": "VBUS",
+      "A5": "CC1",
+      "B5": "CC2",
+      "A6": "USB_D+",
+      "B6": "USB_D+",
+      "A7": "USB_D-",
+      "B7": "USB_D-",
+      "A8": null,
+      "B8": null,
+      "S1": "GND"
+    },
+    "kind": "connector",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      100,
+      22.8,
+      180
+    ]
+  },
+  "U1": {
+    "value": "AP2112K-3.3",
+    "mpn": "AP2112K-3.3TRG1",
+    "lcsc": "C51118",
+    "footprint": "Carrier:SOT-23-5",
+    "pins": {
+      "1": "VIN_5V",
+      "2": "GND",
+      "3": "VIN_5V",
+      "4": null,
+      "5": "+3V3_TEST"
+    },
+    "kind": "ic",
+    "types": {
+      "1": "power_in",
+      "2": "power_in",
+      "3": "input",
+      "4": "no_connect",
+      "5": "power_out"
+    },
+    "names": {
+      "1": "VIN",
+      "2": "GND",
+      "3": "EN",
+      "4": "NC",
+      "5": "VOUT"
+    },
+    "bom": true,
+    "position": [
+      80,
+      31,
+      0
+    ]
+  },
+  "U2": {
+    "value": "USBLC6-2SC6",
+    "mpn": "USBLC6-2SC6",
+    "lcsc": "C7519",
+    "footprint": "Carrier:SOT-23-6",
+    "pins": {
+      "1": "USB_D+",
+      "2": "GND",
+      "3": "USB_D-",
+      "4": "USB_D-",
+      "5": "VBUS",
+      "6": "USB_D+"
+    },
+    "kind": "ic",
+    "types": {},
+    "names": {
+      "1": "IO1",
+      "2": "GND",
+      "3": "IO2",
+      "4": "IO2",
+      "5": "VBUS",
+      "6": "IO1"
+    },
+    "bom": true,
+    "position": [
+      100,
+      31,
+      90
+    ]
+  },
+  "F1": {
+    "value": "500mA PTC",
+    "mpn": "1206L050/15YR",
+    "lcsc": "C151162",
+    "footprint": "Carrier:Fuse_1206_3216Metric",
+    "pins": {
+      "1": "VBUS",
+      "2": "VIN_5V"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      87,
+      27,
+      0
+    ]
+  },
+  "R1": {
+    "value": "5.1kR",
+    "mpn": "0603WAF5101T5E",
+    "lcsc": "C23186",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "CC1",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      93,
+      30,
+      90
+    ]
+  },
+  "R2": {
+    "value": "5.1kR",
+    "mpn": "0603WAF5101T5E",
+    "lcsc": "C23186",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "CC2",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      107,
+      30,
+      90
+    ]
+  },
+  "C1": {
+    "value": "4.7uF",
+    "mpn": "CL10A475KO8NNNC",
+    "lcsc": "C19666",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "VIN_5V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      76,
+      31,
+      90
+    ]
+  },
+  "C2": {
+    "value": "4.7uF",
+    "mpn": "CL10A475KO8NNNC",
+    "lcsc": "C19666",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      84,
+      31,
+      90
+    ]
+  },
+  "C3": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "VBUS",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      104,
+      31,
+      90
+    ]
+  },
+  "R3": {
+    "value": "2.2kR",
+    "mpn": "0603WAF2201T5E",
+    "lcsc": "C4190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "VIN_5V",
+      "2": "P5_LED"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      70,
+      28,
+      0
+    ]
+  },
+  "D1": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "P5_LED"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      73,
+      28,
+      180
+    ]
+  },
+  "R4": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "P3_LED"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      70,
+      35,
+      0
+    ]
+  },
+  "D2": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "P3_LED"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      73,
+      35,
+      180
+    ]
+  },
+  "SW1": {
+    "value": "BOOT / RUN",
+    "mpn": "JS102011SAQN",
+    "lcsc": "C221660",
+    "footprint": "Carrier:SW_SPDT_CK_JS102011SAQN",
+    "pins": {
+      "1": "GND",
+      "2": "ESP_GPIO0_BOOT",
+      "3": null
+    },
+    "kind": "switch",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      65,
+      47,
+      0
+    ]
+  },
+  "SW2": {
+    "value": "RESET",
+    "mpn": "TL3342F160QG",
+    "lcsc": "C2886898",
+    "footprint": "Carrier:SW_SPST_TL3342",
+    "pins": {
+      "1": "GND",
+      "2": "ESP_EN"
+    },
+    "kind": "switch",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      65,
+      60,
+      0
+    ]
+  },
+  "SW3": {
+    "value": "GPIO46 INPUT",
+    "mpn": "TL3342F160QG",
+    "lcsc": "C2886898",
+    "footprint": "Carrier:SW_SPST_TL3342",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GPIO46_TEST"
+    },
+    "kind": "switch",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      130,
+      35,
+      0
+    ]
+  },
+  "R5": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "GPIO46_TEST",
+      "2": "ESP_GPIO46"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      135,
+      41,
+      0
+    ]
+  },
+  "U3": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "ESP_EN",
+      "18": "BUF_ESP_EN",
+      "3": "ESP_GPIO0_BOOT",
+      "17": "BUF_ESP_GPIO0_BOOT",
+      "4": "ESP_GPIO1",
+      "16": "BUF_ESP_GPIO1",
+      "5": "ESP_GPIO2",
+      "15": "BUF_ESP_GPIO2",
+      "6": "ESP_GPIO3",
+      "14": "BUF_ESP_GPIO3",
+      "7": "ESP_GPIO4",
+      "13": "BUF_ESP_GPIO4",
+      "8": "ESP_GPIO5",
+      "12": "BUF_ESP_GPIO5",
+      "9": "ESP_GPIO6",
+      "11": "BUF_ESP_GPIO6"
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      32,
+      92,
+      0
+    ]
+  },
+  "C10": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      35,
+      86.5,
+      0
+    ]
+  },
+  "R110": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_EN",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      81.5,
+      0
+    ]
+  },
+  "R10": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_EN",
+      "2": "LED_ESP_EN"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      81.5,
+      0
+    ]
+  },
+  "D10": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_EN"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      81.5,
+      180
+    ]
+  },
+  "R111": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO0_BOOT",
+      "2": "+3V3_TEST"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      84.5,
+      0
+    ]
+  },
+  "R11": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO0_BOOT",
+      "2": "LED_ESP_GPIO0_BOOT"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      84.5,
+      0
+    ]
+  },
+  "D11": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO0_BOOT"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      84.5,
+      180
+    ]
+  },
+  "R112": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO1",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      87.5,
+      0
+    ]
+  },
+  "R12": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO1",
+      "2": "LED_ESP_GPIO1"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      87.5,
+      0
+    ]
+  },
+  "D12": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO1"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      87.5,
+      180
+    ]
+  },
+  "R113": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO2",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      90.5,
+      0
+    ]
+  },
+  "R13": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO2",
+      "2": "LED_ESP_GPIO2"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      90.5,
+      0
+    ]
+  },
+  "D13": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO2"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      90.5,
+      180
+    ]
+  },
+  "R114": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO3",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      93.5,
+      0
+    ]
+  },
+  "R14": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO3",
+      "2": "LED_ESP_GPIO3"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      93.5,
+      0
+    ]
+  },
+  "D14": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO3"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      93.5,
+      180
+    ]
+  },
+  "R115": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO4",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      96.5,
+      0
+    ]
+  },
+  "R15": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO4",
+      "2": "LED_ESP_GPIO4"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      96.5,
+      0
+    ]
+  },
+  "D15": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO4"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      96.5,
+      180
+    ]
+  },
+  "R116": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO5",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      99.5,
+      0
+    ]
+  },
+  "R16": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO5",
+      "2": "LED_ESP_GPIO5"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      99.5,
+      0
+    ]
+  },
+  "D16": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO5"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      99.5,
+      180
+    ]
+  },
+  "R117": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO6",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      102.5,
+      0
+    ]
+  },
+  "R17": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO6",
+      "2": "LED_ESP_GPIO6"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      102.5,
+      0
+    ]
+  },
+  "D17": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO6"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      102.5,
+      180
+    ]
+  },
+  "U4": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "ESP_GPIO7",
+      "18": "BUF_ESP_GPIO7",
+      "3": "ESP_GPIO8",
+      "17": "BUF_ESP_GPIO8",
+      "4": "ESP_GPIO15",
+      "16": "BUF_ESP_GPIO15",
+      "5": "ESP_GPIO16",
+      "15": "BUF_ESP_GPIO16",
+      "6": "ESP_GPIO17",
+      "14": "BUF_ESP_GPIO17",
+      "7": "ESP_GPIO18",
+      "13": "BUF_ESP_GPIO18",
+      "8": "ESP_GPIO21",
+      "12": "BUF_ESP_GPIO21",
+      "9": "ESP_GPIO33",
+      "11": "BUF_ESP_GPIO33"
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      69,
+      92,
+      0
+    ]
+  },
+  "C11": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      72,
+      86.5,
+      0
+    ]
+  },
+  "R118": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO7",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      81.5,
+      0
+    ]
+  },
+  "R18": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO7",
+      "2": "LED_ESP_GPIO7"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      81.5,
+      0
+    ]
+  },
+  "D18": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO7"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      81.5,
+      180
+    ]
+  },
+  "R119": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO8",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      84.5,
+      0
+    ]
+  },
+  "R19": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO8",
+      "2": "LED_ESP_GPIO8"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      84.5,
+      0
+    ]
+  },
+  "D19": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO8"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      84.5,
+      180
+    ]
+  },
+  "R120": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO15",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      87.5,
+      0
+    ]
+  },
+  "R20": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO15",
+      "2": "LED_ESP_GPIO15"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      87.5,
+      0
+    ]
+  },
+  "D20": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO15"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      87.5,
+      180
+    ]
+  },
+  "R121": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO16",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      90.5,
+      0
+    ]
+  },
+  "R21": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO16",
+      "2": "LED_ESP_GPIO16"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      90.5,
+      0
+    ]
+  },
+  "D21": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO16"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      90.5,
+      180
+    ]
+  },
+  "R122": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO17",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      93.5,
+      0
+    ]
+  },
+  "R22": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO17",
+      "2": "LED_ESP_GPIO17"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      93.5,
+      0
+    ]
+  },
+  "D22": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO17"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      93.5,
+      180
+    ]
+  },
+  "R123": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO18",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      96.5,
+      0
+    ]
+  },
+  "R23": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO18",
+      "2": "LED_ESP_GPIO18"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      96.5,
+      0
+    ]
+  },
+  "D23": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO18"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      96.5,
+      180
+    ]
+  },
+  "R124": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO21",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      99.5,
+      0
+    ]
+  },
+  "R24": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO21",
+      "2": "LED_ESP_GPIO21"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      99.5,
+      0
+    ]
+  },
+  "D24": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO21"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      99.5,
+      180
+    ]
+  },
+  "R125": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO33",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      102.5,
+      0
+    ]
+  },
+  "R25": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO33",
+      "2": "LED_ESP_GPIO33"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      102.5,
+      0
+    ]
+  },
+  "D25": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO33"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      102.5,
+      180
+    ]
+  },
+  "U5": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "ESP_GPIO34",
+      "18": "BUF_ESP_GPIO34",
+      "3": "ESP_GPIO35",
+      "17": "BUF_ESP_GPIO35",
+      "4": "ESP_GPIO38",
+      "16": "BUF_ESP_GPIO38",
+      "5": "ESP_GPIO39",
+      "15": "BUF_ESP_GPIO39",
+      "6": "ESP_GPIO40",
+      "14": "BUF_ESP_GPIO40",
+      "7": "ESP_GPIO41",
+      "13": "BUF_ESP_GPIO41",
+      "8": "ESP_GPIO42",
+      "12": "BUF_ESP_GPIO42",
+      "9": "ESP_GPIO43_TXD",
+      "11": "BUF_ESP_GPIO43_TXD"
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      32,
+      133,
+      0
+    ]
+  },
+  "C12": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      35,
+      127.5,
+      0
+    ]
+  },
+  "R126": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO34",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      122.5,
+      0
+    ]
+  },
+  "R26": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO34",
+      "2": "LED_ESP_GPIO34"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      122.5,
+      0
+    ]
+  },
+  "D26": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO34"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      122.5,
+      180
+    ]
+  },
+  "R127": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO35",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      125.5,
+      0
+    ]
+  },
+  "R27": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO35",
+      "2": "LED_ESP_GPIO35"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      125.5,
+      0
+    ]
+  },
+  "D27": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO35"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      125.5,
+      180
+    ]
+  },
+  "R128": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO38",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      128.5,
+      0
+    ]
+  },
+  "R28": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO38",
+      "2": "LED_ESP_GPIO38"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      128.5,
+      0
+    ]
+  },
+  "D28": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO38"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      128.5,
+      180
+    ]
+  },
+  "R129": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO39",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      131.5,
+      0
+    ]
+  },
+  "R29": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO39",
+      "2": "LED_ESP_GPIO39"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      131.5,
+      0
+    ]
+  },
+  "D29": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO39"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      131.5,
+      180
+    ]
+  },
+  "R130": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO40",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      134.5,
+      0
+    ]
+  },
+  "R30": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO40",
+      "2": "LED_ESP_GPIO40"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      134.5,
+      0
+    ]
+  },
+  "D30": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO40"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      134.5,
+      180
+    ]
+  },
+  "R131": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO41",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      137.5,
+      0
+    ]
+  },
+  "R31": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO41",
+      "2": "LED_ESP_GPIO41"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      137.5,
+      0
+    ]
+  },
+  "D31": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO41"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      137.5,
+      180
+    ]
+  },
+  "R132": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO42",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      140.5,
+      0
+    ]
+  },
+  "R32": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO42",
+      "2": "LED_ESP_GPIO42"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      140.5,
+      0
+    ]
+  },
+  "D32": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO42"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      140.5,
+      180
+    ]
+  },
+  "R133": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO43_TXD",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      25,
+      143.5,
+      0
+    ]
+  },
+  "R33": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO43_TXD",
+      "2": "LED_ESP_GPIO43_TXD"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      41,
+      143.5,
+      0
+    ]
+  },
+  "D33": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO43_TXD"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      45,
+      143.5,
+      180
+    ]
+  },
+  "U6": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "ESP_GPIO44_RXD",
+      "18": "BUF_ESP_GPIO44_RXD",
+      "3": "ESP_GPIO45",
+      "17": "BUF_ESP_GPIO45",
+      "4": "ESP_GPIO46",
+      "16": "BUF_ESP_GPIO46",
+      "5": "GND",
+      "15": null,
+      "6": "GND",
+      "14": null,
+      "7": "GND",
+      "13": null,
+      "8": "GND",
+      "12": null,
+      "9": "GND",
+      "11": null
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      69,
+      133,
+      0
+    ]
+  },
+  "C13": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      72,
+      127.5,
+      0
+    ]
+  },
+  "R134": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO44_RXD",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      122.5,
+      0
+    ]
+  },
+  "R34": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO44_RXD",
+      "2": "LED_ESP_GPIO44_RXD"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      122.5,
+      0
+    ]
+  },
+  "D34": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO44_RXD"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      122.5,
+      180
+    ]
+  },
+  "R135": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO45",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      125.5,
+      0
+    ]
+  },
+  "R35": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO45",
+      "2": "LED_ESP_GPIO45"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      125.5,
+      0
+    ]
+  },
+  "D35": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO45"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      125.5,
+      180
+    ]
+  },
+  "R136": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "ESP_GPIO46",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      62,
+      128.5,
+      0
+    ]
+  },
+  "R36": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_ESP_GPIO46",
+      "2": "LED_ESP_GPIO46"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      78,
+      128.5,
+      0
+    ]
+  },
+  "D36": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_ESP_GPIO46"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      82,
+      128.5,
+      180
+    ]
+  },
+  "U7": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "FPGA_IOB_0A",
+      "18": "BUF_FPGA_IOB_0A",
+      "3": "FPGA_IOB_2A",
+      "17": "BUF_FPGA_IOB_2A",
+      "4": "FPGA_IOB_3B_G6",
+      "16": "BUF_FPGA_IOB_3B_G6",
+      "5": "FPGA_IOB_4A",
+      "15": "BUF_FPGA_IOB_4A",
+      "6": "FPGA_IOB_5B",
+      "14": "BUF_FPGA_IOB_5B",
+      "7": "FPGA_IOB_6A",
+      "13": "BUF_FPGA_IOB_6A",
+      "8": "FPGA_IOB_8A",
+      "12": "BUF_FPGA_IOB_8A",
+      "9": "FPGA_IOB_9B",
+      "11": "BUF_FPGA_IOB_9B"
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      116,
+      92,
+      0
+    ]
+  },
+  "C14": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      119,
+      86.5,
+      0
+    ]
+  },
+  "R142": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_0A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      81.5,
+      0
+    ]
+  },
+  "R42": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_0A",
+      "2": "LED_FPGA_IOB_0A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      81.5,
+      0
+    ]
+  },
+  "D42": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_0A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      81.5,
+      180
+    ]
+  },
+  "R143": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_2A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      84.5,
+      0
+    ]
+  },
+  "R43": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_2A",
+      "2": "LED_FPGA_IOB_2A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      84.5,
+      0
+    ]
+  },
+  "D43": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_2A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      84.5,
+      180
+    ]
+  },
+  "R144": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_3B_G6",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      87.5,
+      0
+    ]
+  },
+  "R44": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_3B_G6",
+      "2": "LED_FPGA_IOB_3B_G6"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      87.5,
+      0
+    ]
+  },
+  "D44": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_3B_G6"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      87.5,
+      180
+    ]
+  },
+  "R145": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_4A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      90.5,
+      0
+    ]
+  },
+  "R45": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_4A",
+      "2": "LED_FPGA_IOB_4A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      90.5,
+      0
+    ]
+  },
+  "D45": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_4A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      90.5,
+      180
+    ]
+  },
+  "R146": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_5B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      93.5,
+      0
+    ]
+  },
+  "R46": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_5B",
+      "2": "LED_FPGA_IOB_5B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      93.5,
+      0
+    ]
+  },
+  "D46": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_5B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      93.5,
+      180
+    ]
+  },
+  "R147": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_6A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      96.5,
+      0
+    ]
+  },
+  "R47": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_6A",
+      "2": "LED_FPGA_IOB_6A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      96.5,
+      0
+    ]
+  },
+  "D47": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_6A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      96.5,
+      180
+    ]
+  },
+  "R148": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_8A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      99.5,
+      0
+    ]
+  },
+  "R48": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_8A",
+      "2": "LED_FPGA_IOB_8A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      99.5,
+      0
+    ]
+  },
+  "D48": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_8A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      99.5,
+      180
+    ]
+  },
+  "R149": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_9B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      102.5,
+      0
+    ]
+  },
+  "R49": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_9B",
+      "2": "LED_FPGA_IOB_9B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      102.5,
+      0
+    ]
+  },
+  "D49": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_9B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      102.5,
+      180
+    ]
+  },
+  "U8": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "FPGA_IOB_13B",
+      "18": "BUF_FPGA_IOB_13B",
+      "3": "FPGA_IOB_16A",
+      "17": "BUF_FPGA_IOB_16A",
+      "4": "FPGA_IOB_18A",
+      "16": "BUF_FPGA_IOB_18A",
+      "5": "FPGA_IOB_20A",
+      "15": "BUF_FPGA_IOB_20A",
+      "6": "FPGA_IOB_22A",
+      "14": "BUF_FPGA_IOB_22A",
+      "7": "FPGA_IOB_23B",
+      "13": "BUF_FPGA_IOB_23B",
+      "8": "FPGA_IOB_25B_G3",
+      "12": "BUF_FPGA_IOB_25B_G3",
+      "9": "FPGA_IOB_29B",
+      "11": "BUF_FPGA_IOB_29B"
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      153,
+      92,
+      0
+    ]
+  },
+  "C15": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      156,
+      86.5,
+      0
+    ]
+  },
+  "R150": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_13B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      81.5,
+      0
+    ]
+  },
+  "R50": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_13B",
+      "2": "LED_FPGA_IOB_13B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      81.5,
+      0
+    ]
+  },
+  "D50": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_13B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      81.5,
+      180
+    ]
+  },
+  "R151": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_16A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      84.5,
+      0
+    ]
+  },
+  "R51": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_16A",
+      "2": "LED_FPGA_IOB_16A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      84.5,
+      0
+    ]
+  },
+  "D51": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_16A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      84.5,
+      180
+    ]
+  },
+  "R152": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_18A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      87.5,
+      0
+    ]
+  },
+  "R52": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_18A",
+      "2": "LED_FPGA_IOB_18A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      87.5,
+      0
+    ]
+  },
+  "D52": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_18A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      87.5,
+      180
+    ]
+  },
+  "R153": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_20A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      90.5,
+      0
+    ]
+  },
+  "R53": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_20A",
+      "2": "LED_FPGA_IOB_20A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      90.5,
+      0
+    ]
+  },
+  "D53": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_20A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      90.5,
+      180
+    ]
+  },
+  "R154": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_22A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      93.5,
+      0
+    ]
+  },
+  "R54": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_22A",
+      "2": "LED_FPGA_IOB_22A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      93.5,
+      0
+    ]
+  },
+  "D54": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_22A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      93.5,
+      180
+    ]
+  },
+  "R155": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_23B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      96.5,
+      0
+    ]
+  },
+  "R55": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_23B",
+      "2": "LED_FPGA_IOB_23B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      96.5,
+      0
+    ]
+  },
+  "D55": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_23B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      96.5,
+      180
+    ]
+  },
+  "R156": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_25B_G3",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      99.5,
+      0
+    ]
+  },
+  "R56": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_25B_G3",
+      "2": "LED_FPGA_IOB_25B_G3"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      99.5,
+      0
+    ]
+  },
+  "D56": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_25B_G3"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      99.5,
+      180
+    ]
+  },
+  "R157": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOB_29B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      102.5,
+      0
+    ]
+  },
+  "R57": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOB_29B",
+      "2": "LED_FPGA_IOB_29B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      102.5,
+      0
+    ]
+  },
+  "D57": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOB_29B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      102.5,
+      180
+    ]
+  },
+  "U9": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "FPGA_IOT_36B",
+      "18": "BUF_FPGA_IOT_36B",
+      "3": "FPGA_IOT_37A",
+      "17": "BUF_FPGA_IOT_37A",
+      "4": "FPGA_IOT_38B",
+      "16": "BUF_FPGA_IOT_38B",
+      "5": "FPGA_IOT_39A",
+      "15": "BUF_FPGA_IOT_39A",
+      "6": "FPGA_IOT_41A",
+      "14": "BUF_FPGA_IOT_41A",
+      "7": "FPGA_IOT_42B",
+      "13": "BUF_FPGA_IOT_42B",
+      "8": "FPGA_IOT_43A",
+      "12": "BUF_FPGA_IOT_43A",
+      "9": "FPGA_IOT_44B",
+      "11": "BUF_FPGA_IOT_44B"
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      116,
+      133,
+      0
+    ]
+  },
+  "C16": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      119,
+      127.5,
+      0
+    ]
+  },
+  "R158": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_36B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      122.5,
+      0
+    ]
+  },
+  "R58": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_36B",
+      "2": "LED_FPGA_IOT_36B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      122.5,
+      0
+    ]
+  },
+  "D58": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_36B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      122.5,
+      180
+    ]
+  },
+  "R159": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_37A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      125.5,
+      0
+    ]
+  },
+  "R59": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_37A",
+      "2": "LED_FPGA_IOT_37A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      125.5,
+      0
+    ]
+  },
+  "D59": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_37A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      125.5,
+      180
+    ]
+  },
+  "R160": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_38B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      128.5,
+      0
+    ]
+  },
+  "R60": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_38B",
+      "2": "LED_FPGA_IOT_38B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      128.5,
+      0
+    ]
+  },
+  "D60": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_38B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      128.5,
+      180
+    ]
+  },
+  "R161": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_39A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      131.5,
+      0
+    ]
+  },
+  "R61": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_39A",
+      "2": "LED_FPGA_IOT_39A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      131.5,
+      0
+    ]
+  },
+  "D61": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_39A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      131.5,
+      180
+    ]
+  },
+  "R162": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_41A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      134.5,
+      0
+    ]
+  },
+  "R62": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_41A",
+      "2": "LED_FPGA_IOT_41A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      134.5,
+      0
+    ]
+  },
+  "D62": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_41A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      134.5,
+      180
+    ]
+  },
+  "R163": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_42B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      137.5,
+      0
+    ]
+  },
+  "R63": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_42B",
+      "2": "LED_FPGA_IOT_42B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      137.5,
+      0
+    ]
+  },
+  "D63": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_42B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      137.5,
+      180
+    ]
+  },
+  "R164": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_43A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      140.5,
+      0
+    ]
+  },
+  "R64": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_43A",
+      "2": "LED_FPGA_IOT_43A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      140.5,
+      0
+    ]
+  },
+  "D64": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_43A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      140.5,
+      180
+    ]
+  },
+  "R165": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_44B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      109,
+      143.5,
+      0
+    ]
+  },
+  "R65": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_44B",
+      "2": "LED_FPGA_IOT_44B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      125,
+      143.5,
+      0
+    ]
+  },
+  "D65": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_44B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      129,
+      143.5,
+      180
+    ]
+  },
+  "U10": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "FPGA_IOT_45A_G1",
+      "18": "BUF_FPGA_IOT_45A_G1",
+      "3": "FPGA_IOT_46B_G0",
+      "17": "BUF_FPGA_IOT_46B_G0",
+      "4": "FPGA_IOT_48B",
+      "16": "BUF_FPGA_IOT_48B",
+      "5": "FPGA_IOT_49A",
+      "15": "BUF_FPGA_IOT_49A",
+      "6": "FPGA_IOT_50B",
+      "14": "BUF_FPGA_IOT_50B",
+      "7": "FPGA_IOT_51A",
+      "13": "BUF_FPGA_IOT_51A",
+      "8": "GND",
+      "12": null,
+      "9": "GND",
+      "11": null
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      153,
+      133,
+      0
+    ]
+  },
+  "C17": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      156,
+      127.5,
+      0
+    ]
+  },
+  "R166": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_45A_G1",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      122.5,
+      0
+    ]
+  },
+  "R66": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_45A_G1",
+      "2": "LED_FPGA_IOT_45A_G1"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      122.5,
+      0
+    ]
+  },
+  "D66": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_45A_G1"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      122.5,
+      180
+    ]
+  },
+  "R167": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_46B_G0",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      125.5,
+      0
+    ]
+  },
+  "R67": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_46B_G0",
+      "2": "LED_FPGA_IOT_46B_G0"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      125.5,
+      0
+    ]
+  },
+  "D67": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_46B_G0"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      125.5,
+      180
+    ]
+  },
+  "R168": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_48B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      128.5,
+      0
+    ]
+  },
+  "R68": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_48B",
+      "2": "LED_FPGA_IOT_48B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      128.5,
+      0
+    ]
+  },
+  "D68": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_48B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      128.5,
+      180
+    ]
+  },
+  "R169": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_49A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      131.5,
+      0
+    ]
+  },
+  "R69": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_49A",
+      "2": "LED_FPGA_IOT_49A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      131.5,
+      0
+    ]
+  },
+  "D69": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_49A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      131.5,
+      180
+    ]
+  },
+  "R170": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_50B",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      134.5,
+      0
+    ]
+  },
+  "R70": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_50B",
+      "2": "LED_FPGA_IOT_50B"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      134.5,
+      0
+    ]
+  },
+  "D70": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_50B"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      134.5,
+      180
+    ]
+  },
+  "R171": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_IOT_51A",
+      "2": "GND"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      146,
+      137.5,
+      0
+    ]
+  },
+  "R71": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_IOT_51A",
+      "2": "LED_FPGA_IOT_51A"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      162,
+      137.5,
+      0
+    ]
+  },
+  "D71": {
+    "value": "GREEN",
+    "mpn": "XL-1608SYGC-06",
+    "lcsc": "C965805",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "GND",
+      "2": "LED_FPGA_IOT_51A"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      166,
+      137.5,
+      180
+    ]
+  },
+  "U11": {
+    "value": "SN74LVC541APWR",
+    "mpn": "SN74LVC541APWR",
+    "lcsc": "C113281",
+    "footprint": "Carrier:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "pins": {
+      "1": "GND",
+      "19": "GND",
+      "10": "GND",
+      "20": "+3V3_TEST",
+      "2": "FPGA_RGB0",
+      "18": "BUF_FPGA_RGB0",
+      "3": "FPGA_RGB1",
+      "17": "BUF_FPGA_RGB1",
+      "4": "FPGA_RGB2",
+      "16": "BUF_FPGA_RGB2",
+      "5": "GND",
+      "15": null,
+      "6": "GND",
+      "14": null,
+      "7": "GND",
+      "13": null,
+      "8": "GND",
+      "12": null,
+      "9": "GND",
+      "11": null
+    },
+    "kind": "ic",
+    "types": {
+      "1": "input",
+      "19": "input",
+      "10": "power_in",
+      "20": "power_in",
+      "2": "input",
+      "18": "tri_state",
+      "3": "input",
+      "17": "tri_state",
+      "4": "input",
+      "16": "tri_state",
+      "5": "input",
+      "15": "tri_state",
+      "6": "input",
+      "14": "tri_state",
+      "7": "input",
+      "13": "tri_state",
+      "8": "input",
+      "12": "tri_state",
+      "9": "input",
+      "11": "tri_state"
+    },
+    "names": {
+      "1": "~{OE1}",
+      "19": "~{OE2}",
+      "10": "GND",
+      "20": "VCC",
+      "2": "A1",
+      "18": "Y1",
+      "3": "A2",
+      "17": "Y2",
+      "4": "A3",
+      "16": "Y3",
+      "5": "A4",
+      "15": "Y4",
+      "6": "A5",
+      "14": "Y5",
+      "7": "A6",
+      "13": "Y6",
+      "8": "A7",
+      "12": "Y7",
+      "9": "A8",
+      "11": "Y8"
+    },
+    "bom": true,
+    "position": [
+      142,
+      57,
+      0
+    ]
+  },
+  "C18": {
+    "value": "100nF",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "footprint": "Carrier:C_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "GND"
+    },
+    "kind": "c",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      145,
+      51.5,
+      0
+    ]
+  },
+  "R174": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_RGB0",
+      "2": "+3V3_TEST"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      135,
+      46.5,
+      0
+    ]
+  },
+  "R74": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "LED_FPGA_RGB0"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      151,
+      46.5,
+      0
+    ]
+  },
+  "D74": {
+    "value": "RED",
+    "mpn": "KT-0603R",
+    "lcsc": "C2286",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_RGB0",
+      "2": "LED_FPGA_RGB0"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      155,
+      46.5,
+      180
+    ]
+  },
+  "R175": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_RGB1",
+      "2": "+3V3_TEST"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      135,
+      49.5,
+      0
+    ]
+  },
+  "R75": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "LED_FPGA_RGB1"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      151,
+      49.5,
+      0
+    ]
+  },
+  "D75": {
+    "value": "RED",
+    "mpn": "KT-0603R",
+    "lcsc": "C2286",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_RGB1",
+      "2": "LED_FPGA_RGB1"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      155,
+      49.5,
+      180
+    ]
+  },
+  "R176": {
+    "value": "100kR",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "FPGA_RGB2",
+      "2": "+3V3_TEST"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      135,
+      52.5,
+      0
+    ]
+  },
+  "R76": {
+    "value": "1kR",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "footprint": "Carrier:R_0603_1608Metric",
+    "pins": {
+      "1": "+3V3_TEST",
+      "2": "LED_FPGA_RGB2"
+    },
+    "kind": "r",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      151,
+      52.5,
+      0
+    ]
+  },
+  "D76": {
+    "value": "RED",
+    "mpn": "KT-0603R",
+    "lcsc": "C2286",
+    "footprint": "Carrier:LED_0603_1608Metric",
+    "pins": {
+      "1": "BUF_FPGA_RGB2",
+      "2": "LED_FPGA_RGB2"
+    },
+    "kind": "led",
+    "types": {},
+    "names": {},
+    "bom": true,
+    "position": [
+      155,
+      52.5,
+      180
+    ]
+  }
+}

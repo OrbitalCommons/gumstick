@@ -48,6 +48,20 @@
         "schematic": "MainBoard.kicad_sch",
         "pcb": "MainBoard.kicad_pcb"
       }
+    },
+    {
+      "id": "programming-carrier",
+      "name": "Module v1 programming + GPIO test carrier",
+      "root": "boards/programming-carrier",
+      "kicad": {
+        "project": "carrier.kicad_pro",
+        "schematic": "carrier.kicad_sch",
+        "pcb": "carrier.kicad_pcb"
+      },
+      "artifacts": {
+        "gerbers": "fab/gerbers",
+        "jlcpcb": "fab/jlcpcb"
+      }
     }
   ]
 }

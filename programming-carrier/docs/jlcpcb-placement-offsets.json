@@ -1,0 +1,39 @@
+{
+  "C113281": {
+    "rotation_offset_degrees": -90,
+    "mpn": "SN74LVC541APWR",
+    "reason": "User verified JLCPCB preview requires 90 degrees clockwise relative to native KiCad CPL; top-side U3-U11.",
+    "confirmed_by": "user JLCPCB preview observation",
+    "date": "2026-09-26"
+  },
+  "C221660": {
+    "mpn": "JS102011SAQN",
+    "rotation_offset_degrees": 0,
+    "cpl_offset_x_mm": 0,
+    "cpl_offset_y_mm": 2.75,
+    "verified_native_rotation_degrees": 0,
+    "reason": "JLCPCB screenshot portal_pasted_image_260926_121947.png: model locating pegs about 96 pixels below board holes; 6.8 mm hole pitch spans about 236 pixels. Upward 2.75 mm aligns both pegs and all three terminals. Offset expressed in CPL +Y-up coordinates. EasyEDA C221660 origin lies on terminal row y=2989.173; locating holes y=3000, giving 2.750058 mm offset.",
+    "date": "2026-09-26"
+  },
+  "C51118": {
+    "mpn": "AP2112K-3.3TRG1",
+    "rotation_offset_degrees": -90,
+    "reason": "User JLCPCB screenshot 260926_122020: pin 1 requires clockwise quarter turn to match KiCad pad 1.",
+    "date": "2026-09-26"
+  },
+  "C7519": {
+    "mpn": "USBLC6-2SC6",
+    "rotation_offset_degrees": -90,
+    "reason": "User JLCPCB screenshot 260926_122020: pin 1 requires clockwise quarter turn to match KiCad pad 1.",
+    "date": "2026-09-26"
+  },
+  "C165948": {
+    "mpn": "TYPE-C-31-M-12",
+    "rotation_offset_degrees": 0,
+    "cpl_offset_x_mm": 0,
+    "cpl_offset_y_mm": -1.425,
+    "verified_native_rotation_degrees": 180,
+    "reason": "JLCPCB screenshot confirms downward shift. EasyEDA C165948 package origin y=2997.4175, shield rows y=2990.702 and 3007.158 (0.254 mm/unit); KiCad local shield rows -3.13 and +1.05. Mean local-origin correction 1.425012 mm. At 180 degrees this is downward on PCB, negative CPL Y.",
+    "date": "2026-09-26"
+  }
+}

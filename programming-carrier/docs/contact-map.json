@@ -1,0 +1,642 @@
+[
+  {
+    "connector": "J1",
+    "module_pin": "20",
+    "carrier_original_pad": "1",
+    "x": 96.2,
+    "y": 44.645,
+    "signal": "ESP_GPIO8"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "19",
+    "carrier_original_pad": "2",
+    "x": 96.6,
+    "y": 44.645,
+    "signal": "ESP_GPIO7"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "18",
+    "carrier_original_pad": "3",
+    "x": 97.0,
+    "y": 44.645,
+    "signal": "ESP_GPIO6"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "17",
+    "carrier_original_pad": "4",
+    "x": 97.400001,
+    "y": 44.645,
+    "signal": "ESP_GPIO5"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "16",
+    "carrier_original_pad": "5",
+    "x": 97.800001,
+    "y": 44.645,
+    "signal": "ESP_GPIO4"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "15",
+    "carrier_original_pad": "6",
+    "x": 98.200001,
+    "y": 44.645,
+    "signal": "ESP_GPIO3"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "14",
+    "carrier_original_pad": "7",
+    "x": 98.600001,
+    "y": 44.645,
+    "signal": "ESP_GPIO2"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "13",
+    "carrier_original_pad": "8",
+    "x": 99.000001,
+    "y": 44.645,
+    "signal": "ESP_GPIO1"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "12",
+    "carrier_original_pad": "9",
+    "x": 99.400001,
+    "y": 44.645,
+    "signal": "ESP_GPIO0_BOOT"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "11",
+    "carrier_original_pad": "10",
+    "x": 99.800001,
+    "y": 44.645,
+    "signal": "ESP_EN"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "10",
+    "carrier_original_pad": "11",
+    "x": 100.2,
+    "y": 44.645,
+    "signal": "GND"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "9",
+    "carrier_original_pad": "12",
+    "x": 100.6,
+    "y": 44.645,
+    "signal": "GND"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "8",
+    "carrier_original_pad": "13",
+    "x": 101.0,
+    "y": 44.645,
+    "signal": "USB_D-"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "7",
+    "carrier_original_pad": "14",
+    "x": 101.4,
+    "y": 44.645,
+    "signal": "USB_D+"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "6",
+    "carrier_original_pad": "15",
+    "x": 101.8,
+    "y": 44.645,
+    "signal": "GND"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "5",
+    "carrier_original_pad": "16",
+    "x": 102.2,
+    "y": 44.645,
+    "signal": "GND"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "4",
+    "carrier_original_pad": "17",
+    "x": 102.6,
+    "y": 44.645,
+    "signal": "VIN_5V"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "3",
+    "carrier_original_pad": "18",
+    "x": 103.0,
+    "y": 44.645,
+    "signal": "VIN_5V"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "2",
+    "carrier_original_pad": "19",
+    "x": 103.4,
+    "y": 44.645,
+    "signal": "VIN_5V"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "1",
+    "carrier_original_pad": "20",
+    "x": 103.8,
+    "y": 44.645,
+    "signal": "VIN_5V"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "21",
+    "carrier_original_pad": "21",
+    "x": 103.8,
+    "y": 47.355,
+    "signal": "ESP_GPIO40"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "22",
+    "carrier_original_pad": "22",
+    "x": 103.4,
+    "y": 47.355,
+    "signal": "GND"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "23",
+    "carrier_original_pad": "23",
+    "x": 103.0,
+    "y": 47.355,
+    "signal": "ESP_GPIO39"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "24",
+    "carrier_original_pad": "24",
+    "x": 102.6,
+    "y": 47.355,
+    "signal": "ESP_GPIO41"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "25",
+    "carrier_original_pad": "25",
+    "x": 102.2,
+    "y": 47.355,
+    "signal": "ESP_GPIO42"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "26",
+    "carrier_original_pad": "26",
+    "x": 101.8,
+    "y": 47.355,
+    "signal": "ESP_GPIO43_TXD"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "27",
+    "carrier_original_pad": "27",
+    "x": 101.4,
+    "y": 47.355,
+    "signal": "ESP_GPIO44_RXD"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "28",
+    "carrier_original_pad": "28",
+    "x": 101.0,
+    "y": 47.355,
+    "signal": "ESP_GPIO35"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "29",
+    "carrier_original_pad": "29",
+    "x": 100.6,
+    "y": 47.355,
+    "signal": "ESP_GPIO33"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "30",
+    "carrier_original_pad": "30",
+    "x": 100.2,
+    "y": 47.355,
+    "signal": "GND"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "31",
+    "carrier_original_pad": "31",
+    "x": 99.800001,
+    "y": 47.355,
+    "signal": "GND"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "32",
+    "carrier_original_pad": "32",
+    "x": 99.400001,
+    "y": 47.355,
+    "signal": "ESP_GPIO34"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "33",
+    "carrier_original_pad": "33",
+    "x": 99.000001,
+    "y": 47.355,
+    "signal": "ESP_GPIO46"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "34",
+    "carrier_original_pad": "34",
+    "x": 98.600001,
+    "y": 47.355,
+    "signal": "ESP_GPIO45"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "35",
+    "carrier_original_pad": "35",
+    "x": 98.200001,
+    "y": 47.355,
+    "signal": "ESP_GPIO15"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "36",
+    "carrier_original_pad": "36",
+    "x": 97.800001,
+    "y": 47.355,
+    "signal": "ESP_GPIO17"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "37",
+    "carrier_original_pad": "37",
+    "x": 97.400001,
+    "y": 47.355,
+    "signal": "ESP_GPIO16"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "38",
+    "carrier_original_pad": "38",
+    "x": 97.0,
+    "y": 47.355,
+    "signal": "ESP_GPIO18"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "39",
+    "carrier_original_pad": "39",
+    "x": 96.6,
+    "y": 47.355,
+    "signal": "ESP_GPIO38"
+  },
+  {
+    "connector": "J1",
+    "module_pin": "40",
+    "carrier_original_pad": "40",
+    "x": 96.2,
+    "y": 47.355,
+    "signal": "ESP_GPIO21"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "20",
+    "carrier_original_pad": "1",
+    "x": 96.2,
+    "y": 69.68,
+    "signal": "FPGA_IOT_43A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "19",
+    "carrier_original_pad": "2",
+    "x": 96.6,
+    "y": 69.68,
+    "signal": "FPGA_IOT_42B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "18",
+    "carrier_original_pad": "3",
+    "x": 97.0,
+    "y": 69.68,
+    "signal": "GND"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "17",
+    "carrier_original_pad": "4",
+    "x": 97.400001,
+    "y": 69.68,
+    "signal": "FPGA_IOT_41A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "16",
+    "carrier_original_pad": "5",
+    "x": 97.800001,
+    "y": 69.68,
+    "signal": "FPGA_IOT_39A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "15",
+    "carrier_original_pad": "6",
+    "x": 98.200001,
+    "y": 69.68,
+    "signal": "FPGA_IOT_38B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "14",
+    "carrier_original_pad": "7",
+    "x": 98.600001,
+    "y": 69.68,
+    "signal": "FPGA_IOT_36B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "13",
+    "carrier_original_pad": "8",
+    "x": 99.000001,
+    "y": 69.68,
+    "signal": "GND"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "12",
+    "carrier_original_pad": "9",
+    "x": 99.400001,
+    "y": 69.68,
+    "signal": "FPGA_IOB_25B_G3"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "11",
+    "carrier_original_pad": "10",
+    "x": 99.800001,
+    "y": 69.68,
+    "signal": "FPGA_IOB_29B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "10",
+    "carrier_original_pad": "11",
+    "x": 100.2,
+    "y": 69.68,
+    "signal": "FPGA_IOB_23B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "9",
+    "carrier_original_pad": "12",
+    "x": 100.6,
+    "y": 69.68,
+    "signal": "FPGA_IOT_37A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "8",
+    "carrier_original_pad": "13",
+    "x": 101.0,
+    "y": 69.68,
+    "signal": "GND"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "7",
+    "carrier_original_pad": "14",
+    "x": 101.4,
+    "y": 69.68,
+    "signal": "FPGA_IOB_20A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "6",
+    "carrier_original_pad": "15",
+    "x": 101.8,
+    "y": 69.68,
+    "signal": "FPGA_IOB_13B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "5",
+    "carrier_original_pad": "16",
+    "x": 102.2,
+    "y": 69.68,
+    "signal": "FPGA_IOB_22A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "4",
+    "carrier_original_pad": "17",
+    "x": 102.6,
+    "y": 69.68,
+    "signal": "FPGA_IOB_16A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "3",
+    "carrier_original_pad": "18",
+    "x": 103.0,
+    "y": 69.68,
+    "signal": "GND"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "2",
+    "carrier_original_pad": "19",
+    "x": 103.4,
+    "y": 69.68,
+    "signal": "FPGA_IOB_18A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "1",
+    "carrier_original_pad": "20",
+    "x": 103.8,
+    "y": 69.68,
+    "signal": "GND"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "21",
+    "carrier_original_pad": "21",
+    "x": 96.2,
+    "y": 72.32,
+    "signal": "FPGA_IOT_48B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "22",
+    "carrier_original_pad": "22",
+    "x": 96.6,
+    "y": 72.32,
+    "signal": "FPGA_IOT_46B_G0"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "23",
+    "carrier_original_pad": "23",
+    "x": 97.0,
+    "y": 72.32,
+    "signal": "GND"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "24",
+    "carrier_original_pad": "24",
+    "x": 97.400001,
+    "y": 72.32,
+    "signal": "FPGA_IOT_45A_G1"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "25",
+    "carrier_original_pad": "25",
+    "x": 97.800001,
+    "y": 72.32,
+    "signal": "FPGA_IOT_50B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "26",
+    "carrier_original_pad": "26",
+    "x": 98.200001,
+    "y": 72.32,
+    "signal": "FPGA_RGB0"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "27",
+    "carrier_original_pad": "27",
+    "x": 98.600001,
+    "y": 72.32,
+    "signal": "FPGA_RGB1"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "28",
+    "carrier_original_pad": "28",
+    "x": 99.000001,
+    "y": 72.32,
+    "signal": "GND"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "29",
+    "carrier_original_pad": "29",
+    "x": 99.400001,
+    "y": 72.32,
+    "signal": "FPGA_RGB2"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "30",
+    "carrier_original_pad": "30",
+    "x": 99.800001,
+    "y": 72.32,
+    "signal": "FPGA_IOT_51A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "31",
+    "carrier_original_pad": "31",
+    "x": 100.2,
+    "y": 72.32,
+    "signal": "FPGA_IOT_49A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "32",
+    "carrier_original_pad": "32",
+    "x": 100.6,
+    "y": 72.32,
+    "signal": "FPGA_IOB_3B_G6"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "33",
+    "carrier_original_pad": "33",
+    "x": 101.0,
+    "y": 72.32,
+    "signal": "FPGA_IOT_44B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "34",
+    "carrier_original_pad": "34",
+    "x": 101.4,
+    "y": 72.32,
+    "signal": "FPGA_IOB_5B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "35",
+    "carrier_original_pad": "35",
+    "x": 101.8,
+    "y": 72.32,
+    "signal": "FPGA_IOB_0A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "36",
+    "carrier_original_pad": "36",
+    "x": 102.2,
+    "y": 72.32,
+    "signal": "FPGA_IOB_2A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "37",
+    "carrier_original_pad": "37",
+    "x": 102.6,
+    "y": 72.32,
+    "signal": "FPGA_IOB_4A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "38",
+    "carrier_original_pad": "38",
+    "x": 103.0,
+    "y": 72.32,
+    "signal": "FPGA_IOB_9B"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "39",
+    "carrier_original_pad": "39",
+    "x": 103.4,
+    "y": 72.32,
+    "signal": "FPGA_IOB_8A"
+  },
+  {
+    "connector": "J2",
+    "module_pin": "40",
+    "carrier_original_pad": "40",
+    "x": 103.8,
+    "y": 72.32,
+    "signal": "FPGA_IOB_6A"
+  }
+]
