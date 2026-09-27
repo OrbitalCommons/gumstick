@@ -1,6 +1,7 @@
 {
   "version": 1,
   "defaultProject": "esp32-fpga-module",
+  "qualityProfile": "docs/pcb-playbook/pcb-profile.yaml",
   "projects": [
     {
       "id": "esp32-fpga-module",
