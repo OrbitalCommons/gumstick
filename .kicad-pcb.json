@@ -63,6 +63,26 @@
         "gerbers": "fab/gerbers",
         "jlcpcb": "fab/jlcpcb"
       }
+    },
+    {
+      "id": "gps-time-calibrator",
+      "name": "GPS optical time calibrator carrier",
+      "root": "boards/gps-time-calibrator",
+      "kicad": {
+        "project": "calibrator.kicad_pro",
+        "schematic": "calibrator.kicad_sch",
+        "pcb": "calibrator.kicad_pcb"
+      },
+      "artifacts": {
+        "gerbers": "fab/gerbers",
+        "jlcpcb": "fab/jlcpcb"
+      },
+      "manufacturer": {
+        "name": "JLCPCB",
+        "stackup": "JLC04161H-7628",
+        "rules": "calibrator.kicad_dru",
+        "notes": "1.6 mm four layer to suit edge-launch SMA; rerouting incomplete, not fabrication-ready."
+      }
     }
   ]
 }
