@@ -419,5 +419,37 @@
     "sha256": "a548838bc36e14d39ae1adfc9a4b57864a9ccdf0100c9f5293309f5beb521215",
     "pages": 11,
     "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "M10-SPG-5.10-interface.pdf",
+    "publisher": "u-blox",
+    "parts": [
+      "MAX-M10S-00B-01"
+    ],
+    "calibrator_references": [
+      "U6"
+    ],
+    "source_url": "https://content.u-blox.com/sites/default/files/u-blox-M10-SPG-5.10_InterfaceDescription_UBX-21035062.pdf",
+    "retrieved": "2026-09-27",
+    "status": "integration protocol reference; confirm fitted firmware version",
+    "sha256": "b20859d86b043458494a3473c28f03ec8ad1e9e9d6a61ea2d220aa0f739248b6",
+    "pages": 176,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "HUSB238-registers.pdf",
+    "publisher": "Hynetek",
+    "parts": [
+      "HUSB238_002DD"
+    ],
+    "calibrator_references": [
+      "U11"
+    ],
+    "source_url": "https://www.hynetek.com/uploadfiles/site/219/news/c3afa59e-1c03-4b92-8525-873c152bae4b.pdf",
+    "retrieved": "2026-09-27",
+    "status": "integration protocol reference; confirm fitted firmware version",
+    "sha256": "6d034fc83971f89558e091929567e6bbfa11bd93bd443cd94ce0a831a6fd4e4a",
+    "pages": 8,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
   }
 ]

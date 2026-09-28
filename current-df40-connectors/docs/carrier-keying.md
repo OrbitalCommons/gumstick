@@ -1,5 +1,7 @@
 # Complementary DF40 carrier keying
 
+Historical design notes. Use [ICD-v1.md](ICD-v1.md) for the consolidated ordered-v1 interface, corrected body datum, existing carrier libraries and full pin contract.
+
 | Module | Module component | Carrier mate |
 | --- | --- | --- |
 | J1 | DF40C(2.0)-40DS-0.4V(51), receptacle | DF40C-40DP-0.4V(51), plug |

@@ -15,8 +15,10 @@ Regenerate with `python3 tools/datasheets/extract.py` (requires Poppler `pdftote
 | AP2112 | [PDF](AP2112.pdf) | [MD](AP2112.md) | [Publisher/source](https://www.diodes.com/assets/Datasheets/AP2112.pdf) |
 | DF40C-40DP-drawing | [PDF](DF40C-40DP-drawing.pdf) | [MD](DF40C-40DP-drawing.md) | existing design reference; source not yet catalogued |
 | HS96L03W2C03 | [PDF](HS96L03W2C03.pdf) | [MD](HS96L03W2C03.md) | [Publisher/source](https://datasheet.lcsc.com/datasheet/pdf/4cfb1fe29ff7e4fbff30eb4e2a452c3a.pdf) |
+| HUSB238-registers | [PDF](HUSB238-registers.pdf) | [MD](HUSB238-registers.md) | [Publisher/source](https://www.hynetek.com/uploadfiles/site/219/news/c3afa59e-1c03-4b92-8525-873c152bae4b.pdf) |
 | HUSB238 | [PDF](HUSB238.pdf) | [MD](HUSB238.md) | [Publisher/source](https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf) |
 | JGHC-S2240000101050 | [PDF](JGHC-S2240000101050.pdf) | [MD](JGHC-S2240000101050.md) | existing design reference; source not yet catalogued |
+| M10-SPG-5.10-interface | [PDF](M10-SPG-5.10-interface.pdf) | [MD](M10-SPG-5.10-interface.md) | [Publisher/source](https://content.u-blox.com/sites/default/files/u-blox-M10-SPG-5.10_InterfaceDescription_UBX-21035062.pdf) |
 | MAX-M10S-integration | [PDF](MAX-M10S-integration.pdf) | [MD](MAX-M10S-integration.md) | [Publisher/source](https://content.u-blox.com/sites/default/files/MAX-M10S_IntegrationManual_UBX-20053088.pdf) |
 | RainSun-AN3216 | [PDF](RainSun-AN3216.pdf) | [MD](RainSun-AN3216.md) | existing design reference; source not yet catalogued |
 | TPS7A45 | [PDF](TPS7A45.pdf) | [MD](TPS7A45.md) | [Publisher/source](https://www.ti.com/lit/ds/symlink/tps7a45.pdf) |
