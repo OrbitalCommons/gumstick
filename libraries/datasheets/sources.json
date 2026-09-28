@@ -1,0 +1,423 @@
+[
+  {
+    "file": "tps2595.pdf",
+    "publisher": "Texas Instruments",
+    "parts": [
+      "TPS259531DSGR"
+    ],
+    "calibrator_references": [
+      "U14"
+    ],
+    "source_url": "https://www.ti.com/lit/ds/symlink/tps2595.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "6a8b67ad925b6fa88d7f3fccd94a3fc4f7c8d3f8a22abecbdfdc3c33f63f0d25",
+    "pages": 49,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "tusb320lai.pdf",
+    "publisher": "Texas Instruments",
+    "parts": [
+      "TUSB320LAIRWBR"
+    ],
+    "calibrator_references": [
+      "U11"
+    ],
+    "source_url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d",
+    "pages": 38,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "AOC97.pdf",
+    "publisher": "Abracon",
+    "parts": [
+      "AOC97FAJC-10.0000"
+    ],
+    "calibrator_references": [
+      "Y1"
+    ],
+    "source_url": "https://abracon.com/datasheets/AOC97.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "97f368720dee39bca256cb51d27f5907faeb42621a06fdf04652baa5b84f8772",
+    "pages": 8,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "MAX-M10S-integration.pdf",
+    "publisher": "u-blox",
+    "parts": [
+      "MAX-M10S-00B-01"
+    ],
+    "calibrator_references": [
+      "U6"
+    ],
+    "source_url": "https://content.u-blox.com/sites/default/files/MAX-M10S_IntegrationManual_UBX-20053088.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "5a7510ef84f7e2757c57e362a25e3c16bcf8c80af5a4f70790c2e51032dbcd13",
+    "pages": 102,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "TPS7A45.pdf",
+    "publisher": "Texas Instruments",
+    "parts": [
+      "TPS7A4533DCQR"
+    ],
+    "calibrator_references": [
+      "U15"
+    ],
+    "source_url": "https://www.ti.com/lit/ds/symlink/tps7a45.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "c8c2fe4b7b5bd34b8ec750809817736cb66bcc29bbdf3a0238738c2d8a1ae80f",
+    "pages": 38,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "HS96L03W2C03.pdf",
+    "publisher": "HS",
+    "parts": [
+      "HS96L03W2C03"
+    ],
+    "calibrator_references": [
+      "DS1"
+    ],
+    "source_url": "https://datasheet.lcsc.com/datasheet/pdf/4cfb1fe29ff7e4fbff30eb4e2a452c3a.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "370328a8c5a1df6181d15da916e4ac31b23f812cc093ccef79a9836794ec4c45",
+    "pages": 25,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "tps2553.pdf",
+    "publisher": "Texas Instruments",
+    "parts": [
+      "TPS2553DBVR"
+    ],
+    "calibrator_references": [
+      "U8"
+    ],
+    "source_url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "88e453700cea2b263cdb5b44fce1e883e0f6d3b975457f879ac1423eeea42071",
+    "pages": 44,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "tlv3501.pdf",
+    "publisher": "Texas Instruments",
+    "parts": [
+      "TLV3501AIDBVR"
+    ],
+    "calibrator_references": [
+      "U9"
+    ],
+    "source_url": "https://www.ti.com/lit/ds/symlink/tlv3501.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "fcfbeffce874629849fe7b2324fa40731a41453b587b8f50782f0ff42311b946",
+    "pages": 33,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "sn74ahct1g125.pdf",
+    "publisher": "Texas Instruments",
+    "parts": [
+      "SN74AHCT1G125DBVR"
+    ],
+    "calibrator_references": [
+      "U10"
+    ],
+    "source_url": "https://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "dbaf49b3af33690fc7f7356afe387e7815a56b8bb73fe1e88bf794f4fb8e0d2f",
+    "pages": 26,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "sn74lvc1g17.pdf",
+    "publisher": "Texas Instruments",
+    "parts": [
+      "SN74LVC1G17DBVR"
+    ],
+    "calibrator_references": [
+      "U7"
+    ],
+    "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "c76fa723fac4502423967a1aa087dd669106b52b8de620c024b26e56f5d59309",
+    "pages": 53,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "sn74lvc541a.pdf",
+    "publisher": "Texas Instruments",
+    "parts": [
+      "SN74LVC541APWR"
+    ],
+    "calibrator_references": [
+      "U3",
+      "U4"
+    ],
+    "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc541a.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "2dd5b2769640eeb604841ccd2a6b2783e12d6d590296aca9d4c3cf9632572634",
+    "pages": 43,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "AP2112.pdf",
+    "publisher": "Diodes Incorporated",
+    "parts": [
+      "AP2112K-3.3TRG1"
+    ],
+    "calibrator_references": [
+      "U2",
+      "U5",
+      "U12"
+    ],
+    "source_url": "https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "ef8d376f2ec356e29172eb9e053819a0ebdcc576dba7fc9ab0505c568427920f",
+    "pages": 18,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "AO3400A.pdf",
+    "publisher": "Alpha & Omega",
+    "parts": [
+      "AO3400A"
+    ],
+    "calibrator_references": [
+      "Q1\u2013Q16"
+    ],
+    "source_url": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
+    "pages": 5,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "USBLC6-2.pdf",
+    "source_url": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+    "error": "HTTPSConnectionPool(host='www.st.com', port=443): Read timed out. (read timeout=35)"
+  },
+  {
+    "file": "Wurth-960030010.pdf",
+    "publisher": "Wurth Elektronik",
+    "parts": [
+      "960030010"
+    ],
+    "calibrator_references": [],
+    "source_url": "https://www.we-online.com/components/products/datasheet/960030010.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "d7975a0d82746cf6002f13252845f8594156a8903729ed1ed7907d23256c77df",
+    "pages": 4,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "Wurth-61300411121.pdf",
+    "publisher": "Wurth Elektronik",
+    "parts": [
+      "61300411121"
+    ],
+    "calibrator_references": [],
+    "source_url": "https://www.we-online.com/components/products/datasheet/61300411121.pdf",
+    "retrieved": "2026-09-27",
+    "status": "design reference",
+    "sha256": "ce759fb8caee2fd0c3167f6925010f6703aa4f939ded51aae7ead334c38c0d7d",
+    "pages": 6,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "ANT2012LL00R2400A.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "822f37e7a613e66c0cfde04bd5ffaf82dab96de3c4bf22ad9e15b88fa5b2480f",
+    "pages": 5,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "ANT3216LL00R2400A.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "78e7a1e42a174fac9d161b81855e2c6baedb3ea8afcc3787ebb461822cb876ca",
+    "pages": 5,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "DF40C-40DP-drawing.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "70cef4d26de8391d11a56a046724fc12b4509284abbc2061287236cbf53f1e47",
+    "pages": 3,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "JGHC-S2240000101050.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "cb400db1bd71f60a39e2802a795a7ad9a8bcbb979ac0a9e6d8ab0c44a5c48889",
+    "pages": 1,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "RainSun-AN3216.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "b5dcf3912f96622f5fe64829937b53797afe08d48a574b44f5cb6848edf5695e",
+    "pages": 1,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "df40-40ds.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "9f1b86e1650165bc4fc0910fb66320a6d09229bc91a6e4984fee2c2231336c9b",
+    "pages": 2,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "df40-catalog.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "b924c940dd62007a6d65b55ccd603ef14ff744e0ca8f4e2904d102faca14eb84",
+    "pages": 25,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "ice40-hardware-checklist.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "1d0b2f0832277bfbf1e5586a6e409b9d45cbab0fe0fd9588c57a04e0d255438a",
+    "pages": 25,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "tlv755p.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "7eb7bc6935bf6c1d247b2fce62c9e5a49a474fd94359ddc390a4baf0ac1f5293",
+    "pages": 51,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "tps62160.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "abc824ca04ee985ede3a513172ccdd2a42c8e1fdcfc3af5acdbe2c1af31aaa72",
+    "pages": 42,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "tps62162.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "abc824ca04ee985ede3a513172ccdd2a42c8e1fdcfc3af5acdbe2c1af31aaa72",
+    "pages": 42,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "xfl3012.pdf",
+    "status": "existing design reference; source not yet catalogued",
+    "sha256": "a939120103cf22d59438ec9eaee8a385e6a7f36fc0b05492206a6e0840a94689",
+    "pages": 4,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "HUSB238.pdf",
+    "source_url": "https://cdn-learn.adafruit.com/assets/assets/000/125/150/original/husb238_datasheet_full.pdf",
+    "parts": [
+      "HUSB238_002DD"
+    ],
+    "calibrator_references": [
+      "U11"
+    ],
+    "status": "Hynetek full datasheet, mirrored by Adafruit",
+    "sha256": "f6fb03b7218e726583a7989c1927432e45504b8f1145bc5b8c6fbcbd285feedc",
+    "pages": 15,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  },
+  {
+    "file": "YLED1206G.pdf",
+    "publisher": "YONGYUTAI",
+    "parts": [
+      "YLED1206G"
+    ],
+    "calibrator_references": [
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "D19",
+      "D20",
+      "D21",
+      "D22",
+      "D23",
+      "D24",
+      "D25",
+      "D26",
+      "D27",
+      "D28",
+      "D29",
+      "D30",
+      "D31",
+      "D32",
+      "D33",
+      "D34",
+      "D35",
+      "D36",
+      "D37",
+      "D38",
+      "D39",
+      "D40",
+      "D41",
+      "D42",
+      "D43",
+      "D44",
+      "D45",
+      "D46",
+      "D47",
+      "D48",
+      "D49",
+      "D50",
+      "D51",
+      "D52",
+      "D53",
+      "D54",
+      "D55",
+      "D56",
+      "D57",
+      "D58",
+      "D59",
+      "D60",
+      "D61",
+      "D62",
+      "D63",
+      "D64",
+      "D65",
+      "D66",
+      "D67",
+      "D68",
+      "D69",
+      "D70",
+      "D71",
+      "D72",
+      "D73"
+    ],
+    "source_url": "https://xonstorage.z8.web.core.windows.net/pdf/yongyutaielectronics_yled1206g_nocat_xonlink.pdf",
+    "retrieved": "2026-09-27",
+    "status": "manufacturer datasheet Rev 2.0 hosted by distributor",
+    "sha256": "a548838bc36e14d39ae1adfc9a4b57864a9ccdf0100c9f5293309f5beb521215",
+    "pages": 11,
+    "extraction": "pdftotext -layout, UTF-8; no OCR"
+  }
+]
