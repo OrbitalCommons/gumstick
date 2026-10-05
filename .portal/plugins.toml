@@ -1,6 +1,6 @@
 [[suggested_plugins]]
-name = "backplane"
-source = "github:meawoppl/agent-portal-plugins//backplane"
+name = "kicadmium"
+source = "github:meawoppl/kicadmium"
 reason = "This repo contains KiCad PCB source and JLCPCB assembly artifacts."
 required = true
 
