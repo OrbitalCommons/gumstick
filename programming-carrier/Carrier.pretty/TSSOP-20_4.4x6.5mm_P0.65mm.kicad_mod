@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "TSSOP, 20 Pin (JEDEC MO-153 Var AC https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+	(descr "TSSOP, 20 Pin, generated with kicad-footprint-generator ipc_gullwing_generator.py")
 	(tags "TSSOP SO")
 	(property "Reference" "U4"
 		(at 0 8 0)

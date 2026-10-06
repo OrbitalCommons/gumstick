@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Inductor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+	(descr "Inductor SMD 0603, square end terminal, IPC_7351 nominal, generated with kicad-footprint-generator")
 	(tags "inductor")
 	(property "Reference" "REF**"
 		(at 0 1.8 180)
