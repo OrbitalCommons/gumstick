@@ -1,0 +1,9 @@
+Signal,ESP32_C6_GPIO,ESP32_C6_QFN32_pad,FPGA_SG48_pad,Notes
+FPGA_SPI_SCK,6,12,15,Native FSPI clock
+FPGA_SPI_MOSI,7,13,17,Native FSPI D
+FPGA_SPI_MISO,2,8,14,Native FSPI Q
+FPGA_SPI_CS_N,18,23,16,Chip select routed through GPIO matrix
+FPGA_SPI_IO2,0,6,13,GPIO matrix; avoids boot-strapping pins
+FPGA_SPI_IO3,1,7,18,GPIO matrix; avoids boot-strapping pins
+FPGA_CRESET_N,20,25,8,Retain 10k pull-down
+FPGA_CDONE,21,26,7,Retain 10k pull-up to 3.3V

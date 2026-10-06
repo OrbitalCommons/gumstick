@@ -1,0 +1,75 @@
+{
+  "revision": "B-development",
+  "status": "design_in_progress_not_for_fabrication",
+  "predecessor": "boards/esp32-fpga-module",
+  "processor": {
+    "mpn": "ESP32-C6FH8",
+    "package": "QFN32 5x5 mm, 0.5 mm pitch",
+    "integrated_flash_mib": 8,
+    "symbol_source": "https://github.com/espressif/kicad-libraries",
+    "datasheet": "https://documentation.espressif.com/esp32-c6_datasheet_en.html",
+    "gpio_available": 22,
+    "gpio_exposed": 12,
+    "usb": "USB Serial/JTAG; not the ESP32-S2 USB OTG peripheral",
+    "boot": "GPIO8 must be high and GPIO9 low for serial download; GPIO9 high for normal SPI boot",
+    "external_straps": ["GPIO4", "GPIO5", "GPIO8", "GPIO9", "GPIO15"],
+    "internal_straps": [],
+    "spi_routing": "GPIO matrix for chip select and quad IO2/IO3; verify timing at intended clock",
+    "fpga_reset_default": "FPGA_CRESET_N pulled low; all MCU-FPGA links avoid ESP strapping pins, including an ESP-only reset after FPGA configuration",
+    "supply_guidance": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c6/schematic-checklist.html"
+  },
+  "power": {
+    "input_net": "+3.3V",
+    "nominal_v": 3.3,
+    "carrier_regulation_target_percent": 5,
+    "carrier_current_budget_a": 1.0,
+    "budget_status": "design target; validate with chosen FPGA image and radio transmit bursts",
+    "c6_supply_capability_min_a": 0.5,
+    "remove": ["U3", "L4", "R62", "R64", "R65"],
+    "retain": ["U4", "L1", "L2", "C60", "C61", "C67"],
+    "input_bulk": "C60 plus C61/C67 reassigned to regulated 3.3 V input",
+    "core_regulator": "TLV75512PDBVR, 3.3 V to 1.2 V; check dissipation against FPGA design current",
+    "rf_filter": "Review C6 supply-filter values against reference design; do not omit RF decoupling",
+    "power_contacts": [2, 4, 70, 72, 74],
+    "ground_contacts": [1, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 71, 73, 75],
+    "carrier_requirements": [
+      "No 5 V on any module power or signal contact",
+      "Connect every designated supply and ground contact",
+      "Do not drive module I/O when its supply is off",
+      "Carrier must implement regulated input, transient protection and reset sequencing",
+      "No hot plugging"
+    ]
+  },
+  "mechanics": {
+    "interface": "M.2 Socket 3 M-key mechanical interface with CUSTOM electrical pinout",
+    "contact_count": 67,
+    "numbering": "M.2 positions 1 through 75, omit key positions 59 through 66",
+    "contact_pitch_mm": 0.5,
+    "width_mm_target": 22,
+    "length_mm_target": 42,
+    "pcb_thickness_mm": 0.8,
+    "thickness_tolerance_mm": 0.08,
+    "copper_layers": 4,
+    "assembly_side": "F.Cu only; B.Cu edge contacts have no paste or placed components",
+    "carrier_socket_candidate": "TE Connectivity 1-2199230-6, M-key, 4.2 mm seating height",
+    "carrier_socket_source": "https://www.te.com/en/product-1-2199230-6.html",
+    "socket_bom_location": "carrier, not module",
+    "retention": "M2 screw and carrier standoff; edge bevel and notch per connector drawing",
+    "compatibility": "NOT PCIe/NVMe/SATA compatible. Only connect to purpose-built v2 carriers.",
+    "release_checks": [
+      "Confirm board outline, notch, plating and bevel against socket drawing",
+      "Confirm final 2242 placement fit, mounting clearance and insertion envelope",
+      "Select actual 0.8 mm manufacturer stackup and recalculate RF/USB geometry",
+      "Quote plated fingers and panelization alongside single-side assembly",
+      "Check finish lifetime against expected insertion cycles"
+    ]
+  },
+  "verification_required": [
+    "Official C6 QFN32 symbol pin audit including FH8/FH4 common package",
+    "Native KiCad netlist comparison against icd-v2-pinout.csv and c6-fpga-link.csv",
+    "ERC, DRC with schematic parity, and workspace quality profile",
+    "Visual schematic, copper, solder mask, solder paste and 3D review",
+    "Firmware C6 target and boot/configuration sequence",
+    "Prototype RF match, clock startup, supply transient and thermal checks"
+  ]
+}
