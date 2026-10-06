@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "defaultProject": "esp32-fpga-module",
+  "defaultProject": "tesla-coil-controller",
   "qualityProfile": "docs/pcb-playbook/pcb-profile.yaml",
   "projects": [
     {
@@ -82,6 +82,20 @@
         "stackup": "JLC04161H-7628",
         "rules": "calibrator.kicad_dru",
         "notes": "1.6 mm four layer to suit edge-launch SMA; routing complete and native ERC/DRC checked. Review manual OCXO/OLED assembly, JLC placement preview and hardware validation before release. RFC v1: not ordered; hold ordering until module and carrier validation."
+      }
+    },
+    {
+      "id": "tesla-coil-controller",
+      "name": "Tesla coil controller (acquisition draft)",
+      "root": "boards/tesla-coil-controller",
+      "kicad": {
+        "project": "controller.kicad_pro",
+        "schematic": "controller.kicad_sch",
+        "pcb": "controller.kicad_pcb"
+      },
+      "artifacts": {
+        "gerbers": "fab/gerbers",
+        "jlcpcb": "fab/jlcpcb"
       }
     }
   ]
