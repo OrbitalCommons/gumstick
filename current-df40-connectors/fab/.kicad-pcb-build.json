@@ -1,0 +1,504 @@
+{
+  "version": 1,
+  "generator": "kicad-pcb",
+  "project": "esp32-fpga-module",
+  "published_at_ms": 1790535579427,
+  "kicad_version": "10.0.6",
+  "hashes": {
+    "revision": "60e17d3b790d08b38550",
+    "sch": "0050d2c517958c03a4d3f49cb9e7ef65ae4aae9974f3772324711082787f5a19",
+    "pcb": "8fb136a00ca0daabc1faf44f7f41e640d49e6937d11d340dee7e03b041161805"
+  },
+  "source_files": {
+    "3dmodels/C_0402_1005Metric.step": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+    "3dmodels/C_0603_1608Metric.step": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+    "3dmodels/Coilcraft_XFL3012.step": "ffb531630e6b80326b97bed7b698b8b7d3ad48cda8002d562e511896fda22002",
+    "3dmodels/Crystal_SMD_2520-4Pin_2.5x2.0mm.step": "cd0c53e8a35a3cb36fc18e5248a2acf382b94b62d156b7bb9cc398eef3e21c4a",
+    "3dmodels/DF40C_2_0_40DS.step": "4f8365e9aec11d5c10631f3741938ec3347739dd6dae62424c38ab0e2d4d4d94",
+    "3dmodels/DF40C_40DP.step": "3bf116d7d2aef6c7304d48ae7a7f788bd7493ec1b58db94bc5de7ddfdb024f66",
+    "3dmodels/FC-B1010RGBT-HG_approx.step": "0e7460a3b871a480ab4bac6db8f4339f9021e1b00086663dfe85374d3742fc9d",
+    "3dmodels/L_0402_1005Metric.step": "8bf2ae2bbd9d8b716db21d8d7fb903fac5ba2696150c3ec2e35bcea17b208ff2",
+    "3dmodels/L_0603_1608Metric.step": "b0136ad7160588d2f5dac8c85da84a35646db656b5bc54bbb873b6b548eedbb3",
+    "3dmodels/QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm.step": "f2b38b0b4bf967c77e683e8d4599608b9f0503055ec535b93c4ebb5d0163e916",
+    "3dmodels/QFN-56-1EP_7x7mm_P0.4mm_EP4x4mm.step": "b42d9b0c7a8d55564f4e9bb74be3ab877d958a268411c07a496787496cfb1b99",
+    "3dmodels/R_0402_1005Metric.step": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+    "3dmodels/SOT-23-5.step": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+    "3dmodels/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
+    "3dmodels/VSSOP-8_3x3mm_P0.65mm.step": "0af17c38f7022ea10ff245f82773c9b00d4163a407490c6b2d91869a0861df56",
+    "Module.kicad_sym": "b8200ad98a6e4e3f418790f36bf6221d8accf8d90b205c4efaf8efd46572c2d9",
+    "Module.pretty/AE1_ACAG0201-2450_2.0x1.25mm.kicad_mod": "dd6aaaa876181222b67e185f98ea08664b96e2dfb5e7bd20723adbbf0a1125f4",
+    "Module.pretty/AE1_PCB-ANTENNA.kicad_mod": "8c2360f21c89e7de9889480fe8a6f30a340cbf99b60ef0a14f95021fbfccafda",
+    "Module.pretty/AE1_Pulse_ANT2012LL00R2400A.kicad_mod": "de71facb67d79c6864fb397bf5fe6b09e98ecfb5dacfa4420b793d3255608d27",
+    "Module.pretty/C1_CAPC1005X60.kicad_mod": "6f099dea76e881438116670fe96c2666c535e9c25cd30eaa5f3239d3577679aa",
+    "Module.pretty/C2_CAPC1005X60.kicad_mod": "f70915ebbc757edfb60c7c7e9e3b8fe96f7ae572f72841169260d67dd291ec24",
+    "Module.pretty/C32_CAPC1005X60.kicad_mod": "9d565ad1a6a42e5f8e8c251d14ece89a393616fd04874521e3a55d0fc6fb4c17",
+    "Module.pretty/C33_C_0603_1608Metric.kicad_mod": "096f3243ed91a8ac7c4129defd22f2a0c15251f86941190a5db1c91438dd6ef6",
+    "Module.pretty/C34_C_0603_1608Metric.kicad_mod": "b78e04a1dc26f0b21222ce3ca6f0ea90b5a643dfe35a2c3d01c949f5035ddf8e",
+    "Module.pretty/C35_CAPC1005X60.kicad_mod": "78edb69b8e92912365826f2180b3988ef38d090aa92b4c8c0a4b085c03417561",
+    "Module.pretty/C35_C_0201_0603Metric.kicad_mod": "d3b130378fc07c27984a8fecfb008ebb9802e61e03a85670414310ed5b7918a1",
+    "Module.pretty/C37_CAPC1005X60.kicad_mod": "4f51df7cc76945012f0acd877daff8f5416ea824157c45e904a18a2007f35af6",
+    "Module.pretty/C38_CAPC1005X60.kicad_mod": "ce868b0d41283c29761e93aa2889de4eb451c182d5ee451de965b656a1fd2edf",
+    "Module.pretty/C39_CAPC1005X60.kicad_mod": "6429079ba049147e9074eba1edc9c383d9b7704ccecd391bb0157ec802da8f25",
+    "Module.pretty/C40_CAPC1005X60.kicad_mod": "e6d258730bc6f7f159ecded7d058e6b59ecee8efa67638f0a974545c51f1d052",
+    "Module.pretty/C41_CAPC1005X60.kicad_mod": "88429a8af506c94bcf33a2615e2804e23a06ae16a15f864531932d2879221693",
+    "Module.pretty/C42_CAPC1005X60.kicad_mod": "074eaacc424223946892db0644567db4edfa55aa66c38d47c280ec823501f313",
+    "Module.pretty/C43_C_0603_1608Metric.kicad_mod": "d920eab77730b080a5e6074b11597adc341c761855be485bcb4b298f10831a72",
+    "Module.pretty/C44_CAPC1005X60.kicad_mod": "9aa2b451ae393013b80acd42fc4493d8049fc357dee425e7d10594f79f5b78b0",
+    "Module.pretty/C45_C_0603_1608Metric.kicad_mod": "46f920a2ab5fd9e04d535e5136f01ea068d90bc2dcbdbd3b94255d35dc634512",
+    "Module.pretty/C46_CAPC1005X60.kicad_mod": "9523b774370ebd26c3a16c087af64685d047028e09581aad2fb40c74682024e0",
+    "Module.pretty/C48_CAPC1005X60.kicad_mod": "19128f3cf100d39d08dcae9bf762831eeaa6975eb704044766d2795e2d5c3f54",
+    "Module.pretty/C49_CAPC1005X60.kicad_mod": "0fc7882e7b5750131ede3b877586f736320a9e00c570f3411a71445f636aec83",
+    "Module.pretty/C50_CAPC1005X60.kicad_mod": "a7644aa56f82b89eb93495b6ede855c0c8c4c007ba8e17545e9bb2d751e41827",
+    "Module.pretty/C52_CAPC1005X60.kicad_mod": "32bc89357b223442fdee6600e1e244095e014578df7a86ef80823feb9c8b89f0",
+    "Module.pretty/C60_C_0603_1608Metric.kicad_mod": "e3184233dac1679b4d67ec9215cabfba7866829a08c50d75afdb8dd00a20b50b",
+    "Module.pretty/C61_C_0603_1608Metric.kicad_mod": "e486d332416baa44721dd517c85b51baca258a807d6048b8f10551590fec0015",
+    "Module.pretty/C61_C_0805_2012Metric.kicad_mod": "440f32fd378f69e3e68bcd892779bc3fe5640a689c8967bd3157d97e2d4ac1b2",
+    "Module.pretty/C62_C_0603_1608Metric.kicad_mod": "5478581cf300fd5fdc7656610e78440782596e36f33c5449a7786ebdfcdb7175",
+    "Module.pretty/C63_C_0603_1608Metric.kicad_mod": "f5c5d714833704571fa6d9a42fb1d5c3dd3b0055bfb918ce5127b4572452b999",
+    "Module.pretty/C64_C_0603_1608Metric.kicad_mod": "289cf6c96be7cf375fc64f1d55508e610f0d548c634fd105a8c0c2f92ffd0f45",
+    "Module.pretty/C65_C_0603_1608Metric.kicad_mod": "af74bd44eb6ca5e30eb913d44f63fdb6a66bc773c6eb172bc5f0034c2f5cb44d",
+    "Module.pretty/C66_C_0603_1608Metric.kicad_mod": "908557f0eec6ad5e742c84145e4a6d1efc1cd102bbbb24f566f6207d05fe0cb3",
+    "Module.pretty/C67_C_0603_1608Metric.kicad_mod": "6733205297652450d87f20ac820039a9b8cbc0207f8e749a1c041d550425475c",
+    "Module.pretty/C68_C_0402_1005Metric.kicad_mod": "3454c8b4a556c9e3ee89441539728f3ecffa12ed0294e83fc0fd22e62a71ca8a",
+    "Module.pretty/C69_C_0402_1005Metric.kicad_mod": "ed3889067cdceb1e4d7e13f095537d88d628632f06550430d31a430852f4e8cf",
+    "Module.pretty/C6_CAPC1005X60.kicad_mod": "cb0df04dceaf0eac7354a3e846493a6ffcdd878101d2195c40879c7b051d6dba",
+    "Module.pretty/C7_CAPC1005X60.kicad_mod": "4232c6acb1a5d2dbca17a7596153c657e6c6253f322de8d0cc3987cb75c06789",
+    "Module.pretty/CAPC1005X60.kicad_mod": "9aa89688490b5ec0e62e8e9d8647ed9ab645ba45f342f41f13b5dce8383255d4",
+    "Module.pretty/D1_RGBLED.kicad_mod": "e23af1cd97574776b728b572431283d2ac640a46b9b5741c0553341ecfbbf755",
+    "Module.pretty/DF40C_40DS_2mm.kicad_mod": "6e6fa60273d5c8c4e892d327793232729e6fa524f488cd8bb35a31410131029a",
+    "Module.pretty/ICE40-QFN.kicad_mod": "e0e5f93f27c1d5efb6e4cc17121b9d76ce2bc5a3bb663862c1e5012794dbb118",
+    "Module.pretty/INDC1006X60N.kicad_mod": "1e29c2f850a1711768ccb389b97fc75ed9bddf5d92672d9462337a8bc50ba2b3",
+    "Module.pretty/J1_DF40C_40DS_2mm.kicad_mod": "2e764b295e72429932e32cd7ccf66967a9efd1d41dcfa33979f10b52e16c4729",
+    "Module.pretty/J2_DF40C_40DP.kicad_mod": "a65e89916f265fc4f5c1a5a586e5fe0b5ed0513e9aaee0ab72cafb53cd2bd651",
+    "Module.pretty/J2_DF40C_40DS_2mm.kicad_mod": "9e4300e76abf0c82e8dbc992807d693fca6bad45ca9f84983ad4b67c12c8fdbb",
+    "Module.pretty/J3_U.FL_Hirose_U.FL-R-SMT-1_Vertical.kicad_mod": "7e834cb28a8207e8f76f5938f6bb689e0bd3c961d7b76065b82ebfd73587e76d",
+    "Module.pretty/JP1_RF_Select_CutChip_BridgeExt.kicad_mod": "9a8993b51709b1996cc1fede7ce8cdad45bde7f7b34949fb02fca7511a51b414",
+    "Module.pretty/L1_L_0603_1608Metric.kicad_mod": "f315ac25ea7b7f6c8cac05174a8b01ceef5dc0483ef7fac25639c3eaf23ce06f",
+    "Module.pretty/L2_L_0603_1608Metric.kicad_mod": "7147dba63a2cf0e1bb0b3ad504f57f320b7b943cc63b8a34cb6aa04f65a69c75",
+    "Module.pretty/L3_INDC1006X60N.kicad_mod": "dc865c7ea71623007014e27f65c8648d4636b5d1bb66566898dc22af1cf14018",
+    "Module.pretty/L4_L_XFL3012_222MEC.kicad_mod": "02c92481168e8d50bda3a4f4783501e402bd43b20f4b824876d730dc92d47162",
+    "Module.pretty/L_XFL3012_222MEC.kicad_mod": "f3c3b26d0ebcf0addd3dc79d58e522deb7d08ec49dfe66237d3c1a641c71c884",
+    "Module.pretty/PCB-ANTENNA.kicad_mod": "eb1ef833b1a6ce5063852c1d96ecc52e7b7bd2a97a9c115ca87f8bb72e7db1b2",
+    "Module.pretty/QFN56_ESP32-S2FH4_EXP-M.kicad_mod": "61f6d25b2fb09903e35cc5e467acc2f76ed73b54d89279d9784ba54eae956e9b",
+    "Module.pretty/R20_RESC1005X40.kicad_mod": "93fffedc7999d85370746f3c0d4e241acadba9262cc4b1830a107383a414e62c",
+    "Module.pretty/R22_RESC1005X40.kicad_mod": "14d5707d783b05dac21fdee3180883d088aeaadf3be6afedc4f93821a5729fec",
+    "Module.pretty/R28_RESC1005X40.kicad_mod": "58c1930a8df18890cf327e5442f0a80bbd2a3584432ea7b6f4a3d690715841eb",
+    "Module.pretty/R29_RESC1005X40.kicad_mod": "4056129a5488b2f5b9da13e2f66fe8f5ce6d0aee2a7f0d5e5b5b9fe446672ba0",
+    "Module.pretty/R3_RESC1005X40.kicad_mod": "719bc9e9e0dcbc8fa2ad563faf9e9642b8a7a2ed144400a0198956d1d22d2ee1",
+    "Module.pretty/R60_R_0402_1005Metric.kicad_mod": "1a3b9a23ebb3cf0bfbc51d02629776decbf4aa0d13b555ba9b524aa928166926",
+    "Module.pretty/R61_R_0402_1005Metric.kicad_mod": "f785181cc05e717b1298daf497f69904a637597425be1a19a233074e6694f9ca",
+    "Module.pretty/R62_R_0402_1005Metric.kicad_mod": "d6a3790e6b8045e045ed6041f1f97cff605ae35ba791487f0abd58f12bab00fa",
+    "Module.pretty/R63_R_0402_1005Metric.kicad_mod": "e55dc7ad8e00eabf1e7ec08518fa2d36dae0d3c93a8ddfaf85aa990a4a833005",
+    "Module.pretty/R64_R_0402_1005Metric.kicad_mod": "51bfccef0f2b97e06d878442b7d254127b04657ce4ce7cef7a2ecd885cf3b0ad",
+    "Module.pretty/R65_R_0402_1005Metric.kicad_mod": "c5da458ae9b34233e84d4a1db44fb945d8bb74fed5ef744985c1d348034c676d",
+    "Module.pretty/RESC1005X40.kicad_mod": "e2d98445d00bf13041e871ec319e574154a686791fa4de55999f035d38b0c5b9",
+    "Module.pretty/RGBLED.kicad_mod": "23215ef2f8c9032ddf28600b0218621f08853efd9f6118b9d8c707d46fd177af",
+    "Module.pretty/SJ1_SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm.kicad_mod": "4517b80f8c3c9167d91d188a7ed19d944742036314e119e60a3eec7f59f3dccf",
+    "Module.pretty/TestPoint_0p8.kicad_mod": "7cd19fb7c4a4e136020291cad61567e7e4bb83e4fa5fbf46da491ffd353f018e",
+    "Module.pretty/U1_QFN56_ESP32-S2FH4_EXP-M.kicad_mod": "b793be108a5eb93313dbdc512d72adb011bc35ca7cbbee5055f8cc73d1f24539",
+    "Module.pretty/U2_ICE40-QFN.kicad_mod": "e658fa0f03a7c606a5f2f707d5197cb88201c2a75ac58f786f7d516b80088e68",
+    "Module.pretty/U3_VSSOP-8_3x3mm_P0.65mm.kicad_mod": "568b742ea456bbd44d26ffa514d1433627fc5e78b18ddefb75faad5145e7489d",
+    "Module.pretty/U3_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.kicad_mod": "54c7fcc2b99ef2286e35e136ca3f32de61d1e322450780ebc31e8aab85af148a",
+    "Module.pretty/U4_SOT-23-5.kicad_mod": "23253512042425d1edea5b57a261f8b393e241e12244196eb4f1931992938942",
+    "Module.pretty/U5_SOT-23-5.kicad_mod": "cb91203f0de97a275c887f7b93dc6346c3197fcbdf9f7dee8339498e874df9d8",
+    "Module.pretty/XTAL_ECS-400-10-36-CKY-TR.kicad_mod": "28e0a8a6ade0d7d1f0f518b9c928334cd03cba2a7f0db5a4354fb22790fcde42",
+    "Module.pretty/Y1_JGHC_S2240000101050.kicad_mod": "281084613f46f5838fe799f80bc08fbd47bd74e64ab8694ff7ccf90f7a135f13",
+    "Module.pretty/Y1_XTAL_ECS-400-10-36-CKY-TR.kicad_mod": "24e1fdf63819fd982134eaf333df931b5fded57ec3cee29957234711a4598803",
+    "fp-lib-table": "81ce353b0b398f00b06cc36dcd192f16ae61aebee88b8e3b8f31495421250532",
+    "module.kicad_dru": "a674da2caa5d7c647ec8eaa6a6005fcad0f3ad52faec9c42ea03460371583b5f",
+    "module.kicad_pcb": "441d492ca44e15825f883397baa316bb4cc7ad006db7818a43be6ab2683e6361",
+    "module.kicad_pro": "811754ca930f3c6835d7a56683b0984e7960bed865d2c8ca7d3d4e5885154d42",
+    "module.kicad_sch": "474ade84441a1a5b6d33b7d8c7b10289f7e4678738ae3cbcfa7b341039994d20",
+    "sym-lib-table": "e3b9e6589e796bf5f9045a883eabcd75f149dbfc322b2e44819d031ffad564c3"
+  },
+  "stages": {
+    "bom": {
+      "input_key": "0545bc40627ba8e3a2d537eb5fcf357806a0e13a7bf57c1cfacd40ee00851e9a",
+      "ok": true,
+      "message": null,
+      "files": [
+        {
+          "path": "fab/bom/module-bom.csv",
+          "sha256": "bd606ed536517f6e200ce73fe4dfb102a99bc21b982fd616bf8ae1c4ac9c7f9f",
+          "size": 2521
+        }
+      ]
+    },
+    "drc": {
+      "input_key": "fa5aba2936c4ac1127d2c3f4b5a87542774e356796a1b9146b018847562dc25e",
+      "ok": true,
+      "message": null,
+      "files": [
+        {
+          "path": "fab/checks/drc.json",
+          "sha256": "4bb1eb42288171dca68a7d44646b24a0dbffda9e1677188d3a8c8eb49b18a47d",
+          "size": 1063
+        }
+      ]
+    },
+    "erc": {
+      "input_key": "c2cd2b3837cffbf11d0636e5ab4a433e1ed4e06fcde9a5c66619cdad12205046",
+      "ok": true,
+      "message": null,
+      "files": [
+        {
+          "path": "fab/checks/erc.json",
+          "sha256": "78ab8695946e4053d97647debe1bf64dfb9c2bb3c74fa0b12c0d13b31f22464e",
+          "size": 979
+        }
+      ]
+    },
+    "gerbers": {
+      "input_key": "b247f44b1521461cb16b466c45104cf636ee6ad7cc33cdd90539436d8a1799b3",
+      "ok": true,
+      "message": null,
+      "files": [
+        {
+          "path": "fab/gerbers/module-B_Adhesive.gba",
+          "sha256": "74f6225adba8a8ada0c7760772cf54f6643f00e96c8607378bf95c2fd2df1ea0",
+          "size": 492
+        },
+        {
+          "path": "fab/gerbers/module-B_Courtyard.gbr",
+          "sha256": "69e22ca36bc933a3582330ddc43211e9d84596d0d50e4e760ce556f6861f3a93",
+          "size": 715
+        },
+        {
+          "path": "fab/gerbers/module-B_Cu.gbl",
+          "sha256": "7a6e2318b0a00c3f2c42baadf69771165e22a0f263d34bc3adb46b58152b83e0",
+          "size": 161199
+        },
+        {
+          "path": "fab/gerbers/module-B_Fab.gbr",
+          "sha256": "89c139e20399292ae914c87b8264023c79289b17530d7c03e4ca98a97d7bb29a",
+          "size": 967
+        },
+        {
+          "path": "fab/gerbers/module-B_Mask.gbs",
+          "sha256": "047a19acb57cf0029159581678323ad1c4129928c97feb21483cfa061481f620",
+          "size": 13759
+        },
+        {
+          "path": "fab/gerbers/module-B_Paste.gbp",
+          "sha256": "0c5dc0835d7484805e49924bb8ee1d930a80b6cad267b3b5f88fa52327b34a17",
+          "size": 2810
+        },
+        {
+          "path": "fab/gerbers/module-B_Silkscreen.gbo",
+          "sha256": "d3c6e3cb523a33116ef6ea60a8c288b6d0365bb7a44cfb3651e2ce07c3fcc2a2",
+          "size": 2148
+        },
+        {
+          "path": "fab/gerbers/module-Edge_Cuts.gm1",
+          "sha256": "49caf4aaa408b97229a9deecfe7fc216aca1c70c1c44811572b97fb1110d62f8",
+          "size": 731
+        },
+        {
+          "path": "fab/gerbers/module-F_Adhesive.gta",
+          "sha256": "a0d2fcd7e689dcca732a0ff9d0db4c95e686d35a6947752276c394c44d5c4fad",
+          "size": 492
+        },
+        {
+          "path": "fab/gerbers/module-F_Courtyard.gbr",
+          "sha256": "26ea18ef96775dcdfd2d344f9a7f35edbcd23461b6986643af8f77cfd00ece39",
+          "size": 5460
+        },
+        {
+          "path": "fab/gerbers/module-F_Cu.gtl",
+          "sha256": "adb6dd3b922e01c2b731f87c279289c260030b447abf7b67fd317ebec7e14495",
+          "size": 264629
+        },
+        {
+          "path": "fab/gerbers/module-F_Fab.gbr",
+          "sha256": "22d92e1c44fe5ed12af84e463ae3f3b09ca9784cae0b65d89cf2c1afa1564666",
+          "size": 30076
+        },
+        {
+          "path": "fab/gerbers/module-F_Mask.gts",
+          "sha256": "2f5b6cefd27422a89b67b90614ac4e4827b688bfd4258923d40a68317ff49367",
+          "size": 72611
+        },
+        {
+          "path": "fab/gerbers/module-F_Paste.gtp",
+          "sha256": "855f4008c9f3a11f577ab9a9f6ed436bbea92b424d62a11178a089cdcb353fde",
+          "size": 12276
+        },
+        {
+          "path": "fab/gerbers/module-F_Silkscreen.gto",
+          "sha256": "17d688848cdc08db960b5bce148f669ef9325af2b52665164302b88d3ef37155",
+          "size": 6373
+        },
+        {
+          "path": "fab/gerbers/module-In1_Cu.g1",
+          "sha256": "59bc7bbedfd823ddf90627915b6702ee206d848976b0331b8fad6789c27ea9c7",
+          "size": 148945
+        },
+        {
+          "path": "fab/gerbers/module-In2_Cu.g2",
+          "sha256": "55086393ebc100891a16a129cb0afec7425d51120c6371079c7ae8d4356ea678",
+          "size": 149083
+        },
+        {
+          "path": "fab/gerbers/module-Margin.gbr",
+          "sha256": "2bd770caecbb00bb2d154ade488008a63168a02bb84859035556f1f74cc77c9f",
+          "size": 466
+        },
+        {
+          "path": "fab/gerbers/module-User_1.gbr",
+          "sha256": "2bd770caecbb00bb2d154ade488008a63168a02bb84859035556f1f74cc77c9f",
+          "size": 466
+        },
+        {
+          "path": "fab/gerbers/module-User_2.gbr",
+          "sha256": "2bd770caecbb00bb2d154ade488008a63168a02bb84859035556f1f74cc77c9f",
+          "size": 466
+        },
+        {
+          "path": "fab/gerbers/module-User_3.gbr",
+          "sha256": "2bd770caecbb00bb2d154ade488008a63168a02bb84859035556f1f74cc77c9f",
+          "size": 466
+        },
+        {
+          "path": "fab/gerbers/module-User_4.gbr",
+          "sha256": "2bd770caecbb00bb2d154ade488008a63168a02bb84859035556f1f74cc77c9f",
+          "size": 466
+        },
+        {
+          "path": "fab/gerbers/module-User_Comments.gbr",
+          "sha256": "b220039500f8edeb1e9187bb946c4ec5cc8353e880bfff71bd6c4dbc4b06e72a",
+          "size": 469
+        },
+        {
+          "path": "fab/gerbers/module-User_Drawings.gbr",
+          "sha256": "e405785aaa0139ded659d0d75d2b00917a4d2580506e0444e00af13ce7e78236",
+          "size": 476
+        },
+        {
+          "path": "fab/gerbers/module-User_Eco1.gbr",
+          "sha256": "dea4f17369f2e58714d566a3485dc643fd086391733d91b6186021afddcea954",
+          "size": 466
+        },
+        {
+          "path": "fab/gerbers/module-User_Eco2.gbr",
+          "sha256": "27be7ceb4e42be98a6cc666038c30a41d91b0a389109ee89a012899805574834",
+          "size": 466
+        },
+        {
+          "path": "fab/gerbers/module-gerbers.zip",
+          "sha256": "d33d5286b24e8ccecb97d3050443e1ff9fef045ba1a4fe6ac323862f2b6548a6",
+          "size": 179351
+        },
+        {
+          "path": "fab/gerbers/module.drl",
+          "sha256": "360f2d64863324668ac588516bc8567660829db20d183db2d70d5b50157a3563",
+          "size": 2693
+        }
+      ]
+    },
+    "glb": {
+      "input_key": "c22c26e365b222bf3bb3ea34ccfe21bf8d930cde8edf0545df0cb135adabbbf7",
+      "ok": true,
+      "message": null,
+      "files": [
+        {
+          "path": "fab/module.glb",
+          "sha256": "f1e930909f15ce28bd89f54f408097a6544f10d45d02850403a1f38454465b38",
+          "size": 9243448
+        }
+      ]
+    },
+    "jlcpcb": {
+      "input_key": "c2ee0da559a570011c8abc17db32f03380074013a0b521e93c0e3245c1b8acb9",
+      "ok": true,
+      "message": null,
+      "files": [
+        {
+          "path": "fab/jlcpcb/BOM_module.csv",
+          "sha256": "f46a3798bfc8b204679c34ea8db242310608a5633ad8813ffaa9d56b4b162108",
+          "size": 2628
+        },
+        {
+          "path": "fab/jlcpcb/CPL_module.csv",
+          "sha256": "560eae51be12b292a5831e8043843908558fdb9fed77feaa74bf28e16e524dd9",
+          "size": 2030
+        },
+        {
+          "path": "fab/jlcpcb/module-B_Adhesive.gba",
+          "sha256": "25412bfd3cbefb90f54330718b363e024cf1964de5c87da0187e73cb90758774",
+          "size": 492
+        },
+        {
+          "path": "fab/jlcpcb/module-B_Courtyard.gbr",
+          "sha256": "a4808e5347a0d2dc54e5a801962042ad130da05d85a5e82d1bf6ffed5f57d70c",
+          "size": 715
+        },
+        {
+          "path": "fab/jlcpcb/module-B_Cu.gbl",
+          "sha256": "3e1e005ac319ff0133ab77645d40d96316adb2bce665169d0bfb180794c868e4",
+          "size": 161199
+        },
+        {
+          "path": "fab/jlcpcb/module-B_Fab.gbr",
+          "sha256": "7baf2a27dc1d110c65421ce5407dbaf1f9d846ba2d635e8694ab3b8dd0c55089",
+          "size": 967
+        },
+        {
+          "path": "fab/jlcpcb/module-B_Mask.gbs",
+          "sha256": "63384ee2c97eefe94b4f3de9d614b10bb76436141cc3e042d66e7ba8707060d9",
+          "size": 13759
+        },
+        {
+          "path": "fab/jlcpcb/module-B_Paste.gbp",
+          "sha256": "b2f51dbf7b04eafdd456d2925a4bc5ee2d12d9a8fe177c819d98142a1bb81943",
+          "size": 2810
+        },
+        {
+          "path": "fab/jlcpcb/module-B_Silkscreen.gbo",
+          "sha256": "589e636808ed7d174e1fa60b8de423e22f2fb39d400a2c194d8b5fbcdf569b67",
+          "size": 2148
+        },
+        {
+          "path": "fab/jlcpcb/module-Edge_Cuts.gm1",
+          "sha256": "035b3f99e9ad71379ecc6e1b3640304e68272eab73465ebfbba88b8e220b5f55",
+          "size": 731
+        },
+        {
+          "path": "fab/jlcpcb/module-F_Adhesive.gta",
+          "sha256": "f0f0c660321bc4f5393d5f924a118d080c603b20bb45b0136868b09a1ec597ec",
+          "size": 492
+        },
+        {
+          "path": "fab/jlcpcb/module-F_Courtyard.gbr",
+          "sha256": "aaf4fdfa4064b0cdc0c1000a415e649f587a86add945d1b5b6de1567672e32b8",
+          "size": 5460
+        },
+        {
+          "path": "fab/jlcpcb/module-F_Cu.gtl",
+          "sha256": "5b09afa90a8f436944432f6e0d56cc795ec675b80d66901f49f80b1950c79b3c",
+          "size": 264629
+        },
+        {
+          "path": "fab/jlcpcb/module-F_Fab.gbr",
+          "sha256": "61ddd5ce547f626de759e4954c1b4b4d845a73202136952e3b9fd48ace41892d",
+          "size": 30076
+        },
+        {
+          "path": "fab/jlcpcb/module-F_Mask.gts",
+          "sha256": "4f6ad191d61996df8f4bd796299e4311277525490346f3e2feb2c04e27aeec5a",
+          "size": 72611
+        },
+        {
+          "path": "fab/jlcpcb/module-F_Paste.gtp",
+          "sha256": "a4195b5396ee603766897c95ae0eeef07883e0ae601197a03b8106be1c087e87",
+          "size": 12276
+        },
+        {
+          "path": "fab/jlcpcb/module-F_Silkscreen.gto",
+          "sha256": "d87ebbb7db3cc97a94bceaf27f85ddfd3b9e60ea54b5b16b22866a3efc5576e0",
+          "size": 6373
+        },
+        {
+          "path": "fab/jlcpcb/module-In1_Cu.g1",
+          "sha256": "ce9e48ec8051596471170ba95a4c3d40986cef6eafa3bb702f08c88b691bf67f",
+          "size": 148945
+        },
+        {
+          "path": "fab/jlcpcb/module-In2_Cu.g2",
+          "sha256": "c893d50a0c4c0580c1831b3b100e40c39609842ffac3d14598f8228819f240d5",
+          "size": 149083
+        },
+        {
+          "path": "fab/jlcpcb/module-Margin.gbr",
+          "sha256": "784d4922e3377055c9ac607d87548f8e0cb96d7a8e08cc2e9f7187c114f1fd39",
+          "size": 466
+        },
+        {
+          "path": "fab/jlcpcb/module-User_1.gbr",
+          "sha256": "784d4922e3377055c9ac607d87548f8e0cb96d7a8e08cc2e9f7187c114f1fd39",
+          "size": 466
+        },
+        {
+          "path": "fab/jlcpcb/module-User_2.gbr",
+          "sha256": "784d4922e3377055c9ac607d87548f8e0cb96d7a8e08cc2e9f7187c114f1fd39",
+          "size": 466
+        },
+        {
+          "path": "fab/jlcpcb/module-User_3.gbr",
+          "sha256": "784d4922e3377055c9ac607d87548f8e0cb96d7a8e08cc2e9f7187c114f1fd39",
+          "size": 466
+        },
+        {
+          "path": "fab/jlcpcb/module-User_4.gbr",
+          "sha256": "784d4922e3377055c9ac607d87548f8e0cb96d7a8e08cc2e9f7187c114f1fd39",
+          "size": 466
+        },
+        {
+          "path": "fab/jlcpcb/module-User_Comments.gbr",
+          "sha256": "7c0caa201e1e25fbc1c3a9263d4fcbd37148bc37b8d7a42fdec4c85c3d60b0e6",
+          "size": 469
+        },
+        {
+          "path": "fab/jlcpcb/module-User_Drawings.gbr",
+          "sha256": "c78d09ac11cd262f0466414f191d49f7c725e279f9da128fa97239201e72b19c",
+          "size": 476
+        },
+        {
+          "path": "fab/jlcpcb/module-User_Eco1.gbr",
+          "sha256": "15b1bea8f162b67bed270507a69f4095988b8fdbd3321331112eec3f1224db95",
+          "size": 466
+        },
+        {
+          "path": "fab/jlcpcb/module-User_Eco2.gbr",
+          "sha256": "ed00ce8d45ad108fd53fd37cab996e56f4c0a94d429628d0826175b75a985bbd",
+          "size": 466
+        },
+        {
+          "path": "fab/jlcpcb/module-jlcpcb.zip",
+          "sha256": "ea0a4563b76cc3125ada28284a6c0e2217f037f19494e951947b740c95310ad1",
+          "size": 180833
+        },
+        {
+          "path": "fab/jlcpcb/module.drl",
+          "sha256": "0b1808678e7119aa76717c79a295c7b4720e508f7cba73549c706c007d69ff3f",
+          "size": 2693
+        }
+      ]
+    },
+    "quality": {
+      "input_key": "8069bc62c8bd868af7764617f7815f653e0859fbf51a1408dfb358fa1d41b0a6",
+      "ok": false,
+      "message": "5 errors, 476 warnings",
+      "files": [
+        {
+          "path": "fab/checks/quality.json",
+          "sha256": "2e98ebf5b919025e9fcc575028cec35deba16f0b5bbbaf58faab6e490bd3238f",
+          "size": 280785
+        }
+      ]
+    },
+    "schematic-pdf": {
+      "input_key": "9d36b85655fce68cc960bf934a4ef7e109042ae29260c5b8fbf02d32b2e8f6a6",
+      "ok": true,
+      "message": null,
+      "files": [
+        {
+          "path": "fab/module-schematic.pdf",
+          "sha256": "ff139a95be19e245ff5da65b2a3ac280c996f944892758add3717c9dc737b003",
+          "size": 310029
+        }
+      ]
+    },
+    "step": {
+      "input_key": "32a9ed99232eb413fb2e0e8f186c5b6cc4f0ecdeee233ff92e6ff40c8fe35c39",
+      "ok": true,
+      "message": null,
+      "files": [
+        {
+          "path": "fab/module.step",
+          "sha256": "86425def1cd9205e075e0be3bbb4ac6e84d387a0aed6051c1d03e779b67ffb91",
+          "size": 6121608
+        }
+      ]
+    }
+  }
+}
