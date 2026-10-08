@@ -74,7 +74,7 @@ z = p.ZONE(board); z.SetNet(nets[V12]); z.SetLayer(p.In2_Cu); z.SetAssignedPrior
 z.SetPadConnection(p.ZONE_CONNECTION_THERMAL); z.SetThermalReliefGap(mm(0.15)); z.SetThermalReliefSpokeWidth(mm(0.15))
 z.SetLocalClearance(mm(0.15)); z.SetMinThickness(mm(0.1)); z.SetZoneName('+1.2V island')
 ol = z.Outline(); ol.NewOutline()
-for x, y in [(105.9, 127.4), (116.2, 127.4), (116.2, 133.8), (106.9, 133.8), (106.9, 131.0), (105.9, 131.0)]: ol.Append(mm(x), mm(y))   # notch keeps the pin-33 plane via outside
+for x, y in [(102.7, 127.4), (116.2, 127.4), (116.2, 133.8), (106.9, 133.8), (106.9, 131.0), (105.5, 131.0), (105.5, 130.6), (102.7, 130.6)]: ol.Append(mm(x), mm(y))   # west lobe carries the regulator trunk; notch keeps the pin-33 plane via outside
 board.Add(z)
 
 # ============================================================== exposed pads: ground vias
@@ -105,7 +105,7 @@ pin_via(GND, 'C40.2', (107.1154, 109.4), F, 0.2)
 T(V33, [P('U1.29'), (110.75, 110.3), P('C39.1')], F, 0.2); V(V33, 110.75, 110.3, 0.4)
 # C39.2 returns through the front pour around the crystal (no via fits between XTAL_N and the GPIO23 drop)
 # VDDPST2 (pin 20) -> C38 east of U1
-T(V33, [P('U1.20'), P('C38.1')], F, 0.2); V(V33, 114.65, 113.75)
+T(V33, [P('U1.20'), P('C38.1')], F, 0.2); V(V33, 114.75, 113.75)
 T(GND, [P('C38.2'), (117.1, 113.75)], F, 0.2); V(GND, 117.1, 113.75)
 # bulk 3.3 V at the NE corner (plane caps)
 pin_via(V33, 'C33.1', (113.5, 105.775), F, 0.25); pin_via(GND, 'C33.2', (113.5, 104.225), F, 0.25)
@@ -184,8 +184,8 @@ bus = [('ESP_EN',          None,  None,  120.9, 118.1, 116.3),
        ('ESP_GPIO8',       111.75, 117.0, 119.4, 118.85, 116.3),
        ('ESP_GPIO9_BOOT',  112.25, 117.8, 118.9, 119.1, 116.3),
        ('USB_D-',          112.75, 117.0, 118.4, 119.35, 116.3),
-       ('USB_D+',          114.3, 115.25, 115.25, 119.6, 114.88),
-       ('ESP_GPIO15',      115.0, 114.25, 114.25, 119.85, 115.0),
+       ('USB_D+',          115.0, 115.25, 115.25, 119.6, 115.0),
+       ('ESP_GPIO15',      114.3, 114.25, 114.25, 119.85, 114.65),
        ('ESP_GPIO16_TXD',  114.3, 113.25, 113.25, 120.1, 115.0),
        ('ESP_GPIO17_RXD',  115.0, 112.75, 112.75, 120.35, 115.0),
        ('ESP_GPIO19',      114.3, 111.75, 111.75, 120.6, 115.7),
@@ -226,13 +226,12 @@ T(V33, [P('U2.24'), (108.25, 125.6)], F, 0.2); T(V33, [P('U2.22'), (109.25, 125.
 T(V33, [P('C52.1'), (109.25, 125.6)], F, 0.2); pin_via(V33, 'C52.1', (107.9846, 124.7), F, 0.2)
 pin_via(GND, 'C52.2', (106.4, 125.6), F, 0.2)
 # west column: PLL (29) and VCC (30) lines run west past the I/O via columns to C44 / C49
-T(PLL, [P('U2.29'), (104.6846, 129.75), P('C44.1')], F, 0.2)
-T(PLL, [(104.6846, 128.4), P('C44.1')], F, 0.2); V(PLL, 104.6846, 128.4)
+T(PLL, [P('U2.29'), (104.6846, 129.75), P('C44.1')], F, 0.15)           # 0.15 wide: C49 sits 0.11 mm below the pin-29 line
+T(PLL, [(104.6846, 128.4), P('C44.1')], F, 0.15); V(PLL, 104.6846, 128.4)
 pin_via(GND, 'C44.2', (103.7154, 128.5), F, 0.2)
-T(V12, [P('U2.30'), P('C49.1')], F, 0.25)
-T(V12, [P('C49.1'), (102.95, 130.25)], F, 0.25)                        # to the regulator trunk
+T(V12, [P('U2.30'), P('C49.1')], F, 0.25)                             # C49 sits on the pin line, 1.9 mm from the pad
 V(V12, 106.35, 130.25)                                                   # island feed, on the pin-30 line
-pin_via(GND, 'C49.2', (104.65, 132.5), F, 0.2)
+pin_via(GND, 'C49.2', (104.615, 131.1), F, 0.2)
 # VCCIO_0 (33): plane via at the exit, cap further west
 T(V33, [P('U2.33'), (106.4, 131.75)], F, 0.2); V(V33, 106.4, 131.75)
 pin_via(V33, 'C46.1', (103.7846, 131.0), F, 0.2)
@@ -248,7 +247,7 @@ T(V33, [P('U3.1'), P('C62.1')], F, 0.25); pin_via(V33, 'C62.1', (103.8, 119.0), 
 pin_via(GND, 'C62.2', (100.6, 119.0), F, 0.25)
 pin_via(GND, 'U3.2', (102.0, 119.9), F, 0.25)
 T(V33, [P('U3.3'), (101.05, 121.7), (100.55, 122.2)], F, 0.25); V(V33, 100.55, 122.2)
-T(V12, [P('U3.5'), (102.95, 130.25)], F, W_PWR)                        # trunk through C63.1 and C45.1
+T(V12, [P('U3.5'), (102.95, 129.3)], F, W_PWR); V(V12, 102.95, 129.3)   # trunk through C63.1 and C45.1 into the island's west lobe
 pin_via(GND, 'C63.2', (105.2, 125.0), F, 0.25)
 pin_via(GND, 'C45.2', (105.2, 126.6), F, 0.25)
 T(V12, [(102.95, 125.7125), P('L2.1')], F, 0.25)

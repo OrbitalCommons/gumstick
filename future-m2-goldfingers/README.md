@@ -36,7 +36,7 @@ by an M.2 2242 key-M card edge with a custom pinout. **Not PCIe/NVMe compatible.
 
 - Eight ground vias sit in the two exposed pads. The playbook forbids vias under packages; a grounded exposed pad has no other return path, so these are kept deliberately.
 - C48, C50 (FPGA VCCIO_2 / VCC east) and C39 (VDDA1) return to ground through the front pour rather than a dedicated via.
-- Decoupling further than 2 mm: U2 pins 5, 29, 30 (2.9 mm), U2 pin 33 (3.7 mm, plane via at the pin), U1 VDDA3P3 (3.3 mm to the pi filter), U1 pin 20 (2.2 mm).
+- Decoupling further than 2 mm: U2 pin 5 (2.9 mm), U2 pin 29 (2.9 mm), U2 pin 33 (3.7 mm, plane via at the pin), U1 VDDA3P3 (3.3 mm to the pi filter). Each of these pins has an I/O exit on both neighbours at 0.5 mm pitch, so only a cap lying on the pin's own line fits and adjacent lines cannot both carry one; the contract records the per-pin reason.
 - The QSPI link runs through the GPIO matrix on every lane (no native FSPI pins are free of strapping/USB duties); verify the achievable configuration clock.
 - ESP32-C6FH8/FH4 showed no LCSC stock on 2026-10-07.
 
