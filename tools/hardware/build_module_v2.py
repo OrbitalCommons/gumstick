@@ -89,6 +89,15 @@ def import_fp(lib_dir, src_name, name, src_root):
             if g.GetLayer() == p.F_SilkS:
                 if name in PASSIVE_FPS or name.startswith(('QFN-32', 'ICE40', 'SOT-23')): g.SetLayer(p.F_Fab)
                 elif isinstance(g, p.PCB_TEXT) and g.GetTextThickness() < mm(0.15): g.SetTextThickness(mm(0.15)); g.SetTextSize(v(1.0, 1.0))
+        if name == 'ICE40-QFN':
+            # the vendor footprint ships its datasheet dimension drawing, pad-style notes and a hatched fab body;
+            # keep only copper, paste and mask, then draw a plain 7 mm body with a pin-1 chamfer and a courtyard
+            for g in list(f.GraphicalItems()):
+                if g.GetLayer() in (p.Dwgs_User, p.Cmts_User, p.F_Fab, p.B_Fab, p.F_CrtYd): f.Remove(g)
+            h = 3.5; ch = 0.75
+            for a_, b_ in [((-h + ch, -h), (h, -h)), ((h, -h), (h, h)), ((h, h), (-h, h)), ((-h, h), (-h, -h + ch)), ((-h, -h + ch), (-h + ch, -h))]:
+                s_ = p.PCB_SHAPE(f); s_.SetShape(p.SHAPE_T_SEGMENT); s_.SetStart(v(*a_)); s_.SetEnd(v(*b_)); s_.SetLayer(p.F_Fab); s_.SetWidth(mm(0.1)); f.Add(s_)
+            c_ = p.PCB_SHAPE(f); c_.SetShape(p.SHAPE_T_RECT); c_.SetStart(v(-3.75, -3.75)); c_.SetEnd(v(3.75, 3.75)); c_.SetLayer(p.F_CrtYd); c_.SetWidth(mm(0.05)); f.Add(c_)
         lib_save(f, name)
     return p.FootprintLoad(str(D / 'Module2.pretty'), name)
 
