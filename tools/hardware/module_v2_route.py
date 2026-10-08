@@ -41,6 +41,7 @@ def NET(name): return pads[name][2]
 finger_of = {n: (x, y, k) for k, (x, y, n) in fingers.items()}
 
 W_SIG, W_PWR, W_RF, W_LINK, W_BUS = 0.15, 0.25, 0.26, 0.15, 0.15
+M_FEED = 0.8                    # corner miter on the nested ESP feeders (EN .. D-)
 VIA_D, VIA_DR = 0.45, 0.2
 stats = {'tracks': 0, 'vias': 0}
 
@@ -96,7 +97,7 @@ T('ESP_EN', [P('R22.1'), P('C32.1')], F, 0.15); V('ESP_EN', 106.7, 117.865)
 pin_via(GND, 'C32.2', (106.7, 120.2), F, 0.2)
 # CHIP_PU (pin 4) leaves west, drops to B.Cu, feeds the RC column and the bus (lane 0)
 T('ESP_EN', [P('U1.4'), (107.5, 113.25)], F); V('ESP_EN', 107.5, 113.25)
-T('ESP_EN', [(107.5, 113.25), (107.5, 120.9), (116.3, 120.9)], B, W_BUS)
+T('ESP_EN', [(107.5, 113.25), (107.5, 120.9 - M_FEED), (107.5 + M_FEED, 120.9), (115.7, 120.9)], B, W_BUS)   # mitered corner; bus leg below
 T('ESP_EN', [(107.5, 117.865), (106.7, 117.865)], B, W_BUS)
 # VDDA1/VDDA2 (pins 29, 32): C39 above pin 29 via a 0.4 mm via, C40 west of pin 32 on a short bar
 T(V33, [P('U1.32'), (109.25, 110.15), P('C40.1')], F, 0.15)
@@ -178,12 +179,14 @@ def back_entry(net, n, lane_x, c):
 # feeders: (net, via x, via y, feeder level y, lane x, miter x); each feeder runs east on its level to the miter x, then takes a
 # 45-degree leg into its lane. Legs are y - x = level - miter_x, nested (stepping >= 0.36 mm) so none cross; the miter x values
 # keep the legs 0.4 mm off the R20/R21/C38/R29 vias. Lanes are ordered west->east, so are their contacts (34 .. 6).
-bus = [('ESP_EN',          None,  None,  120.9, 118.1, 116.3),
-       ('ESP_GPIO4',       109.75, 117.0, 120.4, 118.35, 116.3),
-       ('ESP_GPIO5',       110.25, 117.8, 119.9, 118.6, 116.3),
-       ('ESP_GPIO8',       111.75, 117.0, 119.4, 118.85, 116.3),
-       ('ESP_GPIO9_BOOT',  112.25, 117.8, 118.9, 119.1, 116.3),
-       ('USB_D-',          112.75, 117.0, 118.4, 119.35, 116.3),
+# The first six feeders form one nested family: a 45-degree corner off the via drop (M_FEED), then legs stepping 0.6 mm in y - x.
+# GPIO8's in-line R21 via at x 116.0 sets the shallowest leg; the rest start progressively further west.
+bus = [('ESP_EN',          None,  None,  120.9, 118.1, 115.7),
+       ('ESP_GPIO4',       109.75, 117.0, 120.4, 118.35, 115.8),
+       ('ESP_GPIO5',       110.25, 117.8, 119.9, 118.6, 115.9),
+       ('ESP_GPIO8',       111.75, 117.0, 119.4, 118.85, 116.0),
+       ('ESP_GPIO9_BOOT',  112.25, 117.8, 118.9, 119.1, 116.1),
+       ('USB_D-',          112.75, 117.0, 118.4, 119.35, 116.2),
        ('USB_D+',          115.0, 115.25, 115.25, 119.6, 115.0),
        ('ESP_GPIO15',      114.3, 114.25, 114.25, 119.85, 114.65),
        ('ESP_GPIO16_TXD',  114.3, 113.25, 113.25, 120.1, 115.0),
@@ -204,6 +207,7 @@ for k, (net, vx, vy, lvl, lane, xt) in enumerate(bus):
         T(net, [(px, py), (vx, vy)] if (px == vx or py == vy) else [(px, py), (px, vy), (vx, vy)], F)   # straight pin exit to the via
         V(net, vx, vy, 0.4 if net == 'ESP_GPIO23' else VIA_D)
         if vy == lvl: T(net, [(vx, vy), (xt, lvl)], B, W_BUS)
+        elif k <= 5:  T(net, [(vx, vy), (vx, lvl - M_FEED), (vx + M_FEED, lvl), (xt, lvl)], B, W_BUS)   # mitered corner
         else:         T(net, [(vx, vy), (vx, lvl), (xt, lvl)], B, W_BUS)
     c = lvl - xt                                                     # leg y - x = c; must fall by >= 0.36 per lane outwards
     assert prev_c is None or c <= prev_c - 0.36 + 1e-6 or k <= 5 and c >= prev_c + 0.36 - 1e-6, (net, c, prev_c)
