@@ -82,11 +82,21 @@ def lib_save(f, name):
     p.PCB_IO_KICAD_SEXPR().FootprintSave(str(D / 'Module2.pretty'), f)
     saved_fps.add(name)
 
+# 3D bodies for imported footprints that arrive without one (v1 library). Pin 1 of the iCE40 land is top-left like the stock QFN-48.
+MODEL_MAP = {'C_0402': 'Capacitor_SMD.3dshapes/C_0402_1005Metric.step',
+             'ICE40-QFN': 'Package_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm.step'}
+def ensure_model(f, name):
+    if list(f.Models()) or name not in MODEL_MAP: return
+    src = STD_3D / MODEL_MAP[name]; dst = D / '3dmodels' / src.name
+    if not dst.exists(): shutil.copy2(src, dst)
+    m = p.FP_3DMODEL(); m.m_Filename = '${KIPRJMOD}/3dmodels/' + src.name; f.Add3DModel(m)
+
 PASSIVE_FPS = {'C_0402', 'C_0603', 'R_0402', 'L_0402', 'L_0603', 'TestPoint_0p8', 'LED_RGB_1010'}
 def import_fp(lib_dir, src_name, name, src_root):
     if name not in saved_fps and not (D / 'Module2.pretty' / f'{name}.kicad_mod').exists():
         f = p.FootprintLoad(str(lib_dir), src_name); assert f, (lib_dir, src_name)
         copy_model(f, src_root)
+        ensure_model(f, name)
         for g in list(f.GraphicalItems()):
             if g.GetLayer() == p.F_SilkS:
                 if name in PASSIVE_FPS or name.startswith(('QFN-32', 'ICE40', 'SOT-23')): g.SetLayer(p.F_Fab)
