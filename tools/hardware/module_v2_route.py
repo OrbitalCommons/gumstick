@@ -115,8 +115,9 @@ T(V33, [P('C67.1'), (103.0, 137.0)], F, 0.25)                                 # 
 T(V33, [P('C60.1'), (101.4, 136.5), (102.5, 137.6)], F, 0.25)                 # contact 72
 T(V33, [P('C61.1'), (120.0, 136.675), (120.0, 138.3)], F, 0.25)               # contact 2 (west exit, then straight down)
 pin_via(GND, 'C67.2', (103.0, 133.2), F, 0.25); pin_via(GND, 'C60.2', (101.4, 133.2), F, 0.25)
-# C66 feeds past C61 on its west side (the ESP bus lanes under this strip leave no room for vias); C61/C66 ground pads join the front pour
+# C66 feeds past C61 on its west side into the same contact via; the ESP bus lanes end at x 119.9, so both ground pads get vias
 T(V33, [P('C66.1'), (119.6, 133.575), (119.6, 136.275), (120.0, 136.675)], F, 0.25)
+pin_via(GND, 'C66.2', (120.55, 131.2), F, 0.25); pin_via(GND, 'C61.2', (120.55, 134.35), F, 0.25)
 
 # ============================================================== RF front end
 T('RF_IN', [P('U1.1'), P('C1.1')], F, W_RF)
@@ -147,15 +148,17 @@ for net, a, b, k in (('FPGA_SPI_SCK', 'U1.9', 'U2.15', 12.7), ('FPGA_SPI_MISO', 
     ax, ay = P(a); bx, by = P(b)
     T(net, [(ax, ay), (ax, k + ax), (bx, k + bx), (bx, by)], F, W_LINK)
 
-# ============================================================== CRESET / CDONE (F.Cu runs east of U1, B.Cu legs into U2)
+# ============================================================== CRESET / CDONE (F.Cu runs east of U1, short B.Cu drops into U2)
+# Both runs turn west above the FPGA's east fan to vias on the pin-8 / pin-7 via columns, so the B.Cu hops are straight drops
+# and the ESP bus lanes can pass just east of them. CDONE turns lower so its horizontal passes under CRESET's.
 CR, CD = 'FPGA_CRESET_N', 'FPGA_CDONE'
-T(CR, [P('U1.18'), (117.5, 114.75), (117.5, 126.0), (117.2, 126.3)], F); V(CR, 117.2, 126.3)
-T(CR, [(117.2, 126.3), (115.25, 128.25), (115.25, 129.75)], B); V(CR, 115.25, 129.75)
+T(CR, [P('U1.18'), (117.5, 114.75), (117.5, 125.6), (115.25, 125.6)], F); V(CR, 115.25, 125.6)
+T(CR, [(115.25, 125.6), (115.25, 129.75)], B); V(CR, 115.25, 129.75)
 T(CR, [P('U2.8'), (115.25, 129.75)], F)
 T(CR, [P('R28.2'), (117.5, 124.4)], F); pin_via(GND, 'R28.1', (115.0, 124.4), F)
 T(CR, [P('TP1.1'), (117.5, 122.2)], F); T(CD, [P('TP2.1'), (118.0, 120.6)], F)
-T(CD, [P('U1.23'), (118.0, 112.25), (118.0, 126.6), (117.7, 126.9)], F); V(CD, 117.7, 126.9)
-T(CD, [(117.7, 126.9), (115.95, 128.65), (115.95, 130.25)], B); V(CD, 115.95, 130.25)
+T(CD, [P('U1.23'), (118.0, 112.25), (118.0, 126.3), (115.95, 126.3)], F); V(CD, 115.95, 126.3)
+T(CD, [(115.95, 126.3), (115.95, 130.25)], B); V(CD, 115.95, 130.25)
 T(CD, [P('U2.7'), (115.95, 130.25)], F)
 T(CD, [(116.9, 112.25), P('R29.1')], F); pin_via(V33, 'R29.2', (116.9, 109.9), F)
 
@@ -185,21 +188,22 @@ def back_entry(net, n, lane_x, c):
 # keep the legs 0.4 mm off the R20/R21/C38/R29 vias. Lanes are ordered west->east, so are their contacts (34 .. 6).
 # The first six feeders form one nested family: a 45-degree corner off the via drop (M_FEED), then legs stepping 0.6 mm in y - x.
 # GPIO8's in-line R21 via at x 116.0 sets the shallowest leg; the rest start progressively further west.
-bus = [('ESP_EN',          None,  None,  120.9, 118.1, 115.7),
-       ('ESP_GPIO4',       109.75, 117.0, 120.4, 118.35, 115.8),
-       ('ESP_GPIO5',       110.25, 117.8, 119.9, 118.6, 115.9),
-       ('ESP_GPIO8',       111.75, 117.0, 119.4, 118.85, 116.0),
-       ('ESP_GPIO9_BOOT',  112.25, 117.8, 118.9, 119.1, 116.1),
-       ('USB_D-',          112.75, 117.0, 118.4, 119.35, 116.2),
-       ('USB_D+',          115.0, 115.25, 115.25, 119.6, 115.0),
-       ('ESP_GPIO15',      114.3, 114.25, 114.25, 119.85, 114.65),
-       ('ESP_GPIO16_TXD',  114.3, 113.25, 113.25, 120.1, 115.0),
-       ('ESP_GPIO17_RXD',  115.0, 112.75, 112.75, 120.35, 115.0),
-       ('ESP_GPIO19',      114.3, 111.75, 111.75, 120.6, 115.7),
-       ('ESP_GPIO20',      112.75, 110.3, 110.3, 120.85, 114.8),
-       ('ESP_GPIO21',      112.25, 109.0, 109.3, 121.1, 114.3),
-       ('ESP_GPIO22',      111.75, 109.6, 108.55, 121.35, 114.05),
-       ('ESP_GPIO23',      111.25, 110.3, 108.3, 121.6, 114.3)]
+# Lanes start at x 116.4, just east of the CDONE drop at 115.95 (they used to start at 118.1, east of the old CRESET/CDONE legs).
+bus = [('ESP_EN',          None,  None,  120.9, 116.4, 115.7),
+       ('ESP_GPIO4',       109.75, 117.0, 120.4, 116.65, 115.8),
+       ('ESP_GPIO5',       110.25, 117.8, 119.9, 116.9, 115.9),
+       ('ESP_GPIO8',       111.75, 117.0, 119.4, 117.15, 116.0),
+       ('ESP_GPIO9_BOOT',  112.25, 117.8, 118.9, 117.4, 116.1),
+       ('USB_D-',          112.75, 117.0, 118.4, 117.65, 116.2),
+       ('USB_D+',          115.0, 115.25, 115.25, 117.9, 115.0),
+       ('ESP_GPIO15',      114.3, 114.25, 114.25, 118.15, 114.65),
+       ('ESP_GPIO16_TXD',  114.3, 113.25, 113.25, 118.4, 115.0),
+       ('ESP_GPIO17_RXD',  115.0, 112.75, 112.75, 118.65, 115.0),
+       ('ESP_GPIO19',      114.3, 111.75, 111.75, 118.9, 115.7),
+       ('ESP_GPIO20',      112.75, 110.3, 110.3, 119.15, 114.8),
+       ('ESP_GPIO21',      112.25, 109.0, 109.3, 119.4, 114.3),
+       ('ESP_GPIO22',      111.75, 109.6, 108.55, 119.65, 114.05),
+       ('ESP_GPIO23',      111.25, 110.3, 108.3, 119.9, 114.3)]
 esp_pad = {'ESP_GPIO4': 'U1.10', 'ESP_GPIO5': 'U1.11', 'ESP_GPIO8': 'U1.14', 'ESP_GPIO9_BOOT': 'U1.15', 'USB_D-': 'U1.16', 'USB_D+': 'U1.17',
            'ESP_GPIO15': 'U1.19', 'ESP_GPIO16_TXD': 'U1.21', 'ESP_GPIO17_RXD': 'U1.22', 'ESP_GPIO19': 'U1.24', 'ESP_GPIO20': 'U1.25',
            'ESP_GPIO21': 'U1.26', 'ESP_GPIO22': 'U1.27', 'ESP_GPIO23': 'U1.28'}

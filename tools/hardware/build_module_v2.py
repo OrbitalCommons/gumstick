@@ -263,7 +263,7 @@ cap0402('C52', '0.1uF', '+3.3V', 'GND', 107.5, 125.6, 180)          # SPI_VCCIO1
 cap0603('C67', '22uF / 10V', '+3.3V', 'GND', 103.0, 135.0, 90, 'C5355402', 'CL10A226MPCNUBE')
 cap0603('C60', '10uF / 10V', '+3.3V', 'GND', 101.4, 135.0, 90)
 cap0603('C61', '22uF / 10V', '+3.3V', 'GND', 120.55, 135.9, 90, 'C5355402', 'CL10A226MPCNUBE')
-cap0603('C66', '1uF / 6.3V', '+3.3V', 'GND', 120.55, 132.8, 90, 'C15849')      # the ESP bus lanes run under this strip on B.Cu: no vias
+cap0603('C66', '1uF / 6.3V', '+3.3V', 'GND', 120.55, 132.8, 90, 'C15849')
 # configuration link pull resistors
 res0402('R28', '10k', 'GND', 'FPGA_CRESET_N', 116.2, 124.4, 0)
 res0402('R29', '10k', 'FPGA_CDONE', '+3.3V', 116.9, 111.2425, 90)
