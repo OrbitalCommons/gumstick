@@ -73,6 +73,9 @@ c['contacts'] = {str(r['Contact']): r['Signal'] for r in rows}
 c['sourcing'] = {'ESP32-C6FH8': 'LCSC C41459370 (no stock on 2026-10-07); ESP32-C6FH4 C6908287 (no stock); plan a distributor buy or confirm stock before ordering assembly'}
 c['layout'] = {'layers': 'F.Cu signal/components, In1 GND, In2 +3.3V plane with a +1.2V island under U2, B.Cu ESP bus and FPGA lanes to the back contacts',
                'contact_field': 'Front ground contacts each carry a via 1.3 mm above the pad; the back-contact lanes beside them step 0.15 mm aside and re-enter their pads straight.',
+               'stackup': {'name': 'JLCPCB JLC04081H-3313', 'nominal_mm': 0.799, 'why': 'M.2 requires 0.8 +/- 0.08 mm; JLCPCB 0.8 mm 4-layer builds are 0.721-0.803 mm nominal with +/- 0.1 mm tolerance, so the best-centred build was chosen',
+                           'layers': '35 um Cu / 0.0994 mm 3313 prepreg er 4.1 / In1 GND / 0.5 mm core er 4.48 / In2 +3.3V / 0.0994 mm 3313 / 35 um Cu',
+                           'rf_feed': '50 ohm coated CPWG 0.14 mm trace / 0.15 mm gap (JLCPCB calculator 50.4 ohm, field solve 49.9 ohm; docs/rf-feed.json)'},
                'card_edge': {'source': 'https://jlcpcb.com/help/article/jlcpcb-gold-fingers (read 2026-10-07)',
                              'finish': 'ENIG with the gold-finger option (JLCPCB plates fingers gold only under ENIG; HASL would tin them)',
                              'bevel': '30 deg (JLCPCB offers 30/45 only; the M.2 drawing shows 20 deg, confirm socket fit). Copper setback 0.6 mm from the routed edge: JLCPCB quotes ~1.13 mm at 1.6 mm board thickness for 30 deg, scaled to 0.8 mm and rounded up.',

@@ -29,6 +29,9 @@ Record the capability URL and the date the rules were checked in the
 - 50 Ω coated CPWG on that stack: **0.26 mm trace / 0.15 mm gap**
   (≈50.15 Ω, JLC calculator). Encode the gap as a netclass/zone rule, e.g.
   `/RF_*` to GND clearance.
+- 0.8 mm cards (M.2, 0.8 +/- 0.08 mm): **JLC04081H-3313** is the best-centred JLC build (0.799 mm nominal;
+  JLC tolerance below 1.0 mm is +/- 0.1 mm). 50 Ohm coated CPWG on its 0.0994 mm 3313 prepreg: **0.14 mm trace /
+  0.15 mm gap** (JLC calculator 50.4 Ohm). Reproduce with `tools/hardware/module_v2_impedance.py`.
 - Specify the stackup *and* controlled impedance on the order, because board
   thickness alone doesn't fix the stackup. Save the calculator inputs in the repo.
 

@@ -6,12 +6,12 @@ by an M.2 2242 key-M card edge with a custom pinout. **Not PCIe/NVMe compatible.
 
 | Item | Value |
 | --- | --- |
-| Card | 22 x 42 mm, 0.8 mm, 4 layers (JLC 0.8 mm stackup to be confirmed) |
+| Card | 22 x 42 mm, 0.8 mm (M.2 0.8 +/- 0.08), 4 layers, JLCPCB JLC04081H-3313 (nominal 0.799 mm) |
 | Layers | F.Cu parts and signals, In1 GND, In2 +3.3 V (with a +1.2 V island under U2), B.Cu ESP bus and FPGA lanes |
 | Contacts | 67 (positions 59-66 are the key notch); pinout in `docs/icd-v2-pinout.csv` |
 | Power in | +3.3 V on 2/4/70/72/74, GND on 1/3/9/15/21/27/33/39/45/51/57/71/73/75 |
 | Core | TLV75512 1.2 V LDO (U3), PLL fed through L2 |
-| RF | ESP32-C6 pin 1 -> C1/L3/C2 pi match -> U.FL J3, 0.26 mm CPWG carried from v1 (re-tune on the 0.8 mm stackup) |
+| RF | ESP32-C6 pin 1 -> C1/L3/C2 pi match -> U.FL J3, 50 ohm coated CPWG 0.14 mm / 0.15 mm gap on 0.0994 mm 3313 prepreg (`docs/rf-feed.json`); match values still to re-tune |
 
 ## Files
 
@@ -46,6 +46,12 @@ by an M.2 2242 key-M card edge with a custom pinout. **Not PCIe/NVMe compatible.
 - Fingers stop 0.6 mm inside the routed edge (JLCPCB's copper setback for a 30 degree bevel, scaled from 1.13 mm at 1.6 mm); their inner ends stay at 2.0 / 2.5 mm.
 - The finger field has one solder-mask window per side and a rule area that keeps pours and vias out of it.
 - JLCPCB needs at least 50 x 50 mm for a board with gold fingers (and >= 5 x 5 cm for a chamfer), so the 22 x 42 mm card must be ordered as a panel with the connector edge on the panel outline and no V-cut through the fingers.
+
+## Stackup
+
+- M.2 fixes the card at 0.8 +/- 0.08 mm. JLCPCB's 0.8 mm four-layer builds range from 0.721 to 0.803 mm nominal, and their tolerance below 1.0 mm is +/- 0.1 mm. JLC04081H-3313 (0.799 mm) is the best-centred build; order it by name with impedance control and confirm the finished thickness over the fingers.
+- Layers: 35 um Cu / 0.0994 mm 3313 prepreg (er 4.1) / In1 GND / 0.5 mm core / In2 +3.3 V / 0.0994 mm 3313 / 35 um Cu.
+- The RF width comes from `tools/hardware/module_v2_impedance.py`: JLCPCB's coated-CPWG calculator gives 50.4 ohm and a 2D field solve 49.9 ohm for 0.14 mm / 0.15 mm.
 
 ## Open before any fabrication
 

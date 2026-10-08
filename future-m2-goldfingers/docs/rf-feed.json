@@ -1,0 +1,88 @@
+{
+  "stackup": {
+    "name": "JLC04081H-3313",
+    "prepreg_mm": 0.0994,
+    "prepreg_er": 4.1,
+    "copper_mm": 0.035,
+    "mask": "LPI er 3.8, 1.2 mil over substrate, 0.6 mil over copper",
+    "reference": "In1.Cu GND"
+  },
+  "chosen": {
+    "width_mm": 0.14,
+    "gap_mm": 0.15
+  },
+  "jlc_calculator": {
+    "model": "CoatedCoplanarWaveguideWithLowerGnd1B",
+    "sweep": [
+      {
+        "width_mm": 0.12,
+        "gap_mm": 0.15,
+        "Z0_ohm": 53.86,
+        "er_eff": 3.143
+      },
+      {
+        "width_mm": 0.13,
+        "gap_mm": 0.15,
+        "Z0_ohm": 52.08,
+        "er_eff": 3.151
+      },
+      {
+        "width_mm": 0.14,
+        "gap_mm": 0.15,
+        "Z0_ohm": 50.42,
+        "er_eff": 3.16
+      },
+      {
+        "width_mm": 0.15,
+        "gap_mm": 0.15,
+        "Z0_ohm": 48.87,
+        "er_eff": 3.169
+      },
+      {
+        "width_mm": 0.16,
+        "gap_mm": 0.15,
+        "Z0_ohm": 47.43,
+        "er_eff": 3.178
+      },
+      {
+        "width_mm": 0.12,
+        "gap_mm": 0.2,
+        "Z0_ohm": 55.26,
+        "er_eff": 3.177
+      },
+      {
+        "width_mm": 0.13,
+        "gap_mm": 0.2,
+        "Z0_ohm": 53.41,
+        "er_eff": 3.186
+      },
+      {
+        "width_mm": 0.14,
+        "gap_mm": 0.2,
+        "Z0_ohm": 51.68,
+        "er_eff": 3.195
+      },
+      {
+        "width_mm": 0.15,
+        "gap_mm": 0.2,
+        "Z0_ohm": 50.07,
+        "er_eff": 3.204
+      },
+      {
+        "width_mm": 0.16,
+        "gap_mm": 0.2,
+        "Z0_ohm": 48.56,
+        "er_eff": 3.213
+      }
+    ],
+    "old_7628_0.26_0.15_ohm": 50.5
+  },
+  "field_solve": {
+    "width_mm": 0.14,
+    "gap_mm": 0.15,
+    "Z0_d5um": 49.64,
+    "Z0_d2p5um": 49.77,
+    "Z0_extrapolated": 49.9,
+    "er_eff": 3.096
+  }
+}

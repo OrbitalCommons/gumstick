@@ -39,7 +39,8 @@
   (constraint text_height (min 1.0mm))
   (constraint text_thickness (min 0.15mm)))
 
-# RF feed is 50 ohm coated CPWG on the 7628 prepreg: 0.26 mm base width / 0.15 mm ground gap (same outer prepreg as the 1.0 mm v1 stackup).
+# RF feed is 50 ohm coated CPWG on JLC04081H-3313 (0.0994 mm 3313 prepreg to In1 GND): 0.14 mm base width / 0.15 mm ground gap
+# (JLCPCB calculator 50.4 ohm, 2D field solve 49.9 ohm; see docs/rf-feed.json).
 (rule "RF feed to ground pour spacing"
   (condition "A.Type == 'Track' && A.NetClass == 'RF' && B.Type == 'Zone' && B.NetName == 'GND'")
   (constraint clearance (min 0.15mm)))

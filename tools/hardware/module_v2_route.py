@@ -40,7 +40,7 @@ def P(name):
 def NET(name): return pads[name][2]
 finger_of = {n: (x, y, k) for k, (x, y, n) in fingers.items()}
 
-W_SIG, W_PWR, W_RF, W_LINK, W_BUS = 0.15, 0.25, 0.26, 0.15, 0.15
+W_SIG, W_PWR, W_RF, W_LINK, W_BUS = 0.15, 0.25, 0.14, 0.15, 0.15   # W_RF: 50 ohm coated CPWG, 0.15 gap, JLC04081H-3313 (docs/rf-feed.json)
 M_FEED = 0.8                    # corner miter on the nested ESP feeders (EN .. D-)
 VIA_D, VIA_DR = 0.45, 0.2
 stats = {'tracks': 0, 'vias': 0}
@@ -367,6 +367,7 @@ LINT = D / 'module.lint.json'
 pol = json.load(open(LINT)) if LINT.exists() else {}
 intent = pol.setdefault('config', {}).setdefault('intent', {})
 intent.setdefault('route', {})['edge_clearance_mm'] = 0.14          # M.2 fingers end 0.15 mm inside the routed edge (0.3 mm elsewhere via the DRU)
+pol['config']['min_trace_mm'] = 0.10                               # fab minimum (DRU / board setup); the 50 ohm RF feed is 0.14 mm on 3313
 ep = {'U1': (111.0, 113.5, 1.85), 'U2': (111.0, 130.5, 1.9)}
 cap_gnd = [(p.ToMM(pd.GetPosition().x), p.ToMM(pd.GetPosition().y)) for fp in board.GetFootprints() if fp.GetReference()[0] in 'CR' for pd in fp.Pads() if pd.GetNetname() == 'GND']
 roles = {}
