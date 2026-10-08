@@ -255,14 +255,15 @@ cap0603('C43', '10uF', '+1.2V_PLL', 'GND', 101.0, 129.75, -90)
 cap0402('C44', '0.1uF', '+1.2V_PLL', 'GND', 104.2, 129.4, 180)       # VCCPLL pin 29 (pad 1 at the bottom, fed from the south)
 cap0402('C49', '0.1uF', '+1.2V', 'GND', 105.1, 130.25, 180)             # VCC pin 30 (left), on the pin line
 cap0402('C46', '0.1uF', '+3.3V', 'GND', 103.3, 131.75, 180)           # VCCIO_0 pin 33 (left); pin fed by an In2 via at its exit
-cap0603('C66', '1uF / 6.3V', '+3.3V', 'GND', 117.6, 104.0, 90, 'C15849')
 cap0402('C50', '0.1uF', '+1.2V', 'GND', 115.45, 134.5, -90)           # VCC pin 5 (right)
 cap0402('C48', '0.1uF', '+3.3V', 'GND', 114.48, 135.6, -90)           # VCCIO_2 pin 1 (right)
 cap0402('C52', '0.1uF', '+3.3V', 'GND', 107.5, 125.6, 180)          # SPI_VCCIO1 pin 22 and VPP_2V5 pin 24 (top), shared on a short 3.3 V bar
-# 3.3 V input bulk beside the power contacts (2/4 right, 70/72/74 left)
-cap0603('C60', '10uF / 10V', '+3.3V', 'GND', 119.3, 104.0, 90)
-cap0603('C61', '22uF / 10V', '+3.3V', 'GND', 121.0, 104.0, 90, 'C5355402', 'CL10A226MPCNUBE')
-cap0603('C67', '22uF / 10V', '+3.3V', 'GND', 115.9, 104.0, 90, 'C5355402', 'CL10A226MPCNUBE')
+# 3.3 V input bulk at the power contacts: C67/C60 above contacts 70/72 (left), C61/C66 in the strip east of the FPGA fan above
+# contact 2 (right). Each 3.3 V pad runs into its contact's In2 via; rotation 90 puts pad 1 (+3.3V) south.
+cap0603('C67', '22uF / 10V', '+3.3V', 'GND', 103.0, 135.0, 90, 'C5355402', 'CL10A226MPCNUBE')
+cap0603('C60', '10uF / 10V', '+3.3V', 'GND', 101.4, 135.0, 90)
+cap0603('C61', '22uF / 10V', '+3.3V', 'GND', 120.55, 135.9, 90, 'C5355402', 'CL10A226MPCNUBE')
+cap0603('C66', '1uF / 6.3V', '+3.3V', 'GND', 120.55, 132.8, 90, 'C15849')      # the ESP bus lanes run under this strip on B.Cu: no vias
 # configuration link pull resistors
 res0402('R28', '10k', 'GND', 'FPGA_CRESET_N', 116.2, 124.4, 0)
 res0402('R29', '10k', 'FPGA_CDONE', '+3.3V', 116.9, 111.2425, 90)

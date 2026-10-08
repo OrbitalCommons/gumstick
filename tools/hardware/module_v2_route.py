@@ -108,11 +108,15 @@ T(V33, [P('U1.29'), (110.75, 110.3), P('C39.1')], F, 0.2); V(V33, 110.75, 110.3,
 # VDDPST2 (pin 20) -> C38 east of U1
 T(V33, [P('U1.20'), P('C38.1')], F, 0.2); V(V33, 114.75, 113.75)
 T(GND, [P('C38.2'), (117.1, 113.75)], F, 0.2); V(GND, 117.1, 113.75)
-# bulk 3.3 V at the NE corner (plane caps)
+# C33: 10 uF on the ESP side of the 3.3 V plane (plane cap)
 pin_via(V33, 'C33.1', (113.5, 105.775), F, 0.25); pin_via(GND, 'C33.2', (113.5, 104.225), F, 0.25)
-for c in ('C66', 'C60', 'C61', 'C67'):
-    x1, y1 = P(c + '.1'); x2, y2 = P(c + '.2')
-    pin_via(V33, c + '.1', (x1, 106.0), F, 0.25); pin_via(GND, c + '.2', (x2, 102.3), F, 0.25)
+# input bulk at the power contacts: each 3.3 V pad runs into its contact's In2 via, each ground pad has its own via
+T(V33, [P('C67.1'), (103.0, 137.0)], F, 0.25)                                 # contact 70
+T(V33, [P('C60.1'), (101.4, 136.5), (102.5, 137.6)], F, 0.25)                 # contact 72
+T(V33, [P('C61.1'), (120.0, 136.675), (120.0, 138.3)], F, 0.25)               # contact 2 (west exit, then straight down)
+pin_via(GND, 'C67.2', (103.0, 133.2), F, 0.25); pin_via(GND, 'C60.2', (101.4, 133.2), F, 0.25)
+# C66 feeds past C61 on its west side (the ESP bus lanes under this strip leave no room for vias); C61/C66 ground pads join the front pour
+T(V33, [P('C66.1'), (119.6, 133.575), (119.6, 136.275), (120.0, 136.675)], F, 0.25)
 
 # ============================================================== RF front end
 T('RF_IN', [P('U1.1'), P('C1.1')], F, W_RF)
@@ -315,8 +319,8 @@ for n in (9, 15, 21, 27, 33, 39, 45, 51, 57):
     fx, fy, _ = fingers[n]; T(GND, [(fx, fy), (fx, Y_GVIA)], F); V(GND, fx, Y_GVIA)
 # end ground contacts 1/3 and 71/73/75: the pour stays out of the finger window, so they run up to the board-end vias by hand,
 # squeezing past the back power-contact vias (2 at 120.0/138.3, 4 at 119.625/139.175, 74 at 102.0/138.3) and 0.3 mm off the tab edge
-V(GND, 120.4, 137.7); V(GND, 101.6, 137.7)
-T(GND, [P('J1.1'), (120.25, 139.0), (120.55, 138.7), (120.55, 137.85), (120.4, 137.7)], F)
+V(GND, 120.7, 137.75); V(GND, 101.6, 137.7)                                   # 120.7: clear of C61's feed into the contact-2 via
+T(GND, [P('J1.1'), (120.25, 139.0), (120.55, 138.7), (120.55, 137.9), (120.7, 137.75)], F)
 T(GND, [P('J1.3'), (119.75, 139.6), (120.25, 139.6)], F)                 # 90-degree tee into the contact-1 column
 T(GND, [P('J1.75'), (101.75, 139.0), (101.45, 138.7), (101.45, 137.85), (101.6, 137.7)], F)
 T(GND, [P('J1.71'), (102.75, 139.6), (101.75, 139.6)], F)                # one bar; contact 73 tees into it
@@ -331,7 +335,7 @@ stub(72, [(102.5, 137.6)], (102.5, 137.6))
 stub(74, [(102.0, 138.3)], (102.0, 138.3))
 # plane stitching in open areas
 for xy in [(113.0, 103.0), (110.5, 104.5), (107.0, 103.5), (102.5, 104.0), (100.9, 110.0), (100.9, 114.5), (106.0, 121.5), (108.8, 119.8),
-           (113.8, 123.6), (100.9, 134.5), (102.3, 135.5), (121.3, 106.8)]:
+           (113.8, 123.6), (121.3, 106.8), (117.6, 102.3), (119.3, 102.3)]:   # the last two keep the NE corner stitched
     V(GND, *xy)
 
 def merge_collinear():

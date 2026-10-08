@@ -82,7 +82,7 @@ c['layout'] = {'layers': 'F.Cu signal/components, In1 GND, In2 +3.3V plane with 
                              'solder_mask': 'Finger field fully opened on both sides (window in the J1 footprint); no pour or via inside the window (rule area m2-finger-window).',
                              'panel': 'A board or panel with gold fingers must be at least 50 x 50 mm and chamfers need >= 5 x 5 cm, so the 22 x 42 mm card is ordered as a panel with the connector edge on the panel outline; a V-cut may not cross the fingers.'},
                'deviations': ['Eight ground vias sit in the two exposed pads (U1 four, U2 four); the playbook forbids vias under packages but a grounded exposed pad has no other return.',
-                              'C48/C50 and C39 return to ground through the front pour (no dedicated via fits beside the contact fan / the XTAL_N drop).',
+                              'C48/C50, C39 and the contact-2 input bulk C61/C66 return to ground through the front pour (no dedicated via fits beside the contact fan / the XTAL_N drop / over the ESP bus lanes).',
                               'Decoupling beyond 2 mm: U2 pin 5 (C50 2.9 mm, boxed in by the CRESET/CDONE drops and the pin-4/6 exits), U2 pin 29 (C44 2.9 mm; pins 28/30 exit either side so only one cap fits on the 29/30 pair and it went to the core pin 30), U2 pin 33 (C46 3.7 mm, plane via at the pin), U1 VDDA3P3 pins 2/3 (C35 3.3 mm; the RF match owns the space beside pins 1-3).']}
 json.dump(c, open(D / 'docs/design-contract.json', 'w'), indent=2); open(D / 'docs/design-contract.json', 'a').write('\n')
 print('wrote icd-v2-pinout.csv', len(rows), 'contacts; c6-fpga-link.csv; design-contract.json')
