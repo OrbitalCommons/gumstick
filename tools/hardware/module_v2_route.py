@@ -337,10 +337,8 @@ fx4, fy4, _ = fingers[4]; T(V33, [(fx4, fy4), (119.5, 139.3), (119.625, 139.175)
 stub(70, [(103.0, 137.0)], (103.0, 137.0))
 stub(72, [(102.5, 137.6)], (102.5, 137.6))
 stub(74, [(102.0, 138.3)], (102.0, 138.3))
-# plane stitching in open areas
-for xy in [(113.0, 103.0), (110.5, 104.5), (107.0, 103.5), (102.5, 104.0), (100.9, 110.0), (100.9, 114.5), (106.0, 121.5), (108.8, 119.8),
-           (113.8, 123.6), (121.3, 106.8), (117.6, 102.3), (119.3, 102.3)]:   # the last two keep the NE corner stitched
-    V(GND, *xy)
+# No free-standing stitching vias: every via carries a pad, a trace or a contact. In1 is a solid ground plane and the outer
+# ground pours tie to it through the decoupling, thermal and contact-field vias.
 
 def merge_collinear():
     tracks = [t for t in board.GetTracks() if t.GetClass() == 'PCB_TRACK']
@@ -377,16 +375,17 @@ intent = pol.setdefault('config', {}).setdefault('intent', {})
 intent.setdefault('route', {})['edge_clearance_mm'] = 0.14          # M.2 fingers end 0.15 mm inside the routed edge (0.3 mm elsewhere via the DRU)
 pol['config']['min_trace_mm'] = 0.10                               # fab minimum (DRU / board setup); the 50 ohm RF feed is 0.14 mm on 3313
 ep = {'U1': (111.0, 113.5, 1.85), 'U2': (111.0, 130.5, 1.9)}
-cap_gnd = [(p.ToMM(pd.GetPosition().x), p.ToMM(pd.GetPosition().y)) for fp in board.GetFootprints() if fp.GetReference()[0] in 'CR' for pd in fp.Pads() if pd.GetNetname() == 'GND']
+# roles follow attachment: a via earns a role only if a same-net track touches it (or it sits in an exposed pad);
+# anything else is left unroled so `lint` reports it as a stray (via.role_missing)
+segs = [s for s in board.GetTracks() if s.GetClass() == 'PCB_TRACK']
 roles = {}
 for t in board.GetTracks():
     if t.GetClass() != 'PCB_VIA': continue
     x, y = p.ToMM(t.GetPosition().x), p.ToMM(t.GetPosition().y); n = t.GetNetname()
-    if n == 'GND':
-        if any(abs(x - cx) <= h and abs(y - cy) <= h + 0.7 for cx, cy, h in ep.values()): role = 'thermal'
-        elif any(abs(x - gx) < 1.6 and abs(y - gy) < 1.6 for gx, gy in cap_gnd): role = 'return'
-        elif y > 136: role = 'return'                                   # contact-field ground vias
-        else: role = 'stitching'
+    attached = any(s.GetNetCode() == t.GetNetCode() and s.HitTest(t.GetPosition()) for s in segs)   # a same-net track touches it
+    if n == 'GND' and any(abs(x - cx) <= h and abs(y - cy) <= h for cx, cy, h in ep.values()): role = 'thermal'
+    elif not attached: continue
+    elif n == 'GND': role = 'return'
     elif n in ('+3.3V', '+1.2V', '+1.2V_PLL'): role = 'feed'
     else: continue
     roles[str(t.m_Uuid.AsString())] = role
