@@ -40,6 +40,13 @@ by an M.2 2242 key-M card edge with a custom pinout. **Not PCIe/NVMe compatible.
 - The QSPI link runs through the GPIO matrix on every lane (no native FSPI pins are free of strapping/USB duties); verify the achievable configuration clock.
 - ESP32-C6FH8/FH4 showed no LCSC stock on 2026-10-07.
 
+## Card edge (JLCPCB gold-finger rules, see `layout.card_edge` in the contract)
+
+- ENIG finish with the gold-finger option; 30 degree bevel (JLCPCB offers 30/45, the M.2 drawing shows 20: confirm socket fit).
+- Fingers stop 0.6 mm inside the routed edge (JLCPCB's copper setback for a 30 degree bevel, scaled from 1.13 mm at 1.6 mm); their inner ends stay at 2.0 / 2.5 mm.
+- The finger field has one solder-mask window per side and a rule area that keeps pours and vias out of it.
+- JLCPCB needs at least 50 x 50 mm for a board with gold fingers (and >= 5 x 5 cm for a chamfer), so the 22 x 42 mm card must be ordered as a panel with the connector edge on the panel outline and no V-cut through the fingers.
+
 ## Open before any fabrication
 
 Carrier design and socket fit (TE 1-2199230-6), 0.8 mm stackup selection and RF/USB re-calculation, antenna match,

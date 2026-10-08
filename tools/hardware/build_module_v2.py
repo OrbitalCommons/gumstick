@@ -45,7 +45,9 @@ def contact_x(n):              # odd and even rows share the 0.25 mm position gr
     return PIN1_X - (n - 1) * 0.25
 
 KEY = set(range(59, 67))       # positions removed by the key notch
-EDGE_SETBACK = 0.15            # finger pads end this far inside the routed edge
+EDGE_SETBACK = 0.6             # copper setback from the routed edge for JLCPCB's 30 deg bevel (they quote ~1.13 mm at 1.6 mm;
+                               # scaled to the 0.8 mm card and rounded up). The pad tops stay where the socket expects them.
+WINDOW_TOP_F, WINDOW_TOP_B = 2.1, 2.6   # solder-mask window over the finger field (pad length + 0.1), per JLCPCB 'fully opened'
 
 # ---------------------------------------------------------------- board
 board = p.BOARD()
@@ -116,14 +118,18 @@ def build_m2_edge():
         if n in KEY: continue
         pad = p.PAD(f); pad.SetNumber(str(n)); pad.SetShape(p.PAD_SHAPE_RECT); pad.SetAttribute(p.PAD_ATTRIB_SMD)
         top = (n % 2 == 1)
-        length = (2.0 if top else 2.5) - EDGE_SETBACK      # fingers stop just inside the routed edge (within the 0.3 mm bevel zone)
+        length = (2.0 if top else 2.5) - EDGE_SETBACK      # fingers keep their inner ends (2.0 / 2.5 mm from the edge), the bevel zone is copper-free
         pad.SetSize(v(0.35, length)); pad.SetPosition(v(contact_x(n) - CL, -(EDGE_SETBACK + length / 2)))
         ls = p.LSET()
         ls.AddLayer(p.F_Cu if top else p.B_Cu); ls.AddLayer(p.F_Mask if top else p.B_Mask)
         pad.SetLayerSet(ls)                   # no paste on gold fingers
         pad.SetLayer(p.F_Cu if top else p.B_Cu)
-        pad.SetLocalSolderMaskMargin(mm(0.05))
+        pad.SetLocalSolderMaskMargin(mm(0))       # the field-wide window below exposes the fingers
         f.Add(pad)
+    # JLCPCB: the gold-finger area must have the solder mask fully opened; one window per side over the whole field, past the edge
+    for layer, top in ((p.F_Mask, WINDOW_TOP_F), (p.B_Mask, WINDOW_TOP_B)):
+        r = p.PCB_SHAPE(f); r.SetShape(p.SHAPE_T_RECT); r.SetStart(v(-TAB_W / 2, -top)); r.SetEnd(v(TAB_W / 2, 0.5))
+        r.SetFilled(True); r.SetWidth(0); r.SetLayer(layer); f.Add(r)
     # fab outline of the tab and key for reference (board edge is drawn on the PCB)
     for a, b in [((-TAB_W / 2, 0), (TAB_W / 2, 0)), ((-TAB_W / 2, 0), (-TAB_W / 2, -TAB_L)), ((TAB_W / 2, 0), (TAB_W / 2, -TAB_L))]:
         s = p.PCB_SHAPE(f); s.SetShape(p.SHAPE_T_SEGMENT); s.SetStart(v(*a)); s.SetEnd(v(*b)); s.SetLayer(p.F_Fab); s.SetWidth(mm(0.1)); f.Add(s)
@@ -304,6 +310,7 @@ for ref, dx, dy in [('U1', -3.4, -2.2), ('U2', 3.9, 3.25), ('U3', 1.5, -1.9)]:  
     c = p.PCB_SHAPE(fp); c.SetShape(p.SHAPE_T_CIRCLE); c.SetCenter(v(x + dx, y + dy)); c.SetEnd(v(x + dx + 0.15, y + dy)); c.SetLayer(p.F_SilkS); c.SetWidth(mm(0.15)); c.SetFilled(True); fp.Add(c)
 for g in footprints['J3'].GraphicalItems():
     if g.GetLayer() == p.F_SilkS and hasattr(g, 'SetWidth'): g.SetWidth(mm(0.15))
+footprints['J1'].SetAllowSolderMaskBridges(True)   # the finger window deliberately exposes every contact in one aperture
 for fp in board.GetFootprints():                 # mask apertures follow the fab's own expansion; local margins only confuse the bridge check
     if fp.GetReference() != 'J1':
         for pd in fp.Pads(): pd.SetLocalSolderMaskMargin(mm(0.0))
@@ -332,7 +339,8 @@ seg((X0, Y0), (X0, step)); seg((X0, step), (tl, step)); seg((tl, step), (tl, EDG
 # fabrication notes: bevel and keep-outs
 def text(t, x, y, layer, size=0.8, angle=0):
     tx = p.PCB_TEXT(board); tx.SetText(t); tx.SetPosition(v(x, y)); tx.SetLayer(layer); tx.SetTextSize(v(size, size)); tx.SetTextThickness(mm(0.15)); tx.SetTextAngleDegrees(angle); board.Add(tx)
-text('Card edge: 20 deg bevel, 0.30 mm; hard gold on fingers; PCB 0.80 +/-0.08 mm; M.2 2242 key M', CL, EDGE + 1.2, p.Cmts_User, 0.6)
+text('Card edge: ENIG + gold fingers, 30 deg bevel (copper setback 0.6 mm, mask open); PCB 0.80 +/-0.08 mm; M.2 2242 key M', CL, EDGE + 1.2, p.Cmts_User, 0.6)
+text('Order as a panel >= 50 x 50 mm with this edge on the panel outline (no V-cut through the fingers)', CL, EDGE + 2.0, p.Cmts_User, 0.6)
 text('ESP32-C6 + iCE40UP5K module v2', CL, Y0 - 1.5, p.Cmts_User, 0.8)
 # component keep-out strips (fab/courtyard guidance): connector tab 4.0 mm top / 5.2 mm bottom, mounting end 3.8 mm
 for y, layer in [(EDGE - 4.0, p.F_Fab), (EDGE - 5.2, p.B_Fab), (Y0 + 3.8, p.F_Fab)]:
@@ -359,6 +367,15 @@ for l in (p.F_Cu, p.B_Cu): lsa.AddLayer(l)
 za.SetLayerSet(lsa); ola = za.Outline(); ola.NewOutline()
 for x, y in [(X0, EDGE - 2.8), (X0 + W, EDGE - 2.8), (X0 + W, EDGE + 0.5), (X0, EDGE + 0.5)]: ola.Append(mm(x), mm(y))
 board.Add(za)
+# no pour inside the finger window: nothing but the fingers (and their entry tracks) may be exposed there or sit in the bevel zone
+zw = p.ZONE(board); zw.SetIsRuleArea(True); zw.SetZoneName('m2-finger-window')
+zw.SetDoNotAllowZoneFills(True); zw.SetDoNotAllowVias(False)      # contact 4's via sits 0.2 mm above the window
+for fn in ('SetDoNotAllowPads', 'SetDoNotAllowTracks', 'SetDoNotAllowFootprints'): getattr(zw, fn)(False)
+lsw = p.LSET()
+for l in (p.F_Cu, p.B_Cu): lsw.AddLayer(l)
+zw.SetLayerSet(lsw); olw = zw.Outline(); olw.NewOutline()
+for x, y in [(CL - TAB_W / 2, EDGE - WINDOW_TOP_B - 0.2), (CL + TAB_W / 2, EDGE - WINDOW_TOP_B - 0.2), (CL + TAB_W / 2, EDGE + 0.5), (CL - TAB_W / 2, EDGE + 0.5)]: olw.Append(mm(x), mm(y))
+board.Add(zw)
 # via keep-outs under the QFN bodies (debuggability rule from the playbook)
 for ref, half, ex, ey in [('U1', 2.5, 1.85, 1.85), ('U2', 3.5, 1.9, 2.54)]:   # ring between the exposed pad and the body edge
     x, y = parts[ref]['position'][:2]

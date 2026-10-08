@@ -73,6 +73,11 @@ c['contacts'] = {str(r['Contact']): r['Signal'] for r in rows}
 c['sourcing'] = {'ESP32-C6FH8': 'LCSC C41459370 (no stock on 2026-10-07); ESP32-C6FH4 C6908287 (no stock); plan a distributor buy or confirm stock before ordering assembly'}
 c['layout'] = {'layers': 'F.Cu signal/components, In1 GND, In2 +3.3V plane with a +1.2V island under U2, B.Cu ESP bus and FPGA lanes to the back contacts',
                'contact_field': 'Front ground contacts each carry a via 1.3 mm above the pad; the back-contact lanes beside them step 0.15 mm aside and re-enter their pads straight.',
+               'card_edge': {'source': 'https://jlcpcb.com/help/article/jlcpcb-gold-fingers (read 2026-10-07)',
+                             'finish': 'ENIG with the gold-finger option (JLCPCB plates fingers gold only under ENIG; HASL would tin them)',
+                             'bevel': '30 deg (JLCPCB offers 30/45 only; the M.2 drawing shows 20 deg, confirm socket fit). Copper setback 0.6 mm from the routed edge: JLCPCB quotes ~1.13 mm at 1.6 mm board thickness for 30 deg, scaled to 0.8 mm and rounded up.',
+                             'solder_mask': 'Finger field fully opened on both sides (window in the J1 footprint); no pour or via inside the window (rule area m2-finger-window).',
+                             'panel': 'A board or panel with gold fingers must be at least 50 x 50 mm and chamfers need >= 5 x 5 cm, so the 22 x 42 mm card is ordered as a panel with the connector edge on the panel outline; a V-cut may not cross the fingers.'},
                'deviations': ['Eight ground vias sit in the two exposed pads (U1 four, U2 four); the playbook forbids vias under packages but a grounded exposed pad has no other return.',
                               'C48/C50 and C39 return to ground through the front pour (no dedicated via fits beside the contact fan / the XTAL_N drop).',
                               'Decoupling beyond 2 mm: U2 pin 5 (C50 2.9 mm, boxed in by the CRESET/CDONE drops and the pin-4/6 exits), U2 pin 29 (C44 2.9 mm; pins 28/30 exit either side so only one cap fits on the 29/30 pair and it went to the core pin 30), U2 pin 33 (C46 3.7 mm, plane via at the pin), U1 VDDA3P3 pins 2/3 (C35 3.3 mm; the RF match owns the space beside pins 1-3).']}

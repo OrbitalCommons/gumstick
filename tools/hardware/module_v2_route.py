@@ -309,7 +309,14 @@ for pad, col in (('U2.35', 106.75), ('U2.36', 107.1)):
 # front ground contacts: stub north to a via (3 and 73 reach the pour region that holds the neighbouring via)
 for n in (9, 15, 21, 27, 33, 39, 45, 51, 57):
     fx, fy, _ = fingers[n]; T(GND, [(fx, fy), (fx, Y_GVIA)], F); V(GND, fx, Y_GVIA)
-V(GND, 120.4, 137.7); V(GND, 101.6, 137.7)          # contacts 1/3 and 71/73/75 join the front pour at the board ends
+# end ground contacts 1/3 and 71/73/75: the pour stays out of the finger window, so they run up to the board-end vias by hand,
+# squeezing past the back power-contact vias (2 at 120.0/138.3, 4 at 119.625/139.175, 74 at 102.0/138.3) and 0.3 mm off the tab edge
+V(GND, 120.4, 137.7); V(GND, 101.6, 137.7)
+T(GND, [P('J1.1'), (120.25, 139.0), (120.55, 138.7), (120.55, 137.85), (120.4, 137.7)], F)
+T(GND, [P('J1.3'), (119.75, 139.6), (120.25, 139.6)], F)                 # 90-degree tee into the contact-1 column
+T(GND, [P('J1.75'), (101.75, 139.0), (101.45, 138.7), (101.45, 137.85), (101.6, 137.7)], F)
+T(GND, [P('J1.71'), (102.75, 139.6), (101.75, 139.6)], F)                # one bar; contact 73 tees into it
+T(GND, [P('J1.73'), (102.25, 139.6)], F)
 # back power contacts weave past the ground vias (0.15 mm lanes), then drop to the 3.3 V plane
 def stub(n, pts, via):
     fx, fy, _ = fingers[n]; T(V33, [(fx, fy)] + pts, B, W_BUS); V(V33, *via)
