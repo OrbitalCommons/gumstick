@@ -74,7 +74,7 @@ z = p.ZONE(board); z.SetNet(nets[V12]); z.SetLayer(p.In2_Cu); z.SetAssignedPrior
 z.SetPadConnection(p.ZONE_CONNECTION_THERMAL); z.SetThermalReliefGap(mm(0.15)); z.SetThermalReliefSpokeWidth(mm(0.15))
 z.SetLocalClearance(mm(0.15)); z.SetMinThickness(mm(0.1)); z.SetZoneName('+1.2V island')
 ol = z.Outline(); ol.NewOutline()
-for x, y in [(102.7, 127.4), (116.2, 127.4), (116.2, 133.8), (106.9, 133.8), (106.9, 131.0), (105.5, 131.0), (105.5, 130.6), (102.7, 130.6)]: ol.Append(mm(x), mm(y))   # west lobe carries the regulator trunk; notch keeps the pin-33 plane via outside
+for x, y in [(102.7, 127.4), (116.2, 127.4), (116.2, 133.8), (107.3, 133.8), (107.3, 131.0), (105.5, 131.0), (105.5, 130.6), (102.7, 130.6)]: ol.Append(mm(x), mm(y))   # west lobe carries the regulator trunk; notch keeps the pin-33 plane via (106.75) outside
 board.Add(z)
 
 # ============================================================== exposed pads: ground vias
@@ -230,10 +230,10 @@ T(PLL, [P('U2.29'), (104.6846, 129.75), P('C44.1')], F, 0.15)           # 0.15 w
 T(PLL, [(104.6846, 128.4), P('C44.1')], F, 0.15); V(PLL, 104.6846, 128.4)
 pin_via(GND, 'C44.2', (103.7154, 128.5), F, 0.2)
 T(V12, [P('U2.30'), P('C49.1')], F, 0.25)                             # C49 sits on the pin line, 1.9 mm from the pad
-V(V12, 106.35, 130.25)                                                   # island feed, on the pin-30 line
+V(V12, 106.75, 130.25)                                                   # island feed, on the pin-30 line (zig-zag column A)
 pin_via(GND, 'C49.2', (104.615, 131.1), F, 0.2)
 # VCCIO_0 (33): plane via at the exit, cap further west
-T(V33, [P('U2.33'), (106.4, 131.75)], F, 0.2); V(V33, 106.4, 131.75)
+T(V33, [P('U2.33'), (106.75, 131.75)], F, 0.2); V(V33, 106.75, 131.75)    # column A; the island wall sits at 107.3
 pin_via(V33, 'C46.1', (103.7846, 131.0), F, 0.2)
 pin_via(GND, 'C46.2', (102.0, 131.75), F, 0.2)
 # east column: VCCIO_2 (1) south to C48, VCC (5) east to the island. C48.2/C50.2 return through the front pour
@@ -280,9 +280,10 @@ for pad, vx, vy, lane, c in lanes:
     y_turn = back_entry(net, n, lane, c)
     assert y_turn >= y0 + 0.3, (pad, y_turn, y0)
     T(net, [(lane, y0), (lane, y_turn)], B, W_BUS)
-# west column: via columns A (x 106.75: pins 25, 27, 31) and B (x 105.9: pins 26, 28); lanes nest outwards.
+# west column: a tight zig-zag, columns A (x 106.75) and B (x 106.2) alternating pin by pin: 25 A, 26 B, 27 A, 28 B, 30 A (island
+# feed), 31 B, 33 A (plane via). Pins 25/27 lane east (SW fans), 26/28/31 lane west; 28 and 31 re-enter their contacts with SE legs.
 # Pins 32, 34, 35, 36 stay on F.Cu and drop to the odd contacts 69, 67, 55, 53.
-west = [('U2.26', 105.9, 105.2, 241.7), ('U2.28', 105.9, 105.55, 243.3), ('U2.31', 106.75, 107.15, 243.7), ('U2.27', 106.75, 107.5, 244.3), ('U2.25', 106.75, 107.85, 245.1)]
+west = [('U2.25', 106.75, 107.85, 245.1), ('U2.26', 106.2, 105.2, 241.7), ('U2.27', 106.75, 107.5, 244.3), ('U2.28', 106.2, 105.55, 243.3), ('U2.31', 106.2, 105.9, 243.6)]
 for pad, vx, lane, c in west:
     net = NET(pad); px, py = P(pad); n = finger_of[net][2]
     T(net, [(px, py), (vx, py)], F); V(net, vx, py)
@@ -290,7 +291,7 @@ for pad, vx, lane, c in west:
     y0 = py + d
     if d: T(net, [(vx, py), (lane, y0)], B, W_BUS)                 # 45-degree leg straight off the via
     fx = fingers[n][0]; sx = squeezed_x(n)
-    if sx > lane:                                   # contact 58 lies east of lane 28: south-east leg instead
+    if sx > lane:                                   # contacts 58 / 56 lie east of lanes 28 / 31: south-east leg instead
         y_turn = c - lane; y_end = y_turn + (sx - lane)
         T(net, [(lane, y0), (lane, y_turn), (sx, y_end), (sx, Y_JOG), (fx, Y_JOG + abs(fx - sx)), (fx, fingers[n][1])], B, W_BUS)
     else:

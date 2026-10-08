@@ -7,7 +7,7 @@
   "fabrication_ready": false,
   "sha256": {
     "module.kicad_sch": "2599f5439583a32d5db0c37868b79a6293e6222413e353f39c5eb48ce2c6d5af",
-    "module.kicad_pcb": "299bea113b01ded4ebce6f1caca6401561cdb33612326e8584eaed0f5b1baf45",
+    "module.kicad_pcb": "3b02f579016c076d679d6076b1e376d7e102036a77ca0fc3d4d44d086d6fcbc1",
     "module.kicad_pro": "819f099986fd7eea672115b6c479b8a928dda5e5e4f93a953e694ae85a18121e",
     "module.kicad_dru": "36a34823a7532877d41ed8d66882512fb110271a34c00adcffa63d8ffaa812f8"
   }
