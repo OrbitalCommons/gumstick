@@ -27,6 +27,29 @@
       }
     },
     {
+      "id": "esp32-fpga-module-v2",
+      "name": "ESP32-C6 + FPGA M.2 module (v2, development)",
+      "root": "boards/esp32-fpga-module-v2",
+      "kicad": {
+        "project": "module.kicad_pro",
+        "schematic": "module.kicad_sch",
+        "pcb": "module.kicad_pcb"
+      },
+      "artifacts": {
+        "gerbers": "fab/gerbers",
+        "jlcpcb": "fab/jlcpcb"
+      },
+      "manufacturer": {
+        "name": "JLCPCB",
+        "profile": "FR4-4L-0.8mm-1oz-0.5oz-0.45-0.20-via",
+        "capabilities_url": "https://jlcpcb.com/capabilities/Capab",
+        "checked_on": "2026-09-24",
+        "rules": "module.kicad_dru",
+        "notes": "0.8 mm 4-layer M.2 2242 card; stackup approximated as JLC04081H-7628 (confirm with fab); RF CPWG 0.26 mm / 0.15 mm gap carried from v1. Development draft, not for fabrication.",
+        "stackup": "JLC04081H-7628"
+      }
+    },
+    {
       "id": "direction-led-tester",
       "name": "Direction LED tester",
       "root": ".",

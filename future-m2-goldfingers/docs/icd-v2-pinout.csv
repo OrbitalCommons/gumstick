@@ -1,68 +1,68 @@
-Connector,Contact,Signal,IC,Package_pad,Constraint
-J1,1,GND,,,Ground
-J1,2,+3.3V,,,Regulated 3.3V input; connect all five power contacts
-J1,3,GND,,,Ground
-J1,4,+3.3V,,,Regulated 3.3V input; connect all five power contacts
-J1,5,USB_D-,U1,16,USB Serial/JTAG differential pair
-J1,6,ESP_EN,U1,4,Active high CHIP_PU; open-drain reset permitted
-J1,7,USB_D+,U1,17,USB Serial/JTAG differential pair
-J1,8,ESP_GPIO9_BOOT,U1,15,Boot strap; high for normal boot; low for download with GPIO8 high
-J1,9,GND,,,Ground
-J1,10,ESP_GPIO4,U1,10,Strapping pin; preserve documented reset default
-J1,11,FPGA_IOB_18A,U2,10,3.3V logic
-J1,12,ESP_GPIO5,U1,11,Strapping pin; preserve documented reset default
-J1,13,FPGA_IOB_16A,U2,9,3.3V logic
-J1,14,ESP_GPIO3,U1,9,3.3V logic
-J1,15,GND,,,Ground
-J1,16,ESP_GPIO8,U1,14,Boot strap; keep high for download
-J1,17,FPGA_IOB_22A,U2,12,3.3V logic
-J1,18,ESP_GPIO14,U1,18,3.3V logic
-J1,19,FPGA_IOB_13B,U2,6,3.3V logic
-J1,20,ESP_GPIO15,U1,19,Strapping pin; preserve documented reset default
-J1,21,GND,,,Ground
-J1,22,ESP_GPIO16_TXD,U1,21,UART0 TX; 3.3V logic
-J1,23,FPGA_IOB_20A,U2,11,3.3V logic
-J1,24,ESP_GPIO17_RXD,U1,22,UART0 RX; 3.3V logic
-J1,25,FPGA_IOT_37A,U2,23,3.3V logic
-J1,26,ESP_GPIO19,U1,24,3.3V logic
-J1,27,GND,,,Ground
-J1,28,ESP_GPIO22,U1,27,3.3V logic
-J1,29,FPGA_IOB_23B,U2,21,3.3V logic
-J1,30,ESP_GPIO23,U1,28,3.3V logic
-J1,31,FPGA_IOB_29B,U2,19,3.3V logic
-J1,32,FPGA_IOB_25B_G3,U2,20,3.3V logic
-J1,33,GND,,,Ground
-J1,34,FPGA_IOT_36B,U2,25,3.3V logic
-J1,35,FPGA_IOT_38B,U2,27,3.3V logic
-J1,36,FPGA_IOT_39A,U2,26,3.3V logic
-J1,37,FPGA_IOT_41A,U2,28,3.3V logic
-J1,38,FPGA_IOT_42B,U2,31,3.3V logic
-J1,39,GND,,,Ground
-J1,40,FPGA_IOT_43A,U2,32,3.3V logic
-J1,41,FPGA_IOT_48B,U2,36,3.3V logic
-J1,42,FPGA_IOT_46B_G0,U2,35,3.3V logic
-J1,43,FPGA_IOT_45A_G1,U2,37,3.3V logic
-J1,44,FPGA_IOT_50B,U2,38,3.3V logic
-J1,45,GND,,,Ground
-J1,46,FPGA_RGB0,U2,39,RGB current sink shared with onboard LED; not ordinary GPIO
-J1,47,FPGA_RGB1,U2,40,RGB current sink shared with onboard LED; not ordinary GPIO
-J1,48,FPGA_RGB2,U2,41,RGB current sink shared with onboard LED; not ordinary GPIO
-J1,49,FPGA_IOT_51A,U2,42,3.3V logic
-J1,50,FPGA_IOT_49A,U2,43,3.3V logic
-J1,51,GND,,,Ground
-J1,52,FPGA_IOB_3B_G6,U2,44,3.3V logic
-J1,53,FPGA_IOT_44B,U2,34,3.3V logic
-J1,54,FPGA_IOB_5B,U2,45,3.3V logic
-J1,55,FPGA_IOB_0A,U2,46,3.3V logic
-J1,56,FPGA_IOB_2A,U2,47,3.3V logic
-J1,57,GND,,,Ground
-J1,58,FPGA_IOB_4A,U2,48,3.3V logic
-J1,67,FPGA_IOB_9B,U2,3,3.3V logic
-J1,68,FPGA_IOB_8A,U2,4,3.3V logic
-J1,69,FPGA_IOB_6A,U2,2,3.3V logic
-J1,70,+3.3V,,,Regulated 3.3V input; connect all five power contacts
-J1,71,GND,,,Ground
-J1,72,+3.3V,,,Regulated 3.3V input; connect all five power contacts
-J1,73,GND,,,Ground
-J1,74,+3.3V,,,Regulated 3.3V input; connect all five power contacts
-J1,75,GND,,,Ground
+Connector,Contact,Side,Signal,IC,Package_pad,ESP32_C6_GPIO,Constraint
+J1,1,front (odd),GND,,,,Ground
+J1,2,back (even),+3.3V,,,,Regulated 3.3 V input; connect all five power contacts
+J1,3,front (odd),GND,,,,Ground
+J1,4,back (even),+3.3V,,,,Regulated 3.3 V input; connect all five power contacts
+J1,5,front (odd),FPGA_IOB_22A,U2,12,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,6,back (even),ESP_GPIO23,U1,28,GPIO23,3.3 V GPIO
+J1,7,front (odd),FPGA_IOB_20A,U2,11,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,8,back (even),ESP_GPIO22,U1,27,GPIO22,3.3 V GPIO
+J1,9,front (odd),GND,,,,Ground
+J1,10,back (even),ESP_GPIO21,U1,26,GPIO21,3.3 V GPIO
+J1,11,front (odd),FPGA_IOB_18A,U2,10,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,12,back (even),ESP_GPIO20,U1,25,GPIO20,3.3 V GPIO
+J1,13,front (odd),FPGA_IOB_16A,U2,9,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,14,back (even),ESP_GPIO19,U1,24,GPIO19,3.3 V GPIO
+J1,15,front (odd),GND,,,,Ground
+J1,16,back (even),ESP_GPIO17_RXD,U1,22,GPIO17,UART0 RXD by default
+J1,17,front (odd),FPGA_IOB_13B,U2,6,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,18,back (even),ESP_GPIO16_TXD,U1,21,GPIO16,UART0 TXD by default
+J1,19,front (odd),FPGA_IOB_8A,U2,4,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,20,back (even),ESP_GPIO15,U1,19,GPIO15,Strap (sampled at reset): keep the documented default or leave floating
+J1,21,front (odd),GND,,,,Ground
+J1,22,back (even),USB_D+,U1,17,GPIO13,USB Serial/JTAG full-speed pair (D+/D- on adjacent back contacts 22/24)
+J1,23,front (odd),FPGA_IOB_9B,U2,3,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,24,back (even),USB_D-,U1,16,GPIO12,USB Serial/JTAG full-speed pair (D+/D- on adjacent back contacts 22/24)
+J1,25,front (odd),FPGA_IOB_6A,U2,2,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,26,back (even),ESP_GPIO9_BOOT,U1,15,GPIO9,"Boot strap: high for normal SPI boot, low for serial download; R20 10k pull-up on module"
+J1,27,front (odd),GND,,,,Ground
+J1,28,back (even),ESP_GPIO8,U1,14,GPIO8,Boot strap: must be high for serial download (weak internal pull-up); R21 10k pull-up on module
+J1,29,front (odd),FPGA_IOB_2A,U2,47,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,30,back (even),ESP_GPIO5,U1,11,GPIO5,JTAG-select strap (sampled at reset): keep the documented default or leave floating
+J1,31,front (odd),FPGA_IOB_0A,U2,46,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,32,back (even),ESP_GPIO4,U1,10,GPIO4,JTAG-select strap (sampled at reset): keep the documented default or leave floating
+J1,33,front (odd),GND,,,,Ground
+J1,34,back (even),ESP_EN,U1,4,,Active-high CHIP_PU; 10k pull-up and 1 uF on module; open-drain reset permitted
+J1,35,front (odd),FPGA_IOB_3B_G6,U2,44,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,36,back (even),FPGA_IOB_4A,U2,48,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,37,front (odd),FPGA_IOT_49A,U2,43,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,38,back (even),FPGA_IOB_5B,U2,45,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,39,front (odd),GND,,,,Ground
+J1,40,back (even),FPGA_IOB_29B,U2,19,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,41,front (odd),FPGA_RGB2,U2,41,,"iCE40 RGB current-sink driver (open-drain style, not plain GPIO); no on-module LED in v2"
+J1,42,back (even),FPGA_IOT_51A,U2,42,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,43,front (odd),FPGA_RGB1,U2,40,,"iCE40 RGB current-sink driver (open-drain style, not plain GPIO); no on-module LED in v2"
+J1,44,back (even),FPGA_IOB_25B_G3,U2,20,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,45,front (odd),GND,,,,Ground
+J1,46,back (even),FPGA_IOB_23B,U2,21,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,47,front (odd),FPGA_IOT_50B,U2,38,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,48,back (even),FPGA_RGB0,U2,39,,"iCE40 RGB current-sink driver (open-drain style, not plain GPIO); no on-module LED in v2"
+J1,49,front (odd),FPGA_IOT_45A_G1,U2,37,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,50,back (even),FPGA_IOT_37A,U2,23,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,51,front (odd),GND,,,,Ground
+J1,52,back (even),FPGA_IOT_36B,U2,25,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,53,front (odd),FPGA_IOT_48B,U2,36,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,54,back (even),FPGA_IOT_38B,U2,27,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,55,front (odd),FPGA_IOT_46B_G0,U2,35,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,56,back (even),FPGA_IOT_42B,U2,31,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,57,front (odd),GND,,,,Ground
+J1,58,back (even),FPGA_IOT_41A,U2,28,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,67,front (odd),FPGA_IOT_44B,U2,34,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,68,back (even),FPGA_IOT_39A,U2,26,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,69,front (odd),FPGA_IOT_43A,U2,32,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
+J1,70,back (even),+3.3V,,,,Regulated 3.3 V input; connect all five power contacts
+J1,71,front (odd),GND,,,,Ground
+J1,72,back (even),+3.3V,,,,Regulated 3.3 V input; connect all five power contacts
+J1,73,front (odd),GND,,,,Ground
+J1,74,back (even),+3.3V,,,,Regulated 3.3 V input; connect all five power contacts
+J1,75,front (odd),GND,,,,Ground

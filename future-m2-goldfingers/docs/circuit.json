@@ -1,0 +1,1168 @@
+{
+  "U1": {
+    "value": "ESP32-C6FH8",
+    "mpn": "ESP32-C6FH8",
+    "lcsc": "C41459370",
+    "footprint": "Module2:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm",
+    "pins": {
+      "1": "RF_IN",
+      "2": "ESP_VDD3P3",
+      "3": "ESP_VDD3P3",
+      "4": "ESP_EN",
+      "5": "+3.3V",
+      "6": "FPGA_SPI_IO3",
+      "7": "FPGA_SPI_MOSI",
+      "8": "FPGA_SPI_CS_N",
+      "9": "FPGA_SPI_SCK",
+      "10": "ESP_GPIO4",
+      "11": "ESP_GPIO5",
+      "12": "FPGA_SPI_MISO",
+      "13": "FPGA_SPI_IO2",
+      "14": "ESP_GPIO8",
+      "15": "ESP_GPIO9_BOOT",
+      "16": "USB_D-",
+      "17": "USB_D+",
+      "18": "FPGA_CRESET_N",
+      "19": "ESP_GPIO15",
+      "20": "+3.3V",
+      "21": "ESP_GPIO16_TXD",
+      "22": "ESP_GPIO17_RXD",
+      "23": "FPGA_CDONE",
+      "24": "ESP_GPIO19",
+      "25": "ESP_GPIO20",
+      "26": "ESP_GPIO21",
+      "27": "ESP_GPIO22",
+      "28": "ESP_GPIO23",
+      "29": "+3.3V",
+      "30": "XTAL_N",
+      "31": "XTAL_P",
+      "32": "+3.3V",
+      "33": "GND"
+    },
+    "kind": "ic",
+    "names": {
+      "1": "ANT",
+      "2": "VDDA3P3",
+      "3": "VDDA3P3",
+      "4": "CHIP_PU",
+      "5": "VDDPST1",
+      "6": "GPIO0/XTAL_32K_P",
+      "7": "GPIO1/XTAL_32K_N",
+      "8": "GPIO2/FSPIQ",
+      "9": "GPIO3",
+      "10": "GPIO4/MTMS",
+      "11": "GPIO5/MTDI",
+      "12": "GPIO6/MTCK/FSPICLK",
+      "13": "GPIO7/MTDO/FSPID",
+      "14": "GPIO8",
+      "15": "GPIO9",
+      "16": "GPIO12/USB_D-",
+      "17": "GPIO13/USB_D+",
+      "18": "GPIO14",
+      "19": "GPIO15",
+      "20": "VDDPST2",
+      "21": "GPIO16/U0TXD",
+      "22": "GPIO17/U0RXD",
+      "23": "GPIO18",
+      "24": "GPIO19",
+      "25": "GPIO20",
+      "26": "GPIO21",
+      "27": "GPIO22",
+      "28": "GPIO23",
+      "29": "VDDA1",
+      "30": "XTAL_N",
+      "31": "XTAL_P",
+      "32": "VDDA2",
+      "33": "GND"
+    },
+    "types": {
+      "1": "passive",
+      "2": "power_in",
+      "3": "power_in",
+      "4": "input",
+      "5": "power_in",
+      "6": "bidirectional",
+      "7": "bidirectional",
+      "8": "bidirectional",
+      "9": "bidirectional",
+      "10": "bidirectional",
+      "11": "bidirectional",
+      "12": "bidirectional",
+      "13": "bidirectional",
+      "14": "bidirectional",
+      "15": "bidirectional",
+      "16": "bidirectional",
+      "17": "bidirectional",
+      "18": "bidirectional",
+      "19": "bidirectional",
+      "20": "power_in",
+      "21": "bidirectional",
+      "22": "bidirectional",
+      "23": "bidirectional",
+      "24": "bidirectional",
+      "25": "bidirectional",
+      "26": "bidirectional",
+      "27": "bidirectional",
+      "28": "bidirectional",
+      "29": "power_in",
+      "30": "passive",
+      "31": "passive",
+      "32": "power_in",
+      "33": "power_in"
+    },
+    "bom": true,
+    "position": [
+      111.0,
+      113.5,
+      0
+    ]
+  },
+  "U2": {
+    "value": "iCE40UP5K-SG48",
+    "mpn": "ICE40UP5K-SG48I",
+    "lcsc": "C2678152",
+    "footprint": "Module2:ICE40-QFN",
+    "pins": {
+      "2": "FPGA_IOB_6A",
+      "3": "FPGA_IOB_9B",
+      "4": "FPGA_IOB_8A",
+      "6": "FPGA_IOB_13B",
+      "9": "FPGA_IOB_16A",
+      "10": "FPGA_IOB_18A",
+      "11": "FPGA_IOB_20A",
+      "12": "FPGA_IOB_22A",
+      "13": "FPGA_SPI_IO2",
+      "18": "FPGA_SPI_IO3",
+      "19": "FPGA_IOB_29B",
+      "20": "FPGA_IOB_25B_G3",
+      "21": "FPGA_IOB_23B",
+      "23": "FPGA_IOT_37A",
+      "25": "FPGA_IOT_36B",
+      "26": "FPGA_IOT_39A",
+      "27": "FPGA_IOT_38B",
+      "28": "FPGA_IOT_41A",
+      "31": "FPGA_IOT_42B",
+      "32": "FPGA_IOT_43A",
+      "34": "FPGA_IOT_44B",
+      "35": "FPGA_IOT_46B_G0",
+      "36": "FPGA_IOT_48B",
+      "37": "FPGA_IOT_45A_G1",
+      "38": "FPGA_IOT_50B",
+      "42": "FPGA_IOT_51A",
+      "43": "FPGA_IOT_49A",
+      "44": "FPGA_IOB_3B_G6",
+      "45": "FPGA_IOB_5B",
+      "46": "FPGA_IOB_0A",
+      "47": "FPGA_IOB_2A",
+      "48": "FPGA_IOB_4A",
+      "1": "+3.3V",
+      "5": "+1.2V",
+      "7": "FPGA_CDONE",
+      "8": "FPGA_CRESET_N",
+      "14": "FPGA_SPI_MISO",
+      "15": "FPGA_SPI_SCK",
+      "16": "FPGA_SPI_CS_N",
+      "17": "FPGA_SPI_MOSI",
+      "22": "+3.3V",
+      "24": "+3.3V",
+      "29": "+1.2V_PLL",
+      "30": "+1.2V",
+      "33": "+3.3V",
+      "39": "FPGA_RGB0",
+      "40": "FPGA_RGB1",
+      "41": "FPGA_RGB2",
+      "PAD": "GND"
+    },
+    "kind": "ic",
+    "names": {
+      "1": "VCCIO_2",
+      "2": "IOB_6A",
+      "3": "IOB_9B",
+      "4": "IOB_8A",
+      "5": "VCC",
+      "6": "IOB_13B",
+      "7": "CDONE",
+      "8": "CRESET_B",
+      "9": "IOB_16A",
+      "10": "IOB_18A",
+      "11": "IOB_20A",
+      "12": "IOB_22A",
+      "13": "IOB_24A",
+      "14": "IOB_32A_SPI_SO",
+      "15": "IOB_34A_SPI_SCK",
+      "16": "IOB_35B_SPI_SS",
+      "17": "IOB_33B_SPI_SI",
+      "18": "IOB_31B",
+      "19": "IOB_29B",
+      "20": "IOB_25B_G3",
+      "21": "IOB_23B",
+      "22": "SPI_VCCIO1",
+      "23": "IOT_37A",
+      "24": "VPP_2V5",
+      "25": "IOT_36B",
+      "26": "IOT_39A",
+      "27": "IOT_38B",
+      "28": "IOT_41A",
+      "29": "VCCPLL",
+      "30": "VCC",
+      "31": "IOT_42B",
+      "32": "IOT_43A",
+      "33": "VCCIO_0",
+      "34": "IOT_44B",
+      "35": "IOT_46B_G0",
+      "36": "IOT_48B",
+      "37": "IOT_45A_G1",
+      "38": "IOT_50B",
+      "39": "RGB0",
+      "40": "RGB1",
+      "41": "RGB2",
+      "42": "IOT_51A",
+      "43": "IOT_49A",
+      "44": "IOB_3B_G6",
+      "45": "IOB_5B",
+      "46": "IOB_0A",
+      "47": "IOB_2A",
+      "48": "IOB_4A",
+      "PAD": "GND"
+    },
+    "types": {
+      "1": "power_in",
+      "2": "bidirectional",
+      "3": "bidirectional",
+      "4": "bidirectional",
+      "5": "power_in",
+      "6": "bidirectional",
+      "7": "output",
+      "8": "input",
+      "9": "bidirectional",
+      "10": "bidirectional",
+      "11": "bidirectional",
+      "12": "bidirectional",
+      "13": "bidirectional",
+      "14": "bidirectional",
+      "15": "bidirectional",
+      "16": "bidirectional",
+      "17": "bidirectional",
+      "18": "bidirectional",
+      "19": "bidirectional",
+      "20": "bidirectional",
+      "21": "bidirectional",
+      "22": "power_in",
+      "23": "bidirectional",
+      "24": "power_in",
+      "25": "bidirectional",
+      "26": "bidirectional",
+      "27": "bidirectional",
+      "28": "bidirectional",
+      "29": "power_in",
+      "30": "power_in",
+      "31": "bidirectional",
+      "32": "bidirectional",
+      "33": "power_in",
+      "34": "bidirectional",
+      "35": "bidirectional",
+      "36": "bidirectional",
+      "37": "bidirectional",
+      "38": "bidirectional",
+      "39": "bidirectional",
+      "40": "bidirectional",
+      "41": "bidirectional",
+      "42": "bidirectional",
+      "43": "bidirectional",
+      "44": "bidirectional",
+      "45": "bidirectional",
+      "46": "bidirectional",
+      "47": "bidirectional",
+      "48": "bidirectional",
+      "PAD": "power_in"
+    },
+    "bom": true,
+    "position": [
+      111.0,
+      130.5,
+      180
+    ]
+  },
+  "Y1": {
+    "value": "40MHz / CL10pF",
+    "mpn": "S2240000101050",
+    "lcsc": "C426970",
+    "footprint": "Module2:Crystal_2520_4pin",
+    "pins": {
+      "IN/OUT": "XTAL_P_CRYSTAL",
+      "OUT/IN": "XTAL_N",
+      "GND-A": "GND",
+      "GND-B": "GND"
+    },
+    "kind": "xtal",
+    "names": {
+      "IN/OUT": "IN/OUT",
+      "OUT/IN": "OUT/IN",
+      "GND-A": "GND",
+      "GND-B": "GND"
+    },
+    "types": {},
+    "bom": true,
+    "position": [
+      110.4,
+      107.0,
+      0
+    ]
+  },
+  "J3": {
+    "value": "U.FL-R-SMT-1(01)",
+    "mpn": "U.FL-R-SMT-1(01)",
+    "lcsc": "",
+    "footprint": "Module2:UFL_Vertical",
+    "pins": {
+      "1": "RF_ANT",
+      "2": "GND"
+    },
+    "kind": "connector",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      104.95,
+      106.5,
+      90
+    ]
+  },
+  "TP1": {
+    "value": "FPGA_CRESET_N",
+    "mpn": "FPGA_CRESET_N",
+    "lcsc": "",
+    "footprint": "Module2:TestPoint_0p8",
+    "pins": {
+      "1": "FPGA_CRESET_N"
+    },
+    "kind": "testpoint",
+    "names": {},
+    "types": {},
+    "bom": false,
+    "position": [
+      116.8,
+      122.2,
+      0
+    ]
+  },
+  "TP2": {
+    "value": "FPGA_CDONE",
+    "mpn": "FPGA_CDONE",
+    "lcsc": "",
+    "footprint": "Module2:TestPoint_0p8",
+    "pins": {
+      "1": "FPGA_CDONE"
+    },
+    "kind": "testpoint",
+    "names": {},
+    "types": {},
+    "bom": false,
+    "position": [
+      118.7,
+      120.6,
+      0
+    ]
+  },
+  "C1": {
+    "value": "1.5pF",
+    "mpn": "GJM1555C1H1R5WB01D",
+    "lcsc": "",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "RF_IN",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      107.0,
+      111.2654,
+      90
+    ]
+  },
+  "L3": {
+    "value": "2.2nH",
+    "mpn": "LQG15HS2N2S02D",
+    "lcsc": "C86061",
+    "footprint": "Module2:L_0402",
+    "pins": {
+      "1": "RF_IN",
+      "2": "RF_ANT"
+    },
+    "kind": "l",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      105.8,
+      111.75,
+      180
+    ]
+  },
+  "C2": {
+    "value": "1.5pF",
+    "mpn": "GJM1555C1H1R5WB01D",
+    "lcsc": "",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "RF_ANT",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      104.35,
+      111.2654,
+      90
+    ]
+  },
+  "L5": {
+    "value": "24nH",
+    "mpn": "LQG15HS24NJ02D",
+    "lcsc": "C86061",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "XTAL_P",
+      "2": "XTAL_P_CRYSTAL"
+    },
+    "kind": "l",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      109.75,
+      109.5,
+      90
+    ]
+  },
+  "C6": {
+    "value": "12pF",
+    "mpn": "12pF",
+    "lcsc": "C26406",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "XTAL_P_CRYSTAL",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      108.3,
+      107.29,
+      90
+    ]
+  },
+  "C7": {
+    "value": "12pF",
+    "mpn": "12pF",
+    "lcsc": "C26406",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "XTAL_N",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      112.6,
+      106.7096,
+      -90
+    ]
+  },
+  "C40": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      107.6,
+      110.15,
+      180
+    ]
+  },
+  "C39": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      110.75,
+      109.15,
+      90
+    ]
+  },
+  "C35": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "ESP_VDD3P3",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      104.8154,
+      112.75,
+      180
+    ]
+  },
+  "C36": {
+    "value": "1uF",
+    "mpn": "1uF",
+    "lcsc": "C29266",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "ESP_VDD3P3",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      104.8154,
+      113.85,
+      180
+    ]
+  },
+  "C34": {
+    "value": "10uF",
+    "mpn": "10uF",
+    "lcsc": "C19702",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "ESP_VDD3P3",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      104.525,
+      115.2,
+      180
+    ]
+  },
+  "L1": {
+    "value": "100ohm @100MHz",
+    "mpn": "BLM18KG101TN1D",
+    "lcsc": "C160981",
+    "footprint": "Module2:L_0603",
+    "pins": {
+      "1": "+3.3V",
+      "2": "ESP_VDD3P3"
+    },
+    "kind": "l",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      104.5125,
+      116.75,
+      0
+    ]
+  },
+  "C37": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      106.7,
+      114.2346,
+      -90
+    ]
+  },
+  "R22": {
+    "value": "10k",
+    "mpn": "10k",
+    "lcsc": "C60490",
+    "footprint": "Module2:R_0402",
+    "pins": {
+      "1": "ESP_EN",
+      "2": "+3.3V"
+    },
+    "kind": "r",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      106.7,
+      116.7,
+      90
+    ]
+  },
+  "C32": {
+    "value": "1uF",
+    "mpn": "1uF",
+    "lcsc": "C29266",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "ESP_EN",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      106.7,
+      119.0,
+      -90
+    ]
+  },
+  "C38": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      116.1,
+      113.75,
+      0
+    ]
+  },
+  "C33": {
+    "value": "10uF",
+    "mpn": "10uF",
+    "lcsc": "C19702",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      114.3,
+      105.0,
+      90
+    ]
+  },
+  "R20": {
+    "value": "10k",
+    "mpn": "10k",
+    "lcsc": "C60490",
+    "footprint": "Module2:R_0402",
+    "pins": {
+      "1": "ESP_GPIO9_BOOT",
+      "2": "+3.3V"
+    },
+    "kind": "r",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      115.0,
+      117.8,
+      90
+    ]
+  },
+  "R21": {
+    "value": "10k",
+    "mpn": "10k",
+    "lcsc": "C60490",
+    "footprint": "Module2:R_0402",
+    "pins": {
+      "1": "ESP_GPIO8",
+      "2": "+3.3V"
+    },
+    "kind": "r",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      116.0,
+      118.3,
+      90
+    ]
+  },
+  "U3": {
+    "value": "TLV75512PDBVR",
+    "mpn": "TLV75512PDBVR",
+    "lcsc": "C2877864",
+    "footprint": "Module2:SOT-23-5",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND",
+      "3": "+3.3V",
+      "5": "+1.2V"
+    },
+    "kind": "ic",
+    "names": {
+      "1": "IN",
+      "2": "GND",
+      "3": "EN",
+      "4": "NC",
+      "5": "OUT"
+    },
+    "types": {
+      "1": "power_in",
+      "2": "power_in",
+      "3": "input",
+      "4": "no_connect",
+      "5": "power_out"
+    },
+    "bom": true,
+    "position": [
+      102.0,
+      122.0,
+      270
+    ]
+  },
+  "C62": {
+    "value": "1uF / 6.3V",
+    "mpn": "1uF / 6.3V",
+    "lcsc": "C15849",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      102.175,
+      119.0,
+      180
+    ]
+  },
+  "C63": {
+    "value": "1uF / 6.3V",
+    "mpn": "1uF / 6.3V",
+    "lcsc": "C15849",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+1.2V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      103.725,
+      125.0,
+      0
+    ]
+  },
+  "C45": {
+    "value": "10uF",
+    "mpn": "10uF",
+    "lcsc": "C19702",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+1.2V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      103.725,
+      126.6,
+      0
+    ]
+  },
+  "L2": {
+    "value": "100ohm @100MHz",
+    "mpn": "BLM18KG101TN1D",
+    "lcsc": "C160981",
+    "footprint": "Module2:L_0603",
+    "pins": {
+      "1": "+1.2V",
+      "2": "+1.2V_PLL"
+    },
+    "kind": "l",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      101.0,
+      126.5,
+      -90
+    ]
+  },
+  "C43": {
+    "value": "10uF",
+    "mpn": "10uF",
+    "lcsc": "C19702",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+1.2V_PLL",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      101.0,
+      129.75,
+      -90
+    ]
+  },
+  "C44": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+1.2V_PLL",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      104.2,
+      129.4,
+      180
+    ]
+  },
+  "C49": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+1.2V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      104.65,
+      130.7346,
+      -90
+    ]
+  },
+  "C46": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      103.3,
+      131.75,
+      180
+    ]
+  },
+  "C66": {
+    "value": "1uF / 6.3V",
+    "mpn": "1uF / 6.3V",
+    "lcsc": "C15849",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      117.6,
+      104.0,
+      90
+    ]
+  },
+  "C50": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+1.2V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      115.45,
+      134.5,
+      -90
+    ]
+  },
+  "C48": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      114.48,
+      135.6,
+      -90
+    ]
+  },
+  "C52": {
+    "value": "0.1uF",
+    "mpn": "0.1uF",
+    "lcsc": "C1525",
+    "footprint": "Module2:C_0402",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      107.5,
+      125.6,
+      180
+    ]
+  },
+  "C60": {
+    "value": "10uF / 10V",
+    "mpn": "10uF / 10V",
+    "lcsc": "C19702",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      119.3,
+      104.0,
+      90
+    ]
+  },
+  "C61": {
+    "value": "22uF / 10V",
+    "mpn": "CL10A226MPCNUBE",
+    "lcsc": "C5355402",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      121.0,
+      104.0,
+      90
+    ]
+  },
+  "C67": {
+    "value": "22uF / 10V",
+    "mpn": "CL10A226MPCNUBE",
+    "lcsc": "C5355402",
+    "footprint": "Module2:C_0603",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      115.9,
+      104.0,
+      90
+    ]
+  },
+  "R28": {
+    "value": "10k",
+    "mpn": "10k",
+    "lcsc": "C60490",
+    "footprint": "Module2:R_0402",
+    "pins": {
+      "1": "GND",
+      "2": "FPGA_CRESET_N"
+    },
+    "kind": "r",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      116.2,
+      124.4,
+      0
+    ]
+  },
+  "R29": {
+    "value": "10k",
+    "mpn": "10k",
+    "lcsc": "C60490",
+    "footprint": "Module2:R_0402",
+    "pins": {
+      "1": "FPGA_CDONE",
+      "2": "+3.3V"
+    },
+    "kind": "r",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      116.9,
+      111.2425,
+      90
+    ]
+  },
+  "J1": {
+    "value": "M.2 Key M card edge (custom pinout)",
+    "mpn": "PCB card edge",
+    "lcsc": "",
+    "footprint": "Module2:M2_CardEdge_KeyM_2242",
+    "pins": {
+      "1": "GND",
+      "3": "GND",
+      "9": "GND",
+      "15": "GND",
+      "21": "GND",
+      "27": "GND",
+      "33": "GND",
+      "39": "GND",
+      "45": "GND",
+      "51": "GND",
+      "57": "GND",
+      "71": "GND",
+      "73": "GND",
+      "75": "GND",
+      "2": "+3.3V",
+      "4": "+3.3V",
+      "70": "+3.3V",
+      "72": "+3.3V",
+      "74": "+3.3V",
+      "34": "ESP_EN",
+      "32": "ESP_GPIO4",
+      "30": "ESP_GPIO5",
+      "28": "ESP_GPIO8",
+      "26": "ESP_GPIO9_BOOT",
+      "24": "USB_D-",
+      "22": "USB_D+",
+      "20": "ESP_GPIO15",
+      "18": "ESP_GPIO16_TXD",
+      "16": "ESP_GPIO17_RXD",
+      "14": "ESP_GPIO19",
+      "12": "ESP_GPIO20",
+      "10": "ESP_GPIO21",
+      "8": "ESP_GPIO22",
+      "6": "ESP_GPIO23",
+      "5": "FPGA_IOB_22A",
+      "7": "FPGA_IOB_20A",
+      "11": "FPGA_IOB_18A",
+      "13": "FPGA_IOB_16A",
+      "17": "FPGA_IOB_13B",
+      "19": "FPGA_IOB_8A",
+      "23": "FPGA_IOB_9B",
+      "25": "FPGA_IOB_6A",
+      "49": "FPGA_IOT_45A_G1",
+      "47": "FPGA_IOT_50B",
+      "43": "FPGA_RGB1",
+      "41": "FPGA_RGB2",
+      "37": "FPGA_IOT_49A",
+      "35": "FPGA_IOB_3B_G6",
+      "31": "FPGA_IOB_0A",
+      "29": "FPGA_IOB_2A",
+      "50": "FPGA_IOT_37A",
+      "48": "FPGA_RGB0",
+      "46": "FPGA_IOB_23B",
+      "44": "FPGA_IOB_25B_G3",
+      "42": "FPGA_IOT_51A",
+      "40": "FPGA_IOB_29B",
+      "38": "FPGA_IOB_5B",
+      "36": "FPGA_IOB_4A",
+      "53": "FPGA_IOT_48B",
+      "55": "FPGA_IOT_46B_G0",
+      "52": "FPGA_IOT_36B",
+      "68": "FPGA_IOT_39A",
+      "54": "FPGA_IOT_38B",
+      "58": "FPGA_IOT_41A",
+      "56": "FPGA_IOT_42B",
+      "69": "FPGA_IOT_43A",
+      "67": "FPGA_IOT_44B"
+    },
+    "kind": "connector",
+    "names": {},
+    "types": {},
+    "bom": false,
+    "position": [
+      111.0,
+      142.0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Module2")(type "KiCad")(uri "${KIPRJMOD}/Module2.pretty")(options "")(descr "ESP32-C6 + iCE40 M.2 module v2 footprints"))
+)

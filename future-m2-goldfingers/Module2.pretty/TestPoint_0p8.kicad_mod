@@ -1,0 +1,59 @@
+(footprint "TestPoint_0p8"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "TP2"
+		(at 0 -0.9 0)
+		(layer "F.SilkS")
+		(uuid "13a38ab6-6c84-4d90-84a2-5eaca7eac9d6")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "FPGA_CDONE"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "75882f90-9ec9-47c0-a87f-01f72c63d2d5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bfdaf045-9e2b-4aff-a456-cca931dc3523")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "95f6fd26-cce6-495d-bbb4-de75c09aa807")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask")
+		(uuid "9f27720c-d517-43f3-bcdb-91ae4783e6d8")
+	)
+	(embedded_fonts no)
+)

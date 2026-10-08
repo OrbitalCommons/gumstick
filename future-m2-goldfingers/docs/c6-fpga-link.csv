@@ -1,9 +1,9 @@
 Signal,ESP32_C6_GPIO,ESP32_C6_QFN32_pad,FPGA_SG48_pad,Notes
-FPGA_SPI_SCK,6,12,15,Native FSPI clock
-FPGA_SPI_MOSI,7,13,17,Native FSPI D
-FPGA_SPI_MISO,2,8,14,Native FSPI Q
-FPGA_SPI_CS_N,18,23,16,Chip select routed through GPIO matrix
-FPGA_SPI_IO2,0,6,13,GPIO matrix; avoids boot-strapping pins
-FPGA_SPI_IO3,1,7,18,GPIO matrix; avoids boot-strapping pins
-FPGA_CRESET_N,20,25,8,Retain 10k pull-down
-FPGA_CDONE,21,26,7,Retain 10k pull-up to 3.3V
+FPGA_SPI_SCK,3,9,15,GPIO matrix clock (not the native FSPICLK pin); keep the configuration SPI clock modest and verify timing
+FPGA_SPI_MOSI,1,7,17,GPIO matrix
+FPGA_SPI_MISO,6,12,14,GPIO matrix
+FPGA_SPI_CS_N,2,8,16,GPIO matrix chip select
+FPGA_SPI_IO2,7,13,13,"GPIO matrix; quad lane, avoids strapping pins"
+FPGA_SPI_IO3,0,6,18,"GPIO matrix; quad lane, avoids strapping pins"
+FPGA_CRESET_N,14,18,8,R28 10k pull-down keeps the FPGA in reset until the ESP releases it; TP1
+FPGA_CDONE,18,23,7,R29 10k pull-up to 3.3 V; TP2
