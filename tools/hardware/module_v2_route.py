@@ -96,7 +96,7 @@ T('ESP_EN', [P('R22.1'), P('C32.1')], F, 0.15); V('ESP_EN', 106.7, 117.865)
 pin_via(GND, 'C32.2', (106.7, 120.2), F, 0.2)
 # CHIP_PU (pin 4) leaves west, drops to B.Cu, feeds the RC column and the bus (lane 0)
 T('ESP_EN', [P('U1.4'), (107.5, 113.25)], F); V('ESP_EN', 107.5, 113.25)
-T('ESP_EN', [(107.5, 113.25), (107.5, 120.9), (118.1, 120.9)], B, W_BUS)
+T('ESP_EN', [(107.5, 113.25), (107.5, 120.9), (116.3, 120.9)], B, W_BUS)
 T('ESP_EN', [(107.5, 117.865), (106.7, 117.865)], B, W_BUS)
 # VDDA1/VDDA2 (pins 29, 32): C39 above pin 29 via a 0.4 mm via, C40 west of pin 32 on a short bar
 T(V33, [P('U1.32'), (109.25, 110.15), P('C40.1')], F, 0.15)
@@ -175,36 +175,44 @@ def back_entry(net, n, lane_x, c):
     return y_turn
 
 # ============================================================== ESP signal bus (B.Cu)
-# feeders: (net, via x, via y, feeder level y, lane x); lanes are ordered west->east, so are their contacts (34 .. 6)
-bus = [('ESP_EN',          None,  None,  120.9, 118.1),
-       ('ESP_GPIO4',       109.75, 117.0, 120.4, 118.35),
-       ('ESP_GPIO5',       110.25, 117.8, 119.9, 118.6),
-       ('ESP_GPIO8',       111.75, 117.0, 119.4, 118.85),
-       ('ESP_GPIO9_BOOT',  112.25, 117.8, 118.9, 119.1),
-       ('USB_D-',          112.75, 117.0, 118.4, 119.35),
-       ('USB_D+',          114.3, 115.25, 115.25, 119.6),
-       ('ESP_GPIO15',      115.0, 114.25, 114.25, 119.85),
-       ('ESP_GPIO16_TXD',  114.3, 113.25, 113.25, 120.1),
-       ('ESP_GPIO17_RXD',  115.0, 112.75, 112.75, 120.35),
-       ('ESP_GPIO19',      114.3, 111.75, 111.75, 120.6),
-       ('ESP_GPIO20',      112.75, 110.3, 110.3, 120.85),
-       ('ESP_GPIO21',      112.25, 109.0, 109.3, 121.1),
-       ('ESP_GPIO22',      111.75, 109.6, 108.55, 121.35),
-       ('ESP_GPIO23',      111.25, 110.3, 108.3, 121.6)]
+# feeders: (net, via x, via y, feeder level y, lane x, miter x); each feeder runs east on its level to the miter x, then takes a
+# 45-degree leg into its lane. Legs are y - x = level - miter_x, nested (stepping >= 0.36 mm) so none cross; the miter x values
+# keep the legs 0.4 mm off the R20/R21/C38/R29 vias. Lanes are ordered west->east, so are their contacts (34 .. 6).
+bus = [('ESP_EN',          None,  None,  120.9, 118.1, 116.3),
+       ('ESP_GPIO4',       109.75, 117.0, 120.4, 118.35, 116.3),
+       ('ESP_GPIO5',       110.25, 117.8, 119.9, 118.6, 116.3),
+       ('ESP_GPIO8',       111.75, 117.0, 119.4, 118.85, 116.3),
+       ('ESP_GPIO9_BOOT',  112.25, 117.8, 118.9, 119.1, 116.3),
+       ('USB_D-',          112.75, 117.0, 118.4, 119.35, 116.3),
+       ('USB_D+',          114.3, 115.25, 115.25, 119.6, 114.88),
+       ('ESP_GPIO15',      115.0, 114.25, 114.25, 119.85, 115.0),
+       ('ESP_GPIO16_TXD',  114.3, 113.25, 113.25, 120.1, 115.0),
+       ('ESP_GPIO17_RXD',  115.0, 112.75, 112.75, 120.35, 115.0),
+       ('ESP_GPIO19',      114.3, 111.75, 111.75, 120.6, 115.7),
+       ('ESP_GPIO20',      112.75, 110.3, 110.3, 120.85, 114.8),
+       ('ESP_GPIO21',      112.25, 109.0, 109.3, 121.1, 114.3),
+       ('ESP_GPIO22',      111.75, 109.6, 108.55, 121.35, 114.05),
+       ('ESP_GPIO23',      111.25, 110.3, 108.3, 121.6, 114.3)]
 esp_pad = {'ESP_GPIO4': 'U1.10', 'ESP_GPIO5': 'U1.11', 'ESP_GPIO8': 'U1.14', 'ESP_GPIO9_BOOT': 'U1.15', 'USB_D-': 'U1.16', 'USB_D+': 'U1.17',
            'ESP_GPIO15': 'U1.19', 'ESP_GPIO16_TXD': 'U1.21', 'ESP_GPIO17_RXD': 'U1.22', 'ESP_GPIO19': 'U1.24', 'ESP_GPIO20': 'U1.25',
            'ESP_GPIO21': 'U1.26', 'ESP_GPIO22': 'U1.27', 'ESP_GPIO23': 'U1.28'}
 C_ESP0, DC = 249.75, 0.36
-for k, (net, vx, vy, lvl, lane) in enumerate(bus):
+prev_c = None
+for k, (net, vx, vy, lvl, lane, xt) in enumerate(bus):
     if vx is not None:
         px, py = P(esp_pad[net])
         T(net, [(px, py), (vx, vy)] if (px == vx or py == vy) else [(px, py), (px, vy), (vx, vy)], F)   # straight pin exit to the via
         V(net, vx, vy, 0.4 if net == 'ESP_GPIO23' else VIA_D)
-        if vy == lvl: T(net, [(vx, vy), (lane, lvl)], B, W_BUS)
-        else:         T(net, [(vx, vy), (vx, lvl), (lane, lvl)], B, W_BUS)
+        if vy == lvl: T(net, [(vx, vy), (xt, lvl)], B, W_BUS)
+        else:         T(net, [(vx, vy), (vx, lvl), (xt, lvl)], B, W_BUS)
+    c = lvl - xt                                                     # leg y - x = c; must fall by >= 0.36 per lane outwards
+    assert prev_c is None or c <= prev_c - 0.36 + 1e-6 or k <= 5 and c >= prev_c + 0.36 - 1e-6, (net, c, prev_c)
+    prev_c = c
+    y_in = lvl + (lane - xt)
     n = finger_of[net][2]
     y_turn = back_entry(net, n, lane, C_ESP0 + DC * k)
-    T(net, [(lane, lvl), (lane, y_turn)], B, W_BUS)
+    assert y_turn > y_in, (net, y_turn, y_in)
+    T(net, [(xt, lvl), (lane, y_in), (lane, y_turn)], B, W_BUS)
 
 # R20 / R21 pull-ups hang off the GPIO9 / GPIO8 feeders through in-line vias
 T('ESP_GPIO9_BOOT', [P('R20.1'), (115.0, 118.9)], F); V('ESP_GPIO9_BOOT', 115.0, 118.9)
