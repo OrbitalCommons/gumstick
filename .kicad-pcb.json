@@ -43,10 +43,10 @@
         "name": "JLCPCB",
         "profile": "FR4-4L-0.8mm-1oz-0.5oz-0.45-0.20-via",
         "capabilities_url": "https://jlcpcb.com/capabilities/Capab",
-        "checked_on": "2026-09-24",
+        "checked_on": "2026-10-08",
         "rules": "module.kicad_dru",
-        "notes": "0.8 mm 4-layer M.2 2242 card; stackup approximated as JLC04081H-7628 (confirm with fab); RF CPWG 0.26 mm / 0.15 mm gap carried from v1. Development draft, not for fabrication.",
-        "stackup": "JLC04081H-7628"
+        "notes": "0.8 mm 4-layer M.2 2242 card (M.2 0.8 +/- 0.08 mm); JLC04081H-3313 ordered by name with impedance control; RF coated CPWG 0.14 mm / 0.15 mm gap (docs/rf-feed.json). Gold fingers need JLCPCB Standard PCBA as a >= 70 x 70 mm panel. Development draft, not for fabrication.",
+        "stackup": "JLC04081H-3313"
       }
     },
     {
