@@ -80,13 +80,13 @@ def symdef(ref):
     return pm
 
 # IC pin arrangement (left column, right column). None leaves a gap.
-esp_left = ['1', None, '2', '3', None, '5', '20', '29', '32', None, '31', '30', None, '4', None, '16', '17', None, '33']
-esp_right = ['6', '7', '8', '9', '12', '13', '18', '23', None, '10', '11', '14', '15', '19', '21', '22', '24', '25', '26', '27', '28']
+esp_left = ['1', None, '2', '3', None, '5', '28', '37', '40', None, '39', '38', None, '4', None, '18', '19', None, '20', '21', '22', '24', '25', '26', '23', None, '41']
+esp_right = ['6', '7', '8', '9', '12', '13', '16', '17', None, '10', '11', '14', '15', '27', '29', '30', '31', '32', '33', '34', '35', '36']
 fpga_left = ['1', '22', '24', '33', None, '5', '30', None, '29', None, 'PAD', None, '8', '7', None, '15', '17', '14', '16', '13', '18', None, '39', '40', '41']
 fpga_right = ['2', '3', '4', '6', '9', '10', '11', '12', '19', '20', '21', '23', '25', '26', '27', '28', '31', '32', '34', '35', '36', '37', '38', '42', '43', '44', '45', '46', '47', '48']
 j1_odd = [str(n) for n in range(1, 76, 2) if str(n) in parts['J1']['pins']]
 j1_even = [str(n) for n in range(2, 76, 2) if str(n) in parts['J1']['pins']]
-IC_LAYOUT = {'U1': (esp_left, esp_right), 'U2': (fpga_left, fpga_right), 'J1': (j1_odd, j1_even), 'U3': (['1', '3', None, '2'], ['5', None, '4']), 'J3': (['1', '2'], [])}
+IC_LAYOUT = {'U4': (['1', '6', '5', '2', '3', '7'], ['8', None, '4', '9']), 'U1': (esp_left, esp_right), 'U2': (fpga_left, fpga_right), 'J1': (j1_odd, j1_even), 'U3': (['1', '3', None, '2'], ['5', None, '4']), 'J3': (['1', '2'], [])}
 
 def place(ref, x, y, rot=0, mirror=False):
     """Place a symbol; return a dict of pin terminal coordinates in sheet space."""
@@ -183,7 +183,8 @@ def ic_block(ref, x, y, title, w, h):
 
 # ---------------------------------------------------------------- sheet
 sheet_w, sheet_h = 520.0, 330.0
-ic_block('U1', 15.24, 15.24, 'ESP32-C6FH8  (QFN32, 8 MB in-package flash)', 93.98, 83.82)
+ic_block('U1', 15.24, 15.24, 'ESP32-C6  (QFN40, external flash U4; VDD_SPI unused)', 93.98, 101.6)
+ic_block('U4', 320.04, 15.24, 'W25Q128JV 16 MB quad SPI flash (3.3 V from the plane)', 71.12, 45.72)
 ic_block('U2', 124.46, 15.24, 'iCE40UP5K-SG48  (3.3 V I/O, 1.2 V core)', 93.98, 101.6)
 ic_block('J1', 233.68, 15.24, 'M.2 key M card edge J1  (custom pinout, 3.3 V in, see docs/icd-v2-pinout.csv)', 71.12, 114.3)
 
@@ -273,8 +274,8 @@ def cap_row(caps, rail, x, y, label):
         cx = x + 12.7 * i
         if i > 0: junction((cx, y))
         tc = place(ref, cx, y + 7.62, 270); wire((cx, y), tc['1']); wire(tc['2'], (cx, tc['2'][1] + 2.54)); power('GND', cx, tc['2'][1] + 2.54)
-cap_row(['C33', 'C37', 'C38', 'C39', 'C40', 'C46', 'C48', 'C52', 'C66', 'C60', 'C61', 'C67'], '+3.3V', bx + 12.7, by + 17.78, '+3.3V: ESP VDDPST1/2, VDDA1/2; FPGA VCCIO/VPP; input bulk at the card edge')
-cap_row(['C49', 'C50'], '+1.2V', bx + 185.42, by + 17.78, 'FPGA VCC')
+cap_row(['C33', 'C37', 'C38', 'C39', 'C40', 'C68', 'C46', 'C48', 'C52', 'C66', 'C60', 'C61', 'C67'], '+3.3V', bx + 12.7, by + 17.78, '+3.3V: ESP VDDPST1/2, VDDA1/2; flash VCC; FPGA VCCIO/VPP; input bulk at the card edge')
+cap_row(['C49', 'C50'], '+1.2V', bx + 198.12, by + 17.78, 'FPGA VCC')
 # ESP VDDA3P3 filter: L1 from +3.3V, then the three capacitors
 x0, y0 = bx + 218.44, by + 17.78
 power('+3.3V', x0, y0); tl = place('L1', x0 + 10.16, y0, 0); wire((x0, y0), tl['1'])
@@ -288,7 +289,7 @@ note('ESP VDDA3P3 (pins 2, 3)', x0, y0 - 5.08, 1.2)
 # power flags for the rails that enter from the card edge
 pwr_flag(bx + 269.24, by + 45.72); wire((bx + 269.24, by + 45.72), (bx + 269.24, by + 43.18)); power('+3.3V', bx + 269.24, by + 43.18)
 pwr_flag(bx + 279.4, by + 45.72); wire((bx + 279.4, by + 45.72), (bx + 279.4, by + 48.26)); power('GND', bx + 279.4, by + 48.26)
-note('PWR_FLAGs: +3.3V and GND enter on card-edge contacts 2/4/70/72/74 and 1/3/9/15/21/27/33/39/45/51/57/71/73/75.', bx + 170.18, by + 58.42, 1.1)
+note('PWR_FLAGs: +3.3V and GND enter on card-edge contacts 2/4/70/72/74 and 1/3/9/15/21/27/39/45/51/57/71/73/75.', bx + 170.18, by + 58.42, 1.1)
 
 # ---------------------------------------------------------------- write
 missing = [r for r in parts if r not in placed]

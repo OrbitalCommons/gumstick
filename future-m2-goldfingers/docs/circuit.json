@@ -1,9 +1,9 @@
 {
   "U1": {
-    "value": "ESP32-C6FH8",
-    "mpn": "ESP32-C6FH8",
-    "lcsc": "C41459370",
-    "footprint": "Module2:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm",
+    "value": "ESP32-C6",
+    "mpn": "ESP32-C6",
+    "lcsc": "C5364646",
+    "footprint": "Module2:QFN-40-1EP_5x5mm_P0.4mm_EP3.3x3.3mm",
     "pins": {
       "1": "RF_IN",
       "2": "ESP_VDD3P3",
@@ -20,24 +20,31 @@
       "13": "FPGA_SPI_IO2",
       "14": "ESP_GPIO8",
       "15": "ESP_GPIO9_BOOT",
-      "16": "USB_D-",
-      "17": "USB_D+",
-      "18": "FPGA_CRESET_N",
-      "19": "ESP_GPIO15",
-      "20": "+3.3V",
-      "21": "ESP_GPIO16_TXD",
-      "22": "ESP_GPIO17_RXD",
-      "23": "FPGA_CDONE",
-      "24": "ESP_GPIO19",
-      "25": "ESP_GPIO20",
-      "26": "ESP_GPIO21",
-      "27": "ESP_GPIO22",
-      "28": "ESP_GPIO23",
-      "29": "+3.3V",
-      "30": "XTAL_N",
-      "31": "XTAL_P",
-      "32": "+3.3V",
-      "33": "GND"
+      "16": "FPGA_CRESET_N",
+      "17": "FPGA_CDONE",
+      "18": "USB_D-",
+      "19": "USB_D+",
+      "20": "FLASH_CS",
+      "21": "FLASH_DO",
+      "22": "FLASH_WP",
+      "24": "FLASH_HD",
+      "25": "FLASH_CLK",
+      "26": "FLASH_DI",
+      "27": "ESP_GPIO15",
+      "28": "+3.3V",
+      "29": "ESP_GPIO16_TXD",
+      "30": "ESP_GPIO17_RXD",
+      "31": "ESP_GPIO18",
+      "32": "ESP_GPIO19",
+      "33": "ESP_GPIO20",
+      "34": "ESP_GPIO21",
+      "35": "ESP_GPIO22",
+      "36": "ESP_GPIO23",
+      "37": "+3.3V",
+      "38": "XTAL_N",
+      "39": "XTAL_P",
+      "40": "+3.3V",
+      "41": "GND"
     },
     "kind": "ic",
     "names": {
@@ -56,24 +63,32 @@
       "13": "GPIO7/MTDO/FSPID",
       "14": "GPIO8",
       "15": "GPIO9",
-      "16": "GPIO12/USB_D-",
-      "17": "GPIO13/USB_D+",
-      "18": "GPIO14",
-      "19": "GPIO15",
-      "20": "VDDPST2",
-      "21": "GPIO16/U0TXD",
-      "22": "GPIO17/U0RXD",
-      "23": "GPIO18",
-      "24": "GPIO19",
-      "25": "GPIO20",
-      "26": "GPIO21",
-      "27": "GPIO22",
-      "28": "GPIO23",
-      "29": "VDDA1",
-      "30": "XTAL_N",
-      "31": "XTAL_P",
-      "32": "VDDA2",
-      "33": "GND"
+      "16": "GPIO10",
+      "17": "GPIO11",
+      "18": "GPIO12/USB_D-",
+      "19": "GPIO13/USB_D+",
+      "20": "SPICS0",
+      "21": "SPIQ",
+      "22": "SPIWP",
+      "23": "VDD_SPI",
+      "24": "SPIHD",
+      "25": "SPICLK",
+      "26": "SPID",
+      "27": "GPIO15",
+      "28": "VDDPST2",
+      "29": "GPIO16/U0TXD",
+      "30": "GPIO17/U0RXD",
+      "31": "GPIO18",
+      "32": "GPIO19",
+      "33": "GPIO20",
+      "34": "GPIO21",
+      "35": "GPIO22",
+      "36": "GPIO23",
+      "37": "VDDA1",
+      "38": "XTAL_N",
+      "39": "XTAL_P",
+      "40": "VDDA2",
+      "41": "GND"
     },
     "types": {
       "1": "passive",
@@ -95,26 +110,80 @@
       "17": "bidirectional",
       "18": "bidirectional",
       "19": "bidirectional",
-      "20": "power_in",
+      "20": "bidirectional",
       "21": "bidirectional",
       "22": "bidirectional",
-      "23": "bidirectional",
+      "23": "power_out",
       "24": "bidirectional",
       "25": "bidirectional",
       "26": "bidirectional",
       "27": "bidirectional",
-      "28": "bidirectional",
-      "29": "power_in",
-      "30": "passive",
-      "31": "passive",
-      "32": "power_in",
-      "33": "power_in"
+      "28": "power_in",
+      "29": "bidirectional",
+      "30": "bidirectional",
+      "31": "bidirectional",
+      "32": "bidirectional",
+      "33": "bidirectional",
+      "34": "bidirectional",
+      "35": "bidirectional",
+      "36": "bidirectional",
+      "37": "power_in",
+      "38": "passive",
+      "39": "passive",
+      "40": "power_in",
+      "41": "power_in"
     },
     "bom": true,
     "position": [
       111.0,
-      113.5,
+      114.0,
       0
+    ]
+  },
+  "U4": {
+    "value": "W25Q128JVPIQ",
+    "mpn": "W25Q128JVPIQ",
+    "lcsc": "C190862",
+    "footprint": "Module2:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm",
+    "pins": {
+      "1": "FLASH_CS",
+      "2": "FLASH_DO",
+      "3": "FLASH_WP",
+      "4": "GND",
+      "5": "FLASH_DI",
+      "6": "FLASH_CLK",
+      "7": "FLASH_HD",
+      "8": "+3.3V",
+      "9": "GND"
+    },
+    "kind": "ic",
+    "names": {
+      "1": "/CS",
+      "2": "DO(IO1)",
+      "3": "/WP(IO2)",
+      "4": "GND",
+      "5": "DI(IO0)",
+      "6": "CLK",
+      "7": "/HOLD(IO3)",
+      "8": "VCC",
+      "9": "EP"
+    },
+    "types": {
+      "1": "input",
+      "2": "bidirectional",
+      "3": "bidirectional",
+      "4": "power_in",
+      "5": "bidirectional",
+      "6": "input",
+      "7": "bidirectional",
+      "8": "power_in",
+      "9": "passive"
+    },
+    "bom": true,
+    "position": [
+      118.0,
+      105.3,
+      -90
     ]
   },
   "U2": {
@@ -379,7 +448,7 @@
     "bom": true,
     "position": [
       107.0,
-      111.2654,
+      111.7154,
       90
     ]
   },
@@ -398,7 +467,7 @@
     "bom": true,
     "position": [
       105.8,
-      111.75,
+      112.2,
       180
     ]
   },
@@ -417,15 +486,15 @@
     "bom": true,
     "position": [
       104.35,
-      111.2654,
+      111.7154,
       90
     ]
   },
   "L5": {
     "value": "24nH",
-    "mpn": "LQG15HS24NJ02D",
-    "lcsc": "C86061",
-    "footprint": "Module2:C_0402",
+    "mpn": "LQP03TG24NJ02D",
+    "lcsc": "",
+    "footprint": "Module2:L_0201",
     "pins": {
       "1": "XTAL_P",
       "2": "XTAL_P_CRYSTAL"
@@ -435,8 +504,8 @@
     "types": {},
     "bom": true,
     "position": [
-      109.75,
-      109.5,
+      109.6,
+      110.15,
       90
     ]
   },
@@ -492,16 +561,16 @@
     "types": {},
     "bom": true,
     "position": [
-      107.6,
-      110.15,
-      180
+      108.7,
+      110.3,
+      90
     ]
   },
   "C39": {
     "value": "0.1uF",
-    "mpn": "0.1uF",
-    "lcsc": "C1525",
-    "footprint": "Module2:C_0402",
+    "mpn": "0201B104K100NT",
+    "lcsc": "C285017",
+    "footprint": "Module2:C_0201",
     "pins": {
       "1": "+3.3V",
       "2": "GND"
@@ -511,8 +580,8 @@
     "types": {},
     "bom": true,
     "position": [
-      110.75,
-      109.15,
+      110.4,
+      110.05,
       90
     ]
   },
@@ -530,8 +599,8 @@
     "types": {},
     "bom": true,
     "position": [
-      104.8154,
-      112.75,
+      104.5154,
+      113.35,
       180
     ]
   },
@@ -549,8 +618,8 @@
     "types": {},
     "bom": true,
     "position": [
-      104.8154,
-      113.85,
+      104.5154,
+      114.35,
       180
     ]
   },
@@ -568,8 +637,8 @@
     "types": {},
     "bom": true,
     "position": [
-      104.525,
-      115.2,
+      104.225,
+      115.7,
       180
     ]
   },
@@ -587,8 +656,8 @@
     "types": {},
     "bom": true,
     "position": [
-      104.5125,
-      116.75,
+      104.225,
+      117.25,
       0
     ]
   },
@@ -606,8 +675,8 @@
     "types": {},
     "bom": true,
     "position": [
-      106.7,
-      114.2346,
+      105.9,
+      114.2846,
       -90
     ]
   },
@@ -625,8 +694,8 @@
     "types": {},
     "bom": true,
     "position": [
-      106.7,
-      116.7,
+      105.9,
+      118.64,
       90
     ]
   },
@@ -644,8 +713,8 @@
     "types": {},
     "bom": true,
     "position": [
-      106.7,
-      119.0,
+      105.9,
+      120.6,
       -90
     ]
   },
@@ -663,9 +732,9 @@
     "types": {},
     "bom": true,
     "position": [
-      115.9,
-      113.75,
-      0
+      115.35,
+      111.15,
+      90
     ]
   },
   "C33": {
@@ -682,9 +751,28 @@
     "types": {},
     "bom": true,
     "position": [
-      114.3,
+      114.0,
       105.0,
       90
+    ]
+  },
+  "C68": {
+    "value": "0.1uF",
+    "mpn": "0201B104K100NT",
+    "lcsc": "C285017",
+    "footprint": "Module2:C_0201",
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    },
+    "kind": "c",
+    "names": {},
+    "types": {},
+    "bom": true,
+    "position": [
+      119.585,
+      109.35,
+      180
     ]
   },
   "R20": {
@@ -701,9 +789,9 @@
     "types": {},
     "bom": true,
     "position": [
-      115.0,
-      117.8,
-      90
+      115.1,
+      121.0,
+      -90
     ]
   },
   "R21": {
@@ -720,9 +808,9 @@
     "types": {},
     "bom": true,
     "position": [
-      116.0,
-      118.3,
-      90
+      114.15,
+      121.3,
+      -90
     ]
   },
   "U3": {
@@ -1076,9 +1164,9 @@
     "types": {},
     "bom": true,
     "position": [
-      116.9,
-      111.2425,
-      90
+      119.5,
+      123.2,
+      0
     ]
   },
   "J1": {
@@ -1093,7 +1181,6 @@
       "15": "GND",
       "21": "GND",
       "27": "GND",
-      "33": "GND",
       "39": "GND",
       "45": "GND",
       "51": "GND",
@@ -1107,15 +1194,16 @@
       "72": "+3.3V",
       "74": "+3.3V",
       "34": "ESP_EN",
-      "32": "ESP_GPIO4",
-      "30": "ESP_GPIO5",
-      "28": "ESP_GPIO8",
-      "26": "ESP_GPIO9_BOOT",
-      "24": "USB_D-",
-      "22": "USB_D+",
-      "20": "ESP_GPIO15",
-      "18": "ESP_GPIO16_TXD",
-      "16": "ESP_GPIO17_RXD",
+      "33": "ESP_GPIO4",
+      "32": "ESP_GPIO5",
+      "30": "ESP_GPIO8",
+      "28": "ESP_GPIO9_BOOT",
+      "26": "USB_D-",
+      "24": "USB_D+",
+      "22": "ESP_GPIO15",
+      "20": "ESP_GPIO16_TXD",
+      "18": "ESP_GPIO17_RXD",
+      "16": "ESP_GPIO18",
       "14": "ESP_GPIO19",
       "12": "ESP_GPIO20",
       "10": "ESP_GPIO21",

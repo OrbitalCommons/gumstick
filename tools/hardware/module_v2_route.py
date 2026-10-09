@@ -79,43 +79,46 @@ for x, y in [(102.7, 127.4), (116.2, 127.4), (116.2, 133.8), (107.3, 133.8), (10
 board.Add(z)
 
 # ============================================================== exposed pads: ground vias
-for x, y in [(110.3, 112.8), (111.7, 112.8), (110.3, 114.2), (111.7, 114.2), (110.75, 129.2), (112.3, 129.2), (110.75, 131.8), (112.3, 131.8)]:
+for x, y in [(110.3, 113.3), (111.7, 113.3), (110.3, 114.7), (111.7, 114.7), (110.75, 129.2), (112.3, 129.2), (110.75, 131.8), (112.3, 131.8)]:
     V(GND, x, y)
 
-# ============================================================== ESP32-C6 power
-# VDDA3P3 (pins 2, 3): filter column west of U1, bused on x = 105.3 through C35/C36/C34 to the bead L1.
-T(VDDA, [P('U1.3'), (105.3, 112.75)], F, 0.25)
-T(VDDA, [P('U1.2'), (107.8, 112.25), (107.55, 112.5), (105.3, 112.5), (105.3, 116.75)], F, 0.25)   # bus through C35.1, C36.1, C34.1 to L1.2
-for pad, via in (('C35.2', (103.6, 112.75)), ('C36.2', (103.6, 113.85)), ('C34.2', (102.95, 115.2))): pin_via(GND, pad, via, F, 0.25)
-pin_via(V33, 'L1.1', (102.95, 116.75), F, 0.25)
-# VDDPST1 (pin 5) -> C37; EN RC: R22/C32 share the EN via (in-line) and R22's 3.3 V via sits west of it
-T(V33, [P('U1.5'), P('C37.1')], F, 0.2)
-pin_via(V33, 'C37.1', (106.1, 113.75), F, 0.2)
-pin_via(GND, 'C37.2', (106.7, 115.45), F, 0.2)
-T(V33, [P('R22.2'), (106.1, 116.1925)], F, 0.15); V(V33, 106.1, 116.1925)
-T('ESP_EN', [P('R22.1'), P('C32.1')], F, 0.15); V('ESP_EN', 106.7, 117.865)
-pin_via(GND, 'C32.2', (106.7, 120.2), F, 0.2)
-# CHIP_PU (pin 4) leaves west, drops to B.Cu, feeds the RC column and the bus (lane 0)
-T('ESP_EN', [P('U1.4'), (107.5, 113.25)], F); V('ESP_EN', 107.5, 113.25)
-T('ESP_EN', [(107.5, 113.25), (107.5, 120.9 - M_FEED), (107.5 + M_FEED, 120.9), (115.7, 120.9)], B, W_BUS)   # mitered corner; bus leg below
-T('ESP_EN', [(107.5, 117.865), (106.7, 117.865)], B, W_BUS)
-# VDDA1/VDDA2 (pins 29, 32): C39 above pin 29 via a 0.4 mm via, C40 west of pin 32 on a short bar
-T(V33, [P('U1.32'), (109.25, 110.15), P('C40.1')], F, 0.15)
-pin_via(V33, 'C40.1', (108.0846, 109.3), F, 0.15)
-pin_via(GND, 'C40.2', (107.1154, 109.4), F, 0.2)
-T(V33, [P('U1.29'), (110.75, 110.3), P('C39.1')], F, 0.2); V(V33, 110.75, 110.3, 0.4)
-# C39.2 returns through the front pour around the crystal (no via fits between XTAL_N and the GPIO23 drop)
-# VDDPST2 (pin 20) -> C38 east of U1
-T(V33, [P('U1.20'), P('C38.1')], F, 0.2); V(V33, 114.75, 113.75)
-T(GND, [P('C38.2'), (117.1, 113.75)], F, 0.2); V(GND, 117.1, 113.75)
+# ============================================================== ESP32-C6 (QFN40) power
+# U1 at (111, 114), 0.4 mm pitch: left pads x 108.56 (pins 1-10, y 112.2..115.8), bottom y 116.44 (11-20, x 109.2..112.8),
+# right x 113.44 (21-30, y 115.8..112.2), top y 111.56 (31-40, x 112.8..109.2).
+# VDDA3P3 (pins 2, 3): bus on x = 105.0 through C35/C36/C34 to the bead L1
+T(VDDA, [P('U1.3'), (105.0, 113.0)], F, 0.15)
+T(VDDA, [P('U1.2'), (107.8, 112.6), (107.4, 113.0)], F, 0.15)
+T(VDDA, [(105.0, 113.0), (105.0, 117.25)], F, 0.25)
+for pad, via in (('C35.2', (103.3, 113.35)), ('C36.2', (103.3, 114.35)), ('C34.2', (102.65, 115.7))): pin_via(GND, pad, via, F, 0.25)
+pin_via(V33, 'L1.1', (102.65, 117.25), F, 0.25)
+# CHIP_PU (pin 4) -> via between the VDDA and VDDPST1 lines; EN runs on B.Cu (x 107.3) and feeds the RC west of the link columns
+T('ESP_EN', [P('U1.4'), (107.7, 113.4)]); V('ESP_EN', 107.7, 113.4)
+T('ESP_EN', [(107.7, 113.4), (107.3, 113.8), (107.3, 121.6 - M_FEED), (107.3 + M_FEED, 121.6), (115.4, 121.6)], B, W_BUS)
+T('ESP_EN', [(107.3, 119.62), (105.9, 119.62)], B, W_BUS); V('ESP_EN', 105.9, 119.62)
+T('ESP_EN', [P('R22.1'), P('C32.1')], F, 0.15)
+pin_via(V33, 'R22.2', (105.9, 117.4), F, 0.2)
+pin_via(GND, 'C32.2', (105.9, 121.75), F, 0.2)
+# VDDPST1 (pin 5) -> C37 west of the link columns, plane via on the line
+T(V33, [P('U1.5'), P('C37.1')], F, 0.15); V(V33, 106.9, 113.8)
+pin_via(GND, 'C37.2', (105.9, 115.45), F, 0.2)
+# VDDA2 (pin 40) turns west onto C40; VDDA1 (pin 37) drops into a 0.4 mm plane via with C39 (0201) on the pin line above it
+T(V33, [P('U1.40'), (109.2, 111.0), (108.7, 111.0)], F, 0.15)
+T(V33, [P('C40.1'), (108.0, 110.785)], F, 0.15); V(V33, 108.0, 110.785)
+pin_via(GND, 'C40.2', (108.7, 109.15), F, 0.2)
+T(V33, [P('U1.37'), P('C39.1')], F, 0.15); V(V33, 110.4, 110.85, 0.4)
+pin_via(GND, 'C39.2', (110.4, 109.15), F, 0.15)
+# VDDPST2 (pin 28) runs east between the TXD and GPIO15 vias, then north to C38; its vias sit between the B.Cu bus legs
+T(V33, [P('U1.28'), (115.35, 113.0), P('C38.1')], F, 0.15)
+T(V33, [(115.35, 112.25), (115.65, 112.25)], F, 0.15); V(V33, 115.65, 112.25)   # c = -3.4 midline (RXD / GPIO18 legs)
+pin_via(GND, 'C38.2', (115.35, 110.15), F, 0.15)       # on the c = -5.2 midline between the GPIO19 and GPIO20 legs
 # C33: 10 uF on the ESP side of the 3.3 V plane (plane cap)
-pin_via(V33, 'C33.1', (113.5, 105.775), F, 0.25); pin_via(GND, 'C33.2', (113.5, 104.225), F, 0.25)
+pin_via(V33, 'C33.1', (113.2, 105.775), F, 0.25); pin_via(GND, 'C33.2', (113.2, 104.225), F, 0.25)
 # input bulk at the power contacts: each 3.3 V pad runs into its contact's In2 via, each ground pad has its own via
 T(V33, [P('C67.1'), (103.0, 137.0)], F, 0.25)                                 # contact 70
 T(V33, [P('C60.1'), (101.4, 136.5), (102.5, 137.6)], F, 0.25)                 # contact 72
 T(V33, [P('C61.1'), (120.0, 136.675), (120.0, 138.3)], F, 0.25)               # contact 2 (west exit, then straight down)
 pin_via(GND, 'C67.2', (103.0, 133.2), F, 0.25); pin_via(GND, 'C60.2', (101.4, 133.2), F, 0.25)
-# C66 feeds past C61 on its west side into the same contact via; the ESP bus lanes end at x 119.9, so both ground pads get vias
+# C66 feeds past C61 on its west side into the same contact via; the ESP bus lanes end at x 120.15, so both ground pads get vias
 T(V33, [P('C66.1'), (119.6, 133.575), (119.6, 136.275), (120.0, 136.675)], F, 0.25)
 pin_via(GND, 'C66.2', (120.55, 131.2), F, 0.25); pin_via(GND, 'C61.2', (120.55, 134.35), F, 0.25)
 
@@ -123,54 +126,86 @@ pin_via(GND, 'C66.2', (120.55, 131.2), F, 0.25); pin_via(GND, 'C61.2', (120.55, 
 T('RF_IN', [P('U1.1'), P('C1.1')], F, W_RF)
 T('RF_IN', [P('C1.1'), P('L3.1')], F, W_RF)
 T('RF_ANT', [P('L3.2'), P('C2.1')], F, W_RF)
-T('RF_ANT', [(104.95, 111.75), P('J3.1')], F, W_RF)
-pin_via(GND, 'C1.2', (106.3, 110.7808), F, 0.2)
-pin_via(GND, 'C2.2', (104.35, 110.0), F, 0.2)
+T('RF_ANT', [(104.95, 112.2), P('J3.1')], F, W_RF)
+pin_via(GND, 'C1.2', (106.3, 111.23), F, 0.2)
+pin_via(GND, 'C2.2', (104.35, 110.5), F, 0.2)
 pin_via(GND, 'J3.2', (106.425, 104.4), F, 0.25)
 
 # ============================================================== crystal
-T('XTAL_P', [P('U1.31'), P('L5.1')], F)
-T('XTAL_P_CRYSTAL', [P('L5.2'), (109.75, 107.775)], F)
+T('XTAL_P', [P('U1.39'), P('L5.1')], F)
+T('XTAL_P_CRYSTAL', [P('L5.2'), (109.6, 108.0)], F)                            # straight up into the crystal's IN/OUT pad
 T('XTAL_P_CRYSTAL', [P('C6.1'), P('Y1.IN/OUT')], F)
 pin_via(GND, 'C6.2', (108.3, 106.0), F)
-T('XTAL_N', [P('U1.30'), (110.25, 106.225), P('Y1.OUT/IN')], F)
+T('XTAL_N', [P('U1.38'), (110.0, 108.65), (110.25, 108.4), (110.25, 106.225), P('Y1.OUT/IN')], F)   # passes under the crystal body
 T('XTAL_N', [P('Y1.OUT/IN'), P('C7.1')], F)
 pin_via(GND, 'C7.2', (112.6, 107.75), F)
 pin_via(GND, 'Y1.GND-A', (109.475, 105.3), F, 0.2)
 
 # ============================================================== QSPI link U1 -> U2 (F.Cu, uncrossed)
-# left-column pins leave west and turn south; bottom pins go straight south; all meet U2's top row with 45 deg legs.
-# Legs are y - x = k with k stepping 0.45 so parallel legs keep the Link clearance.
-for net, a, b, col, k in (('FPGA_SPI_IO3', 'U1.6', 'U2.18', 107.2, 14.05), ('FPGA_SPI_MOSI', 'U1.7', 'U2.17', 107.56, 13.6), ('FPGA_SPI_CS_N', 'U1.8', 'U2.16', 107.92, 13.15)):
+# GPIO0-3 leave the left side and turn south in columns; GPIO6/7 drop from the bottom row. All meet U2's top row with 45 deg legs
+# y - x = k (stepping 0.45 so parallel legs keep the Link clearance).
+for net, a, b, col, k in (('FPGA_SPI_IO3', 'U1.6', 'U2.18', 106.42, 14.05), ('FPGA_SPI_MOSI', 'U1.7', 'U2.17', 106.78, 13.6),
+                          ('FPGA_SPI_CS_N', 'U1.8', 'U2.16', 107.14, 13.15), ('FPGA_SPI_SCK', 'U1.9', 'U2.15', 107.5, 12.7)):
     ax, ay = P(a); bx, by = P(b)
     T(net, [(ax, ay), (col, ay), (col, k + col), (bx, k + bx), (bx, by)], F, W_LINK)
-for net, a, b, k in (('FPGA_SPI_SCK', 'U1.9', 'U2.15', 12.7), ('FPGA_SPI_MISO', 'U1.12', 'U2.14', 12.25), ('FPGA_SPI_IO2', 'U1.13', 'U2.13', 11.8)):
+for net, a, b, k in (('FPGA_SPI_MISO', 'U1.12', 'U2.14', 12.25), ('FPGA_SPI_IO2', 'U1.13', 'U2.13', 11.8)):
     ax, ay = P(a); bx, by = P(b)
     T(net, [(ax, ay), (ax, k + ax), (bx, k + bx), (bx, by)], F, W_LINK)
 
-# ============================================================== CRESET / CDONE (F.Cu runs east of U1, short B.Cu drops into U2)
-# Both runs turn west above the FPGA's east fan to vias on the pin-8 / pin-7 via columns, so the B.Cu hops are straight drops
-# and the ESP bus lanes can pass just east of them. CDONE turns lower so its horizontal passes under CRESET's.
+# ============================================================== CRESET / CDONE (GPIO10/11 on the bottom row)
+# Both drop between the bus vias, turn east above the link legs, run down x 117.5 / 118.0 and turn west to vias on the pin-8 / pin-7
+# via columns; the B.Cu hops are straight drops into U2.
 CR, CD = 'FPGA_CRESET_N', 'FPGA_CDONE'
-T(CR, [P('U1.18'), (117.5, 114.75), (117.5, 125.6), (115.25, 125.6)], F); V(CR, 115.25, 125.6)
+T(CR, [P('U1.16'), (111.2, 118.8), (117.5, 118.8), (117.5, 125.6), (115.25, 125.6)], F); V(CR, 115.25, 125.6)
 T(CR, [(115.25, 125.6), (115.25, 129.75)], B); V(CR, 115.25, 129.75)
 T(CR, [P('U2.8'), (115.25, 129.75)], F)
 T(CR, [P('R28.2'), (117.5, 124.4)], F); pin_via(GND, 'R28.1', (115.0, 124.4), F)
-T(CR, [P('TP1.1'), (117.5, 122.2)], F); T(CD, [P('TP2.1'), (118.0, 120.6)], F)
-T(CD, [P('U1.23'), (118.0, 112.25), (118.0, 126.3), (115.95, 126.3)], F); V(CD, 115.95, 126.3)
+T(CR, [P('TP1.1'), (117.5, 122.2)], F)
+T(CD, [P('U1.17'), (111.6, 118.4), (118.0, 118.4), (118.0, 126.3), (115.95, 126.3)], F); V(CD, 115.95, 126.3)
 T(CD, [(115.95, 126.3), (115.95, 130.25)], B); V(CD, 115.95, 130.25)
 T(CD, [P('U2.7'), (115.95, 130.25)], F)
-T(CD, [(116.9, 112.25), P('R29.1')], F); pin_via(V33, 'R29.2', (116.9, 109.9), F)
+T(CD, [P('TP2.1'), (118.0, 120.6)], F)
+T(CD, [(118.0, 123.2), P('R29.1')], F); pin_via(V33, 'R29.2', (120.65, 123.2), F)      # pull-up's plane via sits east of the bus lanes
+
+# ============================================================== SPI flash U4 (W25Q128JV, QIO) in the north-east corner
+# DI/CLK/HOLD leave the right side, turn north in a channel (x 116.1..117.9) and fan into U4's south row; WP/DO/CS run up the east
+# side (x 120.65 / 121.1 / 121.55). The chip's pin order is mirrored against the C6's, so WP and DO cross under CS on B.Cu in the
+# empty corner above U4 (vias at y 101.45 / 101.9); CS stays on F.Cu over the top.
+K0 = 232.4                                                      # jog lines x + y = K0 - 0.5 i (CS, DO, WP, HD, CLK)
+chan = [('FLASH_DI', 'U1.26', 116.095, None), ('FLASH_CLK', 'U1.25', 116.455, ('U4.6', K0 - 2.0)), ('FLASH_HD', 'U1.24', 116.815, ('U4.7', K0 - 1.5)),
+        ('FLASH_WP', 'U1.22', 117.175, (120.65, K0 - 1.0)), ('FLASH_DO', 'U1.21', 117.535, (121.1, K0 - 0.5))]
+for net, pad, col, jog in chan:
+    px, py = P(pad)
+    if jog is None:
+        T(net, [(px, py), (col, py), P('U4.5')], F); continue
+    tgt, K = jog
+    ex = P(tgt)[0] if isinstance(tgt, str) else tgt
+    pts = [(px, py), (col, py), (col, K - col), (ex, K - ex)]
+    if isinstance(tgt, str): pts.append(P(tgt))
+    T(net, pts, F)
+cx, cy = P('U1.20')
+T('FLASH_CS', [(cx, cy), (cx, 117.25), (117.895, 117.25), (117.895, K0 - 117.895), (121.55, K0 - 121.55), (121.55, 101.0), (119.905, 101.0), P('U4.1')], F)
+T('FLASH_DO', [(121.1, K0 - 0.5 - 121.1), (121.1, 101.45)], F); V('FLASH_DO', 121.1, 101.45)
+T('FLASH_DO', [(121.1, 101.45), (118.635, 101.45)], B); V('FLASH_DO', 118.635, 101.45); T('FLASH_DO', [(118.635, 101.45), P('U4.2')], F)
+T('FLASH_WP', [(120.65, K0 - 1.0 - 120.65), (120.65, 101.9)], F); V('FLASH_WP', 120.65, 101.9)
+T('FLASH_WP', [(120.65, 101.9), (117.365, 101.9)], B); V('FLASH_WP', 117.365, 101.9); T('FLASH_WP', [(117.365, 101.9), P('U4.3')], F)
+pin_via(GND, 'U4.4', (116.095, 101.85), F, 0.25)
+T(GND, [P('U4.4'), (116.095, 103.5)], F, 0.25)                    # ground pin into the exposed pad
+# supply: plane via beside pin 8 and the 0.1 uF (0201) in the pocket south of the chip
+T(V33, [P('U4.8'), (119.905, 108.85)], F, 0.25); V(V33, 119.905, 108.85)
+T(V33, [(119.905, 108.85), P('C68.1')], F, 0.25)
+pin_via(GND, 'C68.2', (119.265, 110.1), F, 0.15)
 
 # ============================================================== contact field geometry
-GND_FINGERS = {1, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 71, 73, 75}
+GND_FINGERS = {1, 3, 9, 15, 21, 27, 39, 45, 51, 57, 71, 73, 75}
+VIA_FINGERS = GND_FINGERS | {33}        # front contacts that carry a via at Y_GVIA (33 is ESP_GPIO4 now)
 Y_GVIA, Y_JOG, Y_END_MAX = 138.7, 139.0, 138.2
 def squeezed_x(n):
     """Back-contact lane x near the pads: step 0.15 mm away from an adjacent front ground contact."""
     x = fingers[n][0]
-    if n - 1 in GND_FINGERS and n + 1 in GND_FINGERS: raise ValueError(n)      # handled by hand (power contacts)
-    if n - 1 in GND_FINGERS: return x - 0.15           # n-1 is east (x falls with n)
-    if n + 1 in GND_FINGERS: return x + 0.15
+    if n - 1 in VIA_FINGERS and n + 1 in VIA_FINGERS: raise ValueError(n)      # handled by hand (power contacts)
+    if n - 1 in VIA_FINGERS: return x - 0.15           # n-1 is east (x falls with n)
+    if n + 1 in VIA_FINGERS: return x + 0.15
     return x
 def back_entry(net, n, lane_x, c):
     """B.Cu lane from (lane_x, c - lane_x) south-west along y + x = c to the squeezed column, then into pad n."""
@@ -183,54 +218,61 @@ def back_entry(net, n, lane_x, c):
     return y_turn
 
 # ============================================================== ESP signal bus (B.Cu)
-# feeders: (net, via x, via y, feeder level y, lane x, miter x); each feeder runs east on its level to the miter x, then takes a
-# 45-degree leg into its lane. Legs are y - x = level - miter_x, nested (stepping >= 0.36 mm) so none cross; the miter x values
-# keep the legs 0.4 mm off the R20/R21/C38/R29 vias. Lanes are ordered west->east, so are their contacts (34 .. 6).
-# The first six feeders form one nested family: a 45-degree corner off the via drop (M_FEED), then legs stepping 0.6 mm in y - x.
-# GPIO8's in-line R21 via at x 116.0 sets the shallowest leg; the rest start progressively further west.
-# Lanes start at x 116.4, just east of the CDONE drop at 115.95 (they used to start at 118.1, east of the old CRESET/CDONE legs).
-bus = [('ESP_EN',          None,  None,  120.9, 116.4, 115.7),
-       ('ESP_GPIO4',       109.75, 117.0, 120.4, 116.65, 115.8),
-       ('ESP_GPIO5',       110.25, 117.8, 119.9, 116.9, 115.9),
-       ('ESP_GPIO8',       111.75, 117.0, 119.4, 117.15, 116.0),
-       ('ESP_GPIO9_BOOT',  112.25, 117.8, 118.9, 117.4, 116.1),
-       ('USB_D-',          112.75, 117.0, 118.4, 117.65, 116.2),
-       ('USB_D+',          115.0, 115.25, 115.25, 117.9, 115.0),
-       ('ESP_GPIO15',      114.3, 114.25, 114.25, 118.15, 114.65),
-       ('ESP_GPIO16_TXD',  114.3, 113.25, 113.25, 118.4, 115.0),
-       ('ESP_GPIO17_RXD',  115.0, 112.75, 112.75, 118.65, 115.0),
-       ('ESP_GPIO19',      114.3, 111.75, 111.75, 118.9, 115.7),
-       ('ESP_GPIO20',      112.75, 110.3, 110.3, 119.15, 114.8),
-       ('ESP_GPIO21',      112.25, 109.0, 109.3, 119.4, 114.3),
-       ('ESP_GPIO22',      111.75, 109.6, 108.55, 119.65, 114.05),
-       ('ESP_GPIO23',      111.25, 110.3, 108.3, 119.9, 114.3)]
-esp_pad = {'ESP_GPIO4': 'U1.10', 'ESP_GPIO5': 'U1.11', 'ESP_GPIO8': 'U1.14', 'ESP_GPIO9_BOOT': 'U1.15', 'USB_D-': 'U1.16', 'USB_D+': 'U1.17',
-           'ESP_GPIO15': 'U1.19', 'ESP_GPIO16_TXD': 'U1.21', 'ESP_GPIO17_RXD': 'U1.22', 'ESP_GPIO19': 'U1.24', 'ESP_GPIO20': 'U1.25',
-           'ESP_GPIO21': 'U1.26', 'ESP_GPIO22': 'U1.27', 'ESP_GPIO23': 'U1.28'}
+# feeders: (net, via x, via y, feeder level y, miter x). Each feeder leaves its via on B.Cu, runs east on its level to the miter x and
+# takes a 45-degree leg y - x = level - miter_x into its lane (x 116.4 + 0.25 k). Bottom-row feeders (EN .. D+) drop to their levels
+# with a 45-degree corner (M_FEED); the right-side and top-row feeders leave at their via height. Legs are nested (c falls by >= 0.55
+# per lane outwards); the VDDPST2 plane via and the C38 ground via sit on the midlines of two widened gaps (c -3.4 and -5.2).
+bus = [('ESP_EN',          None,   None,   121.6,  115.4),
+       ('ESP_GPIO4',       107.9,  116.35, 121.15, 115.5),
+       ('ESP_GPIO5',       109.2,  117.35, 120.7,  115.6),
+       ('ESP_GPIO8',       110.4,  117.35, 120.25, 115.7),
+       ('ESP_GPIO9_BOOT',  110.8,  117.95, 119.8,  115.8),
+       ('USB_D-',          112.0,  117.35, 119.35, 115.9),
+       ('USB_D+',          112.4,  117.95, 118.9,  116.0),
+       ('ESP_GPIO15',      114.8,  113.4,  113.4,  114.8),
+       ('ESP_GPIO16_TXD',  114.8,  112.6,  112.6,  114.8),
+       ('ESP_GPIO17_RXD',  114.25, 112.2,  112.2,  115.0),
+       ('ESP_GPIO18',      112.8,  110.6,  110.6,  114.6),
+       ('ESP_GPIO19',      112.4,  110.0,  110.0,  114.6),
+       ('ESP_GPIO20',      112.0,  110.6,  109.55, 115.35),
+       ('ESP_GPIO21',      111.6,  110.0,  109.1,  115.5),
+       ('ESP_GPIO22',      111.2,  110.6,  108.65, 115.65),
+       ('ESP_GPIO23',      110.8,  108.55, 108.2,  115.8)]
+esp_pad = {'ESP_GPIO4': 'U1.10', 'ESP_GPIO5': 'U1.11', 'ESP_GPIO8': 'U1.14', 'ESP_GPIO9_BOOT': 'U1.15', 'USB_D-': 'U1.18', 'USB_D+': 'U1.19',
+           'ESP_GPIO15': 'U1.27', 'ESP_GPIO16_TXD': 'U1.29', 'ESP_GPIO17_RXD': 'U1.30', 'ESP_GPIO18': 'U1.31', 'ESP_GPIO19': 'U1.32',
+           'ESP_GPIO20': 'U1.33', 'ESP_GPIO21': 'U1.34', 'ESP_GPIO22': 'U1.35', 'ESP_GPIO23': 'U1.36'}
+LANE0, LANE_P = 116.4, 0.25
 C_ESP0, DC = 249.75, 0.36
 prev_c = None
-for k, (net, vx, vy, lvl, lane, xt) in enumerate(bus):
+for k, (net, vx, vy, lvl, xt) in enumerate(bus):
+    lane = LANE0 + LANE_P * k
     if vx is not None:
         px, py = P(esp_pad[net])
-        T(net, [(px, py), (vx, vy)] if (px == vx or py == vy) else [(px, py), (px, vy), (vx, vy)], F)   # straight pin exit to the via
-        V(net, vx, vy, 0.4 if net == 'ESP_GPIO23' else VIA_D)
-        if vy == lvl: T(net, [(vx, vy), (xt, lvl)], B, W_BUS)
-        elif k <= 5:  T(net, [(vx, vy), (vx, lvl - M_FEED), (vx + M_FEED, lvl), (xt, lvl)], B, W_BUS)   # mitered corner
-        else:         T(net, [(vx, vy), (vx, lvl), (xt, lvl)], B, W_BUS)
-    c = lvl - xt                                                     # leg y - x = c; must fall by >= 0.36 per lane outwards
-    assert prev_c is None or c <= prev_c - 0.36 + 1e-6 or k <= 5 and c >= prev_c + 0.36 - 1e-6, (net, c, prev_c)
+        if net == 'ESP_GPIO4': T(net, [(px, py), (vx, py), (vx, vy)], F)                        # west, then down to the via
+        else: T(net, [(px, py), (vx, vy)] if (abs(px - vx) < 1e-6 or abs(py - vy) < 1e-6) else [(px, py), (px, vy), (vx, vy)], F)
+        V(net, vx, vy)
+        if abs(vy - lvl) < 1e-6: T(net, [(vx, vy), (xt, lvl)], B, W_BUS)
+        elif vy > lvl:   T(net, [(vx, vy), (vx, lvl), (xt, lvl)], B, W_BUS)                        # top row: north to the level
+        else:            T(net, [(vx, vy), (vx, lvl - M_FEED), (vx + M_FEED, lvl), (xt, lvl)], B, W_BUS)   # mitered corner
+    c = lvl - xt
+    assert prev_c is None or c <= prev_c - 0.55 + 1e-6, (net, c, prev_c)
     prev_c = c
     y_in = lvl + (lane - xt)
     n = finger_of[net][2]
-    y_turn = back_entry(net, n, lane, C_ESP0 + DC * k)
+    if n in VIA_FINGERS:                                         # front contact: lane ends on the contact's via, F.Cu stub to the pad
+        fx, fy, _ = fingers[n]; cc = C_ESP0 + DC * k
+        y_turn = cc - lane; assert cc - fx <= Y_END_MAX + 1e-6
+        T(net, [(lane, y_turn), (fx, cc - fx), (fx, Y_GVIA)], B, W_BUS); V(net, fx, Y_GVIA); T(net, [(fx, Y_GVIA), (fx, fy)], F)
+    else:
+        y_turn = back_entry(net, n, lane, C_ESP0 + DC * k)
     assert y_turn > y_in, (net, y_turn, y_in)
     T(net, [(xt, lvl), (lane, y_in), (lane, y_turn)], B, W_BUS)
 
-# R20 / R21 pull-ups hang off the GPIO9 / GPIO8 feeders through in-line vias
-T('ESP_GPIO9_BOOT', [P('R20.1'), (115.0, 118.9)], F); V('ESP_GPIO9_BOOT', 115.0, 118.9)
-pin_via(V33, 'R20.2', (115.0, 116.5), F)
-T('ESP_GPIO8', [P('R21.1'), (116.0, 119.4)], F); V('ESP_GPIO8', 116.0, 119.4)
-pin_via(V33, 'R21.2', (116.0, 117.0), F)
+# R20 / R21 pull-ups hang off the GPIO9 / GPIO8 levels through in-line vias; their 3.3 V vias sit south of the EN level
+T('ESP_GPIO9_BOOT', [P('R20.1'), (115.1, 119.8)], F); V('ESP_GPIO9_BOOT', 115.1, 119.8)
+pin_via(V33, 'R20.2', (115.1, 122.2), F)
+T('ESP_GPIO8', [P('R21.1'), (114.15, 120.25)], F); V('ESP_GPIO8', 114.15, 120.25)
+pin_via(V33, 'R21.2', (114.15, 122.45), F)
 
 # ============================================================== FPGA power / decoupling
 # top row: pins 22 and 24 share a short 3.3 V bar with C52
@@ -319,7 +361,7 @@ for pad, col in (('U2.35', 106.75), ('U2.36', 107.1)):
 
 # ============================================================== M.2 ground and power contacts
 # front ground contacts: stub north to a via (3 and 73 reach the pour region that holds the neighbouring via)
-for n in (9, 15, 21, 27, 33, 39, 45, 51, 57):
+for n in (9, 15, 21, 27, 39, 45, 51, 57):
     fx, fy, _ = fingers[n]; T(GND, [(fx, fy), (fx, Y_GVIA)], F); V(GND, fx, Y_GVIA)
 # end ground contacts 1/3 and 71/73/75: the pour stays out of the finger window, so they run up to the board-end vias by hand,
 # squeezing past the back power-contact vias (2 at 120.0/138.3, 4 at 119.625/139.175, 74 at 102.0/138.3) and 0.3 mm off the tab edge

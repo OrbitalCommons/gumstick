@@ -5,7 +5,7 @@ Run with system Python (needs pcbnew). Writes boards/esp32-fpga-module-v2/.
 Idempotent for libraries; refuses to overwrite a routed PCB unless --replace-draft.
 
 Sources of truth used here:
-- ESP32-C6 datasheet, QFN32 pin table (ESP32-C6FH4/FH8): docs/design-contract.json
+- ESP32-C6 datasheet v1.5, QFN40 pin table (Table 2-1) and chip-to-flash mapping (Table 2-16); W25Q128JV datasheet
 - M.2 card edge: e-tec MPE-075-RXM9 recommended module drawing (PCI-SIG M.2 compatible)
 - v1 module (boards/esp32-fpga-module) for the FPGA, crystal, LED, U.FL, LDO parts
 """
@@ -91,7 +91,7 @@ def ensure_model(f, name):
     if not dst.exists(): shutil.copy2(src, dst)
     m = p.FP_3DMODEL(); m.m_Filename = '${KIPRJMOD}/3dmodels/' + src.name; f.Add3DModel(m)
 
-PASSIVE_FPS = {'C_0402', 'C_0603', 'R_0402', 'L_0402', 'L_0603', 'TestPoint_0p8', 'LED_RGB_1010'}
+PASSIVE_FPS = {'C_0402', 'C_0603', 'R_0402', 'L_0402', 'L_0603', 'C_0201', 'L_0201', 'TestPoint_0p8', 'LED_RGB_1010'}
 def import_fp(lib_dir, src_name, name, src_root):
     if name not in saved_fps and not (D / 'Module2.pretty' / f'{name}.kicad_mod').exists():
         f = p.FootprintLoad(str(lib_dir), src_name); assert f, (lib_dir, src_name)
@@ -99,8 +99,14 @@ def import_fp(lib_dir, src_name, name, src_root):
         ensure_model(f, name)
         for g in list(f.GraphicalItems()):
             if g.GetLayer() == p.F_SilkS:
-                if name in PASSIVE_FPS or name.startswith(('QFN-32', 'ICE40', 'SOT-23')): g.SetLayer(p.F_Fab)
+                if name in PASSIVE_FPS or name.startswith(('QFN-32', 'QFN-40', 'WSON', 'ICE40', 'SOT-23')): g.SetLayer(p.F_Fab)
                 elif isinstance(g, p.PCB_TEXT) and g.GetTextThickness() < mm(0.15): g.SetTextThickness(mm(0.15)); g.SetTextSize(v(1.0, 1.0))
+        if name.startswith('QFN-40'):
+            k = 3.3 / 3.6
+            for pd in f.Pads():
+                if pd.GetNumber() in ('41', ''):
+                    pd.SetSize(v(p.ToMM(pd.GetSize().x) * k, p.ToMM(pd.GetSize().y) * k))
+                    pd.SetPosition(v(p.ToMM(pd.GetPosition().x) * k, p.ToMM(pd.GetPosition().y) * k))
         if name == 'ICE40-QFN':
             # the vendor footprint ships its datasheet dimension drawing, pad-style notes and a hatched fab body;
             # keep only copper, paste and mask, then draw a plain 7 mm body with a pin-1 chamfer and a courtyard
@@ -148,7 +154,7 @@ def build_m2_edge():
     return p.FootprintLoad(str(D / 'Module2.pretty'), name)
 
 # ---------------------------------------------------------------- part placement helper
-REF_POS = {'U1': (111.0, 118.0, 0), 'U2': (111.0, 136.2, 0), 'U3': (104.6, 122.0, 0), 'J3': (102.4, 108.4, 0)}
+REF_POS = {'U1': (111.0, 118.0, 0), 'U2': (111.0, 136.2, 0), 'U3': (104.6, 122.0, 0), 'J3': (102.4, 108.4, 0), 'U4': (114.6, 102.4, 0)}
 def add(ref, val, f, pins, x, y, angle=0, kind='ic', mpn='', lcsc='', names=None, types=None, bom=True, ref_vis=None):
     f.SetFPID(p.LIB_ID('Module2', str(f.GetFPID().GetLibItemName())))
     f.SetReference(ref); f.SetValue(val); f.SetPosition(v(x, y)); f.SetOrientationDegrees(angle)
@@ -185,27 +191,41 @@ def res0402(ref, val, a, b, x, y, ang=0, lcsc='C60490', mpn=''):
 def ind0402(ref, val, a, b, x, y, ang=0, lcsc='', mpn='', land='L_0402'):
     src = {'L_0402': 'L3_INDC1006X60N', 'C_0402': 'CAPC1005X60'}[land]       # the crystal series inductor uses the narrower 0402 land to clear XTAL_N
     return add(ref, val, v1fp(src, land), {'1': a, '2': b}, x, y, ang, 'l', mpn, lcsc)
+def cap0201(ref, val, a, b, x, y, ang=0, lcsc='C285017', mpn='0201B104K100NT'):
+    return add(ref, val, stdfp('Capacitor_SMD', 'C_0201_0603Metric', 'C_0201'), {'1': a, '2': b}, x, y, ang, 'c', mpn, lcsc)
+def ind0201(ref, val, a, b, x, y, ang=0, lcsc='', mpn=''):
+    return add(ref, val, stdfp('Inductor_SMD', 'L_0201_0603Metric', 'L_0201'), {'1': a, '2': b}, x, y, ang, 'l', mpn, lcsc)
 def bead0603(ref, val, a, b, x, y, ang=0):
     return add(ref, val, v1fp('L1_L_0603_1608Metric', 'L_0603'), {'1': a, '2': b}, x, y, ang, 'l', 'BLM18KG101TN1D', 'C160981')
 
 # ---------------------------------------------------------------- placement (absolute mm)
-U1X, U1Y = CL, 113.5           # ESP32-C6, rotation 0: ANT at left-top, crystal pins at top-left, USB at bottom-right
+U1X, U1Y = CL, 114.0           # ESP32-C6 QFN40, rotation 0: ANT at left-top, crystal pins at top-left, flash pins on the right
 U2X, U2Y = CL, 130.5           # iCE40, rotation 180: SPI pins at top-right, RGB at bottom
 
-# ESP32-C6FH8 QFN32 (datasheet Table 2-2); QFN32 has GPIO14 and no GPIO10/11; no VDD_SPI pin.
+# ESP32-C6 QFN40 (datasheet v1.5 Table 2-1 / 2-4): no in-package flash; SPI0/1 pins 20-22 and 24-26 go to the external W25Q128 (U4).
+# The flash runs from the 3.3 V plane (datasheet: VDD_SPI may be left for other use when the flash has its own supply), so pin 23 is
+# unconnected: VDD_SPI sits between the flash data pins and its 0.1/1 uF pair would have no room. QFN40 has GPIO10/11 and no GPIO14: CRESET/CDONE move to GPIO10/11, GPIO18 goes to the connector.
 esp_names = {'1': 'ANT', '2': 'VDDA3P3', '3': 'VDDA3P3', '4': 'CHIP_PU', '5': 'VDDPST1', '6': 'GPIO0/XTAL_32K_P', '7': 'GPIO1/XTAL_32K_N',
              '8': 'GPIO2/FSPIQ', '9': 'GPIO3', '10': 'GPIO4/MTMS', '11': 'GPIO5/MTDI', '12': 'GPIO6/MTCK/FSPICLK', '13': 'GPIO7/MTDO/FSPID',
-             '14': 'GPIO8', '15': 'GPIO9', '16': 'GPIO12/USB_D-', '17': 'GPIO13/USB_D+', '18': 'GPIO14', '19': 'GPIO15', '20': 'VDDPST2',
-             '21': 'GPIO16/U0TXD', '22': 'GPIO17/U0RXD', '23': 'GPIO18', '24': 'GPIO19', '25': 'GPIO20', '26': 'GPIO21', '27': 'GPIO22',
-             '28': 'GPIO23', '29': 'VDDA1', '30': 'XTAL_N', '31': 'XTAL_P', '32': 'VDDA2', '33': 'GND'}
+             '14': 'GPIO8', '15': 'GPIO9', '16': 'GPIO10', '17': 'GPIO11', '18': 'GPIO12/USB_D-', '19': 'GPIO13/USB_D+', '20': 'SPICS0',
+             '21': 'SPIQ', '22': 'SPIWP', '23': 'VDD_SPI', '24': 'SPIHD', '25': 'SPICLK', '26': 'SPID', '27': 'GPIO15', '28': 'VDDPST2',
+             '29': 'GPIO16/U0TXD', '30': 'GPIO17/U0RXD', '31': 'GPIO18', '32': 'GPIO19', '33': 'GPIO20', '34': 'GPIO21', '35': 'GPIO22',
+             '36': 'GPIO23', '37': 'VDDA1', '38': 'XTAL_N', '39': 'XTAL_P', '40': 'VDDA2', '41': 'GND'}
 esp_pins = {'1': 'RF_IN', '2': 'ESP_VDD3P3', '3': 'ESP_VDD3P3', '4': 'ESP_EN', '5': '+3.3V', '6': 'FPGA_SPI_IO3', '7': 'FPGA_SPI_MOSI',
             '8': 'FPGA_SPI_CS_N', '9': 'FPGA_SPI_SCK', '10': 'ESP_GPIO4', '11': 'ESP_GPIO5', '12': 'FPGA_SPI_MISO', '13': 'FPGA_SPI_IO2',
-            '14': 'ESP_GPIO8', '15': 'ESP_GPIO9_BOOT', '16': 'USB_D-', '17': 'USB_D+', '18': 'FPGA_CRESET_N', '19': 'ESP_GPIO15', '20': '+3.3V',
-            '21': 'ESP_GPIO16_TXD', '22': 'ESP_GPIO17_RXD', '23': 'FPGA_CDONE', '24': 'ESP_GPIO19', '25': 'ESP_GPIO20', '26': 'ESP_GPIO21',
-            '27': 'ESP_GPIO22', '28': 'ESP_GPIO23', '29': '+3.3V', '30': 'XTAL_N', '31': 'XTAL_P', '32': '+3.3V', '33': 'GND'}
-esp_types = {k: ('power_in' if n in ('VDDA3P3', 'VDDPST1', 'VDDPST2', 'VDDA1', 'VDDA2', 'GND') else 'input' if n in ('CHIP_PU',) else 'passive' if n in ('ANT', 'XTAL_N', 'XTAL_P') else 'bidirectional') for k, n in esp_names.items()}
-add('U1', 'ESP32-C6FH8', stdfp('Package_DFN_QFN', 'QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm', 'QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm'),
-    esp_pins, U1X, U1Y, 0, 'ic', 'ESP32-C6FH8', 'C41459370', esp_names, esp_types)
+            '14': 'ESP_GPIO8', '15': 'ESP_GPIO9_BOOT', '16': 'FPGA_CRESET_N', '17': 'FPGA_CDONE', '18': 'USB_D-', '19': 'USB_D+', '20': 'FLASH_CS',
+            '21': 'FLASH_DO', '22': 'FLASH_WP', '24': 'FLASH_HD', '25': 'FLASH_CLK', '26': 'FLASH_DI', '27': 'ESP_GPIO15',
+            '28': '+3.3V', '29': 'ESP_GPIO16_TXD', '30': 'ESP_GPIO17_RXD', '31': 'ESP_GPIO18', '32': 'ESP_GPIO19', '33': 'ESP_GPIO20',
+            '34': 'ESP_GPIO21', '35': 'ESP_GPIO22', '36': 'ESP_GPIO23', '37': '+3.3V', '38': 'XTAL_N', '39': 'XTAL_P', '40': '+3.3V', '41': 'GND'}
+esp_types = {k: ('power_in' if n in ('VDDA3P3', 'VDDPST1', 'VDDPST2', 'VDDA1', 'VDDA2', 'GND') else 'power_out' if n == 'VDD_SPI' else 'input' if n in ('CHIP_PU',) else 'passive' if n in ('ANT', 'XTAL_N', 'XTAL_P') else 'bidirectional') for k, n in esp_names.items()}
+add('U1', 'ESP32-C6', stdfp('Package_DFN_QFN', 'QFN-40-1EP_5x5mm_P0.4mm_EP3.6x3.6mm', 'QFN-40-1EP_5x5mm_P0.4mm_EP3.3x3.3mm'),
+    esp_pins, U1X, U1Y, 0, 'ic', 'ESP32-C6', 'C5364646', esp_names, esp_types)
+# 16 MB quad SPI NOR (W25Q128JVPIQ, WSON-8 6x5) in the north-east corner, rotated so DI/CLK/HOLD/VCC face the channel from U1
+flash_names = {'1': '/CS', '2': 'DO(IO1)', '3': '/WP(IO2)', '4': 'GND', '5': 'DI(IO0)', '6': 'CLK', '7': '/HOLD(IO3)', '8': 'VCC', '9': 'EP'}
+flash_pins = {'1': 'FLASH_CS', '2': 'FLASH_DO', '3': 'FLASH_WP', '4': 'GND', '5': 'FLASH_DI', '6': 'FLASH_CLK', '7': 'FLASH_HD', '8': '+3.3V', '9': 'GND'}
+flash_types = {'1': 'input', '2': 'bidirectional', '3': 'bidirectional', '4': 'power_in', '5': 'bidirectional', '6': 'input', '7': 'bidirectional', '8': 'power_in', '9': 'passive'}
+add('U4', 'W25Q128JVPIQ', stdfp('Package_SON', 'WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm', 'WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm'),
+    flash_pins, 118.0, 105.3, -90, 'ic', 'W25Q128JVPIQ', 'C190862', flash_names, flash_types)
 
 # iCE40UP5K-SG48 (pin names from the v1 contract; same QSPI configuration link as v1)
 fpga_names = {'1': 'VCCIO_2', '2': 'IOB_6A', '3': 'IOB_9B', '4': 'IOB_8A', '5': 'VCC', '6': 'IOB_13B', '7': 'CDONE', '8': 'CRESET_B', '9': 'IOB_16A', '10': 'IOB_18A',
@@ -229,29 +249,33 @@ add('J3', 'U.FL-R-SMT-1(01)', v1fp('J3_U.FL_Hirose_U.FL-R-SMT-1_Vertical', 'UFL_
 add('TP1', 'FPGA_CRESET_N', v1fp('TestPoint_0p8', 'TestPoint_0p8'), {'1': 'FPGA_CRESET_N'}, 116.8, 122.2, 0, 'testpoint', bom=False)
 add('TP2', 'FPGA_CDONE', v1fp('TestPoint_0p8', 'TestPoint_0p8'), {'1': 'FPGA_CDONE'}, 118.7, 120.6, 0, 'testpoint', bom=False)
 
-# --- ESP32 cluster. U1 at (111,113.5) rotation 0: pads 1-8 left (x 108.5), 9-16 bottom (y 115.95), 17-24 right (x 113.5), 25-32 top (y 111.05).
-# RF front end west of pin 1 (ANT at 108.5,111.75): C1 shunt, L3 series, C2 shunt, then north to the U.FL.
-cap0402('C1', '1.5pF', 'RF_IN', 'GND', 107.0, 111.2654, 90, '', 'GJM1555C1H1R5WB01D')
-ind0402('L3', '2.2nH', 'RF_IN', 'RF_ANT', 105.8, 111.75, 180, 'C86061', 'LQG15HS2N2S02D')
-cap0402('C2', '1.5pF', 'RF_ANT', 'GND', 104.35, 111.2654, 90, '', 'GJM1555C1H1R5WB01D')
-# crystal north of pins 30/31 with the series inductor on XTAL_P and symmetric load capacitors
-ind0402('L5', '24nH', 'XTAL_P', 'XTAL_P_CRYSTAL', 109.75, 109.5, 90, 'C86061', 'LQG15HS24NJ02D', land='C_0402')
+# --- ESP32 cluster. U1 at (111,114) rotation 0, 0.4 mm pitch: pads 1-10 left (x 108.56, y 112.2..115.8), 11-20 bottom (y 116.44,
+# x 109.2..112.8), 21-30 right (x 113.44, y 115.8..112.2), 31-40 top (y 111.56, x 112.8..109.2).
+# RF front end west of pin 1 (ANT at 108.56,112.2): C1 shunt, L3 series, C2 shunt, then north to the U.FL.
+cap0402('C1', '1.5pF', 'RF_IN', 'GND', 107.0, 111.7154, 90, '', 'GJM1555C1H1R5WB01D')
+ind0402('L3', '2.2nH', 'RF_IN', 'RF_ANT', 105.8, 112.2, 180, 'C86061', 'LQG15HS2N2S02D')
+cap0402('C2', '1.5pF', 'RF_ANT', 'GND', 104.35, 111.7154, 90, '', 'GJM1555C1H1R5WB01D')
+# crystal north of pins 38/39; at 0.4 mm pitch only 0201 parts fit on the pin lines (L5 on XTAL_P, C39 on VDDA1)
+ind0201('L5', '24nH', 'XTAL_P', 'XTAL_P_CRYSTAL', 109.6, 110.15, 90, '', 'LQP03TG24NJ02D')
 cap0402('C6', '12pF', 'XTAL_P_CRYSTAL', 'GND', 108.3, 107.29, 90, 'C26406')
 cap0402('C7', '12pF', 'XTAL_N', 'GND', 112.6, 106.7096, -90, 'C26406')
-cap0402('C40', '0.1uF', '+3.3V', 'GND', 107.6, 110.15, 180)         # VDDA2 pin 32
-cap0402('C39', '0.1uF', '+3.3V', 'GND', 110.75, 109.15, 90)          # VDDA1 pin 29
-# VDDA3P3 (pins 2,3) filter: bead from the 3.3 V plane, 10 uF + 1 uF + 0.1 uF
-cap0402('C35', '0.1uF', 'ESP_VDD3P3', 'GND', 104.8154, 112.75, 180)
-cap0402('C36', '1uF', 'ESP_VDD3P3', 'GND', 104.8154, 113.85, 180, 'C29266')
-cap0603('C34', '10uF', 'ESP_VDD3P3', 'GND', 104.525, 115.2, 180)
-bead0603('L1', '100ohm @100MHz', '+3.3V', 'ESP_VDD3P3', 104.5125, 116.75, 0)
-cap0402('C37', '0.1uF', '+3.3V', 'GND', 106.7, 114.2346, -90)        # VDDPST1 pin 5 (pad 1 on the pin-5 line)
-res0402('R22', '10k', 'ESP_EN', '+3.3V', 106.7, 116.7, 90)
-cap0402('C32', '1uF', 'ESP_EN', 'GND', 106.7, 119.0, -90, 'C29266')
-cap0402('C38', '0.1uF', '+3.3V', 'GND', 115.9, 113.75, 0)           # VDDPST2 pin 20 (fed by a short east trace)
-cap0603('C33', '10uF', '+3.3V', 'GND', 114.3, 105.0, 90)
-res0402('R20', '10k', 'ESP_GPIO9_BOOT', '+3.3V', 115.0, 117.8, 90)
-res0402('R21', '10k', 'ESP_GPIO8', '+3.3V', 116.0, 118.3, 90)
+cap0402('C40', '0.1uF', '+3.3V', 'GND', 108.7, 110.3, 90)           # VDDA2 pin 40 (pin turns west onto pad 1, south end)
+cap0201('C39', '0.1uF', '+3.3V', 'GND', 110.4, 110.05, 90)           # VDDA1 pin 37, on the pin line above its 0.4 mm plane via
+# VDDA3P3 (pins 2,3) filter: bead from the 3.3 V plane, 10 uF + 1 uF + 0.1 uF on a bus at x 105.0
+cap0402('C35', '0.1uF', 'ESP_VDD3P3', 'GND', 104.5154, 113.35, 180)
+cap0402('C36', '1uF', 'ESP_VDD3P3', 'GND', 104.5154, 114.35, 180, 'C29266')
+cap0603('C34', '10uF', 'ESP_VDD3P3', 'GND', 104.225, 115.7, 180)
+bead0603('L1', '100ohm @100MHz', '+3.3V', 'ESP_VDD3P3', 104.225, 117.25, 0)
+cap0402('C37', '0.1uF', '+3.3V', 'GND', 105.9, 114.2846, -90)        # VDDPST1 pin 5, west of the link columns (pad 1 on the pin-5 line)
+res0402('R22', '10k', 'ESP_EN', '+3.3V', 105.9, 118.64, 90)
+cap0402('C32', '1uF', 'ESP_EN', 'GND', 105.9, 120.6, -90, 'C29266')
+cap0402('C38', '0.1uF', '+3.3V', 'GND', 115.35, 111.15, 90)          # VDDPST2 pin 28, north of the GPIO15/TXD/RXD vias
+cap0603('C33', '10uF', '+3.3V', 'GND', 114.0, 105.0, 90)
+# flash supply decoupling at U4 pin 8 (+3.3V): 0.1 uF (0201) in the pocket between the HOLD drop and the WP/DO/CS columns;
+# C33 (10 uF) sits on the same plane 4 mm west of the chip
+cap0201('C68', '0.1uF', '+3.3V', 'GND', 119.585, 109.35, 180)       # pad 1 on the pin-8 drop, 1.4 mm from the pin
+res0402('R20', '10k', 'ESP_GPIO9_BOOT', '+3.3V', 115.1, 121.0, -90)    # pad 1 north next to the GPIO9 level via
+res0402('R21', '10k', 'ESP_GPIO8', '+3.3V', 114.15, 121.3, -90)
 
 # --- 1.2 V regulator cluster west of the FPGA; FPGA decoupling at its pins.
 # U2 at (111,130.5) rotation 180: pins 13-24 top (y 127.0), 25-36 left (x 107.5), 37-48 bottom (y 134.0), 1-12 right (x 114.5).
@@ -276,14 +300,15 @@ cap0603('C61', '22uF / 10V', '+3.3V', 'GND', 120.55, 135.9, 90, 'C5355402', 'CL1
 cap0603('C66', '1uF / 6.3V', '+3.3V', 'GND', 120.55, 132.8, 90, 'C15849')
 # configuration link pull resistors
 res0402('R28', '10k', 'GND', 'FPGA_CRESET_N', 116.2, 124.4, 0)
-res0402('R29', '10k', 'FPGA_CDONE', '+3.3V', 116.9, 111.2425, 90)
+res0402('R29', '10k', 'FPGA_CDONE', '+3.3V', 119.5, 123.2, 0)
 
 # ---------------------------------------------------------------- M.2 contacts (custom pinout; see docs/icd-v2-pinout.csv)
-GND_CONTACTS = [1, 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 71, 73, 75]
+GND_CONTACTS = [1, 3, 9, 15, 21, 27, 39, 45, 51, 57, 71, 73, 75]   # 33 now carries ESP_GPIO4
 PWR_CONTACTS = [2, 4, 70, 72, 74]
 # ESP signals ride a B.Cu bus down the east margin to the even (B.Cu) contacts 6..34; order follows the bus nesting.
-esp_contacts = {34: 'ESP_EN', 32: 'ESP_GPIO4', 30: 'ESP_GPIO5', 28: 'ESP_GPIO8', 26: 'ESP_GPIO9_BOOT', 24: 'USB_D-', 22: 'USB_D+', 20: 'ESP_GPIO15',
-                18: 'ESP_GPIO16_TXD', 16: 'ESP_GPIO17_RXD', 14: 'ESP_GPIO19', 12: 'ESP_GPIO20', 10: 'ESP_GPIO21', 8: 'ESP_GPIO22', 6: 'ESP_GPIO23'}
+esp_contacts = {34: 'ESP_EN', 33: 'ESP_GPIO4', 32: 'ESP_GPIO5', 30: 'ESP_GPIO8', 28: 'ESP_GPIO9_BOOT', 26: 'USB_D-', 24: 'USB_D+', 22: 'ESP_GPIO15',
+                20: 'ESP_GPIO16_TXD', 18: 'ESP_GPIO17_RXD', 16: 'ESP_GPIO18', 14: 'ESP_GPIO19', 12: 'ESP_GPIO20', 10: 'ESP_GPIO21', 8: 'ESP_GPIO22',
+                6: 'ESP_GPIO23'}   # 33 is a front contact reached through its old ground via
 rgb_contacts = {}
 # FPGA I/O contacts: assign by physical order to keep the fanout uncrossed.
 # Right-side pins 1-12 (x fixed, y bottom->top) feed the right odd contacts 11..29 (F.Cu);
@@ -316,7 +341,7 @@ for n, s in fpga_contacts.items(): contacts[str(n)] = s
 assert len(contacts) == 67, len(contacts)
 add('J1', 'M.2 Key M card edge (custom pinout)', build_m2_edge(), contacts, CL, EDGE, 0, 'connector', 'PCB card edge', '', bom=False, ref_vis=False)
 
-for ref, dx, dy in [('U1', -3.4, -2.2), ('U2', 3.9, 3.25), ('U3', 1.5, -1.9)]:   # board-frame offsets from the part centre to the pin-1 corner
+for ref, dx, dy in [('U1', -3.4, -2.2), ('U2', 3.9, 3.25), ('U3', 1.5, -1.9), ('U4', 2.75, -3.45)]:   # board-frame offsets from the part centre to the pin-1 corner
     fp = footprints[ref]; x, y = parts[ref]['position'][:2]
     c = p.PCB_SHAPE(fp); c.SetShape(p.SHAPE_T_CIRCLE); c.SetCenter(v(x + dx, y + dy)); c.SetEnd(v(x + dx + 0.15, y + dy)); c.SetLayer(p.F_SilkS); c.SetWidth(mm(0.15)); c.SetFilled(True); fp.Add(c)
 for g in footprints['J3'].GraphicalItems():
@@ -327,6 +352,8 @@ for fp in board.GetFootprints():                 # mask apertures follow the fab
         for pd in fp.Pads(): pd.SetLocalSolderMaskMargin(mm(0.0))
 for pd in footprints['U3'].Pads():                # the no-connect pin carries the schematic's unconnected-net name so parity is exact
     if pd.GetNumber() == '4': pd.SetNet(net('unconnected-(U3-NC-Pad4)'))
+for pd in footprints['U1'].Pads():
+    if pd.GetNumber() == '23': pd.SetNet(net('unconnected-(U1-VDD_SPI-Pad23)'))
 for pd in footprints['J1'].Pads():                # front ground contacts merge solidly into the front pour (no spokes on 0.35 mm fingers)
     if pd.GetNetname() == 'GND': pd.SetLocalZoneConnection(p.ZONE_CONNECTION_FULL)
 for ref, num in (('U1', '33'), ('U2', 'PAD')):

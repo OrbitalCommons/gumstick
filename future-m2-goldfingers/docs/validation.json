@@ -1,13 +1,13 @@
 {
-  "stage": "Development draft: placed and routed; carrier, RF match, 0.8 mm stackup and C6 sourcing still open",
+  "stage": "Development draft: placed and routed; carrier, RF match and L5 sourcing still open",
   "erc": 0,
   "physical_drc": 0,
   "schematic_parity": 0,
   "unconnected_items": 0,
   "fabrication_ready": false,
   "sha256": {
-    "module.kicad_sch": "2599f5439583a32d5db0c37868b79a6293e6222413e353f39c5eb48ce2c6d5af",
-    "module.kicad_pcb": "27ca94cff285891f2dbffab9f350beff2f3f50797b7205286295b364be4c5ff9",
+    "module.kicad_sch": "dcb76a65453f6bfb0a7efeaa950fe75896f4193d99c90b1b9a8c70a11dfb8d06",
+    "module.kicad_pcb": "001f5003fdcf69fb7e8fa5759928224f400c17f4fd9ad2f36030e1ae4354bb8b",
     "module.kicad_pro": "e401b1c652f3162dcecc09d851202b48a3344690e82f865610f01cc31e8191c7",
     "module.kicad_dru": "b9e73fb3e37c132eaa8a77e9c31ce00becf36611b8120813ef68badd7b218f2f"
   }

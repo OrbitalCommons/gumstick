@@ -7,7 +7,7 @@ def run(*args): subprocess.run(['kicad-cli', *map(str, args)], check=True, captu
 run('sch', 'erc', '--format', 'json', '--severity-error', '--severity-warning', '-o', out / 'erc.json', D / 'module.kicad_sch')
 run('pcb', 'drc', '--schematic-parity', '--refill-zones', '--format', 'json', '--severity-error', '--severity-warning', '-o', out / 'drc.json', D / 'module.kicad_pcb')
 e = json.loads((out / 'erc.json').read_text()); d = json.loads((out / 'drc.json').read_text())
-r = {'stage': 'Development draft: placed and routed; carrier, RF match, 0.8 mm stackup and C6 sourcing still open',
+r = {'stage': 'Development draft: placed and routed; carrier, RF match and L5 sourcing still open',
      'erc': sum(len(s.get('violations', [])) for s in e.get('sheets', [])), 'physical_drc': len(d['violations']),
      'schematic_parity': len(d['schematic_parity']), 'unconnected_items': len(d['unconnected_items']), 'fabrication_ready': False,
      'sha256': {f: hashlib.sha256((D / f).read_bytes()).hexdigest() for f in ['module.kicad_sch', 'module.kicad_pcb', 'module.kicad_pro', 'module.kicad_dru']}}

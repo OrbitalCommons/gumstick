@@ -4,34 +4,34 @@ J1,2,back (even),+3.3V,,,,Regulated 3.3 V input; connect all five power contacts
 J1,3,front (odd),GND,,,,Ground
 J1,4,back (even),+3.3V,,,,Regulated 3.3 V input; connect all five power contacts
 J1,5,front (odd),FPGA_IOB_22A,U2,12,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,6,back (even),ESP_GPIO23,U1,28,GPIO23,3.3 V GPIO
+J1,6,back (even),ESP_GPIO23,U1,36,GPIO23,3.3 V GPIO
 J1,7,front (odd),FPGA_IOB_20A,U2,11,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,8,back (even),ESP_GPIO22,U1,27,GPIO22,3.3 V GPIO
+J1,8,back (even),ESP_GPIO22,U1,35,GPIO22,3.3 V GPIO
 J1,9,front (odd),GND,,,,Ground
-J1,10,back (even),ESP_GPIO21,U1,26,GPIO21,3.3 V GPIO
+J1,10,back (even),ESP_GPIO21,U1,34,GPIO21,3.3 V GPIO
 J1,11,front (odd),FPGA_IOB_18A,U2,10,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,12,back (even),ESP_GPIO20,U1,25,GPIO20,3.3 V GPIO
+J1,12,back (even),ESP_GPIO20,U1,33,GPIO20,3.3 V GPIO
 J1,13,front (odd),FPGA_IOB_16A,U2,9,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,14,back (even),ESP_GPIO19,U1,24,GPIO19,3.3 V GPIO
+J1,14,back (even),ESP_GPIO19,U1,32,GPIO19,3.3 V GPIO
 J1,15,front (odd),GND,,,,Ground
-J1,16,back (even),ESP_GPIO17_RXD,U1,22,GPIO17,UART0 RXD by default
+J1,16,back (even),ESP_GPIO18,U1,31,GPIO18,3.3 V GPIO
 J1,17,front (odd),FPGA_IOB_13B,U2,6,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,18,back (even),ESP_GPIO16_TXD,U1,21,GPIO16,UART0 TXD by default
+J1,18,back (even),ESP_GPIO17_RXD,U1,30,GPIO17,UART0 RXD by default
 J1,19,front (odd),FPGA_IOB_8A,U2,4,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,20,back (even),ESP_GPIO15,U1,19,GPIO15,Strap (sampled at reset): keep the documented default or leave floating
+J1,20,back (even),ESP_GPIO16_TXD,U1,29,GPIO16,UART0 TXD by default
 J1,21,front (odd),GND,,,,Ground
-J1,22,back (even),USB_D+,U1,17,GPIO13,USB Serial/JTAG full-speed pair (D+/D- on adjacent back contacts 22/24)
+J1,22,back (even),ESP_GPIO15,U1,27,GPIO15,Strap (sampled at reset): keep the documented default or leave floating
 J1,23,front (odd),FPGA_IOB_9B,U2,3,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,24,back (even),USB_D-,U1,16,GPIO12,USB Serial/JTAG full-speed pair (D+/D- on adjacent back contacts 22/24)
+J1,24,back (even),USB_D+,U1,19,GPIO13,USB Serial/JTAG full-speed pair (D+/D- on adjacent back contacts 22/24)
 J1,25,front (odd),FPGA_IOB_6A,U2,2,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,26,back (even),ESP_GPIO9_BOOT,U1,15,GPIO9,"Boot strap: high for normal SPI boot, low for serial download; R20 10k pull-up on module"
+J1,26,back (even),USB_D-,U1,18,GPIO12,USB Serial/JTAG full-speed pair (D+/D- on adjacent back contacts 22/24)
 J1,27,front (odd),GND,,,,Ground
-J1,28,back (even),ESP_GPIO8,U1,14,GPIO8,Boot strap: must be high for serial download (weak internal pull-up); R21 10k pull-up on module
+J1,28,back (even),ESP_GPIO9_BOOT,U1,15,GPIO9,"Boot strap: high for normal SPI boot, low for serial download; R20 10k pull-up on module"
 J1,29,front (odd),FPGA_IOB_2A,U2,47,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,30,back (even),ESP_GPIO5,U1,11,GPIO5,JTAG-select strap (sampled at reset): keep the documented default or leave floating
+J1,30,back (even),ESP_GPIO8,U1,14,GPIO8,Boot strap: must be high for serial download (weak internal pull-up); R21 10k pull-up on module
 J1,31,front (odd),FPGA_IOB_0A,U2,46,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
-J1,32,back (even),ESP_GPIO4,U1,10,GPIO4,JTAG-select strap (sampled at reset): keep the documented default or leave floating
-J1,33,front (odd),GND,,,,Ground
+J1,32,back (even),ESP_GPIO5,U1,11,GPIO5,JTAG-select strap (sampled at reset): keep the documented default or leave floating
+J1,33,front (odd),ESP_GPIO4,U1,10,GPIO4,JTAG-select strap (sampled at reset): keep the documented default or leave floating
 J1,34,back (even),ESP_EN,U1,4,,Active-high CHIP_PU; 10k pull-up and 1 uF on module; open-drain reset permitted
 J1,35,front (odd),FPGA_IOB_3B_G6,U2,44,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
 J1,36,back (even),FPGA_IOB_4A,U2,48,,3.3 V FPGA I/O (bank 0/2 at VCCIO 3.3 V)
