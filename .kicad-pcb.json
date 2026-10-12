@@ -102,9 +102,9 @@
       },
       "manufacturer": {
         "name": "JLCPCB",
-        "stackup": "JLC04161H-7628",
+        "stackup": "2-layer 1.6 mm FR4 (JLCPCB standard, no impedance control)",
         "rules": "calibrator.kicad_dru",
-        "notes": "1.6 mm four layer to suit edge-launch SMA; routing complete and native ERC/DRC checked. Review manual OCXO/OLED assembly, JLC placement preview and hardware validation before release. RFC v1: not ordered; hold ordering until module and carrier validation."
+        "notes": "Nominal 1.6 mm two-layer to suit edge-launch SMA and JLCPCB Economic PCBA. GPS feed 0.90 mm / 0.20 mm gap grounded CPW, 49.9 ohm nominal (docs/rf/GPS-FEED.md). Conversion in progress: the PCB file still has the former four-layer stackup and VIN_5V still uses the In2 plane. Review manual OCXO/OLED assembly, JLC placement preview and hardware validation before release. RFC v1: not ordered; hold ordering until module and carrier validation."
       },
       "qualityProfile": "pcb-profile.yaml"
     },
