@@ -17,13 +17,13 @@ assert net(b,'U6',4)==net(b,'R6',1)==net(b,'R7',1)==net(b,'R179',1)=='GPS_PPS'
 assert net(b,'R179',2)==net(b,'D74',2)=='PPS_LED_A' and net(b,'D74',1)=='GND'
 assert parts['R179']['value']=='1k'
 assert all(parts[r]['value']=='33R' for r in ['R6','R7','R180'])
-assert net(b,'J1',21)==net(b,'R180',1)==net(m,'J1',21)==net(m,'U1',44)=='ESP_GPIO40'
+assert net(b,'J1',25)==net(b,'R180',1)==net(m,'J1',25)==net(m,'U1',47)=='ESP_GPIO42'
 assert net(b,'R180',2)==net(b,'U6',9)=='GPS_RESET_N'
 for pin,name in [('15','VIO_SEL'),('16','SDA'),('17','SCL'),('18','SAFEBOOT_N')]:
  assert parts['U6']['names'][pin]==name and parts['U6']['pins'][pin] is None
 report={'pcb_sha256':hashlib.sha256((D/'calibrator.kicad_pcb').read_bytes()).hexdigest(),
  'checks':'VCC_RF bias tee, direct 1k PPS LED, separate 33R timing fanouts, reset end-to-end module mapping, corrected unused pin names',
- 'reset':'ESP32 U1.44 GPIO40 -> module/carrier J1.21 -> R180 33R -> MAX-M10S U6.9',
+ 'reset':'ESP32 U1.47 GPIO42 -> module/carrier J1.25 -> R180 33R -> MAX-M10S U6.9',
  'result':'pass'}
 (D/'docs/gps-reference-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

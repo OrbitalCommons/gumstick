@@ -104,7 +104,7 @@
         "name": "JLCPCB",
         "stackup": "2-layer 1.6 mm FR4 (JLCPCB standard, no impedance control)",
         "rules": "calibrator.kicad_dru",
-        "notes": "Nominal 1.6 mm two-layer to suit edge-launch SMA and JLCPCB Economic PCBA. GPS feed 0.90 mm / 0.20 mm gap grounded CPW, 49.9 ohm nominal (docs/rf/GPS-FEED.md). Conversion in progress: the PCB file still has the former four-layer stackup and VIN_5V still uses the In2 plane. Review manual OCXO/OLED assembly, JLC placement preview and hardware validation before release. RFC v1: not ordered; hold ordering until module and carrier validation."
+        "notes": "Nominal 1.6 mm two-layer to suit edge-launch SMA and JLCPCB Economic PCBA. GPS feed 0.90 mm / 0.20 mm gap grounded CPW, 49.9 ohm nominal (docs/rf/GPS-FEED.md). Submitted to JLCPCB on 2026-10-14 (2-layer 1.6 mm, ENIG, Economic PCBA top side; outputs in fab/, see fab/STATUS.md). Hand assembly: Y1 OCXO, J8 OLED header, DS1 OLED, user-fitted ML1220 cell in BT1. Hardware validation outstanding."
       },
       "qualityProfile": "pcb-profile.yaml"
     },
