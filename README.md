@@ -60,4 +60,5 @@ with history preserved for these paths. Folder moves:
 
 ## License
 
-No license has been chosen yet; until one is added, all rights are reserved.
+[MIT](LICENSE). Third-party datasheets and vendor 3D models included for
+reference keep their own terms; see the scope note in `LICENSE`.
