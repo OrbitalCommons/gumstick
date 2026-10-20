@@ -15,6 +15,48 @@ Start with the **[v1 interface control document](current-df40-connectors/docs/IC
 when designing a carrier for the module: it is the electrical and mechanical
 contract (pinout, mated height, keep-outs, reusable footprints).
 
+## Renders and 3D views
+
+Rendered with KiCad 10 (`kicad-cli pcb render`) from the board files in this
+repository. Click an STL link to open GitHub's interactive 3D viewer (board,
+pads and component bodies; untextured).
+
+### v1: ESP32-S2 + iCE40, DF40 connectors (current)
+
+<p align="center">
+  <img src="current-df40-connectors/renders/iso.png" width="46%" alt="v1 module, angled view">
+  <img src="current-df40-connectors/renders/top.png" width="24%" alt="v1 module, top">
+  <img src="current-df40-connectors/renders/bottom.png" width="24%" alt="v1 module, bottom, J1/J2 DF40 connectors">
+</p>
+
+3D: [current-df40-connectors.stl](https://github.com/OrbitalCommons/gumstick/blob/main/current-df40-connectors/renders/current-df40-connectors.stl)
+
+### v2: ESP32-C6 + iCE40, M.2 gold fingers (future)
+
+<p align="center">
+  <img src="future-m2-goldfingers/renders/iso.png" width="46%" alt="v2 module, angled view">
+  <img src="future-m2-goldfingers/renders/top.png" width="24%" alt="v2 module, top">
+  <img src="future-m2-goldfingers/renders/bottom.png" width="24%" alt="v2 module, bottom">
+</p>
+
+3D: [future-m2-goldfingers.stl](https://github.com/OrbitalCommons/gumstick/blob/main/future-m2-goldfingers/renders/future-m2-goldfingers.stl)
+
+### Programming carrier
+
+<p align="center">
+  <img src="programming-carrier/renders/iso.png" width="60%" alt="programming carrier, angled view">
+</p>
+<p align="center">
+  <img src="programming-carrier/renders/top.png" width="45%" alt="programming carrier, top">
+  <img src="programming-carrier/renders/bottom.png" width="45%" alt="programming carrier, bottom">
+</p>
+
+3D: [programming-carrier.stl](https://github.com/OrbitalCommons/gumstick/blob/main/programming-carrier/renders/programming-carrier.stl)
+
+Colour 3D models with tracks, soldermask and silkscreen are next to each STL
+as `renders/<folder>.glb` (open in any glTF viewer, e.g. Blender or a browser
+glTF viewer); v1 also has a STEP model in `current-df40-connectors/fab/`.
+
 ## Known carriers
 
 - [GPS time calibrator](https://github.com/OrbitalCommons/gps-time-calibrator)
