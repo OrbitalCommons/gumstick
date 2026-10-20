@@ -61,4 +61,4 @@ with history preserved for these paths. Folder moves:
 ## License
 
 [MIT](LICENSE). Third-party datasheets and vendor 3D models included for
-reference keep their own terms; see the scope note in `LICENSE`.
+reference keep their own terms; see `NOTICE`.

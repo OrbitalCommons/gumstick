@@ -1,0 +1,7 @@
+
+Scope: this license covers the original designs and code in this repository
+(KiCad schematics, PCBs, footprints, symbols, scripts, firmware, gateware,
+CAD sources and documentation). Third-party material included for reference
+keeps its own terms and is not relicensed: manufacturer datasheets in
+libraries/datasheets/, and vendor or library 3D models (for example KiCad
+library and LCSC/EasyEDA models) used for visualisation.
