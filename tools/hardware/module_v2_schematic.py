@@ -8,7 +8,7 @@ Never writes the PCB.
 from pathlib import Path
 import json, uuid, re, subprocess, tempfile, xml.etree.ElementTree as ET
 
-R = Path(__file__).resolve().parents[2]; D = R / 'boards/esp32-fpga-module-v2'
+R = Path(__file__).resolve().parents[2]; D = R / 'future-m2-goldfingers'
 parts = json.loads((D / 'docs/circuit.json').read_text())
 uid = lambda s: str(uuid.uuid5(uuid.NAMESPACE_URL, 'bp-module-v2-sch/' + s))
 q = lambda s: json.dumps(str(s))

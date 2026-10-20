@@ -4,7 +4,7 @@ import argparse,hashlib,json,math
 from pathlib import Path
 import pcbnew as pcb
 ROOT=Path(__file__).resolve().parents[2]
-D=ROOT/'boards/esp32-fpga-module'
+D=ROOT/'current-df40-connectors'
 ASSIGNMENTS={
  'U1':{'1':'C37','3':'C35','4':'C35','20':'C38','27':'C40','30':'C41','45':'C39','51':'C42','54':'C42'},
  'U2':{'1':'C52','5':'C50','22':'C48','24':'C48','29':'C44','30':'C49','33':'C46'},

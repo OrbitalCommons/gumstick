@@ -3,7 +3,7 @@
 from pathlib import Path
 from collections import defaultdict
 import pcbnew as p
-path=Path(__file__).resolve().parents[2]/'boards/esp32-fpga-module/module.kicad_pcb'
+path=Path(__file__).resolve().parents[2]/'current-df40-connectors/module.kicad_pcb'
 b=p.LoadBoard(str(path));count=0
 while True:
  adj=defaultdict(list)

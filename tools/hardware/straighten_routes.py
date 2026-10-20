@@ -12,7 +12,7 @@ from shapely.geometry import Point, LineString, Polygon
 from shapely.ops import unary_union
 from shapely.strtree import STRtree
 ROOT=Path(__file__).resolve().parents[2]
-PATH=ROOT/'boards/esp32-fpga-module/module.kicad_pcb'
+PATH=ROOT/'current-df40-connectors/module.kicad_pcb'
 OUT=ROOT/'tmp/octilinear';OUT.mkdir(exist_ok=True,parents=True)
 b=p.LoadBoard(str(PATH))
 

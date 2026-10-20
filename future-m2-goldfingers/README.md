@@ -1,6 +1,6 @@
 # ESP32-C6 + iCE40UP5K M.2 module (v2, development draft)
 
-Successor to `boards/esp32-fpga-module`: the same iCE40UP5K-SG48 FPGA and QSPI configuration link,
+Successor to `current-df40-connectors`: the same iCE40UP5K-SG48 FPGA and QSPI configuration link,
 with the ESP32-S2 module replaced by a bare ESP32-C6 (QFN40) plus a 16 MB quad SPI flash, and the board-to-board connector replaced
 by an M.2 2242 key-M card edge with a custom pinout. **Not PCIe/NVMe compatible. Not for fabrication yet.**
 

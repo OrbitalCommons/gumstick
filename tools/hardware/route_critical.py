@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import pcbnew as p
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';b=p.LoadBoard(str(D/'module.kicad_pcb'))
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';b=p.LoadBoard(str(D/'module.kicad_pcb'))
 def xy(x,y):return p.VECTOR2I(p.FromMM(x+100),p.FromMM(y+100))
 def pos(ref,num):
  pad=next(a for a in b.FindFootprintByReference(ref).Pads() if a.GetNumber()==str(num));return (p.ToMM(pad.GetPosition().x)-100,p.ToMM(pad.GetPosition().y)-100)

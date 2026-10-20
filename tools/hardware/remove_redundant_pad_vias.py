@@ -3,7 +3,7 @@
 from pathlib import Path
 import pcbnew as p,json,subprocess
 from shapely.geometry import Point,box
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';path=D/'module.kicad_pcb';out=R/'tmp/module-layout/current.json'
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';path=D/'module.kicad_pcb';out=R/'tmp/module-layout/current.json'
 def check():
  subprocess.run(['kicad-cli','pcb','drc','--schematic-parity','--format','json','-o',str(out),str(path)],check=True,stdout=subprocess.DEVNULL)
  j=json.loads(out.read_text());return not j['unconnected_items'] and not j.get('schematic_parity') and not any(v['severity']=='error' for v in j['violations'])

@@ -2,7 +2,7 @@
 """Finalize local footprint snapshots and readable markings without changing copper."""
 from pathlib import Path
 import pcbnew as p,json
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';b=p.LoadBoard(str(D/'module.kicad_pcb'));data=json.loads((D/'docs/module-connectivity.json').read_text())
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';b=p.LoadBoard(str(D/'module.kicad_pcb'));data=json.loads((D/'docs/module-connectivity.json').read_text())
 def pt(x,y):return p.VECTOR2I(p.FromMM(100+x),p.FromMM(100+y))
 refs={'U1':(7,10.7),'U2':(10,44.3),'J1':(10,11.5),'J2':(10,37.6),'SJ1':(13,33.1)}
 for t in list(b.GetDrawings()):

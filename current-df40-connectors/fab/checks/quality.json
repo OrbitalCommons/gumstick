@@ -22,7 +22,7 @@
         "command": [
           "/home/meawoppl/agent-portal-plugins/kicad-pcb/.runtime/kicad-tools/bin/kct",
           "check",
-          "/home/meawoppl/repos/bp-test/boards/esp32-fpga-module/module.kicad_pcb",
+          "/home/meawoppl/repos/bp-test/current-df40-connectors/module.kicad_pcb",
           "--format",
           "json",
           "--drc-only",
@@ -30,7 +30,7 @@
           "jlcpcb"
         ],
         "parsed": true,
-        "stderr": ": path_ampacity is INACTIVE without --current-paths and will silently pass. No sidecar was found at any of:\n  /home/meawoppl/repos/bp-test/boards/esp32-fpga-module/module.current_paths.json\n  /home/meawoppl/repos/bp-test/boards/esp32-fpga-module/current_paths.json\n  /home/meawoppl/repos/bp-test/boards/esp32-fpga-module/output/module.current_paths.json\n  /home/meawoppl/repos/bp-test/boards/esp32-fpga-module/output/current_paths.json\n  /home/meawoppl/repos/bp-test/boards/output/module.current_paths.json\n  /home/meawoppl/repos/bp-test/boards/output/current_paths.json\nPass one explicitly with --current-paths, or place it at one of the paths above, to validate declared branch current paths.\nWARNING: zone-clearance findings present (clearance_pad_zone, clearance_segment_zone, clearance_via_zone) — kct check measures these against the committed zone fills in the .kicad_pcb, which may be STALE if the board was routed or refilled after the fills were last saved. Cross-gate / fix with:\n    kicad-cli pcb drc --refill-zones --save-board /home/meawoppl/repos/bp-test/boards/esp32-fpga-module/module.kicad_pcb\nthen re-run kct check, or pass --refill-zones to do this automatically (issue #4096).\n"
+        "stderr": ": path_ampacity is INACTIVE without --current-paths and will silently pass. No sidecar was found at any of:\n  /home/meawoppl/repos/bp-test/current-df40-connectors/module.current_paths.json\n  /home/meawoppl/repos/bp-test/current-df40-connectors/current_paths.json\n  /home/meawoppl/repos/bp-test/current-df40-connectors/output/module.current_paths.json\n  /home/meawoppl/repos/bp-test/current-df40-connectors/output/current_paths.json\n  /home/meawoppl/repos/bp-test/boards/output/module.current_paths.json\n  /home/meawoppl/repos/bp-test/boards/output/current_paths.json\nPass one explicitly with --current-paths, or place it at one of the paths above, to validate declared branch current paths.\nWARNING: zone-clearance findings present (clearance_pad_zone, clearance_segment_zone, clearance_via_zone) — kct check measures these against the committed zone fills in the .kicad_pcb, which may be STALE if the board was routed or refilled after the fills were last saved. Cross-gate / fix with:\n    kicad-cli pcb drc --refill-zones --save-board /home/meawoppl/repos/bp-test/current-df40-connectors/module.kicad_pcb\nthen re-run kct check, or pass --refill-zones to do this automatically (issue #4096).\n"
       },
       {
         "code": 1,
@@ -38,7 +38,7 @@
           "/home/meawoppl/agent-portal-plugins/kicad-pcb/.runtime/kicad-tools/bin/kct",
           "-q",
           "detect-mistakes",
-          "/home/meawoppl/repos/bp-test/boards/esp32-fpga-module/module.kicad_pcb",
+          "/home/meawoppl/repos/bp-test/current-df40-connectors/module.kicad_pcb",
           "--format",
           "json"
         ],

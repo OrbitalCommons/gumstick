@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "defaultProject": "tesla-coil-controller",
+  "defaultProject": "esp32-fpga-module",
   "qualityProfile": "docs/pcb-playbook/pcb-profile.yaml",
   "projects": [
     {
       "id": "esp32-fpga-module",
-      "name": "ESP32 + FPGA module (development)",
-      "root": "boards/esp32-fpga-module",
+      "name": "Gumstick v1: ESP32-S2 + iCE40UP5K, two DF40 connectors (current, ordered)",
+      "root": "current-df40-connectors",
       "kicad": {
         "project": "module.kicad_pro",
         "schematic": "module.kicad_sch",
@@ -28,8 +28,8 @@
     },
     {
       "id": "esp32-fpga-module-v2",
-      "name": "ESP32-C6 + FPGA M.2 module (v2, development)",
-      "root": "boards/esp32-fpga-module-v2",
+      "name": "Gumstick v2: ESP32-C6 + iCE40UP5K, M.2 gold fingers (future, development)",
+      "root": "future-m2-goldfingers",
       "kicad": {
         "project": "module.kicad_pro",
         "schematic": "module.kicad_sch",
@@ -50,72 +50,13 @@
       }
     },
     {
-      "id": "direction-led-tester",
-      "name": "Direction LED tester",
-      "root": ".",
-      "kicad": {
-        "project": "direction-led-tester.kicad_pro",
-        "schematic": "direction-led-tester.kicad_sch",
-        "pcb": "direction-led-tester.kicad_pcb"
-      },
-      "artifacts": {
-        "gerbers": "fab/gerbers",
-        "jlcpcb": "fab/jlcpcb"
-      }
-    },
-    {
-      "id": "mainboard-reference",
-      "name": "Original MainBoard (import reference)",
-      "root": "boards/mainboard-reference",
-      "kicad": {
-        "project": "MainBoard.kicad_pro",
-        "schematic": "MainBoard.kicad_sch",
-        "pcb": "MainBoard.kicad_pcb"
-      }
-    },
-    {
       "id": "programming-carrier",
-      "name": "Module v1 programming + GPIO test carrier",
-      "root": "boards/programming-carrier",
+      "name": "Gumstick v1 programming + GPIO test carrier",
+      "root": "programming-carrier",
       "kicad": {
         "project": "carrier.kicad_pro",
         "schematic": "carrier.kicad_sch",
         "pcb": "carrier.kicad_pcb"
-      },
-      "artifacts": {
-        "gerbers": "fab/gerbers",
-        "jlcpcb": "fab/jlcpcb"
-      }
-    },
-    {
-      "id": "gps-time-calibrator",
-      "name": "GPS optical time calibrator carrier",
-      "root": "boards/gps-time-calibrator",
-      "kicad": {
-        "project": "calibrator.kicad_pro",
-        "schematic": "calibrator.kicad_sch",
-        "pcb": "calibrator.kicad_pcb"
-      },
-      "artifacts": {
-        "gerbers": "fab/gerbers",
-        "jlcpcb": "fab/jlcpcb"
-      },
-      "manufacturer": {
-        "name": "JLCPCB",
-        "stackup": "2-layer 1.6 mm FR4 (JLCPCB standard, no impedance control)",
-        "rules": "calibrator.kicad_dru",
-        "notes": "Nominal 1.6 mm two-layer to suit edge-launch SMA and JLCPCB Economic PCBA. GPS feed 0.90 mm / 0.20 mm gap grounded CPW, 49.9 ohm nominal (docs/rf/GPS-FEED.md). Submitted to JLCPCB on 2026-10-14 (2-layer 1.6 mm, ENIG, Economic PCBA top side; outputs in fab/, see fab/STATUS.md). Hand assembly: Y1 OCXO, J8 OLED header, DS1 OLED, user-fitted ML1220 cell in BT1. Hardware validation outstanding."
-      },
-      "qualityProfile": "pcb-profile.yaml"
-    },
-    {
-      "id": "tesla-coil-controller",
-      "name": "Tesla coil controller (acquisition draft)",
-      "root": "boards/tesla-coil-controller",
-      "kicad": {
-        "project": "controller.kicad_pro",
-        "schematic": "controller.kicad_sch",
-        "pcb": "controller.kicad_pcb"
       },
       "artifacts": {
         "gerbers": "fab/gerbers",

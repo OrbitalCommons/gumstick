@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate the v2 module interface documents from the routed board.
 
-Writes boards/esp32-fpga-module-v2/docs/icd-v2-pinout.csv (every M.2 contact), c6-fpga-link.csv (the
+Writes future-m2-goldfingers/docs/icd-v2-pinout.csv (every M.2 contact), c6-fpga-link.csv (the
 ESP32-C6 <-> iCE40 configuration link) and refreshes the pin tables inside design-contract.json so the
 documents can never drift from the copper. Run after build_module_v2.py / module_v2_route.py.
 """
@@ -10,7 +10,7 @@ from pathlib import Path
 import pcbnew as p
 
 R = Path(__file__).resolve().parents[2]
-D = R / 'boards/esp32-fpga-module-v2'
+D = R / 'future-m2-goldfingers'
 board = p.LoadBoard(str(D / 'module.kicad_pcb'))
 
 pads = {}            # ref -> {num: net}

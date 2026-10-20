@@ -4,7 +4,7 @@ from pathlib import Path
 import json, math
 import pcbnew as p
 from shapely.geometry import box,Point
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';path=D/'module.kicad_pcb';b=p.LoadBoard(str(path))
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';path=D/'module.kicad_pcb';b=p.LoadBoard(str(path))
 def pt(x,y):return p.VECTOR2I(p.FromMM(x+100),p.FromMM(y+100))
 def rect(bb):return box(p.ToMM(bb.GetX())-100,p.ToMM(bb.GetY())-100,p.ToMM(bb.GetRight())-100,p.ToMM(bb.GetBottom())-100)
 # Labels flank their packages; sparse passives retain fabrication-layer references.

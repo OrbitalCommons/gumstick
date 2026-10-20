@@ -2,7 +2,7 @@
 """Import the locally generated routing session and refill copper in KiCad."""
 from pathlib import Path
 import pcbnew as p
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';b=p.LoadBoard(str(D/'module.kicad_pcb'))
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';b=p.LoadBoard(str(D/'module.kicad_pcb'))
 assert p.ImportSpecctraSES(b,str(R/'tmp/module-layout/module.ses'))
 # Ground on the outer layers supplies short return paths for local decoupling.
 for layer,net in [(p.F_Cu,'GND'),(p.B_Cu,'GND'),(p.In2_Cu,'+3.3V')]:

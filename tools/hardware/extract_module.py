@@ -58,14 +58,14 @@ from devboard_names import apply
 name_changes=apply(parts)
 j1=[name_changes.get(n,n) for n in j1];j2=[name_changes.get(n,n) for n in j2]
 # Preserve the reviewed carrier-contact assignments when re-extracting sources.
-override_path=ROOT/'boards/esp32-fpga-module/docs/pinout-overrides.json'
+override_path=ROOT/'current-df40-connectors/docs/pinout-overrides.json'
 if override_path.exists():
  for ref,mapping in json.loads(override_path.read_text()).items():
   ns=j1 if ref=='J1' else j2
   for pin,net in mapping.items():
    parts[ref]['pins'][pin]['net']=net;ns[int(pin)-1]=net
 # All extracted source pins are kept, even where carrier circuitry was deliberately removed.
-out=ROOT/'boards/esp32-fpga-module/docs';out.mkdir(parents=True,exist_ok=True)
+out=ROOT/'current-df40-connectors/docs';out.mkdir(parents=True,exist_ok=True)
 (out/'signal-name-map.json').write_text(json.dumps(name_changes,indent=2)+'\n')
 (out/'module-connectivity.json').write_text(json.dumps(parts,indent=2)+'\n')
 with (out/'carrier-pinout.csv').open('w') as f:

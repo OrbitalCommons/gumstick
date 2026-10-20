@@ -2,7 +2,7 @@
 """Placement for the four-layer dev module. Run before routing, not after."""
 from pathlib import Path
 import pcbnew as p,math,json,xml.etree.ElementTree as E
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';path=D/'module.kicad_pcb';b=p.LoadBoard(str(path))
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';path=D/'module.kicad_pcb';b=p.LoadBoard(str(path))
 def pt(x,y):return p.VECTOR2I(p.FromMM(x+100),p.FromMM(y+100))
 def v(x,y):return p.VECTOR2I(p.FromMM(x),p.FromMM(y))
 loc={

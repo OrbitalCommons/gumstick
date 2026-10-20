@@ -5,7 +5,7 @@ import pcbnew as p,numpy as np,json,math,subprocess,sys
 from shapely.geometry import box,LineString,Point,Polygon
 from shapely import contains_xy
 from shapely.strtree import STRtree
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';O=R/'tmp/module-layout'
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';O=R/'tmp/module-layout'
 S=.025;W=801;H=1825;layers=[p.F_Cu,p.In2_Cu,p.B_Cu,p.In1_Cu];TW=.1;CLEAR=.105;VR=.15
 if '--four' in sys.argv:layers=[p.F_Cu,p.In2_Cu,p.B_Cu,p.In1_Cu]
 b=p.LoadBoard(str(D/'module.kicad_pcb'))

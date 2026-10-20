@@ -2,7 +2,7 @@
 """Generate the module schematic and local symbols from audited pin data."""
 from pathlib import Path
 import json,uuid,re
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';parts=json.loads((D/'docs/module-connectivity.json').read_text())
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';parts=json.loads((D/'docs/module-connectivity.json').read_text())
 uid=lambda key:str(uuid.uuid5(uuid.NAMESPACE_URL,'gps-time-module/'+key))
 q=lambda s:json.dumps(str(s))
 items=[];symbols={};positions={};terminals={}

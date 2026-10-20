@@ -3,7 +3,7 @@
 from pathlib import Path
 import pcbnew as p,json,re,math,sys,subprocess
 from collections import Counter
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';O=R/'tmp/module-layout'
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';O=R/'tmp/module-layout'
 original=(D/'module.kicad_pcb').read_bytes()
 b=p.LoadBoard(str(D/'module.kicad_pcb'));j=json.loads((O/'current.json').read_text())
 opens=set()

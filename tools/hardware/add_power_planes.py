@@ -2,7 +2,7 @@
 """Add the module's ground pours and 3.3 V distribution plane, idempotently."""
 from pathlib import Path
 import pcbnew as p
-D=Path(__file__).resolve().parents[2]/'boards/esp32-fpga-module'
+D=Path(__file__).resolve().parents[2]/'current-df40-connectors'
 b=p.LoadBoard(str(D/'module.kicad_pcb'))
 for layer,net in [(p.F_Cu,'GND'),(p.B_Cu,'GND'),(p.In1_Cu,'GND'),(p.In2_Cu,'+3.3V')]:
  if any(not z.GetIsRuleArea() and z.GetLayer()==layer and z.GetNetname()==net for z in b.Zones()):continue

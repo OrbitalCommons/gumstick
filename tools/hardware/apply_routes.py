@@ -2,7 +2,7 @@
 """Apply routing-assistant output to the active board, retaining manual critical routes."""
 from pathlib import Path
 import pcbnew as p,json
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';O=R/'tmp/module-layout';b=p.LoadBoard(str(O/'critical.kicad_pcb'))
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';O=R/'tmp/module-layout';b=p.LoadBoard(str(O/'critical.kicad_pcb'))
 meta=json.loads((O/'route-meta.json').read_text());names=meta['names'];S=meta['step'];layers=[p.F_Cu,p.In2_Cu,p.B_Cu]
 def pt(x,y):return p.VECTOR2I(p.FromMM(100+x*S),p.FromMM(100+y*S))
 seen=set()

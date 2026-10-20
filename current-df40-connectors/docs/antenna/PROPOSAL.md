@@ -155,4 +155,4 @@ Outstanding gates:
 - Abracon ACAG0201-2450-T datasheet, revised 2025-09-20, pp.4–6: https://abracon.com/datasheets/ACAG0201-2450-T.pdf — copied under `sources/`.
 - Abracon EVB note, revised 2025-03-11: https://abracon.com/datasheets/ACAG0201-2450-EVB.pdf — older reference; not used for production matching values.
 - Qucs grounded CPW equations 12.10–12.13: https://qucs.sourceforge.net/tech/node86.html.
-- Parent PCB snapshot geometry inspected read-only: `/home/meawoppl/repos/bp-test/boards/esp32-fpga-module/module.kicad_pcb`. See `baseline.json` for hash/time.
+- Parent PCB snapshot geometry inspected read-only: `/home/meawoppl/repos/bp-test/current-df40-connectors/module.kicad_pcb`. See `baseline.json` for hash/time.

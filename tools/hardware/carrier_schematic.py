@@ -2,7 +2,7 @@
 """Readable carrier schematic and standalone, two-unit module-v1 interface symbol."""
 from pathlib import Path
 import json,uuid,re
-R=Path(__file__).resolve().parents[2];D=R/'boards/programming-carrier';parts=json.loads((D/'docs/circuit.json').read_text());channels=json.loads((D/'docs/led-map.json').read_text())
+R=Path(__file__).resolve().parents[2];D=R/'programming-carrier';parts=json.loads((D/'docs/circuit.json').read_text());channels=json.loads((D/'docs/led-map.json').read_text())
 uid=lambda s:str(uuid.uuid5(uuid.NAMESPACE_URL,'bp-carrier-v1/'+s));q=lambda s:json.dumps(str(s));items=[];symbols={};pins={};count=0
 E=lambda size=1.27,justify='':f'(effects (font (size {size} {size})) '+(f'(justify {justify})' if justify else '')+')'
 def prop(k,val,x,y,hide=False):return f'(property {q(k)} {q(val)} (at {x} {y} 0) {E()}'+(' (hide yes)' if hide else '')+')'

@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
-BOARD = ROOT / 'boards/programming-carrier'
+BOARD = ROOT / 'programming-carrier'
 def refkey(ref):
     return (re.sub(r'\d+', '', ref), int(re.search(r'\d+', ref).group()))
 def main():

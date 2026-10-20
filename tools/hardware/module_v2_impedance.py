@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """RF feed geometry for the v2 module on JLC04081H-3313: JLCPCB's coated-CPWG calculator (geometry only, no PCB upload)
-plus an independent 2D field solve. Writes boards/esp32-fpga-module-v2/docs/rf-feed.json.
+plus an independent 2D field solve. Writes future-m2-goldfingers/docs/rf-feed.json.
 Run with: uv run --with websocket-client --with numpy python tools/hardware/module_v2_impedance.py"""
 import json, uuid, hashlib, urllib.request, sys
 from pathlib import Path
 import websocket
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from cpwg_fieldsolve import solve
-OUT = Path(__file__).resolve().parents[2] / 'boards/esp32-fpga-module-v2/docs/rf-feed.json'
+OUT = Path(__file__).resolve().parents[2] / 'future-m2-goldfingers/docs/rf-feed.json'
 STACK = {'name': 'JLC04081H-3313', 'prepreg_mm': 0.0994, 'prepreg_er': 4.1, 'copper_mm': 0.035,
          'mask': 'LPI er 3.8, 1.2 mil over substrate, 0.6 mil over copper', 'reference': 'In1.Cu GND'}
 GAP, CHOSEN = 0.15, 0.14

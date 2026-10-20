@@ -2,7 +2,7 @@
 """Initial four-layer placement, explicitly unrouted. Does not produce fab outputs."""
 from pathlib import Path
 import json,uuid,pcbnew as p
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';parts=json.loads((D/'docs/module-connectivity.json').read_text())
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';parts=json.loads((D/'docs/module-connectivity.json').read_text())
 source=p.LoadBoard(str(R/'boards/mainboard-reference/MainBoard.kicad_pcb'));old={f.GetReference():f for f in source.GetFootprints()};lib=D/'Module.pretty';lib.mkdir(exist_ok=True)
 def layers():
  s=p.LSET()

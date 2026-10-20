@@ -2,7 +2,7 @@
 """Attach installed KiCad STEP models and the audited Hirose mating models."""
 from pathlib import Path
 import pcbnew as p,re,shutil
-R=Path(__file__).resolve().parents[2];D=R/'boards/programming-carrier';b=p.LoadBoard(str(D/'carrier.kicad_pcb'))
+R=Path(__file__).resolve().parents[2];D=R/'programming-carrier';b=p.LoadBoard(str(D/'carrier.kicad_pcb'))
 for f in b.GetFootprints():
  name=str(f.GetFPID().GetLibItemName());lib=p.FootprintLoad(str(D/'Carrier.pretty'),name)
  if len(list(lib.Models()))==0:

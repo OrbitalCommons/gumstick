@@ -54,7 +54,7 @@ downloads it. It is discovered via `KICADMIUM_KICAD_CLI`, `KICAD_CLI`, or PATH.
   (`agent-portal plugin status kicadmium` shows the port). Stop it with
   `agent-portal plugin stop kicadmium` when done.
 - **Lint, read-only.**
-  `kicadmium kct -- lint run boards/<board>/<board>.kicad_pcb --format json`
+  `kicadmium kct -- lint run <folder>/<board>.kicad_pcb --format json` (e.g. `current-df40-connectors/module.kicad_pcb`)
   does not write anything. Redirect to a file instead of piping into `head`;
   `kct` panics with a broken-pipe backtrace when the reader closes early.
 - **Mutating `kct` commands are design edits.** Clean tree or an explicit

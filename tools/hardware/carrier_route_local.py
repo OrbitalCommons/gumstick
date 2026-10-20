@@ -2,7 +2,7 @@
 """Route repeated LED cells by construction and prepare wide power / ground feeds."""
 from pathlib import Path
 import pcbnew as p,json,math
-R=Path(__file__).resolve().parents[2];D=R/'boards/programming-carrier';b=p.LoadBoard(str(D/'carrier.kicad_pcb'));fp={f.GetReference():f for f in b.GetFootprints()};ch=json.loads((D/'docs/led-map.json').read_text());mm=p.FromMM;v=lambda x,y:p.VECTOR2I(mm(x),mm(y))
+R=Path(__file__).resolve().parents[2];D=R/'programming-carrier';b=p.LoadBoard(str(D/'carrier.kicad_pcb'));fp={f.GetReference():f for f in b.GetFootprints()};ch=json.loads((D/'docs/led-map.json').read_text());mm=p.FromMM;v=lambda x,y:p.VECTOR2I(mm(x),mm(y))
 def xy(pos):return p.ToMM(pos.x),p.ToMM(pos.y)
 def pad(ref,num):return next(a for a in fp[ref].Pads() if a.GetNumber()==str(num))
 def pos(ref,num):return xy(pad(ref,num).GetPosition())

@@ -5,7 +5,7 @@ Hirose plug drawing EDC-311351-00: 0.4 pitch, 0.23x0.66 pads,
 """
 from pathlib import Path
 import pcbnew as p,json,uuid,csv
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module'
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors'
 b=p.LoadBoard(str(D/'module.kicad_pcb'));parts=json.loads((D/'docs/module-connectivity.json').read_text())
 assert parts['J2']['value']!='DF40C-40DP-0.4V(51)','Migration already applied'
 pt=lambda x,y:p.VECTOR2I(p.FromMM(x),p.FromMM(y))

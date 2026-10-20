@@ -7,7 +7,7 @@ from shapely.geometry import box, LineString
 from shapely.ops import unary_union
 from routing_constraints import pad_geometry
 root=Path(__file__).resolve().parents[2]
-b=p.LoadBoard(str(root/'boards/esp32-fpga-module/module.kicad_pcb'))
+b=p.LoadBoard(str(root/'current-df40-connectors/module.kicad_pcb'))
 issues=[]
 xy=lambda q:(p.ToMM(q.x)-100,p.ToMM(q.y)-100)
 for f in b.GetFootprints():

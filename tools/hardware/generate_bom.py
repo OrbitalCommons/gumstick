@@ -2,7 +2,7 @@
 """Generate a review BOM, preserving original supplier IDs as unverified candidates."""
 from pathlib import Path
 import csv,json,xml.etree.ElementTree as E
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';out=D/'fab/bom';out.mkdir(parents=True,exist_ok=True)
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';out=D/'fab/bom';out.mkdir(parents=True,exist_ok=True)
 parts=json.loads((D/'docs/module-connectivity.json').read_text())
 original={c.get('ref'):{f.get('name'):f.text or '' for f in c.findall('./fields/field')} for c in E.parse(R/'docs/hardware/original-netlist.xml').getroot().find('components')}
 # Enumerate the actual schematic, so stale metadata cannot silently add components.

@@ -2,7 +2,7 @@
 """Copper-overlap audit using circle/oval/rounded-rectangle pad geometry."""
 from pathlib import Path
 import pcbnew as p,json,math,sys
-R=Path(__file__).resolve().parents[2];board=R/'boards/esp32-fpga-module/module.kicad_pcb'
+R=Path(__file__).resolve().parents[2];board=R/'current-df40-connectors/module.kicad_pcb'
 b=p.LoadBoard(str(board));pads=[]
 for f in b.GetFootprints():
  for a in f.Pads():

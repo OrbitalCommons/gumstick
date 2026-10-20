@@ -6,7 +6,7 @@ from routing_constraints import VIA_DIAMETER_MM, VIA_DRILL_MM, VIA_HOLE_GAP_MM
 from shapely.geometry import box,LineString,Point
 from shapely import contains_xy
 from shapely.strtree import STRtree
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';O=R/'tmp/module-layout'
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';O=R/'tmp/module-layout'
 S=.025;W=801;H=1825;layers=[p.F_Cu,p.In2_Cu,p.B_Cu];TW=.1;CLEAR=.105;VR=VIA_DIAMETER_MM/2
 if '--four' in sys.argv:layers=[p.F_Cu,p.In2_Cu,p.B_Cu,p.In1_Cu]
 # Use the project's exact 0.10 mm rule for dense escapes; DRC remains authoritative.

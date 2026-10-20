@@ -1,5 +1,5 @@
 {
-  "board": "boards/esp32-fpga-module/module.kicad_pcb",
+  "board": "current-df40-connectors/module.kicad_pcb",
   "board_sha256": "a0ff38390075833beac6046379897b9fefbec22a8d634a2b91211595034d99cc",
   "coordinate_origin_mm": [
     100.0,

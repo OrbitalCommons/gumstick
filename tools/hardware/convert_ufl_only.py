@@ -2,7 +2,7 @@
 """One-time chip/selector removal and direct U.FL feed ECO."""
 from pathlib import Path
 import pcbnew as p,json
-D=Path('boards/esp32-fpga-module');f=D/'module.kicad_pcb';b=p.LoadBoard(str(f));pt=lambda x,y:p.VECTOR2I(p.FromMM(x+100),p.FromMM(y+100));removed={'AE1','JP1','R63','C68','C69'}
+D=Path('current-df40-connectors');f=D/'module.kicad_pcb';b=p.LoadBoard(str(f));pt=lambda x,y:p.VECTOR2I(p.FromMM(x+100),p.FromMM(y+100));removed={'AE1','JP1','R63','C68','C69'}
 for fp in list(b.GetFootprints()):
  if fp.GetReference() in removed:b.RemoveNative(fp)
 for t in list(b.GetTracks()):

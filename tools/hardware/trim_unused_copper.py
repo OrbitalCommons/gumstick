@@ -5,7 +5,7 @@ import pcbnew as p,json,subprocess,re,sys
 from collections import Counter
 from shapely.geometry import Point,LineString,box
 from shapely.ops import nearest_points
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';path=D/'module.kicad_pcb';O=R/'tmp/module-layout';original=path.read_bytes();b=p.LoadBoard(str(path));before=json.loads((O/'current.json').read_text())
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';path=D/'module.kicad_pcb';O=R/'tmp/module-layout';original=path.read_bytes();b=p.LoadBoard(str(path));before=json.loads((O/'current.json').read_text())
 def count(j):return Counter(re.search(r'\[([^]]+)\]',v['items'][0]['description'])[1] for v in j['unconnected_items'])
 opens=set(count(before));wanted={x['uuid'] for v in before['violations'] if v['type'] in ['via_dangling','track_dangling'] for x in v['items']}
 def xy(v):return p.ToMM(v.x),p.ToMM(v.y)

@@ -4,7 +4,7 @@ from pathlib import Path
 import pcbnew as p,numpy as np,json,math
 from shapely.geometry import box,LineString,Point
 from shapely import contains_xy
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';O=R/'tmp/module-layout';b=p.LoadBoard(str(D/'module.kicad_pcb'))
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';O=R/'tmp/module-layout';b=p.LoadBoard(str(D/'module.kicad_pcb'))
 STEP=.05;W=681;H=721;A=np.zeros((3,H,W),dtype=np.int16);V=np.zeros((H,W),dtype=np.int16);K=np.zeros((H,W),dtype=np.uint8)
 # Slightly more than nominal 0.127 mm clearance to cover quantization.
 CLEAR=.135;TW=.10;VR=.20

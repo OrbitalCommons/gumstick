@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """Construct the ESP32-C6 + iCE40UP5K M.2 module (v2): libraries, circuit contract, PCB.
 
-Run with system Python (needs pcbnew). Writes boards/esp32-fpga-module-v2/.
+Run with system Python (needs pcbnew). Writes future-m2-goldfingers/.
 Idempotent for libraries; refuses to overwrite a routed PCB unless --replace-draft.
 
 Sources of truth used here:
 - ESP32-C6 datasheet v1.5, QFN40 pin table (Table 2-1) and chip-to-flash mapping (Table 2-16); W25Q128JV datasheet
 - M.2 card edge: e-tec MPE-075-RXM9 recommended module drawing (PCI-SIG M.2 compatible)
-- v1 module (boards/esp32-fpga-module) for the FPGA, crystal, LED, U.FL, LDO parts
+- v1 module (current-df40-connectors) for the FPGA, crystal, LED, U.FL, LDO parts
 """
 import sys, json, re, shutil, math, uuid
 from pathlib import Path
 import pcbnew as p
 
 R = Path(__file__).resolve().parents[2]
-D = R / 'boards/esp32-fpga-module-v2'
-V1 = R / 'boards/esp32-fpga-module'
+D = R / 'future-m2-goldfingers'
+V1 = R / 'current-df40-connectors'
 STD_FP = Path('/usr/share/kicad/footprints')
 STD_3D = Path('/usr/share/kicad/3dmodels')
 for d in ['Module2.pretty', 'docs', '3dmodels', 'fab/checks']:

@@ -2,7 +2,7 @@
 """One-time Abracon→Pulse antenna ECO. Run on the pre-Pulse routed board only."""
 from pathlib import Path
 import json,pcbnew as p,math
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';f=str(D/'module.kicad_pcb');b=p.LoadBoard(f)
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';f=str(D/'module.kicad_pcb');b=p.LoadBoard(f)
 pt=lambda x,y:p.VECTOR2I(p.FromMM(x+100),p.FromMM(y+100))
 xy=lambda v:(p.ToMM(v.x)-100,p.ToMM(v.y)-100)
 fps={fp.GetReference():fp for fp in b.GetFootprints()}

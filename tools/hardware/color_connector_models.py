@@ -4,7 +4,7 @@ geometry or a manufacturer material declaration.
 """
 from pathlib import Path
 import cadquery as cq
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module/3dmodels'
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors/3dmodels'
 for name in ['DF40C_2_0_40DS','DF40C_40DP']:
  s=cq.importers.importStep(str(D/(name+'.step'))).val();a=cq.Assembly(s,name=name,color=cq.Color(.065,.075,.09));count=0
  for face in s.Faces():

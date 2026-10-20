@@ -1,7 +1,7 @@
 # Reusable tooling: what to lift out of `tools/hardware`
 
 `tools/hardware/` has about 70 scripts (≈4.3k lines) written during the
-session. **Almost all of them hard-code** `boards/esp32-fpga-module/module.kicad_pcb`,
+session. **Almost all of them hard-code** `current-df40-connectors/module.kicad_pcb`,
 refs like `U1`/`U2`, or net names like `/RF_*`. They are good prototypes but
 not yet a library. This file ranks which ones earn generalization and sets
 out the shape of a shared library.

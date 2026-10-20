@@ -2,7 +2,7 @@
 """Export checked module fabrication files and assembly CSVs from the active design."""
 from pathlib import Path
 import csv,json,subprocess,tempfile,shutil,zipfile,datetime
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';F=D/'fab';B=D/'module.kicad_pcb';S=D/'module.kicad_sch'
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';F=D/'fab';B=D/'module.kicad_pcb';S=D/'module.kicad_sch'
 def run(*args):subprocess.run(['kicad-cli',*map(str,args)],check=True)
 (F/'checks').mkdir(parents=True,exist_ok=True)
 with (F/'checks/via-pad-clearance.json').open('w') as out:

@@ -4,7 +4,7 @@ Run with system Python (KiCad pcbnew). Does not modify the daughterboard.
 """
 from pathlib import Path
 import pcbnew as p, json,csv,uuid,re,shutil,math
-R=Path(__file__).resolve().parents[2]; D=R/'boards/programming-carrier'; M=R/'boards/esp32-fpga-module'
+R=Path(__file__).resolve().parents[2]; D=R/'programming-carrier'; M=R/'current-df40-connectors'
 for d in ['Carrier.pretty','docs','3dmodels','fab/checks']: (D/d).mkdir(parents=True,exist_ok=True)
 uid=lambda s:str(uuid.uuid5(uuid.NAMESPACE_URL,'bp-carrier-v1/'+s))
 q=lambda s:json.dumps(str(s))

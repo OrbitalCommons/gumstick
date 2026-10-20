@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import pcbnew as p,json
-R=Path(__file__).resolve().parents[2];D=R/'boards/programming-carrier';b=p.LoadBoard(str(D/'carrier.kicad_pcb'));v=lambda x,y:p.VECTOR2I(p.FromMM(x),p.FromMM(y))
+R=Path(__file__).resolve().parents[2];D=R/'programming-carrier';b=p.LoadBoard(str(D/'carrier.kicad_pcb'));v=lambda x,y:p.VECTOR2I(p.FromMM(x),p.FromMM(y))
 for f in b.GetFootprints():
  r=f.GetReference();x,y=[p.ToMM(z) for z in [f.GetPosition().x,f.GetPosition().y]]
  if r.startswith(('H','SW')):f.Reference().SetVisible(False)

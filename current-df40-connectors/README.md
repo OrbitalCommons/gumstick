@@ -18,7 +18,7 @@ placement improvements and the clearance-limited neck-downs retained.
 Two underside Hirose DF40 40-pin connectors carry power, programming and
 GPIO signals. J1 is a receptacle and J2 a plug; both are horizontal. The
 complementary genders prevent reversed full mating with the carrier pair. The [programming carrier](../programming-carrier/README.md) supplies USB, buttons
-and mating connectors; the [GPS calibrator](../gps-time-calibrator/README.md) is a separate application carrier.
+and mating connectors; the [GPS calibrator](https://github.com/OrbitalCommons/gps-time-calibrator/blob/main/boards/gps-time-calibrator/README.md) is a separate application carrier.
 
 ## Power
 

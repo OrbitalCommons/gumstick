@@ -4,7 +4,7 @@ from pathlib import Path
 import pcbnew as p,json
 from shapely.geometry import Point,LineString,box
 from shapely.ops import unary_union
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';O=R/'tmp/module-layout';plan=json.loads((D/'docs/external-fanout-plan.json').read_text());b=p.LoadBoard(str(D/'module.kicad_pcb'));layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';O=R/'tmp/module-layout';plan=json.loads((D/'docs/external-fanout-plan.json').read_text());b=p.LoadBoard(str(D/'module.kicad_pcb'));layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]
 def xy(v):return p.ToMM(v.x)-100,p.ToMM(v.y)-100
 def pt(q):return p.VECTOR2I(p.FromMM(round(100+q[0],6)),p.FromMM(round(100+q[1],6)))
 for a in plan:

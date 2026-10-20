@@ -1,7 +1,7 @@
 """Attach project-local STEP models without changing PCB geometry or connectivity."""
 from pathlib import Path
 import pcbnew as p,shutil,json
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';M=D/'3dmodels';base=Path('/usr/share/kicad/3dmodels');b=p.LoadBoard(str(D/'module.kicad_pcb'));manifest=[];prior={r['reference']:r for r in json.loads((D/'docs/3d-models.json').read_text())} if (D/'docs/3d-models.json').exists() else {}
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';M=D/'3dmodels';base=Path('/usr/share/kicad/3dmodels');b=p.LoadBoard(str(D/'module.kicad_pcb'));manifest=[];prior={r['reference']:r for r in json.loads((D/'docs/3d-models.json').read_text())} if (D/'docs/3d-models.json').exists() else {}
 for f in b.GetFootprints():
  ref=f.GetReference();old=list(f.Models());source=None
  if ref in ['AE1','H1','SJ1'] or ref.startswith('TP'):continue

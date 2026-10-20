@@ -4,7 +4,7 @@ from pathlib import Path
 import pcbnew as p,numpy as np,math,json,subprocess
 from shapely.geometry import Point,LineString,box,Polygon
 from shapely import contains_xy
-R=Path(__file__).resolve().parents[2];D=R/'boards/programming-carrier';O=R/'tmp/carrier/grid';O.mkdir(parents=True,exist_ok=True);b=p.LoadBoard(str(D/'carrier.kicad_pcb'));layers=[p.F_Cu,p.In2_Cu,p.B_Cu];step=.05;clear=.137;width=.2;vr=.25;mm=p.FromMM
+R=Path(__file__).resolve().parents[2];D=R/'programming-carrier';O=R/'tmp/carrier/grid';O.mkdir(parents=True,exist_ok=True);b=p.LoadBoard(str(D/'carrier.kicad_pcb'));layers=[p.F_Cu,p.In2_Cu,p.B_Cu];step=.05;clear=.137;width=.2;vr=.25;mm=p.FromMM
 xy=lambda pos:(p.ToMM(pos.x),p.ToMM(pos.y))
 def run(n,start,end):
  global W,H,A,V,x0,y0

@@ -14,7 +14,7 @@ from shapely.strtree import STRtree
 from shapely.ops import unary_union
 from shapely import contains_xy
 from audit_trace_widths import polygons,xy,uid,track_line
-R=Path(__file__).resolve().parents[2];PATH=R/'boards/esp32-fpga-module/module.kicad_pcb';O=R/'tmp/width-fixes/search';O.mkdir(exist_ok=True);b=p.LoadBoard(str(PATH));report=json.loads(Path(sys.argv[1]).read_text());changes=[];attempted=set()
+R=Path(__file__).resolve().parents[2];PATH=R/'current-df40-connectors/module.kicad_pcb';O=R/'tmp/width-fixes/search';O.mkdir(exist_ok=True);b=p.LoadBoard(str(PATH));report=json.loads(Path(sys.argv[1]).read_text());changes=[];attempted=set()
 def pt(q):return p.VECTOR2I(round(q[0]*1e6),round(q[1]*1e6))
 def ends(t):return xy(t.GetStart()),xy(t.GetEnd())
 def geom(t,layer=None):

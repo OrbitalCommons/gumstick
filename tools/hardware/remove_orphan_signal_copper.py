@@ -5,7 +5,7 @@ import pcbnew as p,sys
 from shapely.geometry import Point,LineString,box
 from shapely.strtree import STRtree
 from collections import defaultdict
-R=Path(__file__).resolve().parents[2];path=R/'boards/esp32-fpga-module/module.kicad_pcb';b=p.LoadBoard(str(path));layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu];nets=defaultdict(list)
+R=Path(__file__).resolve().parents[2];path=R/'current-df40-connectors/module.kicad_pcb';b=p.LoadBoard(str(path));layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu];nets=defaultdict(list)
 def xy(v):return p.ToMM(v.x),p.ToMM(v.y)
 for f in b.GetFootprints():
  for a in f.Pads():

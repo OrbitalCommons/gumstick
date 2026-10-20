@@ -191,5 +191,5 @@ def write_reports(result,out):
     (out/'trace-width-audit.md').write_text('\n'.join(s)+'\n')
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('board',nargs='?',type=Path,default=Path('boards/esp32-fpga-module/module.kicad_pcb'));parser.add_argument('--out',type=Path,default=Path('boards/esp32-fpga-module/docs/trace-width-audit'));args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('board',nargs='?',type=Path,default=Path('current-df40-connectors/module.kicad_pcb'));parser.add_argument('--out',type=Path,default=Path('current-df40-connectors/docs/trace-width-audit'));args=parser.parse_args()
     before=hashlib.sha256(args.board.read_bytes()).hexdigest();result=audit(args.board);assert before==hashlib.sha256(args.board.read_bytes()).hexdigest(), 'Board changed while audit was running';write_reports(result,args.out);print(json.dumps({k:result[k] for k in ['transition_pair_count','unique_transition_locations','summary']},indent=2))

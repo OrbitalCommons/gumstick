@@ -2,7 +2,7 @@
 """Hand routing for the ESP32-C6 + iCE40 M.2 module (v2).
 
 Run after build_module_v2.py. Adds all copper (tracks, vias, the +1.2 V inner-layer island) to
-boards/esp32-fpga-module-v2/module.kicad_pcb and saves it in place. Every segment is octilinear.
+future-m2-goldfingers/module.kicad_pcb and saves it in place. Every segment is octilinear.
 
 Layer plan
   F.Cu   component side: RF, crystal, QSPI link, CRESET/CDONE, decoupling, FPGA I/O that stays on top,
@@ -21,7 +21,7 @@ from pathlib import Path
 import pcbnew as p
 
 R = Path(__file__).resolve().parents[2]
-D = R / 'boards/esp32-fpga-module-v2'
+D = R / 'future-m2-goldfingers'
 PCB = D / 'module.kicad_pcb'
 
 board = p.LoadBoard(str(PCB))

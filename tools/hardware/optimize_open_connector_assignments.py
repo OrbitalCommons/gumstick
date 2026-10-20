@@ -5,7 +5,7 @@ import pcbnew as p,json,csv,sys,re
 from shapely.geometry import Point,LineString,box
 from shapely.strtree import STRtree
 from shapely.ops import unary_union
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';b=p.LoadBoard(str(D/'module.kicad_pcb'));layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';b=p.LoadBoard(str(D/'module.kicad_pcb'));layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]
 parts=json.loads((D/'docs/module-connectivity.json').read_text());report=json.loads((R/'tmp/module-layout/current.json').read_text());opens={re.search(r'\[([^]]+)\]',v['items'][0]['description'])[1] for v in report['unconnected_items']}
 def xy(v):return p.ToMM(v.x),p.ToMM(v.y)
 data={}

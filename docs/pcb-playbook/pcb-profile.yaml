@@ -57,7 +57,7 @@ mechanics:
 
 manufacturing:
   fab: jlcpcb
-  rules: boards/esp32-fpga-module/module.kicad_dru
+  rules: current-df40-connectors/module.kicad_dru
   stackup_4l: JLC04101H-7628
   rf_cpwg_50ohm: {trace_mm: 0.26, gap_mm: 0.15}
   cpl_offsets: per_board            # docs/jlcpcb-placement-offsets.json, LCSC-keyed

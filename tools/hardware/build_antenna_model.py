@@ -1,7 +1,7 @@
 """STEP equivalent of the handoff's illustrative antenna envelope; not vendor CAD."""
 from pathlib import Path
 import cadquery as cq
-out=Path(__file__).resolve().parents[2]/'boards/esp32-fpga-module/3dmodels/ACAG0201-2450.step'
+out=Path(__file__).resolve().parents[2]/'current-df40-connectors/3dmodels/ACAG0201-2450.step'
 a=cq.Assembly(name='ACAG0201_2450_illustrative')
 a.add(cq.Workplane('XY').box(2,1.25,.6).translate((0,0,.3)),name='nominal_body',color=cq.Color(.34,.47,.36))
 for i,x in enumerate([-.7,.7]):

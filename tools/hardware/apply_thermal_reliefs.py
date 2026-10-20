@@ -2,7 +2,7 @@
 """Use solderable thermal pad connections; preserve thermal/RF ground exceptions."""
 from pathlib import Path
 import json,pcbnew as p
-D=Path(__file__).resolve().parents[2]/'boards/esp32-fpga-module'
+D=Path(__file__).resolve().parents[2]/'current-df40-connectors'
 b=p.LoadBoard(str(D/'module.kicad_pcb'))
 exceptions={('U1','57'):'ESP32 exposed ground/thermal pad',('U1','PAD'):'ESP32 exposed ground/thermal pad',('U2','PAD'):'FPGA exposed ground/thermal pad',('U3','9'):'Buck exposed ground/thermal pad',('AE1','2'):'Antenna RF ground termination',('J3','2'):'U.FL shield/RF ground'}
 report=[]

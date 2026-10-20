@@ -2,7 +2,7 @@
 """Checked, repeatable carrier fabrication and assembly export."""
 from pathlib import Path
 import csv, subprocess, tempfile, zipfile, shutil, hashlib, json
-R=Path(__file__).resolve().parents[2];D=R/'boards/programming-carrier';F=D/'fab';P=D/'carrier.kicad_pcb';S=D/'carrier.kicad_sch'
+R=Path(__file__).resolve().parents[2];D=R/'programming-carrier';F=D/'fab';P=D/'carrier.kicad_pcb';S=D/'carrier.kicad_sch'
 def run(*args): subprocess.run(list(map(str,args)),check=True)
 for sub in ['checks','gerbers','jlcpcb','bom']:(F/sub).mkdir(parents=True,exist_ok=True)
 run('kicad-cli','sch','erc','--format','json','--exit-code-violations','-o',F/'checks/erc.json',S)

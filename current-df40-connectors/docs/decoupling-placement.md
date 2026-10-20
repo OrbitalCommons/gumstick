@@ -25,6 +25,6 @@ Existing capacitors repositioned; shared-capacitor topology retained. This does 
 
 The baseline column compares the nearest existing 100 nF capacitor on the same net, not necessarily the same reference. Capacitors on a shared supply can serve multiple pins; this is not proof of effective decoupling.
 
-Reference: [Lattice iCE40 Hardware Checklist](../../../libraries/datasheets/ice40-hardware-checklist.pdf), sections 2 and 7.
+Reference: [Lattice iCE40 Hardware Checklist](../../libraries/datasheets/ice40-hardware-checklist.pdf), sections 2 and 7.
 
 Board SHA-256: `87f79015ff1839fab969b1c949993c3161284cc376d5711af10f55e21a9c03d3`

@@ -3,7 +3,7 @@ from pathlib import Path
 import pcbnew as p
 from shapely.geometry import Point
 from routing_constraints import qfn_regions
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';path=D/'module.kicad_pcb';b=p.LoadBoard(str(path));regions=list(qfn_regions(b))
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';path=D/'module.kicad_pcb';b=p.LoadBoard(str(path));regions=list(qfn_regions(b))
 pt=lambda x,y:p.VECTOR2I(p.FromMM(x+100),p.FromMM(y+100))
 for z in list(b.Zones()):
  if z.GetIsRuleArea() and z.GetZoneName().startswith('QFN via access'):b.Remove(z)

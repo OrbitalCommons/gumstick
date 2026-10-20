@@ -5,7 +5,7 @@
 "DRC clean" means nothing until the rules are the fab's rules. The module's
 generic limits hid real violations until they were replaced with JLCPCB's
 published limits. Start every JLC board from
-[`boards/esp32-fpga-module/module.kicad_dru`](../../boards/esp32-fpga-module/module.kicad_dru)
+[`current-df40-connectors/module.kicad_dru`](../../current-df40-connectors/module.kicad_dru)
 (4-layer, 1 oz outer / 0.5 oz inner, routed edges). Its key rules:
 
 | Rule | Minimum |

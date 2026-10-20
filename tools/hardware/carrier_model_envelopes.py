@@ -4,7 +4,7 @@ Dimensions follow their named footprint bodies. These are not vendor mechanical 
 """
 from pathlib import Path
 import cadquery as cq
-D=Path(__file__).resolve().parents[2]/'boards/programming-carrier/3dmodels'
+D=Path(__file__).resolve().parents[2]/'programming-carrier/3dmodels'
 a=cq.Assembly(name='HRO_USB_C_envelope')
 shell=cq.Workplane('XY').box(8.9,7.35,3.16,centered=(True,True,False)).translate((0,1.575,0.05))
 # STEP y is opposite the footprint's y; front opening at negative model Y.

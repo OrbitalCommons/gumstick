@@ -2,7 +2,7 @@
 """Checks and review exports for the v2 module draft; never fabricate from this script's outputs."""
 import subprocess, json, hashlib
 from pathlib import Path
-D = Path(__file__).resolve().parents[2] / 'boards/esp32-fpga-module-v2'; out = D / 'fab/checks'; out.mkdir(parents=True, exist_ok=True)
+D = Path(__file__).resolve().parents[2] / 'future-m2-goldfingers'; out = D / 'fab/checks'; out.mkdir(parents=True, exist_ok=True)
 def run(*args): subprocess.run(['kicad-cli', *map(str, args)], check=True, capture_output=True)
 run('sch', 'erc', '--format', 'json', '--severity-error', '--severity-warning', '-o', out / 'erc.json', D / 'module.kicad_sch')
 run('pcb', 'drc', '--schematic-parity', '--refill-zones', '--format', 'json', '--severity-error', '--severity-warning', '-o', out / 'drc.json', D / 'module.kicad_pcb')

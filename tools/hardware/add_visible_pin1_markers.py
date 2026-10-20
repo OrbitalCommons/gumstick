@@ -3,7 +3,7 @@
 import pcbnew as p,math,json
 from pathlib import Path
 from shapely.geometry import box,Point
-D=Path('boards/esp32-fpga-module');f=D/'module.kicad_pcb';b=p.LoadBoard(str(f))
+D=Path('current-df40-connectors');f=D/'module.kicad_pcb';b=p.LoadBoard(str(f))
 def bb(item):
  q=item.GetBoundingBox();return box(p.ToMM(q.GetLeft()),p.ToMM(q.GetTop()),p.ToMM(q.GetRight()),p.ToMM(q.GetBottom()))
 # Remove markers from the previous run; leave footprint-native silk intact.

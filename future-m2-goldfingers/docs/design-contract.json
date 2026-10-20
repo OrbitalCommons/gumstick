@@ -1,7 +1,7 @@
 {
   "revision": "B-development",
   "status": "design_draft_routed_not_for_fabrication",
-  "predecessor": "boards/esp32-fpga-module",
+  "predecessor": "current-df40-connectors",
   "processor": {
     "mpn": "ESP32-C6",
     "package": "QFN40 5x5 mm, 0.4 mm pitch, 3.3 mm exposed pad (flashless ESP32-C6; LCSC C5364646)",

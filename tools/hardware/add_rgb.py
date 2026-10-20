@@ -3,7 +3,7 @@
 from pathlib import Path
 import json,uuid
 import pcbnew as p
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module'
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors'
 x=json.loads((D/'docs/module-connectivity.json').read_text())
 x['D1']={'source_ref':'U9','value':'FC-B1010RGBT-HG','footprint':'Module:RGBLED','lcsc':'C158099','pins':{f'P${i}':{'name':'A' if i==1 else f'K_RGB{i-2}','type':'passive','net':'+3.3V' if i==1 else f'FPGA_RGB{i-2}'} for i in range(1,5)},'uuid':str(uuid.uuid5(uuid.NAMESPACE_URL,'gps-time-module/D1'))}
 (D/'docs/module-connectivity.json').write_text(json.dumps(x,indent=2)+'\n')

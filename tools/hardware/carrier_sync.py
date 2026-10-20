@@ -2,7 +2,7 @@
 """Verify schematic against circuit contract; assign only KiCad's generated NC nets."""
 from pathlib import Path
 import xml.etree.ElementTree as ET,json,pcbnew as p
-R=Path(__file__).resolve().parents[2];D=R/'boards/programming-carrier';parts=json.loads((D/'docs/circuit.json').read_text());root=ET.parse(R/'tmp/carrier/netlist.xml').getroot();b=p.LoadBoard(str(D/'carrier.kicad_pcb'));actual={}
+R=Path(__file__).resolve().parents[2];D=R/'programming-carrier';parts=json.loads((D/'docs/circuit.json').read_text());root=ET.parse(R/'tmp/carrier/netlist.xml').getroot();b=p.LoadBoard(str(D/'carrier.kicad_pcb'));actual={}
 for n in root.findall('./nets/net'):
  for node in n.findall('node'):actual[(node.attrib['ref'],node.attrib['pin'])]=n.attrib['name']
 for ref,c in parts.items():

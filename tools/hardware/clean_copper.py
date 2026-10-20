@@ -2,7 +2,7 @@
 """Remove duplicate vias and disconnected pour islands, then refill."""
 from pathlib import Path
 import pcbnew as p
-D=Path(__file__).resolve().parents[2]/'boards/esp32-fpga-module'
+D=Path(__file__).resolve().parents[2]/'current-df40-connectors'
 b=p.LoadBoard(str(D/'module.kicad_pcb'));seen=set();removed=0
 for t in list(b.GetTracks()):
  if not isinstance(t,p.PCB_VIA):continue

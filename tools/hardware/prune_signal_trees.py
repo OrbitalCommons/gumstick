@@ -4,7 +4,7 @@ from pathlib import Path
 import pcbnew as p,json,subprocess
 from shapely.geometry import Point,LineString,box
 from shapely.strtree import STRtree
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';path=D/'module.kicad_pcb';out=R/'tmp/module-layout/current.json';original=path.read_bytes();b=p.LoadBoard(str(path));layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu];groups={}
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';path=D/'module.kicad_pcb';out=R/'tmp/module-layout/current.json';original=path.read_bytes();b=p.LoadBoard(str(path));layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu];groups={}
 def xy(v):return p.ToMM(v.x),p.ToMM(v.y)
 def wanted(n):return n.startswith(('/ESP_GPIO','/FPGA_IO','/LINK_','/SYNC_IO'))
 for f in b.GetFootprints():

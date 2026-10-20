@@ -1,13 +1,13 @@
 # Module v1 programming and lighting test fixture
 
 This is the **ordered programming-carrier v1**, a USB programmer and slow GPIO
-indicator fixture for the ESP32-S2 + iCE40 module. Use the [daughterboard ICD](../esp32-fpga-module/docs/ICD-v1.md)
+indicator fixture for the ESP32-S2 + iCE40 module. Use the [daughterboard ICD](../current-df40-connectors/docs/ICD-v1.md)
 for the interface, [design notes](docs/DESIGN.md) for the circuit, and
 [ordered snapshot](releases/v1/README.md) for manufacturing files.
 
 The procedure below specifies a test program to implement. There is **no complete
 fixture firmware included here**. Affogato supplies build/loading/SPI building
-blocks; [these reviewed setup notes](../gps-time-calibrator/docs/integration/affogato.md)
+blocks; [these reviewed setup notes](https://github.com/OrbitalCommons/gps-time-calibrator/blob/main/boards/gps-time-calibrator/docs/integration/affogato.md)
 explain its current capabilities and limitations. The calibrator's GPIO assignments
 and bitstream must **not** be used as the fixture test mapping.
 
@@ -27,7 +27,7 @@ not rated drive strength or a complete input-path/analog/high-speed test.
 Use [led-map.json](docs/led-map.json) as the machine-readable test list. Group by
 `buffer`, preserve `input` order, and carry `active_low`; do not assume consecutive
 LED reference numbers cover every footprint or that a GPIO suffix is a FPGA pad.
-The [ICD CSV](../esp32-fpga-module/docs/icd-v1-pinout.csv) maps each FPGA net to
+The [ICD CSV](../current-df40-connectors/docs/icd-v1-pinout.csv) maps each FPGA net to
 its physical package pin for the fixture PCF.
 
 ## Setup and recovery

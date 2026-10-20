@@ -12,7 +12,7 @@ from shapely.geometry import Point,LineString,Polygon
 from shapely.ops import unary_union
 from shapely.strtree import STRtree
 from audit_trace_widths import polygons,xy,uid,track_line
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';PATH=D/'module.kicad_pcb';OUT=R/'tmp/width-fixes';OUT.mkdir(exist_ok=True)
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';PATH=D/'module.kicad_pcb';OUT=R/'tmp/width-fixes';OUT.mkdir(exist_ok=True)
 b=p.LoadBoard(str(PATH));TARGETS={'VIN_5V':.4,'+3.3V':.4,'+1.2V':.25,'+1.8V':.25,'FPGA_VCCIO0':.25,'ESP_VDD3P3':.25,'+1.2V_PLL':.25,'GND':.25}
 EPS=.000002
 

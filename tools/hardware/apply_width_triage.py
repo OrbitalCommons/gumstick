@@ -4,7 +4,7 @@ from pathlib import Path
 import json,subprocess,hashlib
 import pcbnew as p
 from audit_trace_widths import audit,write_reports
-R=Path(__file__).resolve().parents[2];path=R/'boards/esp32-fpga-module/module.kicad_pcb';out=R/'tmp/width-fixes';history=[]
+R=Path(__file__).resolve().parents[2];path=R/'current-df40-connectors/module.kicad_pcb';out=R/'tmp/width-fixes';history=[]
 for iteration in range(12):
  report=audit(path);changes={}
  for row in report['transitions']:
@@ -24,4 +24,4 @@ for iteration in range(12):
  history.extend(records);print('PASS',iteration,len(records),'segments',flush=True)
 else:raise RuntimeError('Widening did not converge')
 (out/'direct-widening.json').write_text(json.dumps(history,indent=2)+'\n')
-final=audit(path);write_reports(final,R/'boards/esp32-fpga-module/docs/trace-width-audit');print('FINAL',final['summary'],flush=True)
+final=audit(path);write_reports(final,R/'current-df40-connectors/docs/trace-width-audit');print('FINAL',final['summary'],flush=True)

@@ -8,7 +8,7 @@ from pathlib import Path
 import pcbnew as p,math,json
 from shapely.geometry import Point,LineString,box
 from shapely.strtree import STRtree
-R=Path(__file__).resolve().parents[2];D=R/'boards/esp32-fpga-module';b=p.LoadBoard(str(D/'module.kicad_pcb'))
+R=Path(__file__).resolve().parents[2];D=R/'current-df40-connectors';b=p.LoadBoard(str(D/'module.kicad_pcb'))
 layers=[p.F_Cu,p.In1_Cu,p.In2_Cu,p.B_Cu]
 def xy(v):return p.ToMM(v.x),p.ToMM(v.y)
 def pt(v):return p.VECTOR2I(p.FromMM(v[0]),p.FromMM(v[1]))

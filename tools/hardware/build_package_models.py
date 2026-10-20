@@ -1,7 +1,7 @@
 """Build explicitly approximate visualization models; requires cadquery."""
 from pathlib import Path
 import cadquery as cq
-D=Path(__file__).resolve().parents[2]/'boards/esp32-fpga-module/3dmodels'
+D=Path(__file__).resolve().parents[2]/'current-df40-connectors/3dmodels'
 def block(x,y,z,at):return cq.Workplane('XY').box(x,y,z).translate(at)
 a=cq.Assembly(name='FC-B1010RGBT-HG_approx')
 a.add(block(1,1,.8,(0,0,.5)),name='black_package',color=cq.Color(.045,.045,.05))
