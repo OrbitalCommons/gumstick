@@ -59,9 +59,9 @@ glTF viewer); v1 also has a STEP model in `current-df40-connectors/fab/`.
 
 ## Known carriers
 
-- [GPS time calibrator](https://github.com/OrbitalCommons/gps-time-calibrator)
-  (OrbitalCommons, currently private): GNSS-disciplined optical timing
-  reference built around the v1 module.
+- [StratumZero](https://github.com/OrbitalCommons/stratumzero)
+  (OrbitalCommons, currently private): a GNSS-disciplined reference clock you
+  can point a camera at, built around the v1 module.
 
 ## Working on the designs (kicadmium)
 

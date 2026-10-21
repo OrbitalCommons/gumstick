@@ -7,7 +7,7 @@ for the interface, [design notes](docs/DESIGN.md) for the circuit, and
 
 The procedure below specifies a test program to implement. There is **no complete
 fixture firmware included here**. Affogato supplies build/loading/SPI building
-blocks; [these reviewed setup notes](https://github.com/OrbitalCommons/gps-time-calibrator/blob/main/boards/gps-time-calibrator/docs/integration/affogato.md)
+blocks; [these reviewed setup notes](https://github.com/OrbitalCommons/stratumzero/blob/main/boards/stratumzero/docs/integration/affogato.md)
 explain its current capabilities and limitations. The calibrator's GPIO assignments
 and bitstream must **not** be used as the fixture test mapping.
 

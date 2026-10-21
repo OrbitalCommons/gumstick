@@ -26,7 +26,7 @@ supply in v1. All general I/O interfaces are3.3V.
 | [Physical contact map](../../programming-carrier/docs/contact-map.json) | Module contact ↔ original vendor footprint pad mapping |
 | [Frozen programmer pinout](../../programming-carrier/docs/module-v1-pinout.csv) | Independent carrier copy of v1 interface |
 | [Programmer design](../../programming-carrier/docs/DESIGN.md) | Working carrier-source example, actual J1/J2/H1 procurement split |
-| [Calibrator integration guide](https://github.com/OrbitalCommons/gps-time-calibrator/blob/main/boards/gps-time-calibrator/docs/integration/README.md) | Application-specific use of this module |
+| [StratumZero integration guide](https://github.com/OrbitalCommons/stratumzero/blob/main/boards/stratumzero/docs/integration/README.md) | Application-specific use of this module |
 
 ### Library import and procurement
 
@@ -202,7 +202,7 @@ Check CDONE then a runtime protocol/ABI response. Runtime SPI mode, packet forma
 clock rate, resets and timing constraints belong to the application ABI; the wire
 map does not imply a preinstalled protocol or QSPI support.
 
-Affogato provides loader/build blocks. See the [source-reviewed integration notes](https://github.com/OrbitalCommons/gps-time-calibrator/blob/main/boards/gps-time-calibrator/docs/integration/affogato.md)
+Affogato provides loader/build blocks. See the [source-reviewed integration notes](https://github.com/OrbitalCommons/stratumzero/blob/main/boards/stratumzero/docs/integration/affogato.md)
 for actual APIs, implementation gaps, paired ESP+FPGA OTA and proposed4MB partitions.
 The reusable module contract does not require a particular carrier's GPIO allocation.
 
